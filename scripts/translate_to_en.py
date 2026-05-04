@@ -80,13 +80,18 @@ def translate_text(text: str):
     for chunk in split_text(protected):
         try:
             translated = translator.translate(chunk)
-            translated_chunks.append(translated)
+
+            if translated is None:
+                print("Translation returned None, keeping original chunk.")
+                translated = chunk
+
+            translated_chunks.append(str(translated))
             time.sleep(0.4)
         except Exception as exc:
             print(f"Translation failed, keeping original text. Error: {exc}")
             translated_chunks.append(chunk)
 
-    translated_text = "\n\n".join(translated_chunks)
+    translated_text = "\n\n".join(str(chunk) for chunk in translated_chunks if chunk is not None)
     return restore_markdown_tokens(translated_text, placeholders)
 
 
