@@ -19,28 +19,41 @@ EXCLUDE_DIRS = {
 translator = GoogleTranslator(source="zh-TW", target="en")
 
 
+def has_cjk(text: str) -> bool:
+    return bool(re.search(r"[\u4e00-\u9fff]", text))
+
+
 def protect_markdown_tokens(text: str):
     placeholders = {}
-
-    patterns = [
-        r"```[\s\S]*?```",          # fenced code blocks
-        r"`[^`]+`",                 # inline code
-        r"!\[[^\]]*\]\([^)]+\)",    # images
-        r"\[[^\]]+\]\([^)]+\)",     # markdown links
-        r"<[^>]+>",                 # html tags
-    ]
-
     protected = text
     index = 0
+
+    def make_token(original: str) -> str:
+        nonlocal index
+        token = f"⟦{index}⟧"
+        placeholders[token] = original
+        index += 1
+        return token
+
+    patterns = [
+        r"!\[[^\]]*\]\([^)]+\)",    # images
+        r"`[^`]+`",                 # inline code
+        r"<[^>]+>",                 # html tags
+    ]
 
     for pattern in patterns:
         matches = list(re.finditer(pattern, protected))
         for match in matches:
             original = match.group(0)
-            token = f"ZXQPLACEHOLDER{index}QXZ"
-            placeholders[token] = original
-            protected = protected.replace(original, token, 1)
-            index += 1
+            protected = protected.replace(original, make_token(original), 1)
+
+    # Protect URLs inside normal markdown links, but allow link text to translate.
+    def protect_link_url(match):
+        label = match.group(1)
+        url = match.group(2)
+        return f"{label}({make_token(url)})"
+
+    protected = re.sub(r"(\[[^\]]+\])\(([^)]+)\)", protect_link_url, protected)
 
     return protected, placeholders
 
@@ -50,66 +63,85 @@ def restore_markdown_tokens(text: str, placeholders: dict):
 
     for token, original in placeholders.items():
         restored = restored.replace(token, original)
-        restored = restored.replace(token.lower(), original)
 
     return restored
-
-
-def split_text(text: str, max_len: int = 3000):
-    chunks = []
-    current = ""
-
-    for paragraph in text.split("\n\n"):
-        paragraph = paragraph.strip("\n")
-
-        if not paragraph.strip():
-            continue
-
-        if len(current) + len(paragraph) + 2 > max_len:
-            if current.strip():
-                chunks.append(current)
-            current = paragraph
-        else:
-            current += ("\n\n" if current else "") + paragraph
-
-    if current.strip():
-        chunks.append(current)
-
-    return chunks
 
 
 def translate_text(text: str):
     if not text or not text.strip():
         return text
 
-    protected, placeholders = protect_markdown_tokens(text)
-    translated_chunks = []
+    if not has_cjk(text):
+        return text
 
-    for chunk in split_text(protected):
-        if not chunk.strip():
-            translated_chunks.append(chunk)
+    protected, placeholders = protect_markdown_tokens(text)
+
+    try:
+        translated = translator.translate(protected)
+
+        if translated is None:
+            print("Translation returned None, keeping original text.", flush=True)
+            translated = protected
+
+        time.sleep(0.35)
+        return restore_markdown_tokens(str(translated), placeholders)
+
+    except Exception as exc:
+        print(f"Translation failed, keeping original text. Error: {exc}", flush=True)
+        return restore_markdown_tokens(protected, placeholders)
+
+
+def is_table_separator(line: str) -> bool:
+    stripped = line.strip()
+    if "|" not in stripped:
+        return False
+
+    cells = [cell.strip() for cell in stripped.strip("|").split("|")]
+    if not cells:
+        return False
+
+    return all(re.fullmatch(r":?-{3,}:?", cell or "") for cell in cells)
+
+
+def translate_table_line(line: str):
+    if is_table_separator(line):
+        return line
+
+    parts = line.split("|")
+    translated_parts = []
+
+    for part in parts:
+        if not part.strip():
+            translated_parts.append(part)
             continue
 
-        try:
-            translated = translator.translate(chunk)
+        leading = len(part) - len(part.lstrip())
+        trailing = len(part) - len(part.rstrip())
+        core = part.strip()
 
-            if translated is None:
-                print("Translation returned None, keeping original chunk.")
-                translated = chunk
+        translated_core = translate_text(core)
 
-            translated_chunks.append(str(translated))
-            time.sleep(0.6)
+        translated_parts.append(
+            (" " * leading) + translated_core + (" " * trailing)
+        )
 
-        except Exception as exc:
-            print(f"Translation failed, keeping original text. Error: {exc}")
-            translated_chunks.append(str(chunk))
-            time.sleep(0.6)
+    return "|".join(translated_parts)
 
-    translated_text = "\n\n".join(
-        str(chunk) for chunk in translated_chunks if chunk is not None
-    )
 
-    return restore_markdown_tokens(translated_text, placeholders)
+def translate_line(line: str):
+    patterns = [
+        r"^(\s{0,3}#{1,6}\s+)(.+)$",
+        r"^(\s*[-*+]\s+\[[ xX]\]\s+)(.+)$",
+        r"^(\s*[-*+]\s+)(.+)$",
+        r"^(\s*\d+\.\s+)(.+)$",
+    ]
+
+    for pattern in patterns:
+        match = re.match(pattern, line)
+        if match:
+            return match.group(1) + translate_text(match.group(2))
+
+    return translate_text(line)
 
 
 def translate_markdown(content: str):
@@ -147,6 +179,21 @@ def translate_markdown(content: str):
             result.append(line)
             continue
 
+        if "|" in line:
+            flush_buffer()
+            result.append(translate_table_line(line))
+            continue
+
+        if re.match(r"^\s{0,3}#{1,6}\s+", line):
+            flush_buffer()
+            result.append(translate_line(line))
+            continue
+
+        if re.match(r"^\s*([-*+]|\d+\.)\s+", line):
+            flush_buffer()
+            result.append(translate_line(line))
+            continue
+
         buffer.append(line)
 
     flush_buffer()
@@ -160,14 +207,14 @@ def should_skip(path: Path):
 
 
 def main():
+    if OUT_DIR.exists():
+        shutil.rmtree(OUT_DIR)
+
     OUT_DIR.mkdir(exist_ok=True)
 
     gitbook_dir = ROOT / ".gitbook"
     if gitbook_dir.exists():
-        target_gitbook_dir = OUT_DIR / ".gitbook"
-        if target_gitbook_dir.exists():
-            shutil.rmtree(target_gitbook_dir)
-        shutil.copytree(gitbook_dir, target_gitbook_dir)
+        shutil.copytree(gitbook_dir, OUT_DIR / ".gitbook")
 
     markdown_files = [
         path for path in ROOT.rglob("*.md")
@@ -179,13 +226,13 @@ def main():
         target_path = OUT_DIR / relative_path
         target_path.parent.mkdir(parents=True, exist_ok=True)
 
-        print(f"Translating {source_path} -> {target_path}")
+        print(f"Translating {source_path} -> {target_path}", flush=True)
 
         content = source_path.read_text(encoding="utf-8")
         translated = translate_markdown(content)
         target_path.write_text(translated, encoding="utf-8")
 
-    print("Done.")
+    print("Done.", flush=True)
 
 
 if __name__ == "__main__":
