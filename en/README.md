@@ -1,4 +1,4 @@
-#AI Studio basic introduction
+# Basic introduction to AI Studio
 
 <figure><img src=".gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
 
@@ -6,8 +6,8 @@
 
 * **Knowledge Base**: Establish a file knowledge base in three simple steps to solve the problem of insufficient built-in knowledge and unreliable responses in large language models, and authorize domain experts to manage and maintain their own knowledge base in a safe manner to avoid the leakage of key knowledge.
 * **Agent**: Quickly generate Agents based on different application scenarios, and allow users to quickly apply them through authorization.
-* **Prompt word application/template management**: Solidify commonly used prompt words and make them app-based, allowing users to simply provide key information to improve the accuracy of Q&A and avoid the need to enter a large number of prompt words themselves.
-* **AI Workflow**: The flexible AI process mechanism solves different RAG application scenarios and can integrate external integration search mechanisms to improve RAG design efficiency and increase the possibilities of AI Studio applications.
+* **Prompt word application/template management**: Solidify commonly used prompt words and turn them into apps, allowing users to simply provide key information to improve the accuracy of Q&A and avoid the need to enter a large number of prompt words themselves.
+* **AI Workflow**: The flexible AI process mechanism solves different RAG application scenarios and can integrate external integrated search mechanisms to improve RAG design efficiency and increase the possibilities of AI Studio applications.
 
 > **Note:** The information in the following screenshots is for reference only. The actual conversation records, Agents, prompt templates, etc. should be based on your environment.
 
@@ -25,19 +25,19 @@ After logging in, you will enter the "Workspace" page by default. Users can disc
 
 1. Click "Workspace" in the menu on the left side of the page
 2. Move the mouse to the Agent you want to use, or enter keywords in the search bar to search for Agent
-3. Select Agent and click the button on the card to add it to your personal collection.
-4. Click the "Favorites" button at the top of the page to switch to the personal area and check whether the added Agent exists.
+3. Select Agent and click the button on the card to add it to your personal collection
+4. Click the "Favorites" button at the top of the page to switch to the personal area to check whether the added Agent exists.
 
 
 
-## **Explore prompt word templates and add to personal collection**
+## **Explore prompt word templates and add to favorites**
 
 <figure><img src=".gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
 
 1. Click "Workspace" in the menu on the left side of the page
 2. Click the "Apply Template" tab in the exploration page
-3. Move the mouse to the application template you want to use, or enter keywords in the search bar to search for templates
-4. Select the application template and click the button on the card to add it to your personal collection.
+3. Move your mouse to the app template you want to use, or enter keywords in the search bar to search for templates
+4. After selecting the application template, click the button on the card to add it to your personal collection.
 5. Click the "Favorites" button at the top of the page to switch to the personal area and check whether the added application template exists.
 
 

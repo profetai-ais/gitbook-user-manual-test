@@ -25,15 +25,15 @@ Memory is divided into "storage memory" and "reference memory".
 <figure><img src="../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
 
 * **Save Memory**: When enabled, allows the Agent to store memories.
-* **Reference Memory**: When turned on, allows the Agent to reference the memory in the memory bank when responding.
+* **Reference Memory**: When enabled, allows the Agent to reference memories in the memory bank when responding.
 
-##Manage memory
+## manage memory
 
 The entrance to managing memory is in the "Management" button. Memory management is divided into "Personal Memory" and "Agent Memory".
 
 <figure><img src="../.gitbook/assets/image (138).png" alt=""><figcaption></figcaption></figure>
 
-### Personal Memory
+### personal memory
 
 When the reference memory function is turned on, the memory stored here can be called by all Agents. Personal memory entries can store up to 50 memories.
 
@@ -51,7 +51,7 @@ When the reference memory function is turned on, the Agent can call the memory i
 
 <figure><img src="../.gitbook/assets/image (141).png" alt=""><figcaption></figcaption></figure>
 
-## Memory storage method
+## How to store memories
 
 <figure><img src="../.gitbook/assets/image (142).png" alt=""><figcaption></figcaption></figure>
 

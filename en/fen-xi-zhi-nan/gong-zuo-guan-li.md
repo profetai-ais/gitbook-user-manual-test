@@ -10,11 +10,11 @@ description: Work management is used to centrally manage and track various jobs 
 
 When a user puts forward a request, the system will break it down into executable work items and create corresponding Tasks in the Job Manager; each Task will contain a clear job, description, current status (for example: pending, in progress, completed, failed/needs intervention), creation and update time, related inputs and outputs, and necessary execution records to facilitate user backtracking and verification.
 
-## Introduction to task status
+## Task status introduction
 
 There are 8 types of status in total:
 
-<table><thead><tr><th width="224">Status Name</th><th>Description</th></tr>ZXQPL ACEHOLDER8QXZ<tbody><tr><td>PENDING</td><td> has been created, waiting to be queued/not yet dispatched</td>ZXQPLAC EHOLDER15QXZ<tr><td>QUEUED</td><td> is already in the queue waiting to be executed</td></tr>ZXQPLACEHOLDER 22QXZ<td>RUNNING</td><td>Executing</td></tr><tr><td>SUCCEED ED</td><td>Complete successfully</td></tr><tr><td>FAILED</td>ZXQPLACEHO LDER37QXZ execution failed </td></tr><tr><td>STOPPED</td><td> was stopped (aborted) ZXQPLACEHOLDER 44QXZ</tr><tr><td>CANCELED</td><td>Cancelled</td></tr>ZXQPLA CEHOLDER52QXZ<td>PAUSED</td><td>Paused</td></tr></tbody></table>
+<table><thead><tr><th width="224">Status Name</th><th>Description</th></tr></thead><tbody><tr>⟦1 1⟧PENDING</td><td> Created, waiting to be queued/not yet dispatched</td></tr>⟦16 ⟧<td>QUEUED</td><td> Already queued for execution </td></tr><tr>⟦2 3⟧RUNNING</td><td>Executing</td></tr><tr><td>SUCCEED ED</td><td>Completed successfully</td></tr><tr><td>FAILED</td>⟦3 7⟧Execution failed</td></tr><tr><td>STOPPED</td><td>Stopped (aborted )</td></tr><tr><td>CANCELED</td><td>Canceled</td>⟦5 1⟧<tr><td>PAUSED</td><td>Paused</td></tr></tbody></table>
 
 ## Job page description
 
@@ -24,4 +24,4 @@ Click the name of the Task you want to view to open a pop-up window to browse th
 
 <figure><img src="../.gitbook/assets/image (232).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="101">Item</th><th width="177">Name</th><th>Description</th>ZXQP LACEHOLDER9QXZ</thead><tbody><tr>ZXQPLACEHOLDER1 3QXZ1</td><td>redo</td><td>reexecute Job</td></tr><tr><td>2</td><td>Continue Job Work progress </td></tr><tr><td>3</td><td>Detailed information</td><td> View details</td></tr><tr><td>4</td><td>Pause</td><td>Pause Job's work progress </td></tr><tr><td>3</td><td>Cancel</td><td>Cancel this Job Work tasks </td></tr></tbody></table>
+<table><thead><tr><th width="101">Project</th><th width="177">Name</th><th>Description</th></tr>⟦ 10⟧<tbody><tr><td>1</td><td>Redo</td><td>Reexecute Job</td></tr><tr><td>2</td><td>Continue </td><td>Continue Job Work progress</td></tr><tr><td>3</td><td>Detailed information</td><td> View details</td></tr><tr><td>4</td><td>Pause</td><td>Pause Job's work progress</td></tr><tr><td>3</td><td>Cancel</td><td>Cancel this Job's work task</td></tr></tbody></table>

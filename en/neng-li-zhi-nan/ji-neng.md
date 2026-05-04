@@ -14,8 +14,8 @@ By adding different Skills, Agents can perform more specific tasks, such as obta
 
 1. Go to the Skills tab
 2. Click Add and select Create
-3. Select the group to be classified, or click the + sign on the right to add a new group
-4. The left side is the list directory. When you create a skill for the first time, there is a set of folders and Skill.md that cannot be deleted by default. However, you can add additional folders and files. For the new method, please refer to [新增資料夾或檔案](ji-neng.md#xin-zeng-zi-liao-jia-huo-dang-an)
+3. Select a classified group, or click the + sign on the right to add a new group
+4. The left side is the list directory. When you create a skill for the first time, there is a set of folders and Skill.md that cannot be deleted by default. However, you can add additional folders and files. For the new method, please refer to [Add a new folder or file] (ji-neng.md#xin-zeng-zi-liao-jia-huo-dang-an)
 5. Fill in the file content according to the format
 6. You can click Publish to complete the creation or initialize the entire draft.
 
@@ -26,14 +26,14 @@ By adding different Skills, Agents can perform more specific tasks, such as obta
 <figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 1. Click above the list on the left to choose to add a file or folder
-2. Enter the name according to the selected type. Please note that when adding a new file, you need to add an additional file name.
+2. Enter the name according to the selected type. Please note that when adding a new file, you need to add an additional file name extension.
 
 ### Edit/delete folder or file
 
 <figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
-1. Hover the mouse over the data you want to edit or delete
-2. A button will appear on the right, click and use it according to the user’s needs.
+1. Hover your mouse over the data you want to edit or delete
+2. A button will appear on the right, which can be clicked and used according to the user's needs.
 
 ## Import skills
 
@@ -42,8 +42,8 @@ By adding different Skills, Agents can perform more specific tasks, such as obta
 <figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 1. Go to the Skills tab
-2. Click Add and choose to import skills
-3. Select the group to be classified, or click the + sign on the right to add a new group
+2. Click Add and select import skills
+3. Select a classified group, or click the + sign on the right to add a new group
 4. Import files in specified format (only supports **.zip, .md, .skill**)
 5. Click Import to complete the creation
 
@@ -61,11 +61,11 @@ The current security level is determined based on inspection and evaluation base
 
 Reference: [https://genai.owasp.org/llm-top-10/](https://genai.owasp.org/llm-top-10/)
 
-## 使用技能
+## Use skills
 
-使用的位置分別有兩處 :
+There are two locations used:
 
-* **Agent → 左側 Skill 設定**
+* **Agent → Skill settings on the left**
 
 <figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 

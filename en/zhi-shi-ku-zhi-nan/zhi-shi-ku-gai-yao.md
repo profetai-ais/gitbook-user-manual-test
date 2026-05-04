@@ -8,7 +8,7 @@ Compared with the static pre-training data set built into the AI ​​model, th
 
 When LLM receives a user query, the system will use Hybrid Search to search for the most relevant content in the knowledge base. Hybrid Search combines the following signal sources at the same time and combines the ranking results:
 
-* Full-text Search: Use database full-text index (Postgres) to find paragraphs that highly match the query terms
+* Full-text Search: Use the database full-text index (Postgres) to find paragraphs that closely match the query terms
 * Vector Search: Use semantic similarity to find content that is consistent with the concept of the question but may not contain the same words.
 * Chunk Summary Index: Use paragraph summary/key index to help locate key paragraphs in long documents to improve the focus of recall
 
@@ -25,7 +25,7 @@ The system will return highly relevant content fragments (Chunks) and provide th
 
 You only need to prepare text content, such as:
 
-* Long text content (TXT, Markdown, DOCX, HTML, JSONL, even PDF files)
+* Long-form text content (TXT, Markdown, DOCX, HTML, JSONL, even PDF files)
 * Structured data (CSV, Excel, etc.)
 
 Simply upload the file to the **Knowledge Base** and the data processing will be completed automatically.
@@ -36,6 +36,6 @@ If you want to create an AI customer service assistant based on the existing kno
 
 Traditionally, it may take weeks to develop a complete AI customer service chatbot from original text training, and it is difficult to effectively maintain and continuously improve. In AI Studio, the entire process only takes three minutes, and you can start collecting user feedback immediately.
 
-## Knowledge and Datasets
+## knowledge and data sets
 
 In AI Studio, the knowledge base is composed of multiple **data sets**, and each **data set** can contain multiple data chunks (Chunks). You can integrate your entire knowledge base into your application as search context, from uploaded archives or content synced from other data sources.

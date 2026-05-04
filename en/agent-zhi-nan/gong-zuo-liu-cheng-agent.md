@@ -11,9 +11,9 @@ description: Workflow Agent allows users to create processes and design how the 
 <figure><img src="../.gitbook/assets/image (201).png" alt=""><figcaption></figcaption></figure>
 
 1. Click the "+ Create" button in the upper right corner of the screen
-2. Select "Agent Type" as _Workflow_ in the pop-up window
-3. Enter the knowledge name in the "Name" field and click the button on the right to create a multi-language label. Please refer to [多國語言設定](gong-zuo-liu-cheng-agent.md#duo-guo-yu-yan-she-ding)
-4. Enter the knowledge description in the "Description" field and click the button on the right to create a multilingual label. Please refer to [多國語言設定](gong-zuo-liu-cheng-agent.md#duo-guo-yu-yan-she-ding)
+2. In the pop-up window, select "Agent Type" as _Workflow_
+3. Enter the knowledge name in the "Name" field and click the button on the right to create a multilingual label. Please refer to [Multiple Language Settings](gong-zuo-liu-cheng-agent.md#duo-guo-yu-yan-she-ding)
+4. Enter the knowledge description in the "Description" field and click the button on the right to create a multilingual label. Please refer to [Multiple Language Settings](gong-zuo-liu-cheng-agent.md#duo-guo-yu-yan-she-ding)
 5. Click the "Workflow Template" menu to select a workflow template
 6. Click the "Save" button to complete the addition, and the system will automatically enter the Agent editing screen for the user to complete the settings.
 
@@ -32,18 +32,18 @@ Workflow Agent's homepage can be divided into several main areas, as follows:
 
 <figure><img src="../.gitbook/assets/image (203).png" alt=""><figcaption></figcaption></figure>
 
-1. **Agent function options:** Provides links to Agent function settings
+1.  **Agent function options:** Provides links to Agent function settings
 
 The function options area contains the following function links. After clicking, the corresponding setting page will appear:
 
-<table><thead><tr><th width="250">Name</th><th>Description</th>ZXQ PLACEHOLDER7QXZ</thead><tbody><tr><td>Basic settings</td><td>Edit Agent's homepage</td></tr><tr><td>Process settings</td><td>Edit Agent Workflow </td></tr><tr><td> Session log </td><td> provides this Agent Conversation record </td></tr><tr><td>Member management</td><td>Manage this Agent The access rights of </td></tr><tr><td>AI WEBAPP</td><td>set this Agent The web page embeds </td></tr><tr><td>API Key</td><td> to provide secure calling API for third-party applications Voucher for </td></tr></tbody></table>
+<table><thead><tr><th width="250">Name</th><th>Description</th></tr></thead><tbody><tr><td>Basic Settings </td><td>Edit Agent Home Page</td></tr><tr><td>Process Settings</td><td>Edit Agent’s Workflow</td></tr><tr><td>Session Log</td><td>Provide this Agent Conversation records</td></tr><tr><td>Member Management</td><td>Manage the access rights of this Agent</td></tr><tr><td>AI WEBAPP</td><td>Configure this Agent The webpage embedding</td></tr><tr><td>API Key</td><td>provides credentials for third-party applications to securely call the API</td></tr></tbody></table>
 
 2. **Basic information**: Editable Agent name, description and activation status
 3. **Application Settings:** Provides settings related to Agent behavior based on Agent type
 
-<table><thead><tr><th width="250">Name</th><th>Description</th>ZXQPL ACEHOLDER7QXZ</thead><tbody><tr><td>Welcome page</td><td>Setting Agent Question setting </td></tr><tr><td> prompt word template </td><td> Add existing prompt word template for subsequent use </td>ZXQPLACEHOLDER21 QXZ<tr><td> file processing method </td><td> controls the processing method of uploaded files </td></tr></tbody></table>
+<table><thead><tr><th width="250">Name</th><th>Description</th></tr></thead><tbody><tr><td>Welcome page</td><td>Setting Agent Question setting</td></tr><tr><td>Prompt word template</td><td>Add existing prompt word template for subsequent use</td>⟦ 21⟧<tr><td>File processing method</td><td>Control the processing method of uploaded files</td></tr></tbody></table>
 
-4. **Adaptation Preview:** Let users test whether the Q&A results are as expected
+4. **Adaptation Preview:** Allows users to test whether the Q&A results are as expected
 
 ## **Basic settings**
 
@@ -54,7 +54,7 @@ All types of Agent homepages share the Basic Settings section, which includes an
 1. **Agent Status**: Users can edit the activation status of Agent, and the status will change immediately when the switch is switched.
 2. **Basic Settings Edit**: Can edit the most basic name, description and international language translation.
 
-### Agent status setting
+### Agent status settings
 
 <figure><img src="../.gitbook/assets/image (205).png" alt=""><figcaption></figcaption></figure>
 
@@ -64,11 +64,11 @@ All types of Agent homepages share the Basic Settings section, which includes an
 
 1. Click the status bar to open the interface
 2. Click the Publish button
-3. You can copy the URL in the workspace
-4. After clicking the dialog button, open the workspace dialog
-5. Click the Unpublished button to cancel publishing
+3. URL that can be copied in the workspace
+4. After clicking the dialog button, the workspace dialog opens
+5. Click the Unpublished button to unpublish
 
-## **App Settings**
+## **APP SETTINGS**
 
 Provides settings related to Agent behavior based on Agent type. The application settings of _Workflow Agent_ will be described below.
 
@@ -80,13 +80,13 @@ The application template (prompt word template) that has been created or collect
 
 <figure><img src="../.gitbook/assets/image (210).png" alt=""><figcaption></figcaption></figure>
 
-### **Welcome Page**
+### **Welcome page**
 
 Users can set their own default conversation content, allowing the Agent to provide directly clickable question directions before the conversation begins, helping users start interacting more quickly.
 
 <figure><img src="../.gitbook/assets/image (209).png" alt=""><figcaption></figcaption></figure>
 
-## **Adjustment Preview**
+## **Adaptation Preview**
 
 Users can test Agent behavior and response content in this area, and adjust Agent configuration based on the responses.
 
@@ -96,7 +96,7 @@ Users can test Agent behavior and response content in this area, and adjust Agen
 
 "Workflow Settings" in the Agent function options is used to edit the Agent's workflow. Clicking it will open the editing screen of the workflow bound to this Agent.
 
-> For screen description and operation of process editing, please see [編輯工作流程](bian-ji-gong-zuo-liu-cheng.md)
+> For screen descriptions and operations of process editing, please see [Edit Workflow](bian-ji-gong-zuo-liu-cheng.md)
 
 ## **Session Log**
 
@@ -110,15 +110,15 @@ The processing flow is also retained in the log record; when an error occurs in 
 
 ## Permissions
 
-The creator can grant access rights to other users through "Permissions" (please refer to [權限功能介紹](../ru-men-zhi-nan/quan-xian-gong-neng-jie-shao.md) for role definition).
+The creator can grant access rights to other users through "Permissions" (for role definition, please refer to [Permission Function Introduction] (../ru-men-zhi-nan/quan-xian-gong-neng-jie-shao.md)).
 
 > Note: The creator is the default "owner", and each project can only have one owner.
 
 <figure><img src="../.gitbook/assets/image (215).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="99"> Project </th><th width="132"> Operation Name </th><th> Description</th></tr></thead><tbody><tr><td>1</td>ZXQPLACEHOLDER15 QXZEdit table</td><td> Allows users to edit the presentation of the table</td></tr><tr><td>2ZXQPLACEHOLDER 22QXZ<td>Refresh</td><td>Refresh the list after clicking</td></tr><tr><td>3ZXQ PLACEHOLDER30QXZ<td>Content filtering</td><td>Advanced filteringSpecified content</td></tr><tr>ZXQPLACE HOLDER37QXZ4</td><td>Status switching</td><td>Single or multi-select on the form to quickly switch status</td></tr>ZXQPLA CEHOLDER44QXZ<td>5</td><td>Batch deletion</td><td>After checking the items, the delete button in the upper left corner will be displayed, allowing users to delete multiple itemsZXQPLACE HOLDER50QXZ</tr><tr><td>6</td><td> search field </td><td> search Name</td></tr><tr><td>7</td><td>Invite</td><td>InviteOrganization/ Member</td></tr><tr><td>8</td>ZXQPL ACEHOLDER71QXZActivation status</td><td>User permission activation status</td></tr>Z XQPLACEHOLDER76QXZ<td>9</td><td>Action</td>ZXQPLA CEHOLDER81QXZTransfer your role or remove selected users</td></tr></tbody></table>
+<table><thead><tr><th width="99">Project</th><th width="132">Operation Name</th><th>Description</th></tr>⟦10 ⟧<tbody><tr><td>1</td><td>Edit Table</td><td>Allows users to edit tables The way the grid is presented</td></tr><tr><td>2</td><td>Refresh</td><td> Refresh the list after clicking</td></tr><tr><td>3</td><td>Content filtering</td>⟦3 3⟧Advanced filtering of specified content</td></tr><tr><td>4</td><td>Status switching⟦4 0⟧<td>Quickly switch status by selecting single or multiple selections on the form</td></tr><tr><td>5</td> <td>Batch deletion</td><td>After checking the items, the delete button in the upper left corner will be displayed, allowing users to delete multiple items. items</td></tr><tr><td>6</td><td>Search field</td><td>Search Name</td></tr><tr><td>7</td><td>Invite</td><td>Invite Organization / Member</td></tr><tr><td>8</td><td>Enabled Status</td><td>User Permissions Enabled Status</td></tr>⟦ 76⟧<td>9</td><td>Actions</td><td>Transfer your character or delete selected users</td></tr></tbody></table>
 
-### **Add new member**
+### **New member**
 
 <figure><img src="../.gitbook/assets/image (216).png" alt=""><figcaption></figcaption></figure>
 
@@ -133,7 +133,7 @@ The creator can grant access rights to other users through "Permissions" (please
 1. Click "Invite" to open the conversation box
 2. The input box can search for organizations or users
 3. Select the corresponding permissions
-4. Enter keywords to jump out of the corresponding organization/user
+4. Enter keywords to jump out to the corresponding organization/user
 5. You can click the level button on the right to confirm the level of the character.
 6. After selecting the target organization/user, you can click the label to open the view menu and view all users within the organization level and role.
 7. Click the "Add" button to complete the invitation
@@ -158,11 +158,11 @@ If users want to embed Agent into a web page, they need to use this function to 
 
 1. Enter the Web App in "Agent Function List"
 2. Click "+" to open the _Create_ Web App dialog box
-3. Enter the knowledge name in the "Name" field and click the button on the right to create a multi-language label. Please refer to [多國語言設定](gong-zuo-liu-cheng-agent.md#duo-guo-yu-yan-she-ding)
-4. Enter the knowledge description in the "Description" field and click the button on the right to create a multi-language label. Please refer to [多國語言設定](gong-zuo-liu-cheng-agent.md#duo-guo-yu-yan-she-ding)
+3. Enter the knowledge name in the "Name" field and click the button on the right to create a multilingual label. Please refer to [Multiple Language Settings](gong-zuo-liu-cheng-agent.md#duo-guo-yu-yan-she-ding)
+4. Enter the knowledge description in the "Description" field and click the button on the right to create a multilingual label. Please refer to [Multiple Language Settings](gong-zuo-liu-cheng-agent.md#duo-guo-yu-yan-she-ding)
 5. Click "Save" to complete
 6. The new Web App will appear in the manifest. Use the Actions menu to Edit, Set Expiration, or Delete
-7. Click the Web App name to access the information page and view the Embed Code, settings _Application Language_, _Request and Tag Limits_, etc.
+7. Click the Web App name to access the information page and view Embed Code, settings _Application Language_, _Request and Tag Limits_, and more
 
 > Note: Each Agent can have multiple API keys and matching embed code to independently manage expiration dates and usage limits for different Web App instances.
 

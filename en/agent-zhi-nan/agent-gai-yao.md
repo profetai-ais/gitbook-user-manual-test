@@ -1,7 +1,7 @@
 ---
 description: >-
   Agent is a conversational application that allows users to input text (prompt words) and provides it to the Large Language Model (Large Language Model) through a processing mechanism adapted to different application scenarios.
-  Model, LLM) get a reply.
+  Model, LLM) Get a reply.
 ---
 
 # Agent Summary

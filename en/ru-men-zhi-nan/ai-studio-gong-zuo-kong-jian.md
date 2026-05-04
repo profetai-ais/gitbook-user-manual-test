@@ -2,7 +2,7 @@
 description: The workspace is where users interact with Agent.
 ---
 
-#AI Studio workspace
+# AI Studio workspace
 
 The interface mainly consists of two parts:
 
@@ -22,35 +22,35 @@ The conversation recording area is divided into two parts:
 
 Actions available in the conversation recording area:
 
-<table><thead><tr><th width="90">Item</th><th width="157">Operation Name</th><th>Description</th>ZXQ PLACEHOLDER9QXZ</thead><tbody><tr>ZXQPLACEHOLDER1 3QXZ1</td><td> Explore</td><td>Back to Explore Agent/Application template page</td></tr><tr><td>2</td><td>Recent Agent/Conversation</td><td>Recently used Agent Create </td>ZXQ with conversation </td></tr><tr><td>3</td><td> PLACEHOLDER33QXZCreate new conversation</td></tr><tr><td>4</td><td>Edit ZXQP LACEHOLDER40QXZ<td>Edit the name of the selected conversation record</td></tr><tr><td>5</td>Z XQPLACEHOLDER47QXZDelete</td><td>Delete selected conversation history</td></tr></tbody></table>
+<table><thead><tr><th width="90">Project</th><th width="157">Operation Name</th><th>Description</th></tr> </thead><tbody><tr><td>1</td><td>Explore</td><td>Back to Explore Agent/Application Template Page</td></tr><tr><td>2</td><td>Recent Agent/Conversation</td><td>Recently Used Agent Create </td>⟦33 with dialogue </td></tr><tr><td>3</td><td> ⟧Create new conversation</td></tr><tr><td>4</td><td>Edit</td> <td>Edit the name of the selected conversation record</td></tr><tr><td>5</td>⟦ 47⟧Delete</td><td>Delete selected conversation record</td></tr></tbody></table>
 
-## **Chat Area**
+## **Chat area**
 
 <figure><img src="../.gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure>
 
-<table data-first-column-sticky data-full-width="false"><thead><tr><th width="80">Item</th><th width="161">Operation Name</th><th>Description</th>ZXQPL ACEHOLDER9QXZ</thead><tbody><tr>ZXQPLACEHOLDER13Q XZ1</td><td> Reference source </td><td> Click to view Agent Sources referenced in responses to facilitate users to further explore or verify information</td></tr><tr><td>2 </td><td>Action button</td><td>From left to right: copy response text, related questions, and amount spent / Token</td></tr><tr><td>3</td><td> Add additional files using Prompt word template </td></tr><tr><td>4ZXQ PLACEHOLDER38QXZ<td>Input box</td><td>The user enters the prompt here. Click the Send button to send the prompt to all selected Agents to respond </td></tr></tbody></table>
+<table data-first-column-sticky data-full-width="false"><thead><tr><th width="80">Project</th><th width="161">Operation Name</th><th>Description</th></tr>⟦1 0⟧<tbody><tr><td>1</td><td>Reference source</td><td>Click to view Sources referenced in Agent responses to facilitate users to further explore or verify information</td></tr><tr><td>2</td><td>Action buttons</td><td>From left to right: copy response text, related questions, amount spent / Token</td></tr><tr><td>3</td><td>Join</td><td>Add additional files, or use Prompt word template</td></tr><tr><td>4</td><td>Input box</td><td>The user enters the prompt here. Click the Send button to send the prompt to all selected Agents to respond</td></tr></tbody></table>
 
 > Additional Note: The display of the attachment upload portal may vary depending on Agent settings. In some Agents or environments, administrators can control whether to display the "Upload File" icon; when this function is turned off, the attachment entry will not be displayed in the chat input area, and users will not be able to attach files in the session. If you do not see the attachment button in the workspace, please confirm whether the currently selected Agent allows the file attachment function, or contact the system administrator.
 
-## **Use prompt template in chat**
+## **Use prompt templates in chat**
 
 <figure><img src="../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
 
 1. Press the "/" key in the prompt input area, or click the "+" "Prompt Word Template" to display the list of available prompt templates
-2. Click the desired prompt template from the list
+2. Click on the desired prompt template from the list
 3. Enter the necessary parameters and click "Send Directly" to obtain the Agent's response; or click "Editing Prompt" to modify the content before sending.
 
 Available prompt template types:
 
-<table><thead><tr><th width="176">Template type</th><th>Description </th></tr></thead><tbody><tr><td>User Prompt</td><td> Prompt template added to favorites from the Explore area and can be used in any Agent conversation </td></tr><tr><td>Agent Prompt</td><td> is a prompt template bound to a specific Agent and can only be used in this Agent. </td></tr></tbody></table>
+<table><thead><tr><th width="176">Template Type</th><th>Description</th></tr></thead><tbody><tr><td>User Prompt</td><td> Prompt templates added to personal collections from the "Explore" area can be used in any Agent conversation</td></tr><tr><td>Agent Prompt</td><td> Prompt templates bound to a specific Agent can only be used in that Agent Used in</td></tr></tbody></table>
 
 ## **Chat Session Archives**
 
 When talking to an Agent, two profiles are involved. Click the file icon in "..." to **view** and perform operations such as **download** or **delete** according to permissions:
 
-File icon
+File Icon
 
 * **Reference file**: The file uploaded by the user as a prompt attachment.
 * **Job File**: The file generated by the Agent in response or output.
@@ -71,27 +71,27 @@ The **Usage Quota** area allows users to clearly understand the Token and cost c
 
 Usage details will be displayed in **two places**, each with different purposes:
 
-<table data-full-width="false"><thead><tr><th width="83">Item</th><th width="121">Display AreaZXQP LACEHOLDER6QXZ<th width="122">Position</th><th width="276">Display indicator</th><th>PurposeZXQPL ACEHOLDER12QXZ</tr></thead><tbody><tr><td>1ZXQPLACE HOLDER18QXZ<td>Daily quota overview</td><td>Lower left corner of the sidebar</td><td>- <strong>Quota Plan</strong>: Current budget and amount spent (e.g. 0.01 / 10.00 USD) <br>- <strong>Usage</strong>: Visualization of quota usage percentage for the day</td><td> provides a daily usage overview of all sessionsZXQPLA CEHOLDER31QXZ</tr><tr><td>2</td><td> Session Level Token details </td><td> Below each AI response (mouse hover icon displays) </td><td>- <strong>Total Input Tokens</strong>: Contains prompts, system commands, context <br>- <strong>Total Output Tokens</strong>: AI-generated response <br>- <strong>Total Tokens</strong>: Sum of input and output Tokens <br>- <strong>Total Usage Cost</strong>: Cost calculated based on current model price</td><td> Provides detailed cost breakdown of each interaction</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="83">Item</th><th width="121">Display area</th><th width="122">Position</th><th width="276">Display indicator </th><th>Purpose</th>⟦ 13⟧</thead><tbody><tr><td>1</td><td>Daily quota overview</td><td>Bottom left corner of sidebar</td><td>- <strong>Quota Plan</strong>: Current budget and amount spent (e.g. 0.01 / 10.00 USD) <br>- <strong>Usage</strong>: Visualization of quota usage percentage for the day </td><td> Provides daily usage overview of all sessions </td></tr><tr><td>2</td><td>Session Level Token Detail </td><td>Below each AI response (mouseover icon displays) </td><td>- <strong>Total Input Tokens</strong>: Contains prompts, system commands, context <br>- <strong>Total Output Tokens</strong>: AI Generated response <br>- <strong>Total Tokens</strong>: The sum of input and output Tokens <br>- <strong>Total Usage Cost</strong>: Cost calculated based on current model price</td><td>Provides detailed cost breakdown of each interaction</td></tr></tbody></table>
 
-## Canvas
+## canvas
 
 The canvas function can help users present the content generated by AI in the workspace on the right for subsequent viewing, editing, and organization. When users talk to AI and produce longer or more complex content, it can be presented in a clearer layout through the canvas, such as documents, tables, charts, code or other visual content.
 
 Canvas is suitable for situations where you need to review and adjust content for a long time, such as writing documents, organizing reports, analyzing data, viewing charts, or continuously modifying the same content during a conversation. Users can discuss with AI on the left, and view or maintain canvas content on the right, reducing the cost of repeatedly searching for content in chat messages.
 
-### Call canvas
+### call canvas
 
 <figure><img src="../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (116).png" alt=""><figcaption></figcaption></figure>
 
 1. Click the + sign in the lower left corner, select canvas, and the function will appear in the input box.
-2. Enter your requirements in the chat window and ask AI to generate documents, tables, charts or other content.
-3. When the system generates content that can be rendered using canvas, the canvas card will be displayed on the screen.
-4. After clicking the canvas card, the system will open the content in the canvas workspace on the right, and the user can view the complete content in the canvas.
-5. If the content needs to be adjusted, you can continue to ask AI to modify it through the chat window, or directly edit the canvas content according to system support. The modified content will be displayed in the canvas to facilitate users to continue to review and organize.
+2. Enter your requirements in the chat window and ask AI to generate documents, tables, charts, or other content.
+3. When the system generates content that can be rendered using canvas, a canvas card appears in the screen.
+4. After clicking the canvas card, the system will open the content in the canvas workspace on the right, and users can view the complete content in the canvas.
+5. If the content needs to be adjusted, you can continue to ask AI to modify it through the chat window, or directly edit the canvas content according to system support. The modified content will be displayed in the canvas for users to continue to review and organize.
 
-### Notes
+### Things to note
 
 Canvas is suitable for content that is long, complex, or needs to be viewed and modified repeatedly. If it is just a short text reply, the system may display it directly in the chat window and may not open Canvas.
 
@@ -113,7 +113,7 @@ The voice dictation function helps users input text content through voice. Users
 4. After the voice recording is completed, click the "Confirm" button.
 5. After the translation is completed, the text content will be displayed in the input field. Please confirm whether the text content is correct. If there are typos or incomplete semantics, you can manually modify it before sending it out.
 
-### Notes
+### Things to note
 
 To improve the accuracy of speech recognition, it is recommended to use this feature in a quiet environment and speak at a clear and steady speed. If there is a lot of noise around you, you speak too fast, or your pronunciation is unclear, it may affect the system's recognition results.
 

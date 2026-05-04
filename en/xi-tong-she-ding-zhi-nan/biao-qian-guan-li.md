@@ -1,4 +1,4 @@
-# Tag management
+# tag management
 
 ## Introduction
 
@@ -14,7 +14,7 @@ The tag management function helps users classify and manage items in the system 
 
 1. Enter the "Tag Management" page in "System Settings".
 2. Click the "Add" button in the upper right corner.
-3. Enter the label name, or click the button on the right to create a multi-language label, please refer to [ 多國語言設定](biao-qian-guan-li.md#duo-guo-yu-yan-she-ding)
+3. Enter the label name, or click the button on the right to create a multi-language label. Please refer to [Multi-language Settings](biao-qian-guan-li.md#duo-guo-yu-yan-she-ding)
 4. Select the function module to which this label belongs.
 5. After confirming that the content is correct, click Save or Create. After the creation is completed, the tag will appear in the tag management list.
 
@@ -27,9 +27,9 @@ The tag management function helps users classify and manage items in the system 
 
 > Note: The large language model options in the "Model" menu should be based on the configuration of the actual installation environment. The options presented in the documentation are for reference only.
 
-### Notes
+### Things to note
 
-* Tags are mainly used for classifying, filtering and managing projects. It is recommended that users confirm the naming rules before creating tags to avoid tags with similar meanings but different names in the same module, making subsequent management difficult.
+* Tags are mainly used to classify, filter and manage projects. It is recommended that users confirm the naming rules before creating tags to avoid tags with similar meanings but different names in the same module, making subsequent management difficult.
 * Tags with duplicate names cannot be created under the same functional module; tags with the same name can be used under different functional modules. For example, Agent and Knowledge Base can each have labels with the same name in the future, but they will belong to different functional modules.
 * Tag names support multiple languages, and the search will be based on the current system language. If the user switches languages, the display or search results may be different depending on the language setting.
 
@@ -55,13 +55,13 @@ If you select "Don't replace, delete all associations", the system will remove a
 
 1. Enter the "Tag Management" page.
 2. Find the tag you want to delete and click the delete icon on the right side of the column.
-3. Select processing method:
-   * Select "Replace with other tags" and specify the new tag to be replaced with.
+3. Choose processing method:
+   * Select "Replace with other label" and specify the new label to replace it with.
    * Or select "Don't replace, delete all associations".
 4. Click "Continue".
 5. The system will display the confirmation window again based on your selection. After confirming that the content is correct, click "Replace" or "Delete" to complete the operation.
 
-### Notes
+### Things to note
 
 * After deleting a label or replacing a label association, the action cannot be undone. Before executing, please confirm whether the tag is still used by other data, and confirm whether it needs to be replaced with other tags first.
 * If you select "Replace other tags", all data that references the original tag will be changed to reference the new tag. If you select "Don't replace, delete all associations", all data that references the original tag will have the tag association removed.
