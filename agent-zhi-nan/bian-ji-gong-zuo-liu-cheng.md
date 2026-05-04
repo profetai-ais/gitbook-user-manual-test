@@ -1,0 +1,151 @@
+# 編輯工作流程
+
+## **頁面導覽**
+
+下圖為工作流程編輯介面，包含以下控制項目：
+
+<figure><img src="../.gitbook/assets/image (234).png" alt=""><figcaption></figcaption></figure>
+
+1. **節點清單**：AI Studio 提供的工作流程功能元件；可參閱 [工作流程節點](gong-zuo-liu-cheng-jie-dian.md) 頁面以取得可用節點的詳細資訊。
+2. **工作流程功能選單**：提供編輯器的功能操作；詳見下方說明
+3. **工作流程編輯區**：可將功能節點拖放至此區域以編輯工作流程
+4. **編輯器地圖**：協助使用者快速導覽至編輯器的特定區域
+
+<table><thead><tr><th width="183">工作流程功能選單項目（依上圖由左至右）</th><th>說明</th></tr></thead><tbody><tr><td>上一步、下一步</td><td>返回上一個步驟、或回到下一個步驟</td></tr><tr><td>歷史紀錄</td><td>管理workflow的編輯歷史</td></tr><tr><td>匯出檔案</td><td>將此工作流程匯出為檔案</td></tr><tr><td>顯示小地圖</td><td>顯示或隱藏螢幕右下角的小地圖</td></tr><tr><td>重設檢視</td><td>置中並顯示整個工作流程</td></tr><tr><td>摺疊</td><td>摺疊編輯器中所有節點</td></tr><tr><td>編輯全域變數</td><td>編輯工作流程中的全域變數</td></tr><tr><td>剪貼簿</td><td>儲存選取的節點並隨時取用</td></tr><tr><td>儲存</td><td>儲存工作流程的變更</td></tr><tr><td>測試預覽</td><td>開啟聊天視窗測試工作流程（從工作流程範本編輯時不會顯示此按鈕）</td></tr></tbody></table>
+
+## **建立／編輯工作流程**
+
+> 注意：建議從助手設定中開啟工作流程編輯器，方便在編輯後直接使用 測試預覽 進行測試。
+
+<figure><img src="../.gitbook/assets/image (235).png" alt=""><figcaption></figcaption></figure>
+
+以空白工作流程為例，畫面預設會包含一個 **"Start"** 節點。點擊此節點會顯示多個基本變數：
+
+| 變數名稱                       | 說明               | 顯示資訊                                          |
+| -------------------------- | ---------------- | --------------------------------------------- |
+| `(x)${{start}.{query}}`    | 使用者的輸入提示         | _使用者輸入，例如：_ `summarize the attached document` |
+| `(x)${{start}.{files}}`    | 使用者在聊天輸入區附加的檔案清單 | `metadata of the files in a JSON array`       |
+| `(x)${{start}.{time}}`     | 目前系統時間           | `17:19:13`                                    |
+| `(x)${{start}.{date}}`     | 目前系統日期           | `2025-06-06 Friday`                           |
+| `(x)${{start}.{dateTime}}` | 目前系統日期與時間        | `2025-06-06 Friday 17:19:13`                  |
+
+以下為一個簡單範例，示範基本的工作流程操作：
+
+<figure><img src="../.gitbook/assets/image (236).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (237).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (238).png" alt=""><figcaption></figcaption></figure>
+
+1. 在新工作流程中，點擊「Start」節點以查看基本變數
+2. 從節點清單中將「Reply」節點拖放至編輯區
+3. 將「Start」節點的輸出端連接至「Reply」節點的輸入端
+4. 本範例中將顯示基本變數的內容。點擊 「Reply」節點以開啟編輯視窗，並在輸入區編輯助手的回覆內容
+5. 輸入「/」會顯示可用的工作流程變數清單，請參考上方表格選擇要在回覆中顯示的變數
+6. 編輯完成後，點擊功能選單中的「Save」按鈕，然後點擊「Test Preview」測試工作流程
+7. 在「Test Preview」聊天區附加檔案並輸入提示後送出，即可即時看到助手的處理步驟
+8. 助手完成處理後，使用者可以展開聊天區的「Reply」項目以檢視工作流程的結果
+
+您可以依此步驟嘗試使用不同節點，建立符合您應用需求的工作流程！
+
+### 範例情境
+
+#### 工作流節點（Fork / Merge）新聞搜尋助手
+
+情境示範使用者送出一次查詢，系統就能同時從多個資料來源並行搜尋資訊，並自動將結果整合後交由 AI 彙整成重點內容。透過 Fork 與 Merge 的設計，可以大幅提升資料蒐集與分析效率，讓複雜流程變得快速又清楚。
+
+{% file src="../.gitbook/assets/Understanding Fork & Merge Nodes_ A News Search Agent_2026-02-02_影片.mp4" %}
+
+## 節點複製貼上（Clipboard Copy / Paste）
+
+工作流程支援快速複製與貼上節點設定，適合用於建立多個相似節點或跨流程搬移既有邏輯。
+
+<figure><img src="../.gitbook/assets/image (239).png" alt=""><figcaption></figcaption></figure>
+
+使用方式：
+
+* 在畫布上選取一個或多個節點
+* 使用複製/貼上操作
+* 貼上後節點會以相同設定出現在畫布中，可再微調差異內容
+
+補充行為說明：
+
+* 跨工作流程複製貼上：可將節點從流程 A 複製後貼到流程 B，加速組裝流程。
+* 批次操作：可一次選取多個節點進行複製貼上，保留節點的設定內容。
+* 命名衝突處理：若貼上後出現節點名稱或變數名稱重複，系統可能要求調整名稱才能儲存（請依提示修正）。
+
+> 注意：若節點設定中引用了「其他節點的輸出變數」，貼到新流程後可能因缺少上游節點連結而無法解析。建議貼上後先檢查連線與變數引用是否完整。
+
+## Local Storage 暫存同步機制
+
+為避免在瀏覽器重新整理或非正常原因關閉時造成編輯遺失，編輯器會將部分草稿狀態暫存於本機（Local Storage），並在多分頁間同步。
+
+<figure><img src="../.gitbook/assets/image (240).png" alt=""><figcaption></figcaption></figure>
+
+## 歷史紀錄（History）
+
+歷史紀錄可以儲存使用者點擊保存的每一筆內容，使用者可以檢視歷史的編輯紀錄，也能透過復原回復到比較舊的版本。
+
+> 注意：需要點擊右上角的儲存按鈕，內容才會被記錄在歷史紀錄裡。
+
+<figure><img src="../.gitbook/assets/image (241).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;![](<../.gitbook/assets/image (243).png>)
+
+1. 在工作流程功能選單中點擊 「歷史紀錄」
+2. 彈出視窗的左邊是即時預覽
+3. 右邊則是版本紀錄，可透過點選卡片來切換不同的版本。
+   1. 儲存的歷史紀錄最多為21筆，在儲存第22筆時，會從最舊的紀錄刪除
+   2. 如果想保存某一筆歷史紀錄，請點選圖釘圖示儲存固定版本，釘選的圖釘最多只能存在20筆
+4. 點擊要切換的版本
+5. 點擊 「復原」 套用至工作流程
+
+## 編輯全域變數（Global Variables）
+
+全域變數可視為「此工作流程共用的常數/設定」，適合放置會被多個節點重複使用的內容，例如：公司政策、語氣規範、固定格式、回覆模板片段、API 參數預設值等。透過集中管理，可避免在多個節點內重複修改。
+
+<figure><img src="../.gitbook/assets/image (244).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (245).png" alt=""><figcaption></figcaption></figure>
+
+1. 在工作流程功能選單中點擊 「編輯全域變數」
+2. 在彈出視窗中新增或編輯變數內容
+3. 完成後點擊 「儲存」 套用至工作流程
+
+### 新增 / 編輯變數
+
+* 名稱：用於引用的識別名稱，僅允許數字和英文字母。
+* 內容：變數值本體，可為多行文字（例如規範、模板、段落）。
+
+> 注意：若變數名稱有更動，系統會同步更新工作流程內的引用（建議仍以實際畫面提示為準）。若您曾將變數以「純文字」手動拷貝貼上到節點內容中，該類文字不屬於變數引用範圍，需自行更新。
+
+### 在節點中引用全域變數
+
+在節點設定（例如 LLM 節點的「情境 / Context」或其他輸入欄位）中輸入 /，即可從變數清單插入可用的全域變數。插入後系統會以變數表達式形式呈現，後續即會自動帶入最新內容。
+
+<figure><img src="../.gitbook/assets/image (246).png" alt=""><figcaption></figcaption></figure>
+
+### 在 System Prompt 引用全域變數
+
+當您希望多個 LLM 節點共用一致的角色、語氣或輸出規範時，建議將規範寫入全域變數，並在各節點的 System Prompt 直接引用該變數。
+
+好處：規範更新時只需改一次，即可套用到所有引用的節點。
+
+> 注意：若您在儲存時看到「變數無法解析 / 引用失敗」等提示，請確認：
+
+1. 變數名稱未含特殊符號或保留字
+2. 該節點欄位支援變數引用
+3. 變數已儲存成功
+
+>
+
+### 範例情境
+
+#### 全域變數（Global Variables）語系翻譯助手
+
+情境示範設定一次全域變數，就能同時控制整個工作流程中所有 AI 節點的輸出行為，例如輸出語言。使用者不需要逐一修改每個節點，就能快速切換中英文或其他語系，確保整體輸出一致，特別適合多語系或跨國應用情境。
+
+{% file src="../.gitbook/assets/Understanding Global Variables A Localization Agent_2026-02-04_影片.mp4" %}
+
