@@ -23,20 +23,23 @@ def protect_markdown_tokens(text: str):
     placeholders = {}
 
     patterns = [
-        r"`[^`]+`",                # inline code
-        r"\]\([^)]+\)",            # markdown link targets
-        r"!\[[^\]]*\]\([^)]+\)",   # images
-        r"<[^>]+>",                # html tags
+        r"```[\s\S]*?```",          # fenced code blocks
+        r"`[^`]+`",                 # inline code
+        r"!\[[^\]]*\]\([^)]+\)",    # images
+        r"\[[^\]]+\]\([^)]+\)",     # markdown links
+        r"<[^>]+>",                 # html tags
     ]
 
     protected = text
     index = 0
 
     for pattern in patterns:
-        for match in list(re.finditer(pattern, protected)):
+        matches = list(re.finditer(pattern, protected))
+        for match in matches:
+            original = match.group(0)
             token = f"ZXQPLACEHOLDER{index}QXZ"
-            placeholders[token] = match.group(0)
-            protected = protected.replace(match.group(0), token, 1)
+            placeholders[token] = original
+            protected = protected.replace(original, token, 1)
             index += 1
 
     return protected, placeholders
@@ -52,11 +55,16 @@ def restore_markdown_tokens(text: str, placeholders: dict):
     return restored
 
 
-def split_text(text: str, max_len: int = 3500):
+def split_text(text: str, max_len: int = 3000):
     chunks = []
     current = ""
 
     for paragraph in text.split("\n\n"):
+        paragraph = paragraph.strip("\n")
+
+        if not paragraph.strip():
+            continue
+
         if len(current) + len(paragraph) + 2 > max_len:
             if current.strip():
                 chunks.append(current)
@@ -71,13 +79,17 @@ def split_text(text: str, max_len: int = 3500):
 
 
 def translate_text(text: str):
-    if not text.strip():
+    if not text or not text.strip():
         return text
 
     protected, placeholders = protect_markdown_tokens(text)
-
     translated_chunks = []
+
     for chunk in split_text(protected):
+        if not chunk.strip():
+            translated_chunks.append(chunk)
+            continue
+
         try:
             translated = translator.translate(chunk)
 
@@ -86,12 +98,17 @@ def translate_text(text: str):
                 translated = chunk
 
             translated_chunks.append(str(translated))
-            time.sleep(0.4)
+            time.sleep(0.6)
+
         except Exception as exc:
             print(f"Translation failed, keeping original text. Error: {exc}")
-            translated_chunks.append(chunk)
+            translated_chunks.append(str(chunk))
+            time.sleep(0.6)
 
-    translated_text = "\n\n".join(str(chunk) for chunk in translated_chunks if chunk is not None)
+    translated_text = "\n\n".join(
+        str(chunk) for chunk in translated_chunks if chunk is not None
+    )
+
     return restore_markdown_tokens(translated_text, placeholders)
 
 
@@ -104,7 +121,12 @@ def translate_markdown(content: str):
     def flush_buffer():
         if buffer:
             joined = "\n".join(buffer)
-            result.append(translate_text(joined))
+            translated = translate_text(joined)
+
+            if translated is None:
+                translated = joined
+
+            result.append(str(translated))
             buffer.clear()
 
     for line in lines:
@@ -129,7 +151,7 @@ def translate_markdown(content: str):
 
     flush_buffer()
 
-    return "\n".join(result) + "\n"
+    return "\n".join(str(line) for line in result if line is not None) + "\n"
 
 
 def should_skip(path: Path):
