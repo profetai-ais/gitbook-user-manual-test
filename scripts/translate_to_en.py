@@ -23,6 +23,56 @@ def has_cjk(text: str) -> bool:
     return bool(re.search(r"[\u4e00-\u9fff]", text))
 
 
+def split_frontmatter(content: str):
+    """
+    Keep GitBook YAML front matter unchanged.
+
+    Example:
+    ---
+    description: ...
+    icon: ...
+    ---
+
+    This part must not be translated, or GitBook may fail to import the file.
+    """
+    match = re.match(r"\A(---\s*\n[\s\S]*?\n---\s*\n)([\s\S]*)\Z", content)
+
+    if not match:
+        return "", content
+
+    return match.group(1), match.group(2)
+
+
+def cleanup_orphan_placeholders(text: str):
+    """
+    Remove placeholder fragments that may be changed by the translator.
+
+    Examples:
+    O[[32 ]] -> O
+    X[[6 8]] -> X
+    ZXQPLACEHOLDER37QXZ -> ""
+    """
+    if not text:
+        return text
+
+    cleaned = text
+
+    cleanup_patterns = [
+        r"\[\[\s*(?:PH\s*)?\d+(?:\s+\d+)*\s*\]\]",
+        r"\[\s*(?:PH\s*)?\d+(?:\s+\d+)*\s*\]",
+        r"⟦\s*\d+(?:\s+\d+)*\s*⟧",
+        r"⟬\s*PH\s*\d+\s*⟭",
+        r"ZXQPLACEHOLDER\d+QXZ",
+    ]
+
+    for pattern in cleanup_patterns:
+        cleaned = re.sub(pattern, "", cleaned, flags=re.IGNORECASE)
+
+    cleaned = re.sub(r"[ \t]{2,}", " ", cleaned)
+
+    return cleaned
+
+
 def protect_markdown_tokens(text: str):
     placeholders = {}
     protected = text
@@ -30,7 +80,7 @@ def protect_markdown_tokens(text: str):
 
     def make_token(original: str) -> str:
         nonlocal index
-        token = f"⟦{index}⟧"
+        token = f"⟬PH{index:04d}⟭"
         placeholders[token] = original
         index += 1
         return token
@@ -47,7 +97,7 @@ def protect_markdown_tokens(text: str):
             original = match.group(0)
             protected = protected.replace(original, make_token(original), 1)
 
-    # Protect URLs inside normal markdown links, but allow link text to translate.
+    # Protect URLs in normal markdown links, but allow link text to be translated.
     def protect_link_url(match):
         label = match.group(1)
         url = match.group(2)
@@ -64,7 +114,47 @@ def restore_markdown_tokens(text: str, placeholders: dict):
     for token, original in placeholders.items():
         restored = restored.replace(token, original)
 
-    return restored
+        match = re.search(r"PH(\d+)", token)
+        if not match:
+            continue
+
+        index_number = str(int(match.group(1)))
+
+        tolerant_patterns = [
+            rf"⟬\s*PH\s*0*{index_number}\s*⟭",
+            rf"\[\[\s*PH\s*0*{index_number}\s*\]\]",
+            rf"\[\s*PH\s*0*{index_number}\s*\]",
+            rf"\(\s*PH\s*0*{index_number}\s*\)",
+        ]
+
+        for pattern in tolerant_patterns:
+            restored = re.sub(pattern, original, restored, flags=re.IGNORECASE)
+
+    return cleanup_orphan_placeholders(restored)
+
+
+def split_long_text(text: str, max_len: int = 2500):
+    if len(text) <= max_len:
+        return [text]
+
+    chunks = []
+    current = ""
+
+    for sentence in re.split(r"(?<=[。！？.!?])\s*", text):
+        if not sentence:
+            continue
+
+        if len(current) + len(sentence) > max_len:
+            if current.strip():
+                chunks.append(current)
+            current = sentence
+        else:
+            current += sentence
+
+    if current.strip():
+        chunks.append(current)
+
+    return chunks or [text]
 
 
 def translate_text(text: str):
@@ -72,31 +162,42 @@ def translate_text(text: str):
         return text
 
     if not has_cjk(text):
-        return text
+        return cleanup_orphan_placeholders(text)
 
     protected, placeholders = protect_markdown_tokens(text)
+    translated_chunks = []
 
-    try:
-        translated = translator.translate(protected)
+    for chunk in split_long_text(protected):
+        try:
+            translated = translator.translate(chunk)
 
-        if translated is None:
-            print("Translation returned None, keeping original text.", flush=True)
-            translated = protected
+            if translated is None:
+                print("Translation returned None, keeping original text.", flush=True)
+                translated = chunk
 
-        time.sleep(0.35)
-        return restore_markdown_tokens(str(translated), placeholders)
+            translated_chunks.append(str(translated))
+            time.sleep(0.35)
 
-    except Exception as exc:
-        print(f"Translation failed, keeping original text. Error: {exc}", flush=True)
-        return restore_markdown_tokens(protected, placeholders)
+        except Exception as exc:
+            print(f"Translation failed, keeping original text. Error: {exc}", flush=True)
+            translated_chunks.append(str(chunk))
+            time.sleep(0.35)
+
+    translated_text = " ".join(
+        str(chunk) for chunk in translated_chunks if chunk is not None
+    )
+
+    return restore_markdown_tokens(translated_text, placeholders)
 
 
 def is_table_separator(line: str) -> bool:
     stripped = line.strip()
+
     if "|" not in stripped:
         return False
 
     cells = [cell.strip() for cell in stripped.strip("|").split("|")]
+
     if not cells:
         return False
 
@@ -122,7 +223,7 @@ def translate_table_line(line: str):
         translated_core = translate_text(core)
 
         translated_parts.append(
-            (" " * leading) + translated_core + (" " * trailing)
+            (" " * leading) + str(translated_core) + (" " * trailing)
         )
 
     return "|".join(translated_parts)
@@ -139,13 +240,15 @@ def translate_line(line: str):
     for pattern in patterns:
         match = re.match(pattern, line)
         if match:
-            return match.group(1) + translate_text(match.group(2))
+            return match.group(1) + str(translate_text(match.group(2)))
 
     return translate_text(line)
 
 
 def translate_markdown(content: str):
-    lines = content.splitlines()
+    frontmatter, body = split_frontmatter(content)
+
+    lines = body.splitlines()
     result = []
     buffer = []
     in_code_block = False
@@ -198,7 +301,13 @@ def translate_markdown(content: str):
 
     flush_buffer()
 
-    return "\n".join(str(line) for line in result if line is not None) + "\n"
+    translated_body = "\n".join(str(line) for line in result if line is not None)
+    translated_body = cleanup_orphan_placeholders(translated_body)
+
+    if translated_body:
+        translated_body += "\n"
+
+    return frontmatter + translated_body
 
 
 def should_skip(path: Path):
