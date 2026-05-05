@@ -11,13 +11,9 @@
 
 > **注意：** 以下截圖中的資訊僅供參考，實際的對話紀錄、Agent、提示模板等請以您的環境內容為主。
 
-
-
 ## **探索 AI Studio 裡的 Agent 與應用**
 
 登入後，預設會進入「工作空間」頁面。使用者可在此發掘想要使用的 Agent 與應用模板，將其加入個人收藏後便可開始使用。
-
-
 
 ## **探索 AI Agent 並加入到個人收藏**
 
@@ -27,8 +23,6 @@
 2. 將滑鼠移到想使用的 Agent，或是在搜尋欄中輸入關鍵字搜尋 Agent
 3. 選擇 Agent 後點擊卡片上的按鈕加入至個人收藏中
 4. 點擊頁面上方的「收藏夾」按鈕切換到個人區查看添加的 Agent 是否存在
-
-
 
 ## **探索提示詞模板並加入到個人收藏**
 
@@ -40,20 +34,16 @@
 4. 選擇應用模板後點擊卡片上的按鈕加入至個人收藏中
 5. 點擊頁面上方的「收藏夾」按鈕切換到個人區查看添加的應用模板是否存在
 
-
-
 ## **查看個人收藏裡的Agent與應用**
 
 點擊頁面上方的「收藏夾」按鈕可切換到個人區查看自己收藏的 Agent 或應用模板。 點擊 Agent / 應用模板卡片右上角的選單按鈕可透過再次點擊愛心按鈕將所選的 Agent / 應用模板從個人收藏中移除。
 
-<figure><img src=".gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
 
-
-
-* **Agent 卡片**：滑鼠移到卡片上即會顯示選取邊框，再次點擊卡片便會切換至 _工作空間_  區域對 Agent 進行問答。
+* **Agent 卡片**：滑鼠移到卡片上即會顯示選取邊框，再次點擊卡片便會切換至 _工作空間_ 區域對 Agent 進行問答。
 
 <div align="center"><figure><img src=".gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure></div>
 
 * **應用模板卡片**：滑鼠移到卡片上即會顯示「查看」按鈕，點擊之後便會顯示提示詞內容。
 
-<div align="center"><figure><img src=".gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src=".gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure></div>
