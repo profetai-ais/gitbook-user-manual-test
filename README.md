@@ -44,6 +44,6 @@
 
 <div align="center"><figure><img src=".gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure></div>
 
-* **應用模板卡片**：滑鼠移到卡片上即會顯示「查看」按鈕，點擊之後便會顯示提示詞內容。
+* **提示詞模板卡片**：滑鼠移到卡片上即會顯示「查看」按鈕，點擊之後便會顯示提示詞內容。
 
 <div align="center"><figure><img src=".gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure></div>
