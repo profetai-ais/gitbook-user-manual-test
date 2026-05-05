@@ -16,21 +16,21 @@ Users can:
 
 ## Permissions
 
-建立者可以透過「權限」授予其他使用者存取權限（角色定義請參考[權限功能介紹 ](../ru-men-zhi-nan/quan-xian-gong-neng-jie-shao.md))。
+The creator can grant access rights to other users through "Permissions" (for role definition, please refer to [Permission Function Introduction] (../ru-men-zhi-nan/quan-xian-gong-neng-jie-shao.md)).
 
 > Note: The creator is the default "owner", and each project can only have one owner.
 
 <figure><img src="../.gitbook/assets/image (249).png" alt=""><figcaption></figcaption></figure>
 
-| project | Operation name | illustrate                            |
+| project | Operation name | illustrate |
 | -- | ---- | ----------------------------- |
-| 1  | Edit table | Allows the user to edit the presentation of the table                |
-| 2  | refresh   | Refresh list after click                       |
-| 3  | Content filtering | Advanced filtering of specific content                      |
-| 4  | Batch delete | After checking the items, the delete button in the upper left corner will be displayed, allowing users to delete multiple items. |
-| 5  | search field | Search name                         |
-| 6  | invite   | Invite organizations/members                     |
-| 7  | action   | Transfer your role or remove selected users               |
+| 1 | Edit table | Allows the user to edit the presentation of the table |
+| 2 | refresh | Refresh list after click |
+| 3 | Content filtering | Advanced filtering of specific content |
+| 4 | Batch delete | After checking the items, the delete button in the upper left corner will be displayed, allowing users to delete multiple items. |
+| 5 | search field | Search name |
+| 6 | invite | Invite organizations/members |
+| 7 | action | Transfer your role or remove selected users |
 
 ### **New member**
 
@@ -62,4 +62,4 @@ Users can:
 4. Click the "Organization" tab in the right area and check the organizational level to which permissions are to be granted.
 5. Click the "Users" tab in the right area to select the user to whom permissions are to be granted.
 6. Search for the user you want to add in the "User Menu". After selecting, click the "+" button next to the menu to add a user.
-7. After completing the changes to the organization and users, click the "Save" button in the upper right corner to retain the settings.
+7. 完成組織與使用者的變更後點擊右上角的「儲存」按鈕保留設定

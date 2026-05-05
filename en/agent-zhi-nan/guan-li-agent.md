@@ -44,5 +44,5 @@ The export/import function can be used to back up Agent settings, move settings 
 
 1. Click the "… (More)" button in the upper left corner of the screen
 2. Select "Import File"
-3. 點擊欄位選擇匯入的檔案
+3. Click the field to select the file to import
 4. Click "OK" to import the specified file

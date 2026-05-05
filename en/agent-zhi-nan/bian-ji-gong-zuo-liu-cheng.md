@@ -6,12 +6,12 @@ The figure below shows the workflow editing interface, including the following c
 
 <figure><img src="../.gitbook/assets/image (234).png" alt=""><figcaption></figcaption></figure>
 
-1. **Node List**: Workflow functional components provided by AI Studio; please refer to the [Workflow Nodes](gong-zuo-liu-cheng-jie-dian.md) page for detailed information on available nodes.
+1. **Node List**: Workflow functional components provided by AI Studio; please refer to the [Workflow Node](gong-zuo-liu-cheng-jie-dian.md) page for detailed information on available nodes.
 2. **Workflow function menu**: Provides functional operations of the editor; see the description below for details
 3. **Workflow editing area**: Function nodes can be dragged and dropped into this area to edit the workflow
 4. **Editor Map**: Helps users quickly navigate to specific areas of the editor
 
-<table><thead><tr><th width="183">Workflow function menu items (from left to right as shown above) </th><th>Description</th></tr></thead><tbody><tr><td>Up One step, next step</td><td>Return to the previous step, or return to the next step</td></tr><tr><td>History record</td><td>Management Edit history of workflow</td></tr><tr><td>Export file</td><td>Export this workflow as file</td></tr> <tr><td>Show minimap</td><td>Show or hide the minimap in the lower right corner of the screen</td></tr><tr><td>Reset view</td>⟦ 37⟧Center and display the entire workflow</td></tr><tr><td>Collapse</td><td>Collapse all nodes in the editor</td></tr>⟦4 6⟧<td>Edit global variables</td><td>Edit global variables in workflow</td></tr><tr><td>Clipbook</td><td>Storage Save selected nodes and access them at any time</td></tr><tr><td>Save</td><td>Save workflow changes</td></tr><tr>⟦6 5⟧Test Preview</td><td>Open the chat window to test the workflow (this button will not be displayed when editing from the workflow template)</td></tr></tbody></table>
+<table><thead><tr><th width="183">Workflow function menu item (from left as shown above) to right)</th><th>Description</th></tr></thead>⟬PH0 009⟭<tr><td>Previous step, next step</td><td>Return to the previous step, or return to the next step</td></tr><tr><td>History record⟬P H0018⟭<td>Manage workflow edit history</td></tr><tr><td>Export file</td><td>Export this workflow as a file⟬PH00 26⟭</tr><tr><td>Show mini map</td><td>Show Show or hide the minimap in the lower right corner of the screen</td></tr><tr><td>Reset View </td><td>Centers and displays the entire workflow </td></tr>⟬PH00 40⟭<td>Collapse</td><td>Collapse all nodes in the editor</td>⟬P H0045⟭<tr><td>Edit global variables</td><td>Edit workflow Global variables in process</td></tr><tr><td>Clipbook</td><td>Save selected nodes and access them anytime </td></tr><tr><td>Save</td><td>Save workflow changes</td></tr><tr><td>Test Preview</td><td> Open the chat window to test the workflow (this button will not be displayed when editing from the workflow template) </td></tr></tbody></table>
 
 ## **Create/Edit Workflow**
 
@@ -21,13 +21,13 @@ The figure below shows the workflow editing interface, including the following c
 
 Taking a blank workflow as an example, the screen default will contain a **"Start"** node. Clicking on this node will display several basic variables:
 
-| variable name                       | illustrate               | Show information                                          |
+| variable name | illustrate | Show information |
 | -------------------------- | ---------------- | --------------------------------------------- |
-| `(x)${{start}.{query}}`    | User input prompts         | _User input, for example:_ `summarize the attached document` |
-| `(x)${{start}.{files}}`    | List of files the user has attached to the chat input area | `metadata of the files in a JSON array`       |
-| `(x)${{start}.{time}}`     | Current system time           | `17:19:13`                                    |
-| `(x)${{start}.{date}}`     | Current system date           | `2025-06-06 Friday`                           |
-| `(x)${{start}.{dateTime}}` | Current system date and time        | `2025-06-06 Friday 17:19:13`                  |
+| `(x)${{start}.{query}}` | User input prompts | _User input, for example:_ `summarize the attached document` |
+| `(x)${{start}.{files}}` | List of files the user has attached to the chat input area | `metadata of the files in a JSON array` |
+| `(x)${{start}.{time}}` | Current system time | `17:19:13` |
+| `(x)${{start}.{date}}` | Current system date | `2025-06-06 Friday` |
+| `(x)${{start}.{dateTime}}` | Current system date and time | `2025-06-06 Friday 17:19:13` |
 
 The following is a simple example demonstrating basic workflow operations:
 
@@ -97,8 +97,8 @@ The history record can store every content that the user clicks to save. The use
 1. Click "History" in the workflow function menu
 2. The left side of the pop-up window is a real-time preview
 3. On the right is the version record. You can switch between different versions by clicking on the card.
-   1. The maximum number of historical records stored is 21. When the 22nd record is saved, the oldest record will be deleted.
-   2. If you want to save a certain historical record, please click the pushpin icon to save the fixed version. The selected pushpin can only store a maximum of 20 records.
+ 1. The maximum number of historical records stored is 21. When the 22nd record is saved, the oldest record will be deleted.
+ 2. If you want to save a certain historical record, please click the pushpin icon to save the fixed version. The selected pushpin can only store a maximum of 20 records.
 4. Click on the version you want to switch to
 5. Click "Revert" to apply to the workflow
 

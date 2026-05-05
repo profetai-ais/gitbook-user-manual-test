@@ -1,5 +1,5 @@
 ---
-description: The functions and operations visible to users in AI Studio depend on the role to which the account belongs.
+description: 使用者在 AI Studio 中可見的功能與操作取決於帳號所屬的角色。
 ---
 
 # AI Studio roles and permissions description
@@ -14,6 +14,6 @@ The system presets three functional role types:
 
 ## **Character comparison**
 
-<table data-first-column-sticky data-full-width="false"><thead><tr><th>Role Type</th><th>Workspace</th><th>Agent</th><th>Knowledge Base</th><th>Competencies (Skills, MCP)</th><th>Template (Workflow, prompt words)</th><th>System Settings</th><th>Analysis</th></tr></thead><tbody><tr><td>AI Studio Admin</td><td>O</td><td>O</td><td>O</td><td>O⟦32 ⟧<td>O</td><td>O</td><td>O</td></tr><tr><td>AI Studio Collaborators</td><td>O</td><td>O</td><td>O</td><td>O⟦50 ⟧<td>O</td><td>X</td><td>O</td></tr><tr><td>AI Studio User</td><td>O</td><td>O</td><td>O</td><td>X⟦6 8⟧<td>O</td><td>X</td><td>X</td></tr></tbody></table>
+<table data-first-column-sticky data-full-width="false"><thead><tr><th>Role Type</th><th>Workspace</th><th>Agent</th><th>Knowledge Base</th><th>Capabilities (Skills, MCP)</th><th>Template (Workflow, prompt words)</th><th>System Settings</th><th>Analysis</th></tr></thead><tbody><tr><td>AI Studio Admin</td><td>O</td><td>O</td><td>O</td><td>O</td><td>O</td><td>O</td><td>O</td></tr><tr><td>AI Studio Collaborator</td><td>O</td><td>O</td><td>O</td><td>O</td><td>O</td><td> Studio User</td><td>O</td><td>O</td><td>O</td><td>X⟬PH006 8⟭<td>O</td><td>X</td><td>
 
 > Note: For information on role management, please refer to the relevant content in the Domain Twin Portal documentation.

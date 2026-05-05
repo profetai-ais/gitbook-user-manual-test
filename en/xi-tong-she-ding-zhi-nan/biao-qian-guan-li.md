@@ -14,7 +14,7 @@ The tag management function helps users classify and manage items in the system 
 
 1. Enter the "Tag Management" page in "System Settings".
 2. Click the "Add" button in the upper right corner.
-3. Enter the label name, or click the button on the right to create a multi-language label. Please refer to [Multi-language Settings](biao-qian-guan-li.md#duo-guo-yu-yan-she-ding)
+3. Enter the label name, or click the button on the right to create a multi-language label. Please refer to [Multi-language settings] (biao-qian-guan-li.md#duo-guo-yu-yan-she-ding)
 4. Select the function module to which this label belongs.
 5. After confirming that the content is correct, click Save or Create. After the creation is completed, the tag will appear in the tag management list.
 
@@ -56,8 +56,8 @@ If you select "Don't replace, delete all associations", the system will remove a
 1. Enter the "Tag Management" page.
 2. Find the tag you want to delete and click the delete icon on the right side of the column.
 3. Choose processing method:
-   * Select "Replace with other label" and specify the new label to replace it with.
-   * Or select "Don't replace, delete all associations".
+ * Select "Replace with other label" and specify the new label to replace it with.
+ * Or select "Don't replace, delete all associations".
 4. Click "Continue".
 5. The system will display the confirmation window again based on your selection. After confirming that the content is correct, click "Replace" or "Delete" to complete the operation.
 

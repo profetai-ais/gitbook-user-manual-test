@@ -1,5 +1,5 @@
 ---
-description: This page is used to centrally manage the keys (API Key) required by the system. Through this page, you can add, view and delete keys to ensure that system services can operate safely and correctly.
+description: 本頁面用於集中管理系統所需的密鑰（API Key）。透過此頁可新增、檢視與刪除密鑰，確保系統服務能安全且正確地運作。
 ---
 
 # Key management
@@ -10,7 +10,7 @@ After entering the "Key Management" page, the screen will display the list of cu
 
 <figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="210">Name</th><th>Description</th></tr></thead><tbody><tr><td>Type</td><td>Key type (e.g. SERPER, LiteLLM), represents the service type corresponding to this key</td></tr><tr><td>Name</td><td>Key name, used to identify this API Key The purpose of </td></tr><tr><td>Key</td><td>API Key value is only displayed in mask mode for security reasons </td></tr><tr><td>Tenant ID</td><td> belongs to the tenant identification code</td></tr><tr><td>Expire Date</td><td>When key expires</td></tr><tr><td>Creator</td><td>Creator</td></tr><tr><td>Created Date</td><td>Creation Time</td></tr><tr><td>Modified Date</td><td>Last updated time</td></tr><tr><td>Actions</td><td>The operation function currently provides deletion (trash can icon)</td></tr></tbody></table>
+<table><thead><tr><th width="210">Name</th><th>Description</th></tr></thead><tbody><tr><td>Type</td><td>Key type (e.g. SERPER, LiteLLM), represents the service type corresponding to this key</td></tr><tr><td>Name</td><td>Key name, used to identify this API Key Purpose</td></tr><tr><td>Key</td><td>API Key Value, only displayed in mask mode for security reasons</td></tr><tr><td>Tenant ID</td><td>Tenant identification code</td></tr><tr><td>Expire Date</td><td>When key expires</td></tr><tr><td>Crea tor</td><td>Created by</td></tr><tr><td>Created Date</td><td>Establishment Time</td></tr><tr><td>Modified Date</td><td>Last updated</td></tr><tr><td>Actions </td><td> operation function, currently provides deletion (trash can icon) </td></tr></tbody></table>
 
 ## Add new key
 
@@ -22,8 +22,8 @@ After entering the "Key Management" page, the screen will display the list of cu
 2. Type: Select the key type.
 3. Name: Enter the identification name of this API Key. It is recommended to fill in the specific purpose (for example: `litellm api key`) to facilitate subsequent management.
 4. API Key: Enter the actual API key content.
-   * Fields are hidden by default
-   * You can switch to show/hide through the "eye" icon on the right
+ * Fields are hidden by default
+ * You can switch to show/hide through the "eye" icon on the right
 5. Confirm sending: After the setting is completed, click "Ok" to save the key; if not, click "Cancel" to cancel the operation.
 
 ## delete key
@@ -37,6 +37,6 @@ After entering the "Key Management" page, the screen will display the list of cu
 
 ### **Notes**
 
-* **The deleted key cannot be restored**
-* If the API Key is being used by the system or process, deletion may cause related functions to not function properly.
-* It is recommended to confirm that the key is no longer referenced by any service or process before deleting it.
+* **刪除後的密鑰無法復原**
+* 若該 API Key 正被系統或流程使用中，刪除後可能導致相關功能無法正常運作
+* 建議在刪除前，先確認該金鑰已不再被任何服務或流程引用

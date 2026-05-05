@@ -1,5 +1,5 @@
 ---
-description: Work management is used to centrally manage and track various jobs (Jobs) being executed by Agent, and clearly understand the status, responsibility and progress changes of each job.
+description: 工作管理用於集中管理與追蹤 Agent 執行中的各項工作（Jobs）清楚掌握每個工作的狀態、責任歸屬與進度變化。
 ---
 
 # work management
@@ -14,7 +14,7 @@ When a user puts forward a request, the system will break it down into executabl
 
 There are 8 types of status in total:
 
-<table><thead><tr><th width="224">Status Name</th><th>Description</th></tr></thead><tbody><tr>⟦1 1⟧PENDING</td><td> Created, waiting to be queued/not yet dispatched</td></tr>⟦16 ⟧<td>QUEUED</td><td> Already queued for execution </td></tr><tr>⟦2 3⟧RUNNING</td><td>Executing</td></tr><tr><td>SUCCEED ED</td><td>Completed successfully</td></tr><tr><td>FAILED</td>⟦3 7⟧Execution failed</td></tr><tr><td>STOPPED</td><td>Stopped (aborted )</td></tr><tr><td>CANCELED</td><td>Canceled</td>⟦5 1⟧<tr><td>PAUSED</td><td>Paused</td></tr></tbody></table>
+<table><thead><tr><th width="224">Status Name</th><th>Description</th></tr></thead><tbody><tr><td>PENDING</td><td> Created, waiting to be queued/not yet dispatched</td></tr><tr><td>QUEUED</td><td>Already queued for execution </td></tr>⟬P H0022⟭<td>RUNNING</td><td>Executing</td></tr><tr><td>SU CCEEDED</td><td>Completed successfully</td></tr><tr><td>FAILED</td> <td>Execution failed</td></tr><tr><td>STOPPED</td><td> was stopped (aborted) </td></tr><tr><td>CANCELED</td><td>Canceled</td></tr><tr><td>PAUSED</td><td>Paused</td></tr></tbody></table>
 
 ## Job page description
 
@@ -24,4 +24,4 @@ Click the name of the Task you want to view to open a pop-up window to browse th
 
 <figure><img src="../.gitbook/assets/image (232).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="101">Project</th><th width="177">Name</th><th>Description</th></tr>⟦ 10⟧<tbody><tr><td>1</td><td>Redo</td><td>Reexecute Job</td></tr><tr><td>2</td><td>Continue </td><td>Continue Job Work progress</td></tr><tr><td>3</td><td>Detailed information</td><td> View details</td></tr><tr><td>4</td><td>Pause</td><td>Pause Job's work progress</td></tr><tr><td>3</td><td>Cancel</td><td>Cancel this Job's work task</td></tr></tbody></table>
+<table><thead><tr><th width="101">Project</th><th width="177">Name</th><th>Description</th> </tr></thead><tbody><tr><td>1</td><td>Redo </td><td>Redo Job</td></tr><tr><td>2</td><td>Continue </td><td>Continue Job Work progress of</td></tr><tr><td>3</td><td>Detailed information</td><td> View details</td></tr><tr><td>4</td><td>Pause</td><td>Pause Job's work progress</td></tr><tr><td>3</td><td>Cancel</td><td>Cancel this Job Work tasks</td></tr></tbody></table>

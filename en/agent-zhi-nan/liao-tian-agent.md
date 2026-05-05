@@ -1,5 +1,5 @@
 ---
-description: Chat Agent allows users to directly interact with large-scale language models. It is suitable for tasks such as brainstorming, information summarization, and generating formatted text content, without worrying about the leakage of sensitive data.
+description: 聊天 Agent 可讓使用者直接與大型語言模型互動，適用於腦力激盪、資訊摘要、產生格式化文字內容等任務，且無須擔憂敏感資料外洩。
 ---
 
 # Chat Agent
@@ -39,28 +39,28 @@ The chat agent homepage is mainly divided into several parts, as shown below:
 
 1. **Agent Function Options**: The function options area contains the following links, each link will open the corresponding setting page
 
-| name        | illustrate                  |
+| name | illustrate |
 | --------- | ------------------- |
-| Basic settings      | Edit the Agent's home page        |
-| session log      | Provide conversation history for this Agent     |
-| Member management      | Manage access to this Agent     |
-| AI WEBAPP | Configure web embedding for this Agent     |
-| API Key   | Provide credentials for third-party applications to securely call the API |
+| Basic settings | Edit the Agent's home page |
+| session log | Provide conversation history for this Agent |
+| Member management | Manage access to this Agent |
+| AI WEBAPP | Configure web embedding for this Agent |
+| API Key | Provide credentials for third-party applications to securely call the API |
 
 2. **Basic information**: You can view the Agent name, creation and editing time and personnel, and activation status
 3. **Application Settings:** Provides settings related to Agent behavior based on Agent type
 
-| name         | illustrate                          |
+| name | illustrate |
 | ---------- | --------------------------- |
-| Inference parameters       | Control how responses are generated                   |
-| Knowledge base configuration      | Select parameters and available knowledge sources                |
-| tool         | Enable and configure available tools                  |
-| Skill         | Functions used to expand Agent capabilities            |
-| Agent collaboration   | Allows Agents to connect in series and collaborate with other Agents to perform tasks |
-| Agent welcome page | Set initial conversation content                    |
-| prompt word template      | Provides reusable prompt word templates for quick use         |
-| File handling     | Control how uploaded files are processed                 |
-| guardrail         | Control content output                      |
+| Inference parameters | Control how responses are generated |
+| Knowledge base configuration | Select parameters and available knowledge sources |
+| tool | Enable and configure available tools |
+| Skill | Functions used to expand Agent capabilities |
+| Agent collaboration | Allows Agents to connect in series and collaborate with other Agents to perform tasks |
+| Agent welcome page | Set initial conversation content |
+| prompt word template | Provides reusable prompt word templates for quick use |
+| File handling | Control how uploaded files are processed |
+| guardrail | Control content output |
 
 4. **Adaptation Preview:** Allows users to test whether the Q&A results are as expected
 
@@ -97,7 +97,7 @@ Users can control the Agent's reply behavior by adjusting the items in the "**Pa
 
 <figure><img src="../.gitbook/assets/image (163).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="98">Item</th><th width="112">Parameters</th><th width="238">Description</th><th>Range and Value⟦10 ⟧</tr></thead><tbody><tr><td>1</td><td>Model</td><td>Agent Default model selected when building; can be changed here </td><td>n/a</td></tr><tr><td>2</td><td>Temperature</td><td>Control the creativity of the reply. The higher the number, the more diverse and creative the responses; the lower the number, the more precise and consistent the responses </td><td>0–1</td></tr><tr><td>3</td><td>Top P</td><td>Control randomness and diversity. Lower values produce more conservative and predictable text; higher values produce more diverse results</td><td>0–1</td></tr>⟦44 ⟧<td>4</td><td>Maximum mark</td><td>Limit maximum output length</td><td>Set according to needs</td>⟦5 3⟧<tr><td>5</td><td>Conversation Memory</td><td>Store Q&A history to enhance coherence (may slow down response times )</td><td><code>0</code> represents a stateless response; <code>5-10</code> can strike a balance between coherence and performance. The more memories you have, the slower it becomes. </td></tr></tbody></table>
+<table><thead><tr><th width="98">Project</th><th width="112">Parameters</th><th width="238">Description</th><th>Scope and Value</th></tr></thead><tbody><tr><td>1</td><td>Model</td><td>Agent The default model selected when creating; can be changed here</td><td>n/a</td></tr>⟬PH0 024⟭<td>2</td><td>Temperature</td><td>Control the creativity of the reply. The higher the value, the more diverse and creative the responses; the lower the value, the more precise and consistent the responses</td><td>0–1</td></tr><tr><td>3</td><td>Top P</td><td> controls randomness and diversity. Lower values produce more conservative and predictable text; higher values produce more diverse results</td><td>0–1</td></tr><tr>⟬PH00 45⟭4</td><td>Maximum mark</td><td>Limit maximum output length</td><td>Set as required</td>⟬P H0053⟭<tr><td>5</td><td>Conversation Memory</td><td> Stores Q&A history to enhance coherence (may slow down responses Time) </td><td><code>0</code> represents a stateless response; <code>5-10</code> strikes a balance between consistency and performance. The more memories you have, the slower it becomes. </td></tr></tbody></table>
 
 #### instruction
 
@@ -155,31 +155,31 @@ Users can enable/disable tools accessible to Agent in settings.
 
 #### **Session Memory**
 
-<table><thead><tr><th width="250">Tools</th><th>Instructions</th></tr></thead><tbody><tr><td>KV Sessional short-term memory</td><td>enables precise, key-based storage and retrieval of temporary data during a session. Useful for tracking dynamic variables (e.g. <code>Username</code>, <code>Selected Plan</code>). </td></tr><tr><td>graphiti - New memory data </td><td>Storage episodic information (such as interactions or events) into the knowledge graph. </td></tr><tr><td>graphiti - Query memory nodes </td><td>Retrieve entity summaries or node-level memory representations. </td></tr><tr><td>graphiti - Query Memory Facts </td><td>Search for relevant facts and structured relationships in the memory graph. </td></tr><tr><td>graphiti - Delete Entity Relationships </td><td>Remove defined relationships between entities from the graph. </td></tr><tr><td>graphiti - Delete event segments </td><td>Delete specific event segments in the memory graph. </td></tr><tr><td>graphiti - Get Entity Relationships </td><td>Retrieve structured relationships related to a specific entity. </td></tr><tr><td>graphiti - Get a fragment of an event </td><td>Return a recent memory episode to provide context for a conversation or decision-making. </td></tr><tr><td>graphiti - Clear memory graph </td><td>Reset the entire graph-based memory system. </td></tr></tbody></table>
+<table><thead><tr><th width="250">Tools</th><th> says Ming</th></tr></thead><tbody><tr><td>KV Session short-term memory</td><td> enables precise, key-based storage and retrieval of temporary data during a session. Useful for tracking dynamic variables such as <code>Username</code>, <code>Selected Plan</code>. </td></tr><tr><td>graphiti - Added memory data </td><td>Storing episodic information (such as interactions or events) into the knowledge graph. </td></tr><tr><td>graphiti - Query memory node </td><td>Retrieve an entity summary or node-level memory representation. </td></tr><tr><td>graphiti - Query Memory Facts </td><td>Search for relevant facts and structured relationships in the memory graph. </td></tr><tr><td>graphiti - Delete Entity Relationship </td><td>Removes the defined relationship between entities from the graph. </td></tr><tr><td>graphiti - Delete event segment </td><td>Delete a specific event segment in the memory graph. </td></tr><tr><td>graphiti - Get Entity Relationships </td><td> Retrieve structured relationships related to a specific entity. </td></tr><tr><td>graphiti - Get a fragment of an event </td><td> Returns a recent memory episode to provide context for a conversation or decision-making. </td></tr><tr><td>graphiti - Clear Memory Graph </td><td>Resets the entire graph-based memory system. </td></tr></tbody></table>
 
 > PS: For more information about Graphiti, please see its official website.
 
 #### **Academic Articles**
 
-<table><thead><tr><th width="250">Tools</th><th>Usage Guide</th></tr></thead><tbody><tr><td>arXiv Paper Search</td><td>Allows users to search from Search the arXiv database for academic papers. </td></tr><tr><td>Google Scholar Search</td><td>Search for scholarly articles and citations using Google Scholar. </td></tr></tbody></table>
+<table><thead><tr><th width="250">Tools</th><th>Instructions South</th></tr></thead><tbody><tr><td>arXiv Paper Search </td><td> allows users to search for academic papers from the arXiv database. </td></tr><tr><td>Google Scholar Search</td><td>Search for scholarly articles and citations using Google Scholar. </td></tr></tbody></table>
 
 #### **Web Search**
 
-<table><thead><tr><th width="250">Tools</th><th>Usage Guide</th></tr></thead><tbody><tr><td>Serper - Web Content Extraction</td><td>Extract readable content from web URLs. </td></tr><tr><td>Serper - Google Search </td><td>Perform a Google search and return summary results. </td></tr><tr><td>Serper - Patent Search </td><td>Search for issued patents and related documents. </td></tr><tr><td>Serper - Image Search </td><td>Search for images based on text queries. </td></tr><tr><td>Serper - Paper Search </td><td> Search academic papers using Google Scholar-style sources. </td></tr><tr><td>Serper - News Search </td><td>Search for news based on text queries. </td></tr><tr><td>Serper - Map information search </td><td> Search maps based on text queries. </td></tr></tbody></table>
+<table><thead><tr><th width="250">Tools</th><th>Usage Guide </th></tr></thead><tbody><tr><td>Serper - Web Content Extraction </td><td> Extracts readable content from web URLs. </td></tr><tr><td>Serper - Google Search </td><td>Performs a Google search and returns summary results. </td></tr><tr><td>Serper - Patent Search </td><td>Search for issued patents and related documents. </td></tr><tr><td>Serper - Image Search </td><td>Search for images based on text queries. </td></tr><tr><td>Serper - Paper Search </td><td> Search academic papers using Google Scholar-style sources. </td></tr><tr><td>Serper - News Search </td><td> Search for news based on text queries. </td></tr><tr><td>Serper - Map Information Search </td><td> Search maps based on text queries. </td></tr></tbody></table>
 
 > Note: For more information about Sperper, please see its official website.
 
 #### **Code**
 
-<table><thead><tr><th width="250">Tools</th><th>Usage Guide</th></tr></thead><tbody><tr><td>Execute Python code</td><td>Execute Python Scripts or logic to support tasks such as mathematics, data parsing, or automation. </td></tr></tbody></table>
+<table><thead><tr><th width="250">Tools</th><th>Use Guide </th></tr></thead><tbody><tr><td>Execution Python code </td><td> executes Python scripts or logic to support tasks such as mathematics, data parsing, or automation. </td></tr></tbody></table>
 
 #### **Document Handling**
 
-<table><thead><tr><th width="250">Tools</th><th>Usage Guide</th></tr></thead><tbody> <tr><td>Preview Files</td><td>Displays uploaded files in a readable format within the platform. </td></tr><tr><td>File to markdown</td><td>Convert the file to Markdown format. </td></tr></tbody></table>
+<table><thead><tr><th width="250">Tools</th><th>Usage Guide</th></tr></thead><tbody><tr><td>Preview file </td><td>Displays the uploaded file in a readable format within the platform. </td></tr><tr><td>File to markdown</td><td>Convert the file to Markdown format. </td></tr></tbody></table>
 
 #### **Other**
 
-<table><thead><tr><th width="250">Tools</th><th>Usage Guide</th></tr></thead><tbody><tr><td>Get the current time </td><td>Returns the current system time when the request is made. </td></tr><tr><td>Easy Math </td><td>Perform simple arithmetic operations in the prompts. </td></tr><tr><td>Dynamic Thinking Chain (Sequential Thinking) </td><td>Decompose complex problems into step-by-step thinking, with the option to modify or branch. Good for planning, troubleshooting, and structured reasoning. </td></tr></tbody></table>
+<table><thead><tr><th width="250">Tools</th><th>Usage Guide</th></tr></thead><tbody><tr><td>Get the current time </td><td>Returns the current system time when the request is made. </td></tr><tr><td>Easy Math </td><td>Perform simple arithmetic operations in the prompt. </td></tr><tr><td>Dynamic Thinking Chain (Sequential Thinking) </td><td>Decompose complex problems into step-by-step thinking, with the option to modify or branch. Good for planning, troubleshooting, and structured reasoning. </td></tr></tbody></table>
 
 ### Skill
 
@@ -197,7 +197,7 @@ Through this function, users can establish cooperative relationships between mul
 
 <figure><img src="../.gitbook/assets/image (181).png" alt=""><figcaption></figcaption></figure>
 
-### **Welcome page**
+### **Welcome Page**
 
 Users can set their own default conversation content, allowing the Agent to provide directly clickable question directions before the conversation begins, helping users start interacting more quickly.
 
@@ -215,7 +215,7 @@ Users can link existing or favorited application templates (prompt word template
 
 <figure><img src="../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="161">Options </th><th width="103"> are visible to MCP tools </th><th width="96"> to LLM Visible</th><th>Instructions</th><th>Example usage scenarios</th></tr></thead><tbody><tr><td>Do not The process</td><td>X</td><td>X</td><td> file has been uploaded but is not visible to either LLM or MCP tools. Will not be opened or interpreted. </td><td>– –</td></tr><tr><td>Process with Tool</td><td>O</td><td>X</td><td>The file will be passed to MCP Processed by the tool but not passed to LLM. </td><td> Useful when you want to extract material from a CSV or PDF, but don’t need AI-generated comments. </td></tr><tr><td>File to Image Conversion</td><td> </td><td>Suitable for scanned documents or visual layouts where diagrammatic relationships are important. </td></tr><tr><td>Convert to Image &#x26; Tool</td><td>O</td><td>O</td><td>The file will be simultaneously translated to LLM reference and processed by the MCP tool. </td><td> Best suited for invoices or forms that require interpretation of both visual layout and structured data. </td></tr></tbody></table>
+<table><thead><tr><th width="161">Option </th><th width="103"> Visible to MCP tools </th><th width="96"> to LLM Visible</th><th> Description</th><th>Example usage scenario</th></tr></thead><tbody><tr><td>Do not The process </td> <td> Will not be opened or interpreted. </td><td>– –</td></tr><tr><td>Process with Tool</td><td>O</td><td>X</td><td> files are passed to the MCP tool for processing, but not to LLM. </td><td> Useful when you want to extract material from a CSV or PDF, but don’t need AI-generated comments. </td></tr><tr><td>File to Image Conversion </td> <td> </td><td> is suitable for scanned documents or visual layouts where diagrammatic relationships are important. </td></tr><tr><td>Convert to Image &#x26; Tool</td><td>O</td><td>O</td><td> files are simultaneously translated into LLM references and processed by the MCP tool. </td><td> Best suited for invoices or forms that require interpretation of both visual layout and structured data. </td></tr></tbody></table>
 
 ### guardrail
 
@@ -258,10 +258,10 @@ Users can view the created memory list on the Agent's memory page, and quickly i
 1. Enter the Agent page. Click "Memory" in the submenu on the left.
 2. Click the "Create" button in the upper right corner.
 3. Fill in the basic information of memory:
-   * Name: Enter the memory name.
-   * Description: Enter memory description.
-   * Applicable situations: Enter the usage situations where this memory is applicable.
-   * Content: Enter detailed content, which can be formatted in Markdown format.
+ * Name: Enter the memory name.
+ * Description: Enter memory description.
+ * Applicable situations: Enter the usage situations where this memory is applicable.
+ * Content: Enter detailed content, which can be formatted in Markdown format.
 4. After confirming that the content is correct, click "Create" to complete the creation.
 
 ### View memory details
@@ -291,7 +291,7 @@ If the switch is off, it means that this Agent does not use the memory function.
 
 <figure><img src="../.gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
 
-In the memory list, the "Enabled" field is used to display whether a single memory is enabled. When the memory master switch is turned on, the activated single memory will be used as a reference for the Agent's response or task processing.
+In the memory list, the "Enabled" field is used to display whether a single memory is enabled. When the memory master switch is turned on, the activated single memory will be used as reference content when the Agent responds or handles tasks.
 
 Users can disable temporarily unused memories as needed, retaining the content but not allowing the Agent to apply it; they can re-enable it if they need to use it again in the future.
 
@@ -311,7 +311,7 @@ The creator can grant access rights to other users through "Permissions" (please
 
 <figure><img src="../.gitbook/assets/image (196).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="80">Project</th><th width="146">Operation Name</th><th>Description</th> </tr></thead><tbody><tr><td>1</td><td>Edit table⟦16 ⟧<td>Allow users to edit the presentation of tables</td></tr><tr><td>2</td><td>Refresh </td><td>Refresh the list after clicking </td></tr>⟦ 28⟧<td>3</td><td>Content filtering</td><td>Advanced filtering specified content Capacity</td></tr><tr><td>4</td><td>Batch deletion</td>⟦ 41⟧After checking the items, the delete button in the upper left corner will be displayed, allowing the user to delete multiple items</td></tr><tr><td>5</td><td>Search field</td><td>Search Name</td></tr><tr><td>6</td><td>Invite</td><td>Invite Organization / Member</td></tr><tr><td>7</td><td>Action</td><td>Transfer your role or delete selected users</td></tr></tbody></table>
+<table><thead><tr><th width="80">Project</th><th width="146">Operation Name</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>Edit table</td><td>Allows the user to edit the presentation of the table</td>⟬PH0 019⟭<tr><td>2</td><td>Refresh</td><td>Click to refresh the list </td></tr><tr><td>3</td><td>Content filtering</td> <td>Advanced filtering of specified content</td></tr><tr><td>4</td>⟬PH00 39⟭Batch deletion</td><td>After checking the items, the delete button in the upper left corner will be displayed, allowing the user to delete multiple items</td></tr><tr><td>5</td><td>Search field</td><td>Search Name</td></tr><tr><td>6</td><td>Invite</td><td>Invite Organization / Member</td></tr><tr><td>7</td><td>Action⟬PH00 64⟭<td>Transfer your role or remove selected users</td></tr></tbody></table>
 
 ### **New member**
 

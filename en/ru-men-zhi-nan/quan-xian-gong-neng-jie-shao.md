@@ -1,5 +1,5 @@
 ---
-description: This function provides two-level permission control to help you flexibly set "who can access a specific function list" and "who can operate a single item in it."
+description: 本功能提供雙層級的權限控管，協助您彈性設定「誰能存取特定功能清單」以及「誰能操作裡面的單一項目」。
 ---
 
 # Introduction to permission functions
@@ -20,7 +20,7 @@ The following table describes what can be done at the "Agent List" level. You ca
 
 <figure><img src="../.gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure>
 
-<table data-full-width="true"><thead><tr><th>Role</th><th>Description</th><th>Create Agent</th><th>Manage Agent List Members</th><th>View All agents Fully functional roles</td><td>O</td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>Agent List collaborators</strong></td><td> are given permission to assist in managing Agents Role of List Member</td><td>O</td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>Agent List users</strong></td><td> can create and edit their own Agents The role of </td><td>O</td><td>X</td><td>X</td><td>
+<table data-full-width="true"><thead><tr><th>Role</th><th>Description</th><th>Create Agent</th><th>Manage Agent List Member</th><th>View all Agent</th><th>Edit all Agent</th></tr></thead><tbody><tr><td><strong>Agent Inventory Manager</strong></td><td>Actionable Agent List and Agent Fully functional characters</td><td>O</td><td>O</td><td>O⟬P H0030⟭<td>O</td></tr><tr><td><strong>Agent List collaborator </strong></td><td> is given permission to assist in managing Agents Role of Manifest Member</td><td>O</td><td>O</td><td>X⟬P H0046⟭<td>X</td></tr><tr><td><strong>Agent List users </strong></td><td> can create and edit their own Agents The role of</td><td>O</td><td>X</td>⟬PH006 1⟭X</td><td>X</td></tr></tbody></table>
 
 ### Agent
 
@@ -28,7 +28,7 @@ The following table describes what the "Agent" level can do. At this level, the 
 
 <figure><img src="../.gitbook/assets/image (122).png" alt=""><figcaption></figcaption></figure>
 
-<table data-full-width="true"><thead><tr><th>Role</th><th>Description</th><th>Use Agent in Workspace</th><th>View Agent in Agent List</th><th>Manage Agent Member</th><th>Edit Agent</th><th>Delete Agent</th></tr></thead><tbody><tr><td><strong>Agent Administrator</strong></td><td>has a complete Agent Control</td><td>O</td><td>O</td><td>O</td>⟦3 3⟧O</td><td>O</td></tr><tr><td><strong>Agent Collaborators</strong></td><td> can assist in managing Agent Use and content adjustment</td><td>O</td><td>O</td><td>O</td> <td>O</td><td>X</td></tr><tr><td><strong>Agent User </strong></td><td> can only use Agent in the workspace The role of</td><td>O</td><td>X</td><td>X⟦6 8⟧<td>X</td><td>X</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Role</th><th>Description</th><th>Use in Workspace Agent</th><th>View in Agent list Agent</th><th>Manage Agent members</th><th>Edit Agent</th><th>Delete Agent</th></tr></thead><tbody><tr><td><strong>Agent Administrator </strong></td><td> has a complete Agent Control </td><td>O</td><td>O</td><td>O</td>⟬PH0 033⟭O</td><td>O</td></tr><tr><td><strong>Agent Collaborator</strong></td><td> can assist in managing Agent Adjustment of use and content of </td><td>O</td><td>O</td><td>O</td>⟬P H0051⟭O</td><td>X</td></tr><tr><td><strong>Agent User </strong></td><td> can only use Agent in the workspace The role of </td><td>O</td><td>X</td><td>X⟬PH006 8⟭<td>X</td><td>X</td></tr></tbody></table>
 
 
 
@@ -40,7 +40,7 @@ The following table describes what can be done at the Knowledge Base Inventory l
 
 <figure><img src="../.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure>
 
-<table data-full-width="true"><thead><tr><th>Role</th><th>Description</th><th>Build Knowledge</th><th>Manage Knowledge Base Members⟦ 10⟧<th>View all knowledge</th><th>Edit all knowledge</th></tr></thead><tbody><tr> <td><strong>Knowledge base inventory administrator</strong></td><td>The role that can operate all functions of the knowledge base and knowledge⟦24 ⟧<td>O</td><td>O</td><td>O</td><td>O</td></tr><tr>⟦3 5⟧<strong>Knowledge Base Inventory Collaborators</strong></td><td>A role assigned permission to assist in managing knowledge base members⟦40 ⟧<td>O</td><td>O</td><td>X</td><td>X</td></tr><tr>⟦5 1⟧<strong>Knowledge base list user</strong></td><td>A role that can create and edit their own knowledge</td>⟦ 57⟧O</td><td>X</td><td>X</td><td>
+<table data-full-width="true"><thead><tr><th>Role</th><th>Description</th><th>Build Knowledge</th>⟬P H0009⟭Manage knowledge base members</th><th>View all knowledge</th><th>Edit all knowledge</th></tr></thead><tbody><tr><td><strong>Knowledge Base List Administrator</strong></td><td>A role that can operate all functions of the knowledge base and knowledge</td><td>O</td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>Knowledge Base List Collaborator</strong></td><td>Role assigned permission to assist in managing knowledge base members</td>⟬P H0041⟭O</td><td>O</td><td>X</td><td>X</td></tr><tr> <td><strong>Knowledge base list user </strong></td><td>A role that can create and edit their own knowledge </td><td>O</td><td>X</td><td>X</td><td>
 
 ### Knowledge
 
@@ -48,7 +48,7 @@ The following table describes what can be done at the "knowledge" level. At this
 
 <figure><img src="../.gitbook/assets/image (124).png" alt=""><figcaption></figcaption></figure>
 
-<table data-full-width="true"><thead><tr><th>Character </th><th>Description </th><th>Available in Agent New knowledge</th><th>View knowledge in knowledge base list</th><th>Manage knowledge members</th><th>Edit Knowledge</th><th>Delete Knowledge</th></tr></thead><tbody><tr><td><strong>Knowledge Management Administrator </strong></td><td>has complete knowledge control </td><td>O</td><td>O⟦30 ⟧<td>O</td><td>O</td><td>O</td></tr><tr><td><strong>Know Knowledge collaborators</strong></td><td> can assist in the content adjustment of management knowledge</td><td>O</td><td> O</td><td>X</td><td>O</td><td> 58⟧Knowledge Users</strong></td><td>Characters who can only read knowledge</td><td>O</td>⟦65 ⟧X</td><td>X</td><td>X</td><td>
+<table data-full-width="true"><thead><tr><th>Role </th><th>Description </th><th>Available at Agent New knowledge</th><th>View knowledge in knowledge base list</th><th>Manage knowledge members</th><th>Edit knowledge</th><th>Delete Knowledge</th></tr></thead><tbody><tr><td><strong>Knowledge Manager⟬PH00 23⟭</td><td>Have complete knowledge control</td><td>O</td><td>O</td><td> O</td><td>O</td><td>O</td></tr><tr><td><strong>Knowledge Collaboration Author </strong></td><td> can assist in the content adjustment of management knowledge </td><td>O</td><td>O</td> <td>X</td><td>O</td><td> 058⟭Knowledge User</strong></td><td>A character who can only read knowledge</td><td>O</td><td>X</td><td>X</td><td>X</td><td>
 
 
 
@@ -60,7 +60,7 @@ The following table describes what can be done at the "**MCP** Checklist" level.
 
 <figure><img src="../.gitbook/assets/image (125).png" alt=""><figcaption></figcaption></figure>
 
-<table data-full-width="true"><thead><tr><th>Role</th><th>Description</th><th>Create MCP</th><th>Manage MCP Members</th>⟦11 ⟧View all MCPs</th><th>Edit all MCPs</th></tr></thead><tbody><tr><td><strong>MCPs Inventory Administrator</strong></td><td>A role that can operate the MCP inventory and all MCP functions</td><td>O⟦2 6⟧<td>O</td><td>O</td><td>O</td></tr><tr><td><strong>MCP List collaborators</strong></td><td> are given the role of assisting in managing MCP list members</td><td>O⟦4 2⟧<td>O</td><td>X</td><td>X</td></tr><tr><td><strong>MCP List users</strong></td><td> can create and edit their own MCP roles</td><td>O </td><td>X</td><td>X</td><td>
+<table data-full-width="true"><thead><tr><th>Character</th><th> Description</th><th>Establish MCP</th><th>Manage MCP members⟬PH0 010⟭<th>View all MCPs</th><th>Edit all MCPs</th> </tr></thead><tbody><tr><td><strong>MCP Inventory Administrator</strong></td><td>A role that can operate the MCP inventory and all MCP functions</td><td>O</td>⟬PH002 7⟭O</td><td>O</td><td>O</td></tr><tr><td><strong>MCP Manifest collaborator </strong></td><td> is given the role of assisting in managing MCP manifest members </td><td>O</td>⟬PH004 3⟭O</td><td>X</td><td> List users </strong></td><td> can create and edit their own MCP roles </td><td>O</td>⟬P H0059⟭X</td><td>X</td><td>
 
 ### **MCP**
 
@@ -68,7 +68,7 @@ The following table describes what can be done at the "MCP" level. At this level
 
 <figure><img src="../.gitbook/assets/image (126).png" alt=""><figcaption></figcaption></figure>
 
-<table data-full-width="true"><thead><tr><th>Character </th><th>Description </th><th>Available in Agent Added MCP</th><th>View MCP</th><th> in MCP list and set MCP members</th><th>edit Edit MCP</th><th>Delete MCP</th></tr></thead><tbody><tr><td><strong>MCP Administrators</strong></td><td>have full MCP control</td><td>O</td><td>O⟦30 ⟧<td>O</td><td>O</td><td>O</td></tr><tr><td><strong>MCP Collaborators </strong></td><td> can help manage content adjustments for MCP </td><td>O</td><td>O⟦4 8⟧<td> User</strong></td><td>can only read MCP characters</td><td>O</td><td>X </td><td>X</td><td>X</td><td>
+<table data-full-width="true"><thead><tr><th>Role </th><th>Description </th><th>Available at Agent New MCP</th><th>View MCP in MCP list</th><th>Set MCP members</th><th>Edit MCP</th><th>Delete MCP</th></tr></thead><tbody><tr><td><strong>MCP Administrator </strong></td><td> has full MCP control </td><td>O</td><td>O</td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>MCP Collaborator </strong></td><td> can assist in managing content adjustments for MCP </td><td>O</td><td>O</td>⟬P H0049 ⟭ User </strong></td><td>can only read MCP roles </td><td>O</td><td>X⟬PH006 6⟭<td>X</td><td>X</td><td>
 
 
 
@@ -80,15 +80,15 @@ The following table describes what can be done at the "Workflow Template List" l
 
 <figure><img src="../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
 
-<table data-full-width="true"><thead><tr><th>Role</th><th>Description</th><th>Create workflow template</th><th>Manage workflow member template Board</th><th>View all workflow templates</th><th>Edit all workflow templates</th></tr></thead>⟦17 ⟧<tr><td><strong>Workflow Template List Administrator</strong></td><td>Operationable Workflow Template List and Workflow Characters with all template functions</td><td>O</td><td>O</td><td>O</td><td>O</td>⟦33 ⟧<tr><td><strong>Workflow template checklist collaborators</strong></td><td> are given permission to assist in managing workflow template checklist Single-member roles</td><td>O</td><td>O</td><td>X</td><td>X</td></tr>⟦5 0⟧<td><strong>Workflow template list. Users</strong></td><td> can create and edit their own workflow templates. Color</td><td>O</td><td>X</td><td>X</td><td>
+<table data-full-width="true"><thead><tr><th>Role</th><th>Description</th><th>Build Workflow Template</th><th>Manage workflow member templates</th><th>View all workflow templates</th><th>Edit all workflow templates</th></tr></thead><tbody><tr><td><strong>Workflow Template Checklist Administrator</strong></td><td>Operable Workflow Template Checklist and Workflow The role of all template functions</td><td>O</td><td>O</td><td>O</td><td>O</td>⟬P H0033⟭<tr><td><strong>Workflow Template Manifest Collaborator</strong></td><td>Role assigned permission to assist in managing workflow template manifest members </td><td>O</td><td>O</td>⟬P H0045⟭X</td><td>X</td></tr>⟬PH0 050⟭<td><strong>Workflow template list user</strong></td><td>A role that can create and edit their own workflow templates</td>⟬PH0 057⟭O</td><td>X</td><td>X⟬PH00 62⟭<td>X</td></tr></tbody></table>
 
 ### Workflow template
 
-The following table describes what can be done at the "Workflow Template" level. At this level, a "workflow template administrator" or a "workflow template collaborator" is usually responsible for managing members and assigning appropriate permissions to collaborators or users.
+The following table describes what can be done at the "Workflow Template" level. At this level, "workflow template administrators" or "workflow template collaborators" are usually responsible for managing members and assigning appropriate permissions to collaborators or users.
 
 <figure><img src="../.gitbook/assets/image (128).png" alt=""><figcaption></figcaption></figure>
 
-<table data-full-width="true"><thead><tr><th>Role</th><th>Description</th><th>Workflow templates are available in the workspace</th><th>In the workflow list List View Workflow Template</th><th>Set Workflow Template Members</th><th>Edit Workflow Template</th><th>Delete Mention Workflow Template</th></tr></thead><tbody><tr><td><strong>Workflow Template Administrator</strong></td><td> Have complete control over workflow templates</td><td>O</td><td>O</td><td>O</td><td>O</td>⟦ 35⟧O</td></tr><tr><td><strong>Workflow template collaborators</strong></td><td> can assist in managing workflow templates Board content adjustment</td><td>O</td><td>O</td><td>X</td><td>O</td><td>X</td> </tr><tr><td><strong>Workflow template user </strong></td><td>A role that can only read the workflow template </td>⟦ 63⟧O</td><td>X</td><td>X</td><td>X</td><td>
+<table data-full-width="true"><thead><tr><th>Role</th><th>Description</th><th>Workflow templates are available in the workspace</th>⟬PH0 009⟭View the workflow template in the workflow list</th><th>Set workflow template members</th><th>Edit the workflow template</th><th>Delete the workflow Template</th></tr></thead><tbody><tr>⟬PH00 21⟭<strong>Workflow Template Administrator</strong></td><td>has complete Complete workflow template control</td><td>O</td><td>O⟬P H0030⟭<td>O</td><td>O</td><td> O</td></tr><tr><td><strong>Workflow template collaborator</strong></td><td>can assist in managing content adjustments to workflow templates⟬PH0 044⟭<td>O</td><td>O</td><td>X </td><td>O</td><td>X</td>⟬PH005 5⟭<tr><td><strong>Workflow Template User</strong></td><td>Role that can only read workflow templates</td><td>O⟬PH00 64⟭<td>X</td><td>X</td><td>X</td><td>X</td></tr></tbody></table>
 
 
 
@@ -100,7 +100,7 @@ The following table describes what can be done at the "Prompt Word Template List
 
 <figure><img src="../.gitbook/assets/image (129).png" alt=""><figcaption></figcaption></figure>
 
-<table data-full-width="true"><thead><tr><th>Role</th><th>Description</th><th>Create Prompt Word Template</th><th>Manage Prompt Word List Template Member</th><th>View all prompt word templates</th><th>Edit all prompt word templates</th></tr></thead>⟦17 ⟧<tr><td><strong>Prompt word template list administrator</strong></td><td>Operable prompt word template list and prompt word template Fully functional characters</td><td>O</td><td>O</td><td>O</td><td>O</td></tr> <tr><td><strong>Prompt word template list collaborators </strong></td><td> are given permission to assist in managing the prompt word template list. Role of Member</td><td>O</td><td>O</td><td>X</td><td>X</td></tr>⟦50 ⟧<td><strong>Prompt word template list users</strong></td><td>A role that can create and edit their own prompt word templates⟦ 56⟧<td>O</td><td>X</td><td>X</td><td>
+<table data-full-width="true"><thead><tr><th>Role</th><th>Description</th><th>Create Prompt Word Template</th><th>Manage prompt word list template members</th><th>View all prompt word templates</th><th>Edit all prompt word templates</th></tr>⟬PH0 016⟭<tbody><tr><td><strong>Prompt word template list administrator</strong></td><td>Operable prompt word template list and prompt word template Fully functional characters</td><td>O</td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>Prompt Word Template List Collaborator</strong></td><td>Role given permission to assist in managing Prompt Word Template List members⟬P H0040⟭<td>O</td><td>O</td><td>X</td><td>X</td></tr>⟬PH0 050⟭<td><strong>Prompt word template list users</strong></td><td>A role that can create and edit their own prompt word templates</td>⟬PH00 57⟭O</td><td>X</td><td>X⟬PH00 62⟭<td>X</td></tr></tbody></table>
 
 ### prompt word template
 
@@ -108,4 +108,4 @@ The following table describes what can be done at the "prompt word template" lev
 
 <figure><img src="../.gitbook/assets/image (130).png" alt=""><figcaption></figcaption></figure>
 
-<table data-full-width="true"><thead><tr><th>Role</th><th>Description</th><th>The prompt word template can be used in the workspace </th><th>In the prompt word list List view prompt words</th><th>Set prompt word template members</th><th>Edit prompt word template</th><th>Delete prompt word template Board</th></tr></thead><tbody><tr><td><strong>Prompt Word Template Administrator</strong></td><td>Has Complete Prompt word template control rights</td><td>O</td><td>O</td><td>O</td><td>O</td><td>O </td></tr><tr><td><strong>Prompt word template collaborators</strong></td><td> can help manage the content of the prompt word template Adjust </td><td>O</td><td>O</td><td>X</td><td>O</td><td>X</td>⟦5 5⟧<tr><td><strong>Prompt word template user</strong></td><td>The role that can only read the prompt word template</td>⟦63 ⟧O</td><td>X</td><td>X</td><td>X</td><td>
+<table data-full-width="true"><thead><tr><th>Role</th><th>Description</th><th>Prompt word template can be used in the workspace</th><th>View prompt words in prompt word list list</th><th>Set prompt word template members</th><th>Edit prompt word template</th><th>Delete prompt word template⟬PH0 016⟭</tr></thead><tbody><tr><td><strong>Prompt word template administrator</strong></td><td>has complete prompt words Template control rights</td><td>O</td><td>O</td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>Prompt word template collaborator</strong></td><td>can assist in managing the content adjustment of the prompt word template</td> <td>O</td><td>O</td><td>X</td><td>O</td><td>X</td></tr> <tr><td><strong>Prompt word template user </strong></td><td>The role that can only read the prompt word template </td><td>O</td><td>X</td><td>X</td><td>X⟬P H0070⟭<td>X</td></tr></tbody></table>

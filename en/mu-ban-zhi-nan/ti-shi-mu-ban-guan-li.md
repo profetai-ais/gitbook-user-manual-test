@@ -36,7 +36,7 @@ Prompt templates are used to simplify the way users ask questions. Frequently as
 * **Chat Tips:** Templates for all scenarios. After completing the editing, you can save it for use in the "Application Templates" on the "Explore" page.
 * **Agent Tips:** Prompt word templates specifically bound to the assistant will not appear in the "Explore" page for collection.
 
-### **Field description**
+### **Field Description**
 
 <figure><img src="../.gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>
 
@@ -50,21 +50,21 @@ _Field_ can be regarded as a variable in the prompt word, allowing the user to p
 
 ## Permissions
 
-The creator can grant access rights to other users through "Permissions" (for role definition, please refer to [Permission Function Introduction](../ru-men-zhi-nan/ji-chu-jie-mian-jie-shao.md)).
+The creator can grant access rights to other users through "Permissions" (for role definition, please refer to [Permission Function Introduction] (../ru-men-zhi-nan/ji-chu-jie-mian-jie-shao.md) ).
 
 > Note: The creator is the default "manager", and each project can only have one owner.
 
 <figure><img src="../.gitbook/assets/image (281).png" alt=""><figcaption></figcaption></figure>
 
-| project | Operation name | illustrate                            |
+| project | Operation name | illustrate |
 | -- | ---- | ----------------------------- |
-| 1  | Edit table | Allows the user to edit the presentation of the table                |
-| 2  | refresh   | Refresh list after click                       |
-| 3  | Content filtering | Advanced filtering of specific content                      |
-| 4  | Batch delete | After checking the items, the delete button in the upper left corner will be displayed, allowing users to delete multiple items. |
-| 5  | search field | Search name                         |
-| 6  | invite   | Invite organizations/members                     |
-| 7  | action   | Transfer your role or remove selected users               |
+| 1 | Edit table | Allows the user to edit the presentation of the table |
+| 2 | refresh | Refresh list after click |
+| 3 | Content filtering | Advanced filtering of specific content |
+| 4 | Batch delete | After checking the items, the delete button in the upper left corner will be displayed, allowing users to delete multiple items. |
+| 5 | search field | Search name |
+| 6 | invite | Invite organizations/members |
+| 7 | action | Transfer your role or remove selected users |
 
 ### **New member**
 

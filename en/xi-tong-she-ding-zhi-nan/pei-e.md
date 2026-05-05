@@ -1,5 +1,5 @@
 ---
-description: Administrators can create and adjust usage quota plans to manage the frequency and amount of system resources that each user can use.
+description: 管理員可以建立與調整使用配額方案，以管理每位使用者可使用系統資源的頻率與數量。
 ---
 
 # quota
@@ -8,7 +8,7 @@ description: Administrators can create and adjust usage quota plans to manage th
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="80">Project</th><th width="170">Name</th><th>Description</th></tr></thead>⟦1 1⟧<tr><td>1</td><td>Name</td><td>Display name of the quota plan (for example: <code>default</code>, <code>VVIP</code>, <code>Plan VIP</code>). </td></tr><tr><td>2</td><td>Usage reset period </td><td>How often the quota is reset (for example: daily, weekly, hourly). </td></tr><tr><td>3</td><td>Fee Limit (USD) </td><td>Maximum spend (in USD) allowed per reset cycle. <code>-1</code> means unlimited. </td></tr><tr><td>4</td><td>Creator </td><td>The name of the administrator who created this scheme. </td></tr><tr><td>5</td><td>Modification Date </td><td>Modification time of the quota plan. </td></tr><tr><td>6</td><td> An internal note or explanation describing the purpose of the </td><td> quota scheme. </td></tr><tr><td>7</td><td>Actions </td><td>Button to edit or delete this scheme. </td></tr></tbody></table>
+<table><thead><tr><th width="80">Project</th><th width="170">Name</th><th>Description</th>⟬PH00 09⟭</thead><tbody><tr><td>1</td><td>Name</td><td>The display name of the quota plan (for example: <code>default</code>, <code>VVIP</code>, <code>Plan VIP</code>). </td></tr><tr><td>2</td><td>Usage reset period </td><td>How often the quota is reset (for example: daily, weekly, hourly). </td></tr><tr><td>3</td><td>Fee Limit (USD) </td><td>Maximum spend (in USD) allowed per reset cycle. <code>-1</code> represents unlimited. </td></tr><tr><td>4</td><td> Created by </td><td>The name of the administrator who created this scheme. </td></tr><tr><td>5</td><td>Modification Date </td><td>Modification time of the quota plan. </td></tr><tr><td>6</td><td> An internal note or explanation describing the purpose of the </td><td> quota scheme. </td></tr><tr><td>7</td><td>Actions</td><td>Button to edit or delete this scenario. </td></tr></tbody></table>
 
 ## **New quota plan**
 
@@ -35,7 +35,7 @@ Administrators can create a new usage quota plan by setting parameters such as n
 
 1. Go to the Set Default Quota Plan tab.
 2. Click the Default User Quota Plan drop-down menu to see a list of available plans.
-3. Select the desired scenario from the list (e.g. `預設`, `VVIP`, `超低配額`).
+3. Select the desired scheme from the list (e.g. `預設`, `VVIP`, `超低配額`).
 
 > Note: Administrators can create or update a plan in the Quota Plan tab before setting it as default.
 
@@ -66,4 +66,4 @@ When the administrator clicks the **Refresh icon** on the **User Quota Plan Bind
 
 <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="80">Item</th><th width="220">Field Name</th><th>Description</th></tr></thead>⟦11 ⟧<tr><td>1</td><td>Username </td><td>Username whose quota has been manually adjusted. </td></tr><tr><td>2</td><td>Before budget processing (USD) </td><td>User budget before adjustment (in USD). </td></tr><tr><td>3</td><td>After processing budget (USD) </td><td>Adjusted budget in USD. </td></tr><tr><td>4</td><td>Reset usage reason </td><td> Used to record the reason for manual update or correction. </td></tr><tr><td>5</td><td>Creation date </td><td>The date on which the adjustment is performed. </td></tr></tbody></table>
+<table><thead><tr><th width="80">Item</th><th width="220">Field name</th><th>Description</th>⟬PH000 9⟭</thead><tbody><tr><td>1</td><td>Username</td><td>The username whose quota is manually adjusted. </td></tr><tr><td>2</td><td>Before budget processing (USD) </td><td>User budget in USD before adjustment. </td></tr><tr><td>3</td><td>After budget processing (USD) </td><td>Adjusted budget in USD. </td></tr><tr><td>4</td><td>Reset usage reason </td><td> is used to record the reason for manual update or correction. </td></tr><tr><td>5</td><td>Establishment Date </td><td>The date the adjustment was performed. </td></tr></tbody></table>

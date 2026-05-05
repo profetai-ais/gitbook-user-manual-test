@@ -56,21 +56,21 @@ This option allows users to import a workflow template from a file into a new pr
 
 ## Permissions
 
-The creator can grant access rights to other users through "Permissions" (for role definition, please refer to [Permission Function Introduction] (../ru-men-zhi-nan/quan-xian-gong-neng-jie-shao.md) ).
+The creator can grant access rights to other users through "Permissions" (for role definition, please refer to [Permission Function Introduction] (../ru-men-zhi-nan/quan-xian-gong-neng-jie-shao.md)).
 
 > Note: The creator is the default "manager", and each project can only have one owner.
 
 <figure><img src="../.gitbook/assets/image (270).png" alt=""><figcaption></figcaption></figure>
 
-| project | Operation name | illustrate                            |
+| project | Operation name | illustrate |
 | -- | ---- | ----------------------------- |
-| 1  | Edit table | Allows the user to edit the presentation of the table                |
-| 2  | refresh   | Refresh list after click                       |
-| 3  | Content filtering | Advanced filtering of specific content                      |
-| 4  | Batch delete | After checking the items, the delete button in the upper left corner will be displayed, allowing users to delete multiple items. |
-| 5  | search field | Search name                         |
-| 6  | invite   | Invite organizations/members                     |
-| 7  | action   | Transfer your role or remove selected users               |
+| 1 | Edit table | Allows the user to edit the presentation of the table |
+| 2 | refresh | Refresh list after click |
+| 3 | Content filtering | Advanced filtering of specific content |
+| 4 | Batch delete | After checking the items, the delete button in the upper left corner will be displayed, allowing users to delete multiple items. |
+| 5 | search field | Search name |
+| 6 | invite | Invite organizations/members |
+| 7 | action | Transfer your role or remove selected users |
 
 ### **New member**
 

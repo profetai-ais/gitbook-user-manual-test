@@ -6,7 +6,7 @@
 * [AI Studio workspace](ru-men-zhi-nan/ai-studio-gong-zuo-kong-jian.md)
 * [AI Studio Roles and Permissions Description](ru-men-zhi-nan/ai-studio-jue-se-yu-quan-xian-shuo-ming.md)
 * [Basic interface introduction](ru-men-zhi-nan/ji-chu-jie-mian-jie-shao.md)
-* [Permission function introduction](ru-men-zhi-nan/quan-xian-gong-neng-jie-shao.md)
+* [Introduction to permission functions](ru-men-zhi-nan/quan-xian-gong-neng-jie-shao.md)
 
 ## Agent Guide
 
@@ -32,8 +32,8 @@
 
 ## Template Guide
 
-* [Workflow Template Management](mu-ban-zhi-nan/gong-zuo-liu-cheng-mu-ban-guan-li.md)
-* [Prompt Template Management](mu-ban-zhi-nan/ti-shi-mu-ban-guan-li.md)
+* [Workflow template management](mu-ban-zhi-nan/gong-zuo-liu-cheng-mu-ban-guan-li.md)
+* [Prompt template management](mu-ban-zhi-nan/ti-shi-mu-ban-guan-li.md)
 
 ## Analysis Guide
 
@@ -46,4 +46,4 @@
 * [Quota](xi-tong-she-ding-zhi-nan/pei-e.md)
 * [Configuration](xi-tong-she-ding-zhi-nan/pei-zhi.md)
 * [Key Management](xi-tong-she-ding-zhi-nan/mi-yue-guan-li.md)
-* [Tag management](xi-tong-she-ding-zhi-nan/biao-qian-guan-li.md)
+* [Tag Management](xi-tong-she-ding-zhi-nan/biao-qian-guan-li.md)

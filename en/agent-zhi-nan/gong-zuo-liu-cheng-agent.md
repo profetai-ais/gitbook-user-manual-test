@@ -1,5 +1,5 @@
 ---
-description: Workflow Agent allows users to create processes and design how the Agent can complete the user's complex tasks through the functional components provided by AI Studio.
+description: 工作流程 Agent 讓使用者以建立流程的方式，設計 Agent 可如何透過 AI Studio 提供的功能元件完成使用者的複雜任務。
 ---
 
 # Workflow Agent
@@ -32,16 +32,16 @@ Workflow Agent's homepage can be divided into several main areas, as follows:
 
 <figure><img src="../.gitbook/assets/image (203).png" alt=""><figcaption></figcaption></figure>
 
-1.  **Agent function options:** Provides links to Agent function settings
+1. **Agent function options:** Provides links to Agent function settings
 
 The function options area contains the following function links. After clicking, the corresponding setting page will appear:
 
-<table><thead><tr><th width="250">Name</th><th>Description</th></tr></thead><tbody><tr><td>Basic Settings </td><td>Edit Agent Home Page</td></tr><tr><td>Process Settings</td><td>Edit Agent’s Workflow</td></tr><tr><td>Session Log</td><td>Provide this Agent Conversation records</td></tr><tr><td>Member Management</td><td>Manage the access rights of this Agent</td></tr><tr><td>AI WEBAPP</td><td>Configure this Agent The webpage embedding</td></tr><tr><td>API Key</td><td>provides credentials for third-party applications to securely call the API</td></tr></tbody></table>
+<table><thead><tr><th width="250">Name</th><th>Description</th></tr></thead><tbody><tr><td>Basic Settings</td><td>Edit Agent's homepage</td></tr><tr><td>Process Settings</td><td>Edit Agent The workflow of </td></tr><tr><td>Session Log</td><td> provides this Agent Conversation record</td></tr><tr><td>Member Management</td><td>Manage this Agent Access rights</td></tr><tr><td>AI WEBAPP</td><td> Set this Agent Web page embedding </td></tr><tr><td>API Key</td><td> provides secure calling API for third-party applications Voucher for </td></tr></tbody></table>
 
 2. **Basic information**: Editable Agent name, description and activation status
 3. **Application Settings:** Provides settings related to Agent behavior based on Agent type
 
-<table><thead><tr><th width="250">Name</th><th>Description</th></tr></thead><tbody><tr><td>Welcome page</td><td>Setting Agent Question setting</td></tr><tr><td>Prompt word template</td><td>Add existing prompt word template for subsequent use</td>⟦ 21⟧<tr><td>File processing method</td><td>Control the processing method of uploaded files</td></tr></tbody></table>
+<table><thead><tr><th width="250">Name</th><th>Description</th></tr></thead><tbody><tr><td>Welcome page</td><td>Setting Agent Question setting</td></tr><tr><td>Prompt word template</td><td>Add existing prompt word template for subsequent use</td>⟬PH00 21⟭<tr><td>File processing method</td><td>Control the processing method of uploaded files</td></tr></tbody></table>
 
 4. **Adaptation Preview:** Allows users to test whether the Q&A results are as expected
 
@@ -80,7 +80,7 @@ The application template (prompt word template) that has been created or collect
 
 <figure><img src="../.gitbook/assets/image (210).png" alt=""><figcaption></figcaption></figure>
 
-### **Welcome page**
+### **Welcome Page**
 
 Users can set their own default conversation content, allowing the Agent to provide directly clickable question directions before the conversation begins, helping users start interacting more quickly.
 
@@ -116,7 +116,7 @@ The creator can grant access rights to other users through "Permissions" (for ro
 
 <figure><img src="../.gitbook/assets/image (215).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="99">Project</th><th width="132">Operation Name</th><th>Description</th></tr>⟦10 ⟧<tbody><tr><td>1</td><td>Edit Table</td><td>Allows users to edit tables The way the grid is presented</td></tr><tr><td>2</td><td>Refresh</td><td> Refresh the list after clicking</td></tr><tr><td>3</td><td>Content filtering</td>⟦3 3⟧Advanced filtering of specified content</td></tr><tr><td>4</td><td>Status switching⟦4 0⟧<td>Quickly switch status by selecting single or multiple selections on the form</td></tr><tr><td>5</td> <td>Batch deletion</td><td>After checking the items, the delete button in the upper left corner will be displayed, allowing users to delete multiple items. items</td></tr><tr><td>6</td><td>Search field</td><td>Search Name</td></tr><tr><td>7</td><td>Invite</td><td>Invite Organization / Member</td></tr><tr><td>8</td><td>Enabled Status</td><td>User Permissions Enabled Status</td></tr>⟦ 76⟧<td>9</td><td>Actions</td><td>Transfer your character or delete selected users</td></tr></tbody></table>
+<table><thead><tr><th width="99">Project</th><th width="132">Operation Name</th><th> says Ming</th></tr></thead><tbody><tr><td>1</td><td>Edit form⟬P H0016⟭<td>Allows users to edit the presentation of tables</td></tr><tr><td>2</td><td>Refresh</td><td>Click to refresh the list</td></tr><tr><td>3</td><td>Content Filtering</td><td>Advanced Filtering Specified Content</td></tr><tr><td>4⟬PH0 038⟭<td>Status switching</td><td>Quickly switch status by single or multiple selections on the form</td></tr><tr><td>5</td><td>Batch deletion</td><td>After checking the items, the delete button in the upper left corner will be displayed, allowing the user to delete multiple items Item</td></tr><tr><td>6</td><td>Search field</td><td>Search Name</td></tr><tr><td>7</td><td>Invite</td><td>Invite Organization / Member</td></tr><tr><td>8</td>⟬PH00 71⟭Enabled status</td><td>User permission enabled status</td></tr><tr><td>9</td><td>Action</td>⟬PH008 1⟭Transfer your role or delete selected users</td></tr></tbody></table>
 
 ### **New member**
 

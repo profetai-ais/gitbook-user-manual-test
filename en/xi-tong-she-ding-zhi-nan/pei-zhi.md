@@ -1,5 +1,5 @@
 ---
-description: The "Configuration" module is mainly used to manage the system's default behavior settings, including GPT default configuration and default system prompt and other related items.
+description: 「配置」模組主要用於管理系統的預設行為設定，包含 GPT 預設配置與 default system prompt 等相關項目。
 ---
 
 # Configuration
@@ -76,7 +76,7 @@ Rules and restrictions for translation when using the speech-to-text feature in 
 4. If you want to edit the prompt word, you can enter it in the "Prompt Word" text field, or click "Default Template" to use the default translation prompt word.
 5. Click the Save button to save the settings.
 
-## **技能掃描設定**
+## **Skill Scan Settings**
 
 Used to control whether to enable the scanning mechanism when uploading skills. When enabled, the system will scan when skills are uploaded; when disabled, the system will not scan when uploading.
 
@@ -117,4 +117,4 @@ The command rewriting setting can automatically organize the original commands e
 
 <figure><img src="../.gitbook/assets/image (299).png" alt="" width="494"><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="161">Name</th><th>Description</th></tr></thead><tbody><tr><td>Temperature</td><td>Control how creative your answers can be. A high value indicates that the answer is more creative and varied; a low value indicates that the answer is more precise and stable. </td></tr><tr><td>Top P</td><td>Control the randomness and diversity of answers. The smaller the number, the more conservative and predictable the generated text will be; the larger the number, the more diverse the generated text will be. <br><code>top P＝0.5</code>, only the words with the sum of the top 50% probabilities that are most likely to appear in the system are considered, and words with low probability of occurrence are excluded. </td></tr><tr><td>Max Tokens</td><td>Limit the maximum length of the assistant output. </td></tr></tbody></table>
+<table><thead><tr><th width="161">Name</th><th>Description</th>⟬PH0 007⟭</thead><tbody><tr><td>Temperature</td><td>Control how creative your answers can be. A high value indicates that the answer is more creative and varied; a low value indicates that the answer is more precise and stable. </td></tr><tr><td>Top P</td><td>Control the randomness and diversity of answers. The smaller the number, the more conservative and predictable the generated text will be; the larger the number, the more diverse the generated text will be. <br><code>top P＝0.5</code>, only the words with the sum of the top 50% probability that are most likely to appear in the system are considered, and words with low probability of occurrence are excluded. </td></tr><tr><td>Max Tokens</td><td>Limit the maximum length of the assistant output. </td></tr></tbody></table>
