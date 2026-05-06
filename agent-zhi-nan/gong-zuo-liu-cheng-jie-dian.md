@@ -20,7 +20,9 @@
 
 使用語言模型（例如 GPT-5.2 Thinking/GPT-5.2 Instant/Gemini 3）執行提示，根據當前輸入生成或推理結果。
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (29).png" alt="" width="375"><figcaption></figcaption></figure></div>
+
+
+<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (29).png" alt="" width="188"><figcaption></figcaption></figure></div>
 
 <table><thead><tr><th width="80">項目</th><th width="160">功能名稱</th><th>說明</th></tr></thead><tbody><tr><td>1</td><td>LLM名稱</td><td>輸入節點名稱，以利識別</td></tr><tr><td>2</td><td>LLM參數調整</td><td>參考 <a href="liao-tian-agent.md#can-shu">參數</a></td></tr><tr><td>3</td><td>模型</td><td>更換節點所使用的語言模型（與 2. 中的模型設定相同）</td></tr><tr><td>4</td><td>上下文</td><td>Input的內容（輸入「/」選擇query為使用者的問題）</td></tr><tr><td>5</td><td>使用節點檔案</td><td>允許LLM從前面節點取得哪些檔案</td></tr><tr><td>6</td><td>檔案處理</td><td>參考 <a href="https://www.notion.so/3509f9da96be81ef9413d427bc2132c7?pvs=21">檔案處理</a></td></tr><tr><td>7</td><td>啟用知識庫</td><td>參考 <a href="https://www.notion.so/3509f9da96be81d7b1bbe69f43f236d4?pvs=21">知識庫來源</a></td></tr><tr><td>8</td><td>Agent 協作</td><td>參考 <a href="liao-tian-agent.md#agent-xie-zuo">Agent 協作</a></td></tr><tr><td>9</td><td>技能</td><td>參考 <a href="liao-tian-agent.md#ji-neng">技能</a></td></tr><tr><td>10</td><td>參考記憶</td><td>啟用後，LLM在回覆時會參考在記憶庫的記憶，記憶的儲存方式可參考<a href="agent-memory.md"> Agent Memory</a></td></tr><tr><td>11</td><td>對話記憶</td><td>參考 <a href="liao-tian-agent.md#can-shu">參數</a> 內的對話記憶</td></tr><tr><td>12</td><td>工具</td><td>參考 <a href="liao-tian-agent.md#gong-ju">工具</a></td></tr></tbody></table>
 
