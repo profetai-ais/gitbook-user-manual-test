@@ -62,4 +62,4 @@ The creator can grant access rights to other users through "Permissions" (for ro
 4. Click the "Organization" tab in the right area and check the organizational level to which permissions are to be granted.
 5. Click the "Users" tab in the right area to select the user to whom permissions are to be granted.
 6. Search for the user you want to add in the "User Menu". After selecting, click the "+" button next to the menu to add a user.
-7. 完成組織與使用者的變更後點擊右上角的「儲存」按鈕保留設定
+7. After completing the changes to the organization and users, click the "Save" button in the upper right corner to retain the settings.

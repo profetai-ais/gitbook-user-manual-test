@@ -2,7 +2,7 @@
 
 ## Introduction
 
-By adding different Skills, Agents can perform more specific tasks, such as obtaining external information, connecting tools, processing specific processes, or completing operations that cannot be performed directly.你可以依照需求为 Agent 配置合适的 Skill，让它在回应与执行任务时更灵活，也更贴近实际使用情境。
+By adding different Skills, Agents can perform more specific tasks, such as obtaining external information, connecting tools, processing specific processes, or completing operations that cannot be performed directly. You can configure the appropriate Skill for the Agent according to your needs, making it more flexible in responding and performing tasks, and more closely related to actual usage scenarios.
 
 <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
@@ -13,7 +13,7 @@ By adding different Skills, Agents can perform more specific tasks, such as obta
 <figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 1. Go to the Skills tab
-2. 點擊 新增 ，選擇創建
+2. Click Add and select Create
 3. Select a classified group, or click the + sign on the right to add a new group
 4. The left side is the list directory. When you create a skill for the first time, there is a set of folders and Skill.md that cannot be deleted by default. However, you can add additional folders and files. For the new method, please refer to [Add a new folder or file] (ji-neng.md#xin-zeng-zi-liao-jia-huo-dang-an)
 5. Fill in the file content according to the format

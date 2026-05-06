@@ -37,6 +37,6 @@ After entering the "Key Management" page, the screen will display the list of cu
 
 ### **Notes**
 
-* **刪除後的密鑰無法復原**
-* 若該 API Key 正被系統或流程使用中，刪除後可能導致相關功能無法正常運作
-* 建議在刪除前，先確認該金鑰已不再被任何服務或流程引用
+* **The deleted key cannot be restored**
+* If the API Key is being used by the system or process, deletion may cause related functions to not function properly.
+* It is recommended to confirm that the key is no longer referenced by any service or process before deleting it.

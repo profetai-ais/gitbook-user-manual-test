@@ -1,5 +1,5 @@
 ---
-description: The workspace is where users interact with the agent.
+description: 工作空間是使用者與 Agent 互動的地方。
 ---
 
 # AI Studio workspace
@@ -22,13 +22,13 @@ The conversation recording area is divided into two parts:
 
 Actions available in the conversation recording area:
 
-<table><thead><tr><th width="90">Project</th><th width="157">Operation Name</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>Explore</td><td>Back to Explore Agent/Application Template Page</td></tr><tr><td>2</td><td>Recent Agent/Conversation</td><td>Recently Used Agent Conversation with</td></tr><tr><td>3</td><td>Build</td><td>Create new conversation</td></tr><tr><td>4</td><td>Edit⟬PH0 040⟭</td><td>Edit the name of the selected conversation record</td></tr><tr><td>5</td><td>Delete</td><td>Delete selected conversation record</td></tr></tbody></table>
+<table><thead><tr><th width="90">Project</th><th width="157">Operation Name</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>Explore </td><td>Back to Explore Agent/Application Template Page</td></tr><tr><td>2</td><td>Recent Agent/Conversation</td><td>Recently Used Agent Conversation with </td></tr><tr><td>3</td><td>Build </td><td>Create new conversation</td></tr><tr><td>4</td><td>Edit⟬PH0 040⟭<td>Edit the name of the selected conversation record</td></tr><tr><td>5</td><td>Delete</td><td>Delete selected conversation record</td></tr></tbody></table>
 
 ## **Chat area**
 
-<figure><img src="../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure>
 
-<table data-first-column-sticky data-full-width="false"><thead><tr><th width="80">Project</th><th width="161">Operation Name</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>Reference source</td><td>Click to view Agent Sources referenced in responses to facilitate users to further explore or verify information</td></tr><tr><td>2</td><td>Action button</td><td>From left to right: copy response text, related questions, and amount spent / Token</td></tr><tr><td>3</td><td>Join</td><td>Add additional files, or use Prompt word template</td></tr><tr><td>4</td><td>Input box</td><td>The user enters the prompt here. Click the Send button to send the prompt to all selected Agents to respond</td></tr></tbody></table>
+<table data-first-column-sticky data-full-width="false"><thead><tr><th width="80">Project</th><th width="161">Operation Name</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>Reference source</td><td>Click to view Agent Sources referenced in responses to facilitate users to further explore or verify information</td></tr><tr><td>2 </td><td>Action button </td><td>From left to right: copy response text, related questions, and amount spent / Token</td></tr><tr><td>3</td><td>Join</td><td>Add additional files, or use Prompt word template</td></tr><tr><td>4</td><td>Input box</td><td>The user enters the prompt here. Click the Send button to send the prompt to all selected Agents to respond</td></tr></tbody></table>
 
 > Additional Note: The display of the attachment upload portal may vary depending on Agent settings. In some Agents or environments, administrators can control whether to display the "Upload File" icon; when this function is turned off, the attachment entry will not be displayed in the chat input area, and users will not be able to attach files in the session. If you do not see the attachment button in the workspace, please confirm whether the currently selected Agent allows the file attachment function, or contact the system administrator.
 
@@ -36,7 +36,7 @@ Actions available in the conversation recording area:
 
 <figure><img src="../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
 
 1. Press the "/" key in the prompt input area, or click the "+" "Prompt Word Template" to display the list of available prompt templates
 2. Click on the desired prompt template from the list
@@ -44,7 +44,7 @@ Actions available in the conversation recording area:
 
 Available prompt template types:
 
-<table><thead><tr><th width="176">Template Type</th><th>says Ming</th></tr></thead><tbody><tr><td>User Prompt</td><td>Prompt templates added to favorites from the Explore area and can be used in any Agent conversation</td></tr><tr><td>Agent Prompt</td><td>A prompt template bound to a specific Agent and can only be used in that Agent</td></tr></tbody></table>
+<table><thead><tr><th width="176">Template Type</th><th> says Ming</th></tr></thead><tbody><tr><td>User Prompt</td><td> Prompt templates added to favorites from the Explore area and can be used in any Agent conversation </td></tr><tr><td>Agent Prompt</td><td> A prompt template bound to a specific Agent and can only be used in that Agent </td></tr></tbody></table>
 
 ## **Chat Session Archives**
 
@@ -71,7 +71,7 @@ The **Usage Quota** area allows users to clearly understand the Token and cost c
 
 Usage details will be displayed in **two places**, each with different purposes:
 
-<table data-full-width="false"><thead><tr><th width="83">Project</th><th width="121">Display Area</th><th width="122">Position</th><th width="276">Display indicator</th><th>Purpose</th></tr></thead><tbody><tr><td>1</td><td>Daily quota overview</td><td>Bottom left corner of sidebar</td><td>- <strong>Quota Plan</strong>: Current budget and amount spent (e.g. 0.01 / 10.00 USD)<br>- <strong>Usage</strong>: Visualization of quota usage percentage for the day</td><td>Provides per-day quota usage for all sessions Daily Usage Profile</td></tr><tr><td>2</td><td>Session Level Token details</td><td>Below each AI response (mouseover icon displays)</td><td>- <strong>Total Input Tokens</strong>: Contains prompts, system commands, context<br>- <strong>Total Output Tokens</strong>: AI generated response<br>- <strong>Total Tokens</strong>: Sum of input and output Tokens<br>- <strong>Total Usage Cost</strong>: Cost based on current model price</td><td>Provides detailed cost breakdown for each interaction</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="83">Project</th><th width="121">Display Area</th><th width="122">Position</th><th width="276">Display indicator</th><th>Purpose </th></tr></thead><tbody><tr><td>1⟬PH001 8⟭<td>Daily quota overview</td><td>Bottom left corner of sidebar</td><td>- <strong>Quota Plan</strong>: Current budget and amount spent (e.g. 0.01 / 10.00 USD) <br>- <strong>Usage</strong>: Visualization of quota usage percentage for the day </td><td> Provides per-day quota usage for all sessions Daily Usage Profile</td></tr><tr><td>2</td><td>Session Level Token details</td><td>Below each AI response (mouseover icon displays) </td><td>- <strong>Total Input Tokens</strong>: Contains prompts, system commands, context <br>- <strong>Total Output Tokens</strong>: AI generated response <br>- <strong>Total Tokens</strong>: Sum of input and output Tokens <br>- <strong>Total Usage Cost</strong>: Cost based on current model price</td><td>Provides detailed cost breakdown for each interaction</td></tr></tbody></table>
 
 ## canvas
 

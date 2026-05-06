@@ -2,7 +2,7 @@
 description: 使用者在 AI Studio 中可見的功能與操作取決於帳號所屬的角色。
 ---
 
-# AI Studio Roles and Permissions Description
+# AI Studio roles and permissions description
 
 ## **Functional Role Types in AI Studio**
 
@@ -14,6 +14,6 @@ The system presets three functional role types:
 
 ## **Character comparison**
 
-<table data-first-column-sticky data-full-width="false"><thead><tr><th width="118">Role Type</th><th width="105">Workspace</th><th width="88">Agent</th><th width="120">Knowledge Base</th><th width="122">Capabilities (Skills, MCP)</th><th>Template (Workflow, prompt words)</th><th width="104">System Settings</th><th width="83">Analysis</th></tr></thead><tbody><tr><td>AI Studio Admin</td><td>O</td><td>O</td><td>O</td><td>O</td><td>O</td><td>O</td><td>O</td></tr><tr><td>AI Studio Collaborator</td><td>O</td><td>O</td><td>O</td><td>O</td><td>O</td><td>X</td><td>O</td></tr><tr><td>Studio User</td><td>O</td><td>O</td><td>O</td><td>X</td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th>Role Type</th><th>AI Studio Administrator</th><th>AI Studio Collaborator</th><th>AI Studio User</th></tr></thead><tbody><tr>⟬PH00 15⟭<strong>Workspace</strong></td><td>O</td> <td>O</td><td>O</td></tr>⟬PH002 6⟭<td><strong>Agent</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>Knowledge Base</strong></td>⟬PH0 043⟭O</td><td>O</td><td>O</td></tr><tr><td><strong>Capacity</strong><br> <strong>(Skill,MCP)</strong></td><td>O</td><td>O</td> <td> <strong>(workflow, prompt words)</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>Analysis</strong></td><td>O</td>⟬PH0 087⟭O</td><td> 096⟭<td>O</td><td>X</td><td>
 
 > Note: For information on role management, please refer to the relevant content in the Domain Twin Portal documentation.
