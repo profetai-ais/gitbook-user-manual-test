@@ -14,6 +14,6 @@ description: 使用者在 AI Studio 中可見的功能與操作取決於帳號�
 
 ## **角色比較**
 
-<table data-first-column-sticky data-full-width="false"><thead><tr><th>角色類型</th><th>工作空間</th><th>Agent</th><th>知識庫</th><th>能力  (技能、MCP)</th><th>模板 (工作流程、提示詞)</th><th>系統設定</th><th>分析</th></tr></thead><tbody><tr><td>AI Studio 管理員</td><td>O</td><td>O</td><td>O</td><td>O</td><td>O</td><td>O</td><td>O</td></tr><tr><td>AI Studio 協作者</td><td>O</td><td>O</td><td>O</td><td>O</td><td>O</td><td>X</td><td>O</td></tr><tr><td>AI Studio 使用者</td><td>O</td><td>O</td><td>O</td><td>X</td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th>角色類型</th><th>AI Studio 管理員</th><th>AI Studio 協作者</th><th>AI Studio 使用者</th></tr></thead><tbody><tr><td><strong>工作空間</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>Agent</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>知識庫</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>能力</strong><br> <strong>(技能、MCP)</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>模板</strong><br> <strong>(工作流程、提示詞)</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>分析</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>系統設定</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
 
 > 注意： 關於角色的管理請見 Domain Twin Portal 說明文件裡的相關內容。
