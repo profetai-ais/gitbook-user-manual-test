@@ -23,13 +23,9 @@ def has_cjk(text: str) -> bool:
     return bool(re.search(r"[\u4e00-\u9fff]", text))
 
 
-def split_frontmatter(content: str):
-    match = re.match(r"\A(---\s*\n[\s\S]*?\n---\s*\n)([\s\S]*)\Z", content)
-
-    if not match:
-        return "", content
-
-    return match.group(1), match.group(2)
+def yaml_quote(text: str) -> str:
+    text = str(text).replace("\\", "\\\\").replace('"', '\\"')
+    return f'"{text}"'
 
 
 def cleanup_orphan_placeholders(text: str):
@@ -42,62 +38,22 @@ def cleanup_orphan_placeholders(text: str):
         r"⟬\s*PH\s*\d(?:\s*\d)*\s*⟭",
         r"⟦\s*PH\s*\d(?:\s*\d)*\s*⟧",
         r"\[\[\s*(?:PH\s*)?\d(?:\s*\d)*\s*\]\]",
-        r"\[\s*(?:PH\s*)?\d(?:\s*\d)*\s*\]",
-        r"\(\s*(?:PH\s*)?\d(?:\s*\d)*\s*\)",
+        r"\[\s*PH\s*\d(?:\s*\d)*\s*\]",
+        r"\(\s*PH\s*\d(?:\s*\d)*\s*\)",
         r"ZXQPLACEHOLDER\d+QXZ",
+        r"Q+\s*PROTECT\s*\d+\s*Q+",
+        r"T+\s*KEEP\s*\d+\s*T+",
     ]
 
     for pattern in patterns:
         cleaned = re.sub(pattern, "", cleaned, flags=re.IGNORECASE)
 
+    # Remove broken numeric placeholder chains like [1][2][3][4].
+    cleaned = re.sub(r"(?:\[\d+\]){2,}", "", cleaned)
+
     cleaned = re.sub(r"[ \t]{2,}", " ", cleaned)
 
     return cleaned
-
-
-def protect_inline_tokens(text: str):
-    placeholders = {}
-    protected = text
-    index = 0
-
-    def make_token(original: str) -> str:
-        nonlocal index
-        token = f"QQQPROTECT{index}QQQ"
-        placeholders[token] = original
-        index += 1
-        return token
-
-    patterns = [
-        r"`[^`]+`",
-        r"\[[^\]]+\]\([^)]+\)",
-    ]
-
-    for pattern in patterns:
-        matches = list(re.finditer(pattern, protected))
-        for match in matches:
-            original = match.group(0)
-            protected = protected.replace(original, make_token(original), 1)
-
-    return protected, placeholders
-
-
-def restore_inline_tokens(text: str, placeholders: dict):
-    restored = text
-
-    for token, original in placeholders.items():
-        restored = restored.replace(token, original)
-
-        token_number = re.search(r"QQQPROTECT(\d+)QQQ", token)
-        if token_number:
-            number = token_number.group(1)
-            restored = re.sub(
-                rf"Q+\s*PROTECT\s*{number}\s*Q+",
-                original,
-                restored,
-                flags=re.IGNORECASE,
-            )
-
-    return cleanup_orphan_placeholders(restored)
 
 
 def split_long_text(text: str, max_len: int = 2200):
@@ -124,17 +80,16 @@ def split_long_text(text: str, max_len: int = 2200):
     return chunks or [text]
 
 
-def translate_text(text: str):
+def raw_translate(text: str):
     if not text or not text.strip():
         return text
 
     if not has_cjk(text):
         return cleanup_orphan_placeholders(text)
 
-    protected, placeholders = protect_inline_tokens(text)
     translated_chunks = []
 
-    for chunk in split_long_text(protected):
+    for chunk in split_long_text(text):
         try:
             translated = translator.translate(chunk)
 
@@ -150,19 +105,271 @@ def translate_text(text: str):
             translated_chunks.append(str(chunk))
             time.sleep(0.35)
 
-    translated_text = " ".join(
-        str(chunk) for chunk in translated_chunks if chunk is not None
+    return cleanup_orphan_placeholders(
+        " ".join(str(chunk) for chunk in translated_chunks if chunk is not None)
     )
 
-    return restore_inline_tokens(translated_text, placeholders)
+
+def split_frontmatter(content: str):
+    match = re.match(r"\A(---\s*\n[\s\S]*?\n---\s*\n)([\s\S]*)\Z", content)
+
+    if not match:
+        return "", content
+
+    return match.group(1), match.group(2)
+
+
+def translate_frontmatter(frontmatter: str):
+    if not frontmatter:
+        return ""
+
+    lines = frontmatter.splitlines()
+
+    if len(lines) < 2 or lines[0].strip() != "---":
+        return frontmatter
+
+    inner = lines[1:-1]
+    output = []
+    index = 0
+
+    while index < len(inner):
+        line = inner[index]
+
+        block_match = re.match(r"^(\s*)(title|description):\s*([>|][+-]?)\s*$", line)
+
+        if block_match:
+            indent = block_match.group(1)
+            key = block_match.group(2)
+
+            block_lines = []
+            index += 1
+
+            while index < len(inner):
+                next_line = inner[index]
+
+                if re.match(r"^\S[^:]*:\s*", next_line):
+                    break
+
+                block_lines.append(next_line.strip())
+                index += 1
+
+            original_text = " ".join(part for part in block_lines if part)
+
+            if has_cjk(original_text):
+                translated_text = raw_translate(original_text)
+                output.append(f"{indent}{key}: {yaml_quote(translated_text)}")
+            else:
+                output.append(line)
+                output.extend(block_lines)
+
+            continue
+
+        single_match = re.match(r"^(\s*)(title|description):\s*(.*)$", line)
+
+        if single_match:
+            indent = single_match.group(1)
+            key = single_match.group(2)
+            value = single_match.group(3).strip()
+
+            clean_value = value.strip("'\"")
+
+            if has_cjk(clean_value):
+                translated_value = raw_translate(clean_value)
+                output.append(f"{indent}{key}: {yaml_quote(translated_value)}")
+            else:
+                output.append(line)
+
+            index += 1
+            continue
+
+        output.append(line)
+        index += 1
+
+    return "---\n" + "\n".join(output) + "\n---\n"
+
+
+def make_token_factory():
+    placeholders = {}
+    counter = {"value": 0}
+
+    def make_token(original: str) -> str:
+        number = counter["value"]
+        counter["value"] += 1
+
+        token = f"TTTKEEP{number:04d}TTT"
+        placeholders[token] = original
+
+        return token
+
+    return make_token, placeholders
+
+
+def restore_tokens(text: str, placeholders: dict):
+    restored = text
+
+    for token, original in placeholders.items():
+        restored = restored.replace(token, original)
+
+        token_match = re.search(r"TTTKEEP(\d+)", token)
+        if not token_match:
+            continue
+
+        number = str(int(token_match.group(1)))
+        loose_number = r"0*\s*" + r"\s*".join(re.escape(char) for char in number)
+
+        tolerant_patterns = [
+            rf"T+\s*KEEP\s*{loose_number}\s*T+",
+            rf"\[\[\s*T+\s*KEEP\s*{loose_number}\s*T+\s*\]\]",
+            rf"\[\s*T+\s*KEEP\s*{loose_number}\s*T+\s*\]",
+            rf"\(\s*T+\s*KEEP\s*{loose_number}\s*T+\s*\)",
+        ]
+
+        for pattern in tolerant_patterns:
+            restored = re.sub(pattern, original, restored, flags=re.IGNORECASE)
+
+    return cleanup_orphan_placeholders(restored)
+
+
+def translate_markdown_link_label(label: str):
+    if has_cjk(label):
+        return raw_translate(label)
+
+    return label
+
+
+def protect_inline_tokens(text: str):
+    make_token, placeholders = make_token_factory()
+    protected = text
+
+    # Protect images completely.
+    protected = re.sub(
+        r"!\[[^\]]*\]\([^)]+\)",
+        lambda match: make_token(match.group(0)),
+        protected,
+    )
+
+    # Protect inline code completely.
+    protected = re.sub(
+        r"`[^`]+`",
+        lambda match: make_token(match.group(0)),
+        protected,
+    )
+
+    # Protect URLs in markdown links, but translate the visible link label.
+    def replace_link(match):
+        label = match.group(1)
+        url = match.group(2)
+        translated_label = translate_markdown_link_label(label)
+
+        return make_token(f"[{translated_label}]({url})")
+
+    protected = re.sub(
+        r"(?<!!)\[([^\]]+)\]\(([^)]+)\)",
+        replace_link,
+        protected,
+    )
+
+    return protected, placeholders
+
+
+def translate_text(text: str):
+    if not text or not text.strip():
+        return text
+
+    if not has_cjk(text):
+        return cleanup_orphan_placeholders(text)
+
+    protected, placeholders = protect_inline_tokens(text)
+    translated = raw_translate(protected)
+
+    return restore_tokens(translated, placeholders)
+
+
+def is_symbol_only_cell(text: str):
+    stripped = cleanup_orphan_placeholders(text.strip())
+
+    if not stripped:
+        return True
+
+    symbol_values = {
+        "O",
+        "X",
+        "o",
+        "x",
+        "✓",
+        "✔",
+        "✕",
+        "✖",
+        "-",
+        "—",
+        "–",
+        "N/A",
+        "n/a",
+    }
+
+    if stripped in symbol_values:
+        return True
+
+    if re.fullmatch(r"[OXox✓✔✕✖\-—–\s/]+", stripped):
+        return True
+
+    return False
+
+
+def is_table_separator(line: str):
+    stripped = line.strip()
+
+    if "|" not in stripped:
+        return False
+
+    cells = [cell.strip() for cell in stripped.strip("|").split("|")]
+
+    if not cells:
+        return False
+
+    return all(re.fullmatch(r":?-{3,}:?", cell or "") for cell in cells)
+
+
+def is_table_line(line: str):
+    return "|" in line
+
+
+def translate_table_line(line: str):
+    if is_table_separator(line):
+        return line
+
+    parts = line.split("|")
+    translated_parts = []
+
+    for part in parts:
+        if not part.strip():
+            translated_parts.append(part)
+            continue
+
+        leading = len(part) - len(part.lstrip())
+        trailing = len(part) - len(part.rstrip())
+        core = part.strip()
+
+        if is_symbol_only_cell(core):
+            translated_core = cleanup_orphan_placeholders(core)
+        else:
+            translated_core = translate_text(core)
+
+        translated_parts.append(
+            (" " * leading) + str(translated_core) + (" " * trailing)
+        )
+
+    return "|".join(translated_parts)
 
 
 def is_markdown_image(line: str):
     return bool(re.search(r"!\[[^\]]*\]\([^)]+\)", line))
 
 
-def is_table_line(line: str):
-    return "|" in line
+def is_gitbook_directive(line: str):
+    stripped = line.strip()
+
+    return stripped.startswith("{%") or stripped.endswith("%}")
 
 
 def starts_html_block(line: str):
@@ -228,6 +435,7 @@ def translate_line(line: str):
 
 def translate_markdown(content: str):
     frontmatter, body = split_frontmatter(content)
+    translated_frontmatter = translate_frontmatter(frontmatter)
 
     lines = body.splitlines()
     result = []
@@ -274,16 +482,26 @@ def translate_markdown(content: str):
 
             continue
 
+        if is_gitbook_directive(line):
+            flush_buffer()
+            result.append(line)
+            continue
+
         if stripped == "":
             flush_buffer()
             result.append(line)
             continue
 
-        # Safety first:
-        # Keep tables and images unchanged so GitBook layout will not break.
-        if is_table_line(line) or is_markdown_image(line):
+        # Preserve image-only lines so image syntax will not be broken.
+        if is_markdown_image(line):
             flush_buffer()
             result.append(line)
+            continue
+
+        # Translate Markdown tables cell by cell.
+        if is_table_line(line):
+            flush_buffer()
+            result.append(translate_table_line(line))
             continue
 
         if re.match(r"^\s{0,3}#{1,6}\s+", line):
@@ -306,7 +524,7 @@ def translate_markdown(content: str):
     if translated_body:
         translated_body += "\n"
 
-    return frontmatter + translated_body
+    return translated_frontmatter + translated_body
 
 
 def should_skip(path: Path):
