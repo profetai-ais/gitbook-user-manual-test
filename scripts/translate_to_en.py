@@ -26,14 +26,6 @@ def has_cjk(text: str) -> bool:
 def split_frontmatter(content: str):
     """
     Keep GitBook YAML front matter unchanged.
-
-    Example:
-    ---
-    description: ...
-    icon: ...
-    ---
-
-    This part must not be translated, or GitBook may fail to import the file.
     """
     match = re.match(r"\A(---\s*\n[\s\S]*?\n---\s*\n)([\s\S]*)\Z", content)
 
@@ -43,12 +35,24 @@ def split_frontmatter(content: str):
     return match.group(1), match.group(2)
 
 
+def loose_digits_pattern(number_text: str):
+    """
+    Convert "0033" into a regex that can match:
+    0033
+    0 033
+    0 0 3 3
+    33
+    """
+    number = str(int(number_text))
+    return r"0*\s*" + r"\s*".join(re.escape(char) for char in number)
+
+
 def cleanup_orphan_placeholders(text: str):
     """
-    Remove placeholder fragments that may be changed by the translator.
+    Remove placeholder fragments that the translator changed and we could not restore.
 
     Examples:
-    O[[32 ]] -> O
+    O⟬PH0 033⟭ -> O
     X[[6 8]] -> X
     ZXQPLACEHOLDER37QXZ -> ""
     """
@@ -58,10 +62,13 @@ def cleanup_orphan_placeholders(text: str):
     cleaned = text
 
     cleanup_patterns = [
-        r"\[\[\s*(?:PH\s*)?\d+(?:\s+\d+)*\s*\]\]",
-        r"\[\s*(?:PH\s*)?\d+(?:\s+\d+)*\s*\]",
-        r"⟦\s*\d+(?:\s+\d+)*\s*⟧",
-        r"⟬\s*PH\s*\d+\s*⟭",
+        r"⟬\s*PH\s*\d(?:\s*\d)*\s*⟭",
+        r"⟦\s*PH\s*\d(?:\s*\d)*\s*⟧",
+        r"⟬\s*\d(?:\s*\d)*\s*⟭",
+        r"⟦\s*\d(?:\s*\d)*\s*⟧",
+        r"\[\[\s*(?:PH\s*)?\d(?:\s*\d)*\s*\]\]",
+        r"\[\s*(?:PH\s*)?\d(?:\s*\d)*\s*\]",
+        r"\(\s*(?:PH\s*)?\d(?:\s*\d)*\s*\)",
         r"ZXQPLACEHOLDER\d+QXZ",
     ]
 
@@ -69,6 +76,8 @@ def cleanup_orphan_placeholders(text: str):
         cleaned = re.sub(pattern, "", cleaned, flags=re.IGNORECASE)
 
     cleaned = re.sub(r"[ \t]{2,}", " ", cleaned)
+    cleaned = re.sub(r"\s+\|", " |", cleaned)
+    cleaned = re.sub(r"\|\s+", "| ", cleaned)
 
     return cleaned
 
@@ -97,7 +106,7 @@ def protect_markdown_tokens(text: str):
             original = match.group(0)
             protected = protected.replace(original, make_token(original), 1)
 
-    # Protect URLs in normal markdown links, but allow link text to be translated.
+    # Protect URLs in markdown links, but allow link text to be translated.
     def protect_link_url(match):
         label = match.group(1)
         url = match.group(2)
@@ -118,13 +127,16 @@ def restore_markdown_tokens(text: str, placeholders: dict):
         if not match:
             continue
 
-        index_number = str(int(match.group(1)))
+        number_text = match.group(1)
+        loose_number = loose_digits_pattern(number_text)
 
         tolerant_patterns = [
-            rf"⟬\s*PH\s*0*{index_number}\s*⟭",
-            rf"\[\[\s*PH\s*0*{index_number}\s*\]\]",
-            rf"\[\s*PH\s*0*{index_number}\s*\]",
-            rf"\(\s*PH\s*0*{index_number}\s*\)",
+            rf"⟬\s*PH\s*{loose_number}\s*⟭",
+            rf"⟦\s*PH\s*{loose_number}\s*⟧",
+            rf"\[\[\s*PH\s*{loose_number}\s*\]\]",
+            rf"\[\s*PH\s*{loose_number}\s*\]",
+            rf"\(\s*PH\s*{loose_number}\s*\)",
+            rf"PH\s*{loose_number}",
         ]
 
         for pattern in tolerant_patterns:
@@ -133,7 +145,7 @@ def restore_markdown_tokens(text: str, placeholders: dict):
     return cleanup_orphan_placeholders(restored)
 
 
-def split_long_text(text: str, max_len: int = 2500):
+def split_long_text(text: str, max_len: int = 2200):
     if len(text) <= max_len:
         return [text]
 
@@ -190,7 +202,38 @@ def translate_text(text: str):
     return restore_markdown_tokens(translated_text, placeholders)
 
 
-def is_table_separator(line: str) -> bool:
+def is_symbol_only_cell(text: str):
+    stripped = text.strip()
+
+    if not stripped:
+        return True
+
+    symbol_values = {
+        "O",
+        "X",
+        "o",
+        "x",
+        "✓",
+        "✔",
+        "✕",
+        "✖",
+        "-",
+        "—",
+        "–",
+        "N/A",
+        "n/a",
+    }
+
+    if stripped in symbol_values:
+        return True
+
+    if re.fullmatch(r"[OXox✓✔✕✖\-—–\s/]+", stripped):
+        return True
+
+    return False
+
+
+def is_table_separator(line: str):
     stripped = line.strip()
 
     if "|" not in stripped:
@@ -220,7 +263,10 @@ def translate_table_line(line: str):
         trailing = len(part) - len(part.rstrip())
         core = part.strip()
 
-        translated_core = translate_text(core)
+        if is_symbol_only_cell(core):
+            translated_core = cleanup_orphan_placeholders(core)
+        else:
+            translated_core = translate_text(core)
 
         translated_parts.append(
             (" " * leading) + str(translated_core) + (" " * trailing)
