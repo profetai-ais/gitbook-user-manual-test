@@ -13,7 +13,7 @@ description: 工作空間是使用者與 Agent 互動的地方。
 
 ## **對話記錄**
 
-<figure><img src="../.gitbook/assets/image (108).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
 
 對話記錄區域分為兩個部分：
 
@@ -26,7 +26,7 @@ description: 工作空間是使用者與 Agent 互動的地方。
 
 ## **聊天區域**
 
-<figure><img src="../.gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
 
 <table data-first-column-sticky data-full-width="false"><thead><tr><th width="80">項目</th><th width="161">操作名稱</th><th>說明</th></tr></thead><tbody><tr><td>1</td><td>參考來源</td><td>點擊以查看 Agent 回應中參考的來源，方便使用者進一步探索或驗證資訊</td></tr><tr><td>2</td><td>動作按鈕</td><td>由左至右：複製回應文字、相關提問、花費金額 / Token</td></tr><tr><td>3</td><td>加入</td><td>添加附加檔案，或使用提示詞模板</td></tr><tr><td>4</td><td>輸入框</td><td>使用者在此輸入提示。點擊送出按鈕將提示傳送給所有選取的 Agent 進行回應</td></tr></tbody></table>
 
@@ -34,9 +34,9 @@ description: 工作空間是使用者與 Agent 互動的地方。
 
 ## **在聊天中使用提示範本**
 
-<figure><img src="../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (103).png" alt=""><figcaption></figcaption></figure>
 
 1. 在提示輸入區按下「/」鍵，或者點擊「+」 的「提示詞模板」，即可顯示可用的提示範本清單
 2. 從清單中點擊所需的提示範本
@@ -44,7 +44,7 @@ description: 工作空間是使用者與 Agent 互動的地方。
 
 可用的提示範本類型：
 
-<table><thead><tr><th width="176">範本類型</th><th>說明</th></tr></thead><tbody><tr><td>User Prompt</td><td> 從「探索」區域新增到個人收藏的提示範本，可在任何 Agent 對話中使用</td></tr><tr><td>Agent Prompt</td><td> 綁定到特定 Agent 的提示範本，只能在該 Agent 中使用</td></tr></tbody></table>
+<table><thead><tr><th width="176">範本類型</th><th>說明</th></tr></thead><tbody><tr><td>User Prompt</td><td>從「探索」區域新增到個人收藏的提示範本，可在任何 Agent 對話中使用</td></tr><tr><td>Agent Prompt</td><td>綁定到特定 Agent 的提示範本，只能在該 Agent 中使用</td></tr></tbody></table>
 
 ## **聊天會話檔案**
 
@@ -67,7 +67,7 @@ File Icon
 
 > 注意： 預設情況下，配額使用會每日自動重置。
 
-<figure><img src="../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
 
 使用明細會顯示在 **兩個位置**，各自有不同用途：
 
@@ -81,9 +81,9 @@ File Icon
 
 ### 調用畫布
 
-<figure><img src="../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (116).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure>
 
 1. 點擊左下角+號，選擇畫布，功能會出現在輸入框中。
 2. 在聊天視窗中輸入需求，請 AI 產生文件、表格、圖表或其他內容。
@@ -101,11 +101,11 @@ Canvas 適合用於較長、較複雜，或需要反覆查看與修改的內容�
 
 語音聽寫功能可協助使用者透過語音輸入文字內容。使用者只需開啟麥克風並開始說話，系統即可將語音內容轉換為文字，減少手動輸入的時間，提升資料填寫或文字輸入的效率。
 
-<figure><img src="../.gitbook/assets/image (151).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (141).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (152).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (142).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (153).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (143).png" alt=""><figcaption></figcaption></figure>
 
 1. 進入 Agent 對話頁面，點選文字輸入框旁的麥克風圖示。
 2. 若系統跳出麥克風權限提示，請允許系統使用麥克風。

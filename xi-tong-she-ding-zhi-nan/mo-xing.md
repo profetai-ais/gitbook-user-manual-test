@@ -8,13 +8,13 @@ description: >-
 
 ## **新增大語言模型**
 
-<figure><img src="../.gitbook/assets/image (286).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (269).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (287).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (270).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (288).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (271).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (289).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (272).png" alt=""><figcaption></figcaption></figure>
 
 1. 進入後，點擊右上角 「＋新增」 開始設定。
 2. 選擇服務商 (例如：OpenAI / Azure / Gemini / Ollama / Claude)

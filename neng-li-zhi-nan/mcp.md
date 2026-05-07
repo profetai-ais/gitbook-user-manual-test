@@ -10,9 +10,9 @@
 * **追蹤** 開發人員新增的工具
 * **參考** 可用工具及其功能
 
-<figure><img src="../.gitbook/assets/image (247).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (231).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (248).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (232).png" alt=""><figcaption></figcaption></figure>
 
 ## 權限
 
@@ -20,7 +20,7 @@
 
 > Note： 建立者是預設的「擁有者」，每個項目只能有一個擁有者。
 
-<figure><img src="../.gitbook/assets/image (249).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (233).png" alt=""><figcaption></figcaption></figure>
 
 | 項目 | 操作名稱 | 說明                            |
 | -- | ---- | ----------------------------- |
@@ -34,15 +34,15 @@
 
 ### **新增成員**
 
-<figure><img src="../.gitbook/assets/image (250).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (234).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (235).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (252).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (236).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (253).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (237).png" alt=""><figcaption></figcaption></figure>
 
-1. &#x20;點擊「邀請」開&#x555F;_&#x65B0;增成&#x54E1;_&#x5C0D;話方塊
+1. 點擊「邀請」開&#x555F;_&#x65B0;增成&#x54E1;_&#x5C0D;話方塊
 2. 輸入框能搜尋組織或使用者
 3. 選擇對應的權限
 4. 輸入關鍵字跳出對應的組織/使用者
@@ -52,9 +52,9 @@
 
 ## 新增MCP工具權限
 
-<figure><img src="../.gitbook/assets/image (254).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (238).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (255).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (239).png" alt=""><figcaption></figcaption></figure>
 
 1. 點擊「MCP選單」中的 MCP 工具權限項目
 2. 點擊 按鈕為工具批次添加權限

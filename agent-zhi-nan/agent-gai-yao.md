@@ -6,11 +6,9 @@ description: >-
 
 # Agent 概要
 
-
-
 ## **主要優勢**
 
-<figure><img src="../.gitbook/assets/image (131).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure>
 
 * **多樣性**：提供多種 Agent 類型滿足不同的應用需求，透過簡單的配置即可建立出高品質的 Agent 應用。
 * **實現治理**：可管理 Agent 的使用權限，確保生成式 AI 的應用符合企業規範。

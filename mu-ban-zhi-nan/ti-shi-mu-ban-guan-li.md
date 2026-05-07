@@ -8,23 +8,23 @@
 
 ## **新增提示模板**
 
-<figure><img src="../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (278).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (261).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (279).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (262).png" alt=""><figcaption></figcaption></figure>
 
 1. 點選「新增」顯示建立提示詞模板視窗
 2. 選擇提示模板類型
 3. 「名稱」欄位中輸入知識名稱後點擊右側按鈕建立多語言標籤，請參閱 [多國語言設定](ti-shi-mu-ban-guan-li.md#duo-guo-yu-yan-she-ding)
 4. 「描述」欄位中輸入知識描述後點擊右側按鈕建立多語言標籤，請參閱 [多國語言設定](ti-shi-mu-ban-guan-li.md#duo-guo-yu-yan-she-ding)
 5. 建立「字段」
-6. &#x20;在「提示詞設置」分頁中設置提示詞
+6. 在「提示詞設置」分頁中設置提示詞
 7. 點擊 「確定」 完成新增
 
 ### 多國語言設定
 
-<figure><img src="../.gitbook/assets/image (275).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (258).png" alt=""><figcaption></figcaption></figure>
 
 1. 點擊畫面的「地球」按鈕進行自動翻譯，使用者也可以手動編輯內容
 2. 自動翻譯完成後點擊「確定」按鈕，儲存內容
@@ -38,7 +38,7 @@
 
 ### **字段說明**
 
-<figure><img src="../.gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (263).png" alt=""><figcaption></figcaption></figure>
 
 _字段_ 可視為提示詞中的變數，讓使用者依實際場景提供提示詞中必要的資訊。字段有以下種類：
 
@@ -54,7 +54,7 @@ _字段_ 可視為提示詞中的變數，讓使用者依實際場景提供提�
 
 > Note： 建立者是預設的「管理者」，每個項目只能有一個擁有者。
 
-<figure><img src="../.gitbook/assets/image (281).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (264).png" alt=""><figcaption></figcaption></figure>
 
 | 項目 | 操作名稱 | 說明                            |
 | -- | ---- | ----------------------------- |
@@ -68,13 +68,13 @@ _字段_ 可視為提示詞中的變數，讓使用者依實際場景提供提�
 
 ### **新增成員**
 
-<figure><img src="../.gitbook/assets/image (282).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (265).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (283).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (266).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (284).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (267).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (285).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (268).png" alt=""><figcaption></figcaption></figure>
 
 1. 點擊「添加」開&#x555F;_&#x65B0;增成&#x54E1;_&#x5C0D;話方塊
 2. 輸入框能搜尋組織或使用者

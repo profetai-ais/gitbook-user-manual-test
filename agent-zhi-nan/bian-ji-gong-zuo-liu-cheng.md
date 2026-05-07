@@ -4,7 +4,7 @@
 
 下圖為工作流程編輯介面，包含以下控制項目：
 
-<figure><img src="../.gitbook/assets/image (234).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (218).png" alt=""><figcaption></figcaption></figure>
 
 1. **節點清單**：AI Studio 提供的工作流程功能元件；可參閱 [工作流程節點](gong-zuo-liu-cheng-jie-dian.md) 頁面以取得可用節點的詳細資訊。
 2. **工作流程功能選單**：提供編輯器的功能操作；詳見下方說明
@@ -17,7 +17,7 @@
 
 > 注意：建議從助手設定中開啟工作流程編輯器，方便在編輯後直接使用 測試預覽 進行測試。
 
-<figure><img src="../.gitbook/assets/image (235).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (219).png" alt=""><figcaption></figcaption></figure>
 
 以空白工作流程為例，畫面預設會包含一個 **"Start"** 節點。點擊此節點會顯示多個基本變數：
 
@@ -31,11 +31,11 @@
 
 以下為一個簡單範例，示範基本的工作流程操作：
 
-<figure><img src="../.gitbook/assets/image (236).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (220).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (237).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (221).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (238).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (222).png" alt=""><figcaption></figcaption></figure>
 
 1. 在新工作流程中，點擊「Start」節點以查看基本變數
 2. 從節點清單中將「Reply」節點拖放至編輯區
@@ -60,7 +60,7 @@
 
 工作流程支援快速複製與貼上節點設定，適合用於建立多個相似節點或跨流程搬移既有邏輯。
 
-<figure><img src="../.gitbook/assets/image (239).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (223).png" alt=""><figcaption></figcaption></figure>
 
 使用方式：
 
@@ -80,7 +80,7 @@
 
 為避免在瀏覽器重新整理或非正常原因關閉時造成編輯遺失，編輯器會將部分草稿狀態暫存於本機（Local Storage），並在多分頁間同步。
 
-<figure><img src="../.gitbook/assets/image (240).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (224).png" alt=""><figcaption></figcaption></figure>
 
 ## 歷史紀錄（History）
 
@@ -88,11 +88,11 @@
 
 > 注意：需要點擊右上角的儲存按鈕，內容才會被記錄在歷史紀錄裡。
 
-<figure><img src="../.gitbook/assets/image (241).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;![](<../.gitbook/assets/image (243).png>)
+![](<../.gitbook/assets/image (227).png>)
 
 1. 在工作流程功能選單中點擊 「歷史紀錄」
 2. 彈出視窗的左邊是即時預覽
@@ -106,9 +106,9 @@
 
 全域變數可視為「此工作流程共用的常數/設定」，適合放置會被多個節點重複使用的內容，例如：公司政策、語氣規範、固定格式、回覆模板片段、API 參數預設值等。透過集中管理，可避免在多個節點內重複修改。
 
-<figure><img src="../.gitbook/assets/image (244).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (228).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (245).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (229).png" alt=""><figcaption></figcaption></figure>
 
 1. 在工作流程功能選單中點擊 「編輯全域變數」
 2. 在彈出視窗中新增或編輯變數內容
@@ -125,7 +125,7 @@
 
 在節點設定（例如 LLM 節點的「情境 / Context」或其他輸入欄位）中輸入 /，即可從變數清單插入可用的全域變數。插入後系統會以變數表達式形式呈現，後續即會自動帶入最新內容。
 
-<figure><img src="../.gitbook/assets/image (246).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (230).png" alt=""><figcaption></figcaption></figure>
 
 ### 在 System Prompt 引用全域變數
 
@@ -148,4 +148,3 @@
 情境示範設定一次全域變數，就能同時控制整個工作流程中所有 AI 節點的輸出行為，例如輸出語言。使用者不需要逐一修改每個節點，就能快速切換中英文或其他語系，確保整體輸出一致，特別適合多語系或跨國應用情境。
 
 {% file src="../.gitbook/assets/Understanding Global Variables A Localization Agent_2026-02-04_影片.mp4" %}
-

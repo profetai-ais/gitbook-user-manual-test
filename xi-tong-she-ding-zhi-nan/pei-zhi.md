@@ -8,7 +8,7 @@ description: 「配置」模組主要用於管理系統的預設行為設定，�
 
 相關問題功能使用 LLM 已回覆內容生成相關問題，讓使用者點擊就可執行問答。管理人員可以變更相關問題的生成設定。
 
-<figure><img src="../.gitbook/assets/image (290).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (273).png" alt=""><figcaption></figcaption></figure>
 
 1. 在 AI Studio 左側選單中，展開 "設定" 項目後選擇 "系統設定"
 2. 在分頁中，選擇 "相關問題"
@@ -22,7 +22,7 @@ description: 「配置」模組主要用於管理系統的預設行為設定，�
 
 用於根據使用者輸入內容自動產生標題。系統會先辨識輸入語言，再生成簡短且具主題性的標題。
 
-<figure><img src="../.gitbook/assets/image (291).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (274).png" alt=""><figcaption></figcaption></figure>
 
 1. 在 AI Studio 左側選單中，展開 "設定" 項目後選擇 "系統設定"
 2. 在分頁中，選擇 "生成標題"
@@ -36,7 +36,7 @@ description: 「配置」模組主要用於管理系統的預設行為設定，�
 
 用於設定位於畫面右上角頭像中的 Personalization 相關內容所使用的語言模型，可依實際使用情境選擇適合的語言，例如英文或中文。
 
-<figure><img src="../.gitbook/assets/image (292).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (275).png" alt=""><figcaption></figcaption></figure>
 
 1. 在 AI Studio 左側選單中，展開 "設定" 項目後選擇 "系統設定"
 2. 在分頁中，選擇 "記憶語言模型"
@@ -46,7 +46,7 @@ description: 「配置」模組主要用於管理系統的預設行為設定，�
 
 用於設定位於畫面右上角頭像中的 Personalization ，將 Memory 內容向量化並寫入資料庫時所使用的 embedding 模型。
 
-<figure><img src="../.gitbook/assets/image (293).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (276).png" alt=""><figcaption></figcaption></figure>
 
 1. 在 AI Studio 左側選單中，展開 "設定" 項目後選擇 "系統設定"
 2. 在分頁中，選擇 "記憶向量模型"
@@ -56,7 +56,7 @@ description: 「配置」模組主要用於管理系統的預設行為設定，�
 
 用於設定位於畫面右上角頭像中的"個人化"， 記憶的使用規則與限制條件，例如記憶應在何種情況下被使用、保留或刪除。
 
-<figure><img src="../.gitbook/assets/image (294).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>
 
 1. 在 AI Studio 左側選單中，展開 "設定" 項目後選擇 "系統設定"
 2. 在分頁中，選擇 "記憶約束"
@@ -68,7 +68,7 @@ description: 「配置」模組主要用於管理系統的預設行為設定，�
 
 用於工作空間使用語音轉文字的功能時所需要轉譯的規則與限制條件。
 
-<figure><img src="../.gitbook/assets/image (295).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (278).png" alt=""><figcaption></figcaption></figure>
 
 1. 在 AI Studio 左側選單中，展開 "設定" 項目後選擇 "系統設定"
 2. 在分頁中，選擇 "語音設定"
@@ -80,7 +80,7 @@ description: 「配置」模組主要用於管理系統的預設行為設定，�
 
 用於控制上傳技能時是否啟用掃描機制。啟用後，系統會於技能上傳時進行掃描；停用後，則不會於上傳時執行掃描。
 
-<figure><img src="../.gitbook/assets/image (296).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (279).png" alt=""><figcaption></figcaption></figure>
 
 1. 在 AI Studio 左側選單中，展開 "設定" 項目後選擇 "系統設定"
 2. 在分頁中，選擇 "技能掃描設定"
@@ -92,7 +92,7 @@ description: 「配置」模組主要用於管理系統的預設行為設定，�
 
 指令改寫設定可將使用者輸入的原始指令，自動整理成更清楚、具結構且可執行的提示詞。系統會在保留原意的前提下，移除模糊與重複內容，補足必要的格式、語氣、長度或語言限制，並將多步驟需求整理為明確的行動指令，讓後續模型能更準確地理解並執行任務。
 
-<figure><img src="../.gitbook/assets/image (297).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>
 
 1. 在 AI Studio 左側選單中，展開 "設定" 項目後選擇 "系統設定"
 2. 在分頁中，選擇 "指令改寫設定"
@@ -104,7 +104,7 @@ description: 「配置」模組主要用於管理系統的預設行為設定，�
 
 **畫布設定**可判斷使用者需求是否需要啟用畫布相關功能，並依照請求內容自動分派至合適的處理流程。當需求涉及圖表、流程圖、關係圖、互動式 UI 或網頁應用說明時，系統會優先交由畫布設計功能處理；若包含 HTML 生成需求，也會透過指定流程轉交程式編輯功能執行。若需求不屬於視覺化或網頁應用範圍，則維持一般回應流程，避免不必要地啟用畫布功能。
 
-<figure><img src="../.gitbook/assets/image (298).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (281).png" alt=""><figcaption></figcaption></figure>
 
 1. 在 AI Studio 左側選單中，展開 "設定" 項目後選擇 "系統設定"
 2. 在分頁中，選擇 "畫布設定"
@@ -115,6 +115,6 @@ description: 「配置」模組主要用於管理系統的預設行為設定，�
 
 ## **推理參數**
 
-<figure><img src="../.gitbook/assets/image (299).png" alt="" width="494"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (282).png" alt="" width="494"><figcaption></figcaption></figure>
 
 <table><thead><tr><th width="161">名稱</th><th>說明</th></tr></thead><tbody><tr><td>溫度</td><td>控制回答的創意程度。數值高，表示回答較創意且多變；數值低，表示回答較精確且穩定。</td></tr><tr><td>Top P</td><td>控制回答的隨機性及多樣性。數字小，生成的文字越保守、可預測；數字大，生成文字越具多樣性。<br><code>top P＝0.5</code>，僅考慮系統最有可能出現的前50%機率總和的詞，排除出現機率低的詞彙。</td></tr><tr><td>Max Tokens</td><td>限制助手輸出的最大長度。</td></tr></tbody></table>

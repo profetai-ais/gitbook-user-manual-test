@@ -2,7 +2,7 @@
 
 ## **Agent 的種類**
 
-<figure><img src="../.gitbook/assets/image (145).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (135).png" alt=""><figcaption></figcaption></figure>
 
 * **聊天 Agent** ：透過基礎問答直接與內部或外部大語言模型互動。
 * **工作流程**：可編排工作流程處理複雜的應用場景。
@@ -11,9 +11,9 @@
 
 ## **指派 Agent 庫管理人員**
 
-<figure><img src="../.gitbook/assets/image (146).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (136).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (147).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
 
 1. 點擊畫面靠左上方的 「 … ( 更多 ) 」按鈕
 2. 選擇 「指派」
@@ -30,7 +30,7 @@
 
 ### 匯出 Agent
 
-<figure><img src="../.gitbook/assets/image (148).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (138).png" alt=""><figcaption></figcaption></figure>
 
 1. 前往 Agent 清單，或進入目標 Agent 的編輯頁面。
 2. 滑鼠移動到需匯出的 Agent 表格上。
@@ -38,9 +38,9 @@
 
 ### 匯入 Agent
 
-<figure><img src="../.gitbook/assets/image (149).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (139).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (150).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>
 
 1. 點擊畫面靠左上方的 「 … ( 更多 ) 」按鈕
 2. 選擇「匯入檔案」

@@ -16,7 +16,7 @@
 
 此選項將建立一個空白的流程模板。
 
-<figure><img src="../.gitbook/assets/image (265).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (248).png" alt=""><figcaption></figcaption></figure>
 
 1. 點擊右上角 "新增" 新增按鈕
 2. 「名稱」欄位中輸入知識名稱後點擊右側按鈕建立多語言標籤，請參閱 [多國語言設定](gong-zuo-liu-cheng-mu-ban-guan-li.md#duo-guo-yu-yan-she-ding)
@@ -25,7 +25,7 @@
 
 #### 多國語言設定
 
-<figure><img src="../.gitbook/assets/image (266).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (249).png" alt=""><figcaption></figcaption></figure>
 
 1. 點擊畫面的「地球」按鈕進行自動翻譯，使用者也可以手動編輯內容
 2. 自動翻譯完成後點擊「確定」按鈕，儲存內容
@@ -36,7 +36,7 @@
 
 此選項讓使用者複製一個既有的工作流程模板到新的流程中編輯。
 
-<figure><img src="../.gitbook/assets/image (268).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>
 
 1. 從模板列表中選擇要複製的模板
 2. 點擊複製按鈕
@@ -46,7 +46,7 @@
 
 此選項讓使用者從檔案匯入一個工作流程模板到新的流程中編輯。
 
-<figure><img src="../.gitbook/assets/image (269).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (252).png" alt=""><figcaption></figcaption></figure>
 
 1. 點擊右上方更多按鈕，選擇匯入檔案
 2. 點擊 "檔案上傳區" 選擇要匯入的模板檔案 (副檔名為 `.pwflow` 的檔案)
@@ -60,7 +60,7 @@
 
 > Note： 建立者是預設的「管理者」，每個項目只能有一個擁有者。
 
-<figure><img src="../.gitbook/assets/image (270).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (253).png" alt=""><figcaption></figcaption></figure>
 
 | 項目 | 操作名稱 | 說明                            |
 | -- | ---- | ----------------------------- |
@@ -74,13 +74,13 @@
 
 ### **新增成員**
 
-<figure><img src="../.gitbook/assets/image (271).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (254).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (272).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (255).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (273).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (256).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (274).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (257).png" alt=""><figcaption></figcaption></figure>
 
 1. 點擊「添加」開&#x555F;_&#x65B0;增成&#x54E1;_&#x5C0D;話方塊
 2. 輸入框能搜尋組織或使用者

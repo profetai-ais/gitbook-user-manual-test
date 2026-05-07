@@ -6,7 +6,7 @@ description: 點擊知識庫頁面中的知識卡片即可進入設定頁面。
 
 ## **頁面導覽**
 
-<figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
 <table><thead><tr><th width="80">項目</th><th width="180">操作名稱</th><th>說明</th></tr></thead><tbody><tr><td>1</td><td>返回</td><td>點擊後返回知識庫首頁</td></tr><tr><td>2</td><td>收起</td><td>點擊後將選單區域最小化</td></tr><tr><td>3</td><td>知識設定選單</td><td>提供各種知識設定與測試功能</td></tr><tr><td>4</td><td>設定輸入區</td><td>根據使用者所選選單項目開啟對應操作頁面</td></tr></tbody></table>
 
@@ -29,23 +29,23 @@ description: 點擊知識庫頁面中的知識卡片即可進入設定頁面。
 * 長篇文字內容（如 TXT、Markdown、DOCX、HTML、JSONL，非純圖片的 PDF 等）
 * 結構化資料（CSV、Excel 等）
 
-<figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
 <table><thead><tr><th width="80">項目</th><th width="180">操作名稱</th><th>說明</th></tr></thead><tbody><tr><td>1</td><td>編輯表格</td><td>允許使用者編輯表格的呈現方式</td></tr><tr><td>2</td><td>刷新</td><td>點擊後重新整理表格</td></tr><tr><td>3</td><td>篩選</td><td>可依據欄位篩選內容</td></tr><tr><td>4</td><td>我的清單</td><td>開啟後，會只顯示你創建的資料</td></tr><tr><td>5</td><td>批次下載</td><td>可一次勾選多個項目批次下載</td></tr><tr><td>6</td><td>刪除</td><td>勾選列表中的數據集後將顯示刪除按鈕，點擊後將刪除已勾選的數據集</td></tr><tr><td>7</td><td>搜尋</td><td>使用者可輸入關鍵字篩選</td></tr><tr><td>8</td><td>新增/匯入</td><td>上傳檔案，或建立一個空白的數據集</td></tr><tr><td>9</td><td>操作</td><td>使用者可編輯或刪除對應的數據集</td></tr></tbody></table>
 
 ## **新增資料集**
 
-<figure><img src="../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
 
 1. 點擊「知識設定選單」中的 _資料集_ 項目
 2. 點擊「新增/匯入」按鈕後選擇 _匯入檔案_
@@ -89,13 +89,11 @@ description: 點擊知識庫頁面中的知識卡片即可進入設定頁面。
 
 位置從狀態的圖標點擊進去，詳細的操作方式可以參照 [工作管理](../fen-xi-zhi-nan/gong-zuo-guan-li.md) 頁面說明。
 
-&#x20;。
+。
 
-<figure><img src="../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
-
-
-<figure><img src="../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
 
 ## **新增資料集時的數據處理**
 
@@ -124,7 +122,7 @@ description: 點擊知識庫頁面中的知識卡片即可進入設定頁面。
 
 點擊檔案列表中的檔案名稱將開啟 _資料塊_ 檢視頁面，允許使用者閱覽被索引的資料內容，並可按需編輯。
 
-<figure><img src="../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
 
 <table><thead><tr><th width="80">項目</th><th width="180">選項</th><th>說明</th></tr></thead><tbody><tr><td>1</td><td>資料塊 標籤頁</td><td>顯示該檔案被切分後產生的資料塊</td></tr><tr><td>2</td><td>參考檔案 標籤頁</td><td>顯示與資料塊關聯的所有檔案，包括被用作切分的原始檔案與作為參考資料的檔案</td></tr><tr><td>3</td><td>返回</td><td>點擊後返回資料集首頁</td></tr><tr><td>4</td><td>搜尋欄</td><td>允許使用者輸入文字搜尋相關的資料塊</td></tr><tr><td>5</td><td>新增/匯入</td><td>點擊後可手動新增資料塊</td></tr><tr><td>6</td><td>編輯</td><td>點擊後顯示資料塊的 <em>編輯</em> 與 <em>刪除</em> 操作選項</td></tr></tbody></table>
 
@@ -132,11 +130,11 @@ description: 點擊知識庫頁面中的知識卡片即可進入設定頁面。
 
 使用者可優化資料塊內容，以提升 LLM 生成回覆時引用資料的正確性，例如為 Q\&A 類型的資料塊增加可能的問題表達方式。
 
-<figure><img src="../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 
 1. 點擊資料塊的「編輯」按鈕後選擇 _編輯_
 2. 點擊彈出視窗右上方的「編輯」按鈕開啟編輯介面欄位
@@ -147,11 +145,11 @@ description: 點擊知識庫頁面中的知識卡片即可進入設定頁面。
 
 AI Studio 在引用資料集內容生成回覆時，可以新增相關檔案作為參考來源，例如提供 PDF 或 PPT 的特定頁面及圖片等。
 
-<figure><img src="../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
 
 1. 點擊「參考檔案」標籤頁
 2. 點擊「+建立」按鈕開啟系統視窗，選擇要上傳的檔案，完成後按 _確認_
@@ -165,15 +163,13 @@ AI Studio 在引用資料集內容生成回覆時，可以新增相關檔案作�
 
 建立資料集後，使用者可使用 測試 功能進行提問，查看生成回覆時引用了哪些資料塊的內容，並可透過調整檢索參數對搜尋結果進行評分，從而優化資料內容以提升引用資料的準確性。
 
-<figure><img src="../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;
+<figure><img src="../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
 
 1. 點擊「知識設定選單」中的 _測試_ 項目
 2. 點擊「檢索文字」標題右側的 _齒輪按鈕_ 開啟檢索參數設定
@@ -191,19 +187,19 @@ AI Studio 在引用資料集內容生成回覆時，可以新增相關檔案作�
 
 > Note： 建立者是預設的「管理者」，每個項目只能有一個擁有者。
 
-<figure><img src="../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
 
 <table><thead><tr><th width="80">項目</th><th width="180">操作名稱</th><th>說明</th></tr></thead><tbody><tr><td>1</td><td>編輯表格</td><td>允許使用者編輯表格的呈現方式</td></tr><tr><td>2</td><td>刷新</td><td>點擊後刷新列表</td></tr><tr><td>3</td><td>內容篩選</td><td>進階篩選指定內容</td></tr><tr><td>4</td><td>狀態切換</td><td>在表格上單選或多選快速切換狀態</td></tr><tr><td>5</td><td>批次刪除</td><td>勾選項目後左上角的刪除按鈕便會顯示，可讓使用者刪除多個項目</td></tr><tr><td>6</td><td>搜尋欄位</td><td>搜尋 名稱</td></tr><tr><td>7</td><td>邀請</td><td>邀請組織 / 成員</td></tr><tr><td>9</td><td>動作</td><td>轉移您的角色或刪除選定的使用者</td></tr></tbody></table>
 
 ### **新增成員**
 
-<figure><img src="../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
 
 1. 點擊「添加」開&#x555F;_&#x65B0;增成&#x54E1;_&#x5C0D;話方塊
 2. 輸入框能搜尋組織或使用者
@@ -219,9 +215,9 @@ AI Studio 提供資料集存取權限管理，允許企業根據資訊安全需�
 
 存取權限可授予組織或個人使用者；若授予組織，則組織內所有使用者皆擁有該資料使用權限。關於組織及相關成員設定請參考 Domain Twin Portal 操作手冊。
 
-<figure><img src="../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
 
 1. 點擊「知識設定選單」中的 _資料集存取權限_ 項目
 2. 點擊 按鈕為數據集批次添加權限
