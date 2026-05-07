@@ -48,9 +48,7 @@ def cleanup_orphan_placeholders(text: str):
     for pattern in patterns:
         cleaned = re.sub(pattern, "", cleaned, flags=re.IGNORECASE)
 
-    # Remove broken numeric placeholder chains like [1][2][3][4].
     cleaned = re.sub(r"(?:\[\d+\]){2,}", "", cleaned)
-
     cleaned = re.sub(r"[ \t]{2,}", " ", cleaned)
 
     return cleaned
@@ -170,7 +168,6 @@ def translate_frontmatter(frontmatter: str):
             indent = single_match.group(1)
             key = single_match.group(2)
             value = single_match.group(3).strip()
-
             clean_value = value.strip("'\"")
 
             if has_cjk(clean_value):
@@ -230,36 +227,30 @@ def restore_tokens(text: str, placeholders: dict):
     return cleanup_orphan_placeholders(restored)
 
 
-def translate_markdown_link_label(label: str):
-    if has_cjk(label):
-        return raw_translate(label)
-
-    return label
-
-
 def protect_inline_tokens(text: str):
     make_token, placeholders = make_token_factory()
     protected = text
 
-    # Protect images completely.
     protected = re.sub(
         r"!\[[^\]]*\]\([^)]+\)",
         lambda match: make_token(match.group(0)),
         protected,
     )
 
-    # Protect inline code completely.
     protected = re.sub(
         r"`[^`]+`",
         lambda match: make_token(match.group(0)),
         protected,
     )
 
-    # Protect URLs in markdown links, but translate the visible link label.
     def replace_link(match):
         label = match.group(1)
         url = match.group(2)
-        translated_label = translate_markdown_link_label(label)
+
+        if has_cjk(label):
+            translated_label = raw_translate(label)
+        else:
+            translated_label = label
 
         return make_token(f"[{translated_label}]({url})")
 
@@ -283,6 +274,62 @@ def translate_text(text: str):
     translated = raw_translate(protected)
 
     return restore_tokens(translated, placeholders)
+
+
+def translate_summary(content: str):
+    """
+    SUMMARY.md controls GitBook's left navigation.
+
+    Only translate visible link labels:
+    * [中文標題](path/to/file.md)
+
+    Never translate the path inside parentheses, or GitBook navigation breaks.
+    """
+    frontmatter, body = split_frontmatter(content)
+    translated_frontmatter = translate_frontmatter(frontmatter)
+
+    result = []
+
+    for line in body.splitlines():
+        link_match = re.match(r"^(\s*[-*+]\s*)\[([^\]]*)\]\(([^)]+)\)(.*)$", line)
+
+        if link_match:
+            prefix = link_match.group(1)
+            label = link_match.group(2)
+            url = link_match.group(3)
+            suffix = link_match.group(4)
+
+            if has_cjk(label):
+                translated_label = raw_translate(label)
+            else:
+                translated_label = cleanup_orphan_placeholders(label)
+
+            if not translated_label.strip():
+                translated_label = label
+
+            result.append(f"{prefix}[{translated_label}]({url}){suffix}")
+            continue
+
+        heading_match = re.match(r"^(\s{0,3}#{1,6}\s+)(.+)$", line)
+
+        if heading_match:
+            prefix = heading_match.group(1)
+            title = heading_match.group(2)
+            translated_title = raw_translate(title) if has_cjk(title) else title
+            result.append(prefix + translated_title)
+            continue
+
+        if has_cjk(line):
+            result.append(raw_translate(line))
+        else:
+            result.append(cleanup_orphan_placeholders(line))
+
+    translated_body = "\n".join(result)
+
+    if translated_body:
+        translated_body += "\n"
+
+    return translated_frontmatter + translated_body
 
 
 def is_symbol_only_cell(text: str):
@@ -350,7 +397,9 @@ def translate_table_line(line: str):
         trailing = len(part) - len(part.rstrip())
         core = part.strip()
 
-        if is_symbol_only_cell(core):
+        if re.search(r"!\[[^\]]*\]\([^)]+\)", core):
+            translated_core = core
+        elif is_symbol_only_cell(core):
             translated_core = cleanup_orphan_placeholders(core)
         else:
             translated_core = translate_text(core)
@@ -492,13 +541,11 @@ def translate_markdown(content: str):
             result.append(line)
             continue
 
-        # Preserve image-only lines so image syntax will not be broken.
         if is_markdown_image(line):
             flush_buffer()
             result.append(line)
             continue
 
-        # Translate Markdown tables cell by cell.
         if is_table_line(line):
             flush_buffer()
             result.append(translate_table_line(line))
@@ -555,7 +602,12 @@ def main():
         print(f"Translating {source_path} -> {target_path}", flush=True)
 
         content = source_path.read_text(encoding="utf-8")
-        translated = translate_markdown(content)
+
+        if source_path.name == "SUMMARY.md":
+            translated = translate_summary(content)
+        else:
+            translated = translate_markdown(content)
+
         target_path.write_text(translated, encoding="utf-8")
 
     print("Done.", flush=True)
