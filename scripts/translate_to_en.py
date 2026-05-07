@@ -2,6 +2,7 @@ from pathlib import Path
 import re
 import shutil
 import time
+import html
 
 from deep_translator import GoogleTranslator
 
@@ -54,7 +55,7 @@ def cleanup_orphan_placeholders(text: str):
     return cleaned
 
 
-def split_long_text(text: str, max_len: int = 2200):
+def split_long_text(text: str, max_len: int = 1800):
     if len(text) <= max_len:
         return [text]
 
@@ -277,14 +278,6 @@ def translate_text(text: str):
 
 
 def translate_summary(content: str):
-    """
-    SUMMARY.md controls GitBook's left navigation.
-
-    Only translate visible link labels:
-    * [中文標題](path/to/file.md)
-
-    Never translate the path inside parentheses, or GitBook navigation breaks.
-    """
     frontmatter, body = split_frontmatter(content)
     translated_frontmatter = translate_frontmatter(frontmatter)
 
@@ -377,11 +370,11 @@ def is_table_separator(line: str):
     return all(re.fullmatch(r":?-{3,}:?", cell or "") for cell in cells)
 
 
-def is_table_line(line: str):
+def is_markdown_table_line(line: str):
     return "|" in line
 
 
-def translate_table_line(line: str):
+def translate_markdown_table_line(line: str):
     if is_table_separator(line):
         return line
 
@@ -409,6 +402,49 @@ def translate_table_line(line: str):
         )
 
     return "|".join(translated_parts)
+
+
+def translate_html_text_nodes(line: str):
+    """
+    Translate text between HTML tags while preserving tags and attributes.
+
+    Example:
+    <td>管理 Agent</td>
+    -> <td>Manage Agent</td>
+    """
+    if not has_cjk(line):
+        return cleanup_orphan_placeholders(line)
+
+    # Keep image-like lines unchanged.
+    if re.search(r"<\s*(img|video|iframe|source|picture)\b", line, flags=re.IGNORECASE):
+        return line
+
+    parts = re.split(r"(<[^>]+>)", line)
+    output = []
+
+    for part in parts:
+        if not part:
+            continue
+
+        if part.startswith("<") and part.endswith(">"):
+            output.append(part)
+            continue
+
+        if has_cjk(part):
+            leading = re.match(r"^\s*", part).group(0)
+            trailing = re.search(r"\s*$", part).group(0)
+            core = part.strip()
+
+            if is_symbol_only_cell(core):
+                translated_core = cleanup_orphan_placeholders(core)
+            else:
+                translated_core = translate_text(html.unescape(core))
+
+            output.append(leading + str(translated_core) + trailing)
+        else:
+            output.append(cleanup_orphan_placeholders(part))
+
+    return "".join(output)
 
 
 def is_markdown_image(line: str):
@@ -517,14 +553,14 @@ def translate_markdown(content: str):
             continue
 
         if in_html_block:
-            result.append(line)
+            result.append(translate_html_text_nodes(line))
             if ends_html_block(line):
                 in_html_block = False
             continue
 
         if starts_html_block(line):
             flush_buffer()
-            result.append(line)
+            result.append(translate_html_text_nodes(line))
 
             if not ends_html_block(line) and not stripped.lower().endswith("/>"):
                 in_html_block = True
@@ -546,9 +582,9 @@ def translate_markdown(content: str):
             result.append(line)
             continue
 
-        if is_table_line(line):
+        if is_markdown_table_line(line):
             flush_buffer()
-            result.append(translate_table_line(line))
+            result.append(translate_markdown_table_line(line))
             continue
 
         if re.match(r"^\s{0,3}#{1,6}\s+", line):
