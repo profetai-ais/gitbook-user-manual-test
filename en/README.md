@@ -1,6 +1,6 @@
 # Basic introduction to AI Studio
 
-<figure><img src=".gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (92).png" alt=""><figcaption></figcaption></figure>
 
 ## **Core functions and technical features**
 
@@ -17,7 +17,7 @@ After logging in, you will enter the "Workspace" page by default. Users can disc
 
 ## **Explore AI Agent and add to favorites**
 
-<figure><img src=".gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (93).png" alt=""><figcaption></figcaption></figure>
 
 1. Click "Workspace" in the menu on the left side of the page
 2. Move the mouse to the Agent you want to use, or enter keywords in the search bar to search for Agent
@@ -26,7 +26,7 @@ After logging in, you will enter the "Workspace" page by default. Users can disc
 
 ## **Explore prompt word templates and add to favorites**
 
-<figure><img src=".gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
 
 1. Click "Workspace" in the menu on the left side of the page
 2. Click the "Apply Template" tab in the exploration page
@@ -38,12 +38,12 @@ After logging in, you will enter the "Workspace" page by default. Users can disc
 
 Click the "Favorites" button at the top of the page to switch to the personal area to view your favorite Agents or application templates. Click the menu button in the upper right corner of the Agent/Application template card to remove the selected Agent/Application template from your favorites by clicking the heart button again.
 
-<figure><img src=".gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
 
 * **Agent card**: Move the mouse over the card to display the selection border. Click the card again to switch to the _workspace_ area to question and answer the Agent.
 
-<div align="center"><figure><img src=".gitbook/assets/image .png" alt=""><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src=".gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure></div>
 
 * **Prompt Word Template Card**: When the mouse is moved over the card, the "View" button will be displayed. After clicking, the content of the prompt word will be displayed.
 
-<div align="center"><figure><img src=".gitbook/assets/image .png" alt=""><figcaption></figcaption></figure></div>
+<div align="center"><figure><img src=".gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure></div>

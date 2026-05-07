@@ -1,7 +1,7 @@
 ---
-description: 管理員可以建立與調整使用配額方案，以管理每位使用者可使用系統資源的頻率與數量。
+description: "Administrators can create and adjust usage quota plans to manage how often and how much system resources each user can use."
 ---
-
+---
 # quota
 
 ## quota plan
@@ -14,9 +14,9 @@ description: 管理員可以建立與調整使用配額方案，以管理每位�
 
 Administrators can create a new usage quota plan by setting parameters such as name, description, cost limit, and reset period. These plans will control the frequency of users consuming paid resources (such as API tokens, model usage times) according to the limits set here.
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 1. Go to System Settings > Usage Quota Limits.
 2. Select the Quota Plan tab.
@@ -31,11 +31,11 @@ Administrators can create a new usage quota plan by setting parameters such as n
 
 **Default Quota Plan** Defines the baseline usage limit for all newly created users unless otherwise manually assigned to a specific quota plan.
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 1. Go to the Set Default Quota Plan tab.
 2. Click the Default User Quota Plan drop-down menu to see a list of available plans.
-3. Select the desired scheme from the list (e.g. `預設`, `VVIP`, `超低配額`).
+3. Select the desired scenario from the list (e.g. , , ).
 
 > Note: Administrators can create or update a plan in the Quota Plan tab before setting it as default.
 
@@ -43,27 +43,27 @@ Administrators can create a new usage quota plan by setting parameters such as n
 
 **Quota Plan Binding Management** function allows administrators to manually assign exclusive usage quota plans to specific users, overriding the default settings.
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 1. Go to System Settings > User Quota Plan Binding Management.
 2. Click "Create" to create a new binding.
-3. On the left (Dataset), select the quota scheme to allocate (for example, `預設`, `VVIP`, `Plan 1`).
+3. On the left (Dataset), select the quota scheme to allocate (for example, , , ).
 4. On the right (User) select one or more users from the drop-down list.
 5. Click the "+" button to add users manually.
 6. Click OK to confirm the assignment.
 
 > Note: Once assigned, even if the default plan is modified later, the user will still execute according to the bound custom plan.
 
-## **Quota adjustment record**
+## **Quota Adjustment Record**
 
 The **Quota Adjustment Record** page records all manual changes to user quota usage, especially operations from the **User Quota Plan Binding Management** tab.
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 When the administrator clicks the **Refresh icon** on the **User Quota Plan Binding Management** tab, the system will pop up a window asking to enter the **Reason for Resetting Usage**. This field is required to complete the reset operation. After confirmation, the updated budget and reason will be displayed on the User Quota Adjustment Record page.
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 <table><thead><tr><th width="80">項目</th><th width="220">欄位名稱</th><th>說明</th></tr></thead><tbody><tr><td>1</td><td>使用者名稱</td><td>配額被手動調整的使用者名稱。</td></tr><tr><td>2</td><td>處理預算之前 (USD)</td><td>調整前的使用者預算（以美元計算）。</td></tr><tr><td>3</td><td>處理預算之後 (USD)</td><td>調整後的預算（以美元計算）。</td></tr><tr><td>4</td><td>重置用量原因</td><td>用來記錄手動更新或修正的原因。</td></tr><tr><td>5</td><td>建立日期</td><td>執行調整的日期。</td></tr></tbody></table>

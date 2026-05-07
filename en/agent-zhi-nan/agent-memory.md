@@ -8,21 +8,21 @@ For example, users' commonly used titles, tone styles, output formats (columns/t
 
 The entrance to the memory function is in the "Personalization" tab of the avatar in the upper right corner.
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (132).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (133).png" alt=""><figcaption></figcaption></figure>
 
 ### About you
 
 Adding a personal message allows the Agent to generate a more personalized response.
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (136).png" alt=""><figcaption></figcaption></figure>
 
 ### memory
 
 Memory is divided into "storage memory" and "reference memory".
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
 
 * **Save Memory**: When enabled, allows the Agent to store memories.
 * **Reference Memory**: When enabled, allows the Agent to reference memories in the memory bank when responding.
@@ -31,7 +31,7 @@ Memory is divided into "storage memory" and "reference memory".
 
 The entrance to managing memory is in the "Management" button. Memory management is divided into "Personal Memory" and "Agent Memory".
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (138).png" alt=""><figcaption></figcaption></figure>
 
 ### personal memory
 
@@ -39,7 +39,7 @@ When the reference memory function is turned on, the memory stored here can be c
 
 > Note: When the storage limit is exceeded, the system will automatically delete the least frequently used memory entry.
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (139).png" alt=""><figcaption></figcaption></figure>
 
 ### Agent memory
 
@@ -47,17 +47,17 @@ When the reference memory function is turned on, the Agent can call the memory i
 
 > Note: When the storage limit is exceeded, the system will automatically delete the least frequently used memory entry.
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (141).png" alt=""><figcaption></figcaption></figure>
 
 ## How to store memories
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (142).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (143).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (144).png" alt=""><figcaption></figcaption></figure>
 
 1. Please make sure "Save Memory" is turned on before using the memory function.
 2. Select the agent of the conversation in the conversation interface and enter the content you want to remember.

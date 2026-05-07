@@ -1,20 +1,17 @@
 ---
-description: >-
-  AI Studio 可讓 IT 人員串聯外部訂閱的大語言模型 (LLM) 服務，如 ChatGPT 或是
-  Gemini，或是設定串接在自有算力上部署的地端大語言模型。
+description: "AI Studio allows IT staff to connect externally subscribed large language model (LLM) services, such as ChatGPT or Gemini, or set up local large language models deployed on their own computing power. ---"
 ---
-
 # Model
 
 ## **New large language model**
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (286).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (287).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (288).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (289).png" alt=""><figcaption></figcaption></figure>
 
 1. After entering, click "+Add" in the upper right corner to start setting.
 2. Choose a service provider (for example: OpenAI / Azure / Gemini / Ollama / Claude)
@@ -22,9 +19,9 @@ description: >-
  1. Name: Customizable, the name of the model that will be displayed in the system
  2. Model: Please enter the model to use
 
-> Note: Please fill in manually, the system will not automatically list the options. (Example: `gpt-5`, `gpt-4o`, `gemini-pro`, `llama3-70b`...etc.)
+> Note: Please fill in manually, the system will not automatically list the options. (Example: , , , ...etc.)
  >
- > For example, if `gpt-6` is mistakenly planted, an error message will appear during Agent testing:
+ > For example, if it is mistakenly planted as , an error message will appear during Agent testing:
  >
  > Received Model Group=gpt-6
  >
@@ -35,7 +32,7 @@ description: >-
 
 > Note: If the input is incorrect, the system will return an authorization error.
  >
- > * OpenAI: Please fill in the API prefix (Prefix). For example: `https://api.openai.com/v1`
+ > * OpenAI: Please fill in the API prefix (Prefix). For example: 
  > * Gemini: No need to fill in the API Base URL, the system will automatically handle the routing.
  4. API Key: Please fill in the API Key
  5. Organization: Optional. Generally, Key can be left blank. Some OpenAI may need to fill in if short Key is used.

@@ -4,9 +4,9 @@
 
 The figure below shows the workflow editing interface, including the following control items:
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (234).png" alt=""><figcaption></figcaption></figure>
 
-1. **Node List**: Workflow functional components provided by AI Studio; see the [工作流程節點](gong-zuo-liu-cheng-jie-dian.md) page for details on available nodes.
+1. **Node List**: Workflow functional components provided by AI Studio; see the page for details on available nodes.
 2. **Workflow function menu**: Provides functional operations of the editor; see the description below for details
 3. **Workflow editing area**: Function nodes can be dragged and dropped into this area to edit the workflow
 4. **Editor Map**: Helps users quickly navigate to specific areas of the editor
@@ -17,25 +17,25 @@ The figure below shows the workflow editing interface, including the following c
 
 > Note: It is recommended to open the workflow editor from the assistant settings so that you can use Test Preview directly for testing after editing.
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (235).png" alt=""><figcaption></figcaption></figure>
 
 Taking a blank workflow as an example, the screen default will contain a **"Start"** node. Clicking on this node will display several basic variables:
 
-| 變數名稱 | 說明 | 顯示資訊 |
+| variable name | illustrate | Show information |
 | -------------------------- | ---------------- | --------------------------------------------- |
-| `(x)${{start}.{query}}` | 使用者的輸入提示 | _使用者輸入，例如：_ `summarize the attached document` |
-| `(x)${{start}.{files}}` | 使用者在聊天輸入區附加的檔案清單 | `metadata of the files in a JSON array` |
-| `(x)${{start}.{time}}` | 目前系統時間 | `17:19:13` |
-| `(x)${{start}.{date}}` | 目前系統日期 | `2025-06-06 Friday` |
-| `(x)${{start}.{dateTime}}` | 目前系統日期與時間 | `2025-06-06 Friday 17:19:13` |
+| `(x)${{start}.{query}}` | User input prompts | _User input, for example: _ |
+| `(x)${{start}.{files}}` | List of files the user has attached to the chat input area | `metadata of the files in a JSON array` |
+| `(x)${{start}.{time}}` | Current system time | `17:19:13` |
+| `(x)${{start}.{date}}` | Current system date | `2025-06-06 Friday` |
+| `(x)${{start}.{dateTime}}` | Current system date and time | `2025-06-06 Friday 17:19:13` |
 
 The following is a simple example demonstrating basic workflow operations:
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (236).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (237).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (238).png" alt=""><figcaption></figcaption></figure>
 
 1. In the new workflow, click the "Start" node to view the basic variables
 2. Drag and drop the "Reply" node from the node list to the editing area
@@ -54,13 +54,13 @@ You can follow this step to try using different nodes to create a workflow that 
 
 Situational demonstration users send a query, and the system can search for information in parallel from multiple data sources at the same time, and automatically integrate the results and hand them over to AI to compile key content. Through the design of Fork and Merge, the efficiency of data collection and analysis can be greatly improved, making complex processes quick and clear.
 
-{% file src="../.gitbook/assets/Understanding Fork & Merge Nodes_ A News Search Agent_2026-02-02_Video.mp4" %}
+{% file src="../.gitbook/assets/Understanding Fork & Merge Nodes_ A News Search Agent_2026-02-02_影片.mp4" %}
 
 ## Clipboard Copy / Paste
 
 The workflow supports quick copying and pasting of node settings, which is suitable for creating multiple similar nodes or moving existing logic across processes.
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (239).png" alt=""><figcaption></figcaption></figure>
 
 How to use:
 
@@ -80,7 +80,7 @@ Additional behavioral instructions:
 
 In order to avoid loss of edits when the browser is refreshed or closed for abnormal reasons, the editor will temporarily store part of the draft status in the local storage (Local Storage) and synchronize it between multiple pages.
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (240).png" alt=""><figcaption></figcaption></figure>
 
 ## History
 
@@ -88,11 +88,11 @@ The history record can store every content that the user clicks to save. The use
 
 > Note: You need to click the save button in the upper right corner before the content will be recorded in the history.
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (241).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;![](<../.gitbook/assets/image .png>)
+&#x20;![](<../.gitbook/assets/image (243).png>)
 
 1. Click "History" in the workflow function menu
 2. The left side of the pop-up window is a real-time preview
@@ -106,9 +106,9 @@ The history record can store every content that the user clicks to save. The use
 
 Global variables can be regarded as "constants/settings shared by this workflow" and are suitable for placing content that will be reused by multiple nodes, such as company policies, tone specifications, fixed formats, reply template fragments, API parameter default values, etc. Through centralized management, repeated modifications in multiple nodes can be avoided.
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (244).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (245).png" alt=""><figcaption></figcaption></figure>
 
 1. Click "Edit Global Variables" in the workflow function menu
 2. Add or edit variable content in the pop-up window
@@ -125,7 +125,7 @@ Global variables can be regarded as "constants/settings shared by this workflow"
 
 Enter / in the node settings (such as the LLM node's Context or other input field) to insert available global variables from the variable list. After insertion, the system will present it in the form of a variable expression, and the latest content will be automatically brought in later.
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (246).png" alt=""><figcaption></figcaption></figure>
 
 ### Reference global variables in System Prompt
 
@@ -147,5 +147,5 @@ Advantages: When the specification is updated, it only needs to be changed once 
 
 Scenario demonstration: By setting global variables once, you can simultaneously control the output behavior of all AI nodes in the entire workflow, such as output language. Users can quickly switch between Chinese, English or other languages ​​without modifying each node one by one, ensuring that the overall output is consistent, which is especially suitable for multi-lingual or multinational application scenarios.
 
-{% file src="../.gitbook/assets/Understanding Global Variables A Localization Agent_2026-02-04_Video.mp4" %}
+{% file src="../.gitbook/assets/Understanding Global Variables A Localization Agent_2026-02-04_影片.mp4" %}
 

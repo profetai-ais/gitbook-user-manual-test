@@ -1,7 +1,7 @@
 ---
-description: 使用者在 AI Studio 中可見的功能與操作取決於帳號所屬的角色。
+description: "The functions and actions a user can see in AI Studio depend on the role to which the account belongs."
 ---
-
+---
 # AI Studio roles and permissions description
 
 ## **Functional Role Types in AI Studio**

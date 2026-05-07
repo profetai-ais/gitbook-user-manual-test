@@ -8,23 +8,23 @@ Prompt templates are used to simplify the way users ask questions. Frequently as
 
 ## **New prompt template**
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (278).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (279).png" alt=""><figcaption></figcaption></figure>
 
 1. Click "Add" to display the window to create a prompt word template.
 2. Select prompt template type
-3. Enter the knowledge name in the "Name" field and click the button on the right to create a multilingual label. Please refer to [多國語言設定](ti-shi-mu-ban-guan-li.md#duo-guo-yu-yan-she-ding)
-4. Enter the knowledge description in the "Description" field and click the button on the right to create a multilingual label. Please refer to [多國語言設定](ti-shi-mu-ban-guan-li.md#duo-guo-yu-yan-she-ding)
+3. Enter the knowledge name in the "Name" field and click the button on the right to create a multi-language label. Please refer to 
+4. Enter the knowledge description in the "Description" field and click the button on the right to create a multilingual label. Please refer to 
 5. Create "Field"
 6. &#x20;Set prompt words in the "Prompt Word Settings" tab
 7. Click "OK" to complete the addition
 
 ### Multi-language settings
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (275).png" alt=""><figcaption></figcaption></figure>
 
 1. Click the "Earth" button on the screen for automatic translation. Users can also manually edit the content.
 2. After automatic translation is completed, click the "OK" button to save the content.
@@ -36,9 +36,9 @@ Prompt templates are used to simplify the way users ask questions. Frequently as
 * **Chat Tips:** Templates for all scenarios. After completing the editing, you can save it for use in the "Application Templates" on the "Explore" page.
 * **Agent Tips:** Prompt word templates specifically bound to the assistant will not appear in the "Explore" page for collection.
 
-### **Field Description**
+### **Field description**
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>
 
 _Field_ can be regarded as a variable in the prompt word, allowing the user to provide necessary information in the prompt word according to the actual scenario. Fields are of the following types:
 
@@ -50,31 +50,31 @@ _Field_ can be regarded as a variable in the prompt word, allowing the user to p
 
 ## Permissions
 
-The creator can grant access rights to other users through "Permissions" (please refer to [權限功能介紹](../ru-men-zhi-nan/ji-chu-jie-mian-jie-shao.md) for role definition).
+The creator can grant access rights to other users through "Permissions" (for role definition, please refer to ).
 
 > Note: The creator is the default "manager", and each project can only have one owner.
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (281).png" alt=""><figcaption></figcaption></figure>
 
-| 項目 | 操作名稱 | 說明 |
+| project | Operation name | illustrate |
 | -- | ---- | ----------------------------- |
-| 1 | 編輯表格 | 允許使用者編輯表格的呈現方式 |
-| 2 | 刷新 | 點擊後刷新列表 |
-| 3 | 內容篩選 | 進階篩選指定內容 |
-| 4 | 批次刪除 | 勾選項目後左上角的刪除按鈕便會顯示，可讓使用者刪除多個項目 |
-| 5 | 搜尋欄位 | 搜尋 名稱 |
-| 6 | 邀請 | 邀請組織 / 成員 |
-| 7 | 動作 | 轉移您的角色或刪除選定的使用者 |
+| 1 | Edit table | Allows the user to edit the presentation of the table |
+| 2 | refresh | Refresh list after click |
+| 3 | Content filtering | Advanced filtering of specific content |
+| 4 | Batch delete | After checking the items, the delete button in the upper left corner will be displayed, allowing users to delete multiple items. |
+| 5 | search field | Search name |
+| 6 | invite | Invite organizations/members |
+| 7 | action | Transfer your role or remove selected users |
 
 ### **New member**
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (282).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (283).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (284).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (285).png" alt=""><figcaption></figcaption></figure>
 
 1. Click "Add" to open the conversation box
 2. The input box can search for organizations or users

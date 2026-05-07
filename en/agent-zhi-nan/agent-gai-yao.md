@@ -1,16 +1,13 @@
 ---
-description: >-
-  Agent 是一個對話形式的應用，可讓使用者輸入文字 (提示詞)，透過因應不同應用場景的處理機制提供給大語言模型 (Large Language
-  Model, LLM) 取得回覆。
+description: "Agent is a conversational application that allows users to input text (prompt words) and provide responses to the Large Language Model (LLM) through processing mechanisms adapted to different application scenarios. ---"
 ---
-
 # Agent Summary
 
 
 
 ## **Main Advantages**
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (131).png" alt=""><figcaption></figcaption></figure>
 
 * **Diversity**: Provides a variety of Agent types to meet different application needs. High-quality Agent applications can be created through simple configuration.
 * **Achieve governance**: You can manage the usage rights of Agents to ensure that the application of generative AI complies with enterprise specifications.
