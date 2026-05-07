@@ -12,7 +12,7 @@ The related question function uses LLM's replied content to generate related que
 
 1. In the left menu of AI Studio, expand the "Settings" item and select "System Settings"
 2. In the pagination, select "Related Questions"
-3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. For parameter details, see 
+3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. See for parameter details
 4. If you want to edit translation prompts, you can enter them in the "Prompt Words" text field, or click "Default Template" to use the default translation prompts.
 5. Click the "Save" button at the bottom right to save changes
 
@@ -25,8 +25,8 @@ Used to automatically generate titles based on user input. The system recognizes
 <figure><img src="../.gitbook/assets/image (291).png" alt=""><figcaption></figcaption></figure>
 
 1. In the left menu of AI Studio, expand the "Settings" item and select "System Settings"
-2. In Pagination, select Generate Title
-3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. For parameter details, see 
+2. In the pagination, select "Generate title"
+3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. See for parameter details
 4. If you want to edit translation prompts, you can enter them in the "Prompt Words" text field, or click "Default Template" to use the default translation prompts.
 5. Click the "Save" button at the bottom right to save changes
 
@@ -40,7 +40,7 @@ Used to set the language model used for Personalization-related content located 
 
 1. In the left menu of AI Studio, expand the "Settings" item and select "System Settings"
 2. In the pagination, select "Memory Language Model"
-3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. For parameter details, see 
+3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. See for parameter details
 
 ## **Memory Vector Model**
 
@@ -50,7 +50,7 @@ Used to set the Personalization located in the avatar in the upper right corner 
 
 1. In the left menu of AI Studio, expand the "Settings" item and select "System Settings"
 2. In the paging, select "Memory Vector Model"
-3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. For parameter details, see 
+3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. See for parameter details
 
 ## **Memory Constraints**
 
@@ -60,7 +60,7 @@ Used to set "Personalization" located in the avatar in the upper right corner of
 
 1. In the left menu of AI Studio, expand the "Settings" item and select "System Settings"
 2. In the paging, select Remember Constraints
-3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. For parameter details, see 
+3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. See for parameter details
 4. If you want to edit the prompt word, you can enter it in the "Prompt Word" text field, or click "Default Template" to use the default translation prompt word.
 5. Click the Save button to save the settings.
 
@@ -72,7 +72,7 @@ Rules and restrictions for translation when using the speech-to-text feature in 
 
 1. In the left menu of AI Studio, expand the "Settings" item and select "System Settings"
 2. In the tab, select "Voice Settings"
-3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. For parameter details, see 
+3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. See for parameter details
 4. If you want to edit the prompt word, you can enter it in the "Prompt Word" text field, or click "Default Template" to use the default translation prompt word.
 5. Click the Save button to save the settings.
 
@@ -85,7 +85,7 @@ Used to control whether to enable the scanning mechanism when uploading skills. 
 1. In the left menu of AI Studio, expand the "Settings" item and select "System Settings"
 2. In the tab, select "Skill Scan Settings"
 3. Toggle switch to enable/disable features
-4. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. For parameter details, see 
+4. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. See for parameter details
 5. Click the "Save" button at the bottom right to save changes
 
 ## Command override settings
@@ -96,7 +96,7 @@ The command rewriting setting can automatically organize the original commands e
 
 1. In the left menu of AI Studio, expand the "Settings" item and select "System Settings"
 2. In the tab, select "Command Override Settings"
-3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. For parameter details, see 
+3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. See for parameter details
 4. If you want to edit the prompt word, you can enter it in the "Prompt Word" text field, or click "Default Template" to use the default translation prompt word.
 5. Click the Save button to save the settings.
 

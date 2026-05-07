@@ -32,7 +32,7 @@ The following table describes what the "Agent" level can do. At this level, the 
 
 ## Knowledge base list function permissions
 
-### Knowledge Base List
+### Knowledge base list
 
 The following table describes what can be done at the Knowledge Base Inventory level. You can think of the "Knowledge Base List" as a management scope: whether you can create projects, manage members, and view/edit all projects depends on the role you have been granted in this function list.
 

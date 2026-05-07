@@ -271,7 +271,7 @@ Users can view the created memory list on the Agent's memory page, and quickly i
 <figure><img src="../.gitbook/assets/image (188).png" alt=""><figcaption></figcaption></figure>
 
 1. Enter the memory list.
-2. Click on the memory name you want to view.
+2. Click the memory name you want to view.
 3. The system will open the details panel on the right.
 4. Users can view the name, activation status, description, usage context and complete content of the memory. If the content is long, you can scroll up and down in the right panel to view it.
 
@@ -291,7 +291,7 @@ If the switch is off, it means that this Agent does not use the memory function.
 
 <figure><img src="../.gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
 
-In the memory list, the "Enabled" field is used to display whether a single memory is enabled. When the memory master switch is turned on, the activated single memory will be used as a reference for the Agent's response or task processing.
+In the memory list, the "Enabled" field is used to display whether a single memory is enabled. When the memory master switch is turned on, the activated single memory will be used as reference content when the Agent responds or handles tasks.
 
 Users can disable temporarily unused memories as needed, retaining the content but not allowing the Agent to apply it; they can re-enable it if they need to use it again in the future.
 

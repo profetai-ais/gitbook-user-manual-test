@@ -63,7 +63,7 @@ To ensure data processing performance and indexing quality, the data set has the
 | Maximum number of files imported at a time | Up to **100** files |
 | Maximum size of a single file | 300MB |
 
-Additional notes:
+Additional instructions:
 
 * If any of the above limits is exceeded, the system will display a prompt message and prevent uploading. Please adjust the number of files or split the files and re-import them.
 * If the file is a large file (such as a long PDF/DOCX), it is recommended to remove unnecessary images or appendix content first to avoid long processing time.

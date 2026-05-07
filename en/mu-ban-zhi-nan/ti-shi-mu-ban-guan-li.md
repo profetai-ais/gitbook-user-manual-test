@@ -36,7 +36,7 @@ Prompt templates are used to simplify the way users ask questions. Frequently as
 * **Chat Tips:** Templates for all scenarios. After completing the editing, you can save it for use in the "Application Templates" on the "Explore" page.
 * **Agent Tips:** Prompt word templates specifically bound to the assistant will not appear in the "Explore" page for collection.
 
-### **Field description**
+### **Field Description**
 
 <figure><img src="../.gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>
 
