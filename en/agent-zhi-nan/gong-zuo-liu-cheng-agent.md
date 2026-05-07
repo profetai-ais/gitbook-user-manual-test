@@ -11,9 +11,9 @@ description: 工作流程 Agent 讓使用者以建立流程的方式，設計 Ag
 <figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. Click the "+ Create" button in the upper right corner of the screen
-2. Select "Agent Type" as _Workflow_ in the pop-up window
-3. Enter the knowledge name in the "Name" field and click the button on the right to create a multilingual label. Please refer to [Multiple Language Settings](gong-zuo-liu-cheng-agent.md#duo-guo-yu-yan-she-ding)
-4. Enter the knowledge description in the "Description" field and click the button on the right to create a multilingual label. Please refer to [Multiple Language Settings](gong-zuo-liu-cheng-agent.md#duo-guo-yu-yan-she-ding)
+2. In the pop-up window, select "Agent Type" as _Workflow_
+3. Enter the knowledge name in the "Name" field and click the button on the right to create a multilingual label. Please refer to [多國語言設定](gong-zuo-liu-cheng-agent.md#duo-guo-yu-yan-she-ding)
+4. Enter the knowledge description in the "Description" field and click the button on the right to create a multilingual label. Please refer to [多國語言設定](gong-zuo-liu-cheng-agent.md#duo-guo-yu-yan-she-ding)
 5. Click the "Workflow Template" menu to select a workflow template
 6. Click the "Save" button to complete the addition, and the system will automatically enter the Agent editing screen for the user to complete the settings.
 
@@ -36,12 +36,12 @@ Workflow Agent's homepage can be divided into several main areas, as follows:
 
 The function options area contains the following function links. After clicking, the corresponding setting page will appear:
 
-<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Name⟬<table>4⟭⟬<table>5⟭Description⟬<table>6⟭⟬ <table>7⟭⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭Basic Settings⟬<table>12⟭⟬<table>13⟭Edit Agent's homepage⟬<table>14⟭⟬<table>15⟭⟬<table>16⟭⟬<table>17⟭Process Settings⟬<table>18⟭⟬<table>19⟭Edit Agent The workflow of ⟬<table>20⟭⟬<table>21⟭⟬<table>22⟭⟬<table>23⟭Session Log⟬<table>24⟭⟬<table>25⟭ provides this Agent Conversation record⟬<table>26⟭⟬<table>27⟭⟬<table>28⟭⟬<table>29⟭Member Management⟬<table>30⟭⟬<table>31⟭Manage this Agent Access rights⟬<table>32⟭⟬<table>33⟭⟬<table>34⟭⟬<table>35⟭AI WEBAPP⟬<table>36⟭⟬<table>37⟭ Set this Agent Web page embedding ⟬<table>38⟭⟬<table>39⟭⟬<table>40⟭⟬<table>41⟭API Key⟬<table>42⟭⟬<table>43⟭ provides secure calling API for third-party applications Voucher for ⟬<table>44⟭⟬<table>45⟭⟬<table>46⟭⟬<table>47⟭
+<table><thead><tr><th width="250">名稱</th><th>說明</th></tr></thead><tbody><tr><td>基礎設置</td><td>編輯 Agent 的主頁</td></tr><tr><td>流程設置</td><td>編輯 Agent 的工作流程</td></tr><tr><td>會話日誌</td><td>提供此 Agent 的對話紀錄</td></tr><tr><td>成員管理</td><td>管理此 Agent 的存取權限</td></tr><tr><td>AI WEBAPP</td><td>設定此 Agent 的網頁嵌入</td></tr><tr><td>API Key</td><td>提供第三方應用安全呼叫 API 的憑證</td></tr></tbody></table>
 
 2. **Basic information**: Editable Agent name, description and activation status
 3. **Application Settings:** Provides settings related to Agent behavior based on Agent type
 
-<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Name⟬<table>4⟭⟬<table>5⟭Description⟬<table>6⟭⟬<table>7⟭⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭Welcome page⟬<table>12⟭⟬<table>13⟭Setting Agent Question setting⟬<table>14⟭⟬<table>15⟭⟬<table>16⟭⟬<table>17⟭Prompt word template⟬<table>18⟭⟬<table>19⟭Add existing prompt word template for subsequent use⟬<table>20⟭⟬<table> 21⟭⟬<table>22⟭⟬<table>23⟭File processing method⟬<table>24⟭⟬<table>25⟭Control the processing method of uploaded files⟬<table>26⟭⟬<table>27⟭⟬<table>28⟭⟬<table>29⟭
+<table><thead><tr><th width="250">名稱</th><th>說明</th></tr></thead><tbody><tr><td>歡迎頁面</td><td>設定Agent 問題設定</td></tr><tr><td>提示詞模板</td><td>加入現有提示詞模板供後續使用</td></tr><tr><td>檔案處理方式</td><td>控制上傳檔案的處理方式</td></tr></tbody></table>
 
 4. **Adaptation Preview:** Allows users to test whether the Q&A results are as expected
 
@@ -96,7 +96,7 @@ Users can test Agent behavior and response content in this area, and adjust Agen
 
 "Workflow Settings" in the Agent function options is used to edit the Agent's workflow. Clicking it will open the editing screen of the workflow bound to this Agent.
 
-> For screen descriptions and operations of process editing, please see [Edit Workflow](bian-ji-gong-zuo-liu-cheng.md)
+> For screen description and operation of process editing, please see [編輯工作流程](bian-ji-gong-zuo-liu-cheng.md)
 
 ## **Session Log**
 
@@ -110,13 +110,13 @@ The processing flow is also retained in the log record; when an error occurs in 
 
 ## Permissions
 
-The creator can grant access rights to other users through "Permissions" (for role definition, please refer to [Permission Function Introduction] (../ru-men-zhi-nan/quan-xian-gong-neng-jie-shao.md)).
+The creator can grant access rights to other users through "Permissions" (please refer to [權限功能介紹](../ru-men-zhi-nan/quan-xian-gong-neng-jie-shao.md) for role definition).
 
 > Note: The creator is the default "owner", and each project can only have one owner.
 
 <figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Project⟬<table>4⟭⟬<table>5⟭Operation Name⟬<table>6⟭⟬<table>7⟭ says Ming⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭⟬<table>12⟭⟬<table>13⟭1⟬<table>14⟭⟬<table>15⟭Edit form⟬P H0016⟭⟬<table>17⟭Allows users to edit the presentation of tables⟬<table>18⟭⟬<table>19⟭⟬<table>20⟭⟬<table>21⟭2⟬<table>22⟭⟬<table>23⟭Refresh⟬<table>24⟭⟬<table>25⟭Click to refresh the list⟬<table>26⟭⟬<table>27⟭⟬<table>28⟭⟬<table>29⟭3⟬<table>30⟭⟬ <table>31⟭Content Filtering⟬<table>32⟭⟬<table>33⟭Advanced Filtering Specified Content⟬<table>34⟭⟬<table>35⟭⟬<table>36⟭⟬<table>37⟭4⟬<table>38⟭⟬<table>39⟭Status switching⟬<table>40⟭⟬<table>41⟭Quickly switch status by single or multiple selections on the form⟬<table>42⟭⟬<table>43⟭⟬<table>44⟭⟬ <table>45⟭5⟬<table>46⟭⟬<table>47⟭Batch deletion⟬<table>48⟭⟬<table>49⟭After checking the items, the delete button in the upper left corner will be displayed, allowing the user to delete multiple items Item⟬<table>50⟭⟬<table>51⟭⟬<table>52⟭⟬<table>53⟭6⟬<table>54⟭⟬<table>55⟭Search field⟬<table>56⟭⟬<table>57⟭Search Name⟬<table>58⟭⟬<table>59⟭⟬<table>60⟭⟬<table>61⟭7⟬<table>62⟭⟬<table>63⟭Invite⟬<table>64⟭⟬<table>65⟭Invite Organization / Member⟬<table>66⟭⟬<table>67⟭⟬<table>68⟭⟬<table>69⟭8⟬<table>70⟭⟬<table> 71⟭Enabled status⟬<table>72⟭⟬<table>73⟭User permission enabled status⟬<table>74⟭⟬<table>75⟭⟬ <table>76⟭⟬<table>77⟭9⟬<table>78⟭⟬<table>79⟭Action⟬<table>80⟭⟬<table>8 1⟭Transfer your role or delete selected users⟬<table>82⟭⟬<table>83⟭⟬<table>84⟭⟬<table>85⟭
+<table><thead><tr><th width="99">項目</th><th width="132">操作名稱</th><th>說明</th></tr></thead><tbody><tr><td>1</td><td>編輯表格</td><td>允許使用者編輯表格的呈現方式</td></tr><tr><td>2</td><td>刷新</td><td>點擊後刷新列表</td></tr><tr><td>3</td><td>內容篩選</td><td>進階篩選指定內容</td></tr><tr><td>4</td><td>狀態切換</td><td>在表格上單選或多選快速切換狀態</td></tr><tr><td>5</td><td>批次刪除</td><td>勾選項目後左上角的刪除按鈕便會顯示，可讓使用者刪除多個項目</td></tr><tr><td>6</td><td>搜尋欄位</td><td>搜尋 名稱</td></tr><tr><td>7</td><td>邀請</td><td>邀請組織 / 成員</td></tr><tr><td>8</td><td>啟用狀態</td><td>使用者權限啟用狀態</td></tr><tr><td>9</td><td>動作</td><td>轉移您的角色或刪除選定的使用者</td></tr></tbody></table>
 
 ### **New member**
 
@@ -158,8 +158,8 @@ If users want to embed Agent into a web page, they need to use this function to 
 
 1. Enter the Web App in "Agent Function List"
 2. Click "+" to open the _Create_ Web App dialog box
-3. Enter the knowledge name in the "Name" field and click the button on the right to create a multilingual label. Please refer to [Multiple Language Settings](gong-zuo-liu-cheng-agent.md#duo-guo-yu-yan-she-ding)
-4. Enter the knowledge description in the "Description" field and click the button on the right to create a multilingual label. Please refer to [Multiple Language Settings](gong-zuo-liu-cheng-agent.md#duo-guo-yu-yan-she-ding)
+3. Enter the knowledge name in the "Name" field and click the button on the right to create a multilingual label. Please refer to [多國語言設定](gong-zuo-liu-cheng-agent.md#duo-guo-yu-yan-she-ding)
+4. Enter the knowledge description in the "Description" field and click the button on the right to create a multilingual label. Please refer to [多國語言設定](gong-zuo-liu-cheng-agent.md#duo-guo-yu-yan-she-ding)
 5. Click "Save" to complete
 6. The new Web App will appear in the manifest. Use the Actions menu to Edit, Set Expiration, or Delete
 7. Click the Web App name to access the information page and view Embed Code, settings _Application Language_, _Request and Tag Limits_, and more

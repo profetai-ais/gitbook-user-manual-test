@@ -14,7 +14,7 @@ When a user puts forward a request, the system will break it down into executabl
 
 There are 8 types of status in total:
 
-<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Status Name⟬<table>4⟭⟬<table>5⟭Description⟬<table>6⟭⟬<table>7⟭⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭PENDING⟬<table>12⟭⟬<table>13⟭ Created, waiting to be queued/not yet dispatched⟬<table>14 ⟭⟬<table>15⟭⟬<table>16⟭⟬<table>17⟭QUEUED⟬<table>18⟭⟬<table>19⟭Already queued for execution ⟬<table>20⟭⟬<table>21⟭⟬P H0022⟭⟬<table>23⟭RUNNING⟬<table>24⟭⟬<table>25⟭Executing⟬<table>26⟭⟬<table>27⟭⟬<table>28⟭⟬<table>29⟭SU CCEEDED⟬<table>30⟭⟬<table>31⟭Completed successfully⟬<table>32⟭⟬<table>33⟭⟬<table>34⟭⟬<table>35⟭FAILED⟬<table>36⟭ ⟬<table>37⟭Execution failed⟬<table>38⟭⟬<table>39⟭⟬<table>40⟭⟬<table>41⟭STOPPED⟬<table>42⟭⟬<table>43⟭ was stopped (aborted) ⟬<table>44⟭⟬<table>45⟭⟬<table>46⟭⟬<table>47⟭CANCELED⟬<table>48⟭⟬<table>49⟭Canceled⟬<table>50⟭⟬<table>51 ⟭⟬<table>52⟭⟬<table>53⟭PAUSED⟬<table>54⟭⟬<table>55⟭Paused⟬<table>56⟭⟬<table>57⟭⟬<table>58⟭⟬<table>59⟭
+<table><thead><tr><th width="224">狀態名稱</th><th>說明</th></tr></thead><tbody><tr><td>PENDING</td><td>已建立，等待進入佇列/尚未派送</td></tr><tr><td>QUEUED</td><td>已在佇列中等待執行</td></tr><tr><td>RUNNING</td><td>執行中</td></tr><tr><td>SUCCEEDED</td><td>成功完成</td></tr><tr><td>FAILED</td><td>執行失敗</td></tr><tr><td>STOPPED</td><td>被停止（中止）</td></tr><tr><td>CANCELED</td><td>被取消</td></tr><tr><td>PAUSED</td><td>暫停中</td></tr></tbody></table>
 
 ## Job page description
 
@@ -24,4 +24,4 @@ Click the name of the Task you want to view to open a pop-up window to browse th
 
 <figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Project⟬<table>4⟭⟬<table>5⟭Name⟬<table>6⟭⟬<table>7⟭Description⟬<table>8⟭ ⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭⟬<table>12⟭⟬<table>13⟭1⟬<table>14⟭⟬<table>15⟭Redo ⟬<table>16⟭⟬<table>17⟭Redo Job⟬<table>18⟭⟬<table>19⟭⟬<table>20⟭⟬<table>21⟭2⟬<table>22⟭⟬<table>23⟭Continue ⟬<table>24⟭⟬<table>25⟭Continue Job Work progress of⟬<table>26⟭⟬<table>27⟭⟬<table>28⟭⟬<table>29⟭3⟬<table>30⟭⟬<table>31⟭Detailed information⟬<table>32⟭⟬<table>33⟭ View details⟬<table>34⟭⟬<table>35⟭⟬<table>36⟭⟬<table>37⟭4⟬<table>38⟭⟬<table>39⟭Pause⟬<table>40⟭⟬<table>41⟭Pause Job's work progress⟬<table>42⟭⟬<table>43⟭⟬<table>44⟭⟬<table>45⟭3⟬<table>46⟭⟬<table>47⟭Cancel⟬<table>48⟭⟬<table>49⟭Cancel this Job Work tasks⟬<table>50⟭⟬<table>51⟭⟬<table>52⟭⟬<table>53⟭
+<table><thead><tr><th width="101">項目</th><th width="177">名稱</th><th>說明</th></tr></thead><tbody><tr><td>1</td><td>重做</td><td>重新執行 Job</td></tr><tr><td>2</td><td>繼續 </td><td>繼續 Job 的工作進度</td></tr><tr><td>3</td><td>詳細資訊</td><td>查看詳細資訊</td></tr><tr><td>4</td><td>暫停</td><td>暫停 Job 的工作進度</td></tr><tr><td>3</td><td>取消</td><td>取消這個 Job 的工作任務</td></tr></tbody></table>

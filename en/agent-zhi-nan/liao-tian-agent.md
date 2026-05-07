@@ -12,8 +12,8 @@ description: 聊天 Agent 可讓使用者直接與大型語言模型互動，適
 
 1. Click the "+ Create" button in the upper right corner of the screen
 2. Select "Agent Type" in the pop-up window
-3. Enter the knowledge name in the "Name" field and click the button on the right to create a multilingual label. Please refer to [Multiple Language Settings](liao-tian-agent.md#duo-guo-yu-yan-she-ding)
-4. Enter the knowledge description in the "Description" field and click the button on the right to create a multilingual label. Please refer to [Multiple Language Settings](liao-tian-agent.md#duo-guo-yu-yan-she-ding)
+3. Enter the knowledge name in the "Name" field and click the button on the right to create a multilingual label. Please refer to [多國語言設定](liao-tian-agent.md#duo-guo-yu-yan-she-ding)
+4. Enter the knowledge description in the "Description" field and click the button on the right to create a multilingual label. Please refer to [多國語言設定](liao-tian-agent.md#duo-guo-yu-yan-she-ding)
 5. Click the "Label" menu to select the label to be brought into this Agent
 6. Click the "Model" menu to select the large language model used by this Agent
 7. Click the "Save" button to complete the addition, and the system will automatically enter the Agent editing screen for the user to complete the settings.
@@ -22,7 +22,7 @@ description: 聊天 Agent 可讓使用者直接與大型語言模型互動，適
 
 
 
-### Multi-language setting <a href="#duo-guo-yu-yan-she-ding" id="duo-guo-yu-yan-she-ding">⟬<a href="#duo-guo-yu-yan-she-ding" id="duo-guo-yu-yan-she-ding">1⟭
+### Multi-language settings <a href="#duo-guo-yu-yan-she-ding" id="duo-guo-yu-yan-she-ding"></a>
 
 <figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
@@ -37,8 +37,32 @@ description: 聊天 Agent 可讓使用者直接與大型語言模型互動，適
 
 The chat agent homepage is mainly divided into several parts, as shown below:
 
-1. **Agent Function Options**: The function options area contains the following links, each link will open the corresponding setting page | name | illustrate | | --------- | ------------------- | | Basic settings | Edit the Agent's home page | | session log | Provide conversation history for this Agent | | Member management | Manage access to this Agent | | AI WEBAPP | Configure web embedding for this Agent | | API Key | Provide credentials for third-party applications to securely call the API | 2. **Basic information**: You can view the Agent name, creation and editing time and personnel, and activation status
-3. **Application Settings:** Provides settings related to Agent behavior based on Agent type | name | illustrate | | ---------- | --------------------------- | | Inference parameters | Control how responses are generated | | Knowledge base configuration | Select parameters and available knowledge sources | | tool | Enable and configure available tools | | Skill | Functions used to expand Agent capabilities | | Agent collaboration | Allows Agents to connect in series and collaborate with other Agents to perform tasks | | Agent welcome page | Set initial conversation content | | prompt word template | Provides reusable prompt word templates for quick use | | File handling | Control how uploaded files are processed | | guardrail | Control content output | 4. **Adaptation Preview:** Allows users to test whether the Q&A results are as expected
+1. **Agent Function Options**: The function options area contains the following links, each link will open the corresponding setting page
+
+| 名稱 | 說明 |
+| --------- | ------------------- |
+| 基礎設置 | 編輯 Agent 的主頁 |
+| 會話日誌 | 提供此 Agent 的對話紀錄 |
+| 成員管理 | 管理此 Agent 的存取權限 |
+| AI WEBAPP | 設定此 Agent 的網頁嵌入 |
+| API Key | 提供第三方應用安全呼叫 API 的憑證 |
+
+2. **Basic information**: You can view the Agent name, creation and editing time and personnel, and activation status
+3. **Application Settings:** Provides settings related to Agent behavior based on Agent type
+
+| 名稱 | 說明 |
+| ---------- | --------------------------- |
+| 推理參數 | 控制回應生成的方式 |
+| 知識庫配置 | 選擇參數與可用的知識來源 |
+| 工具 | 啟用並配置可用的工具 |
+| 技能 | 用來擴充 Agent 能力的功能 |
+| Agent 協作 | 可讓 Agent 串接並協同其他 Agent 執行任務 |
+| Agent 歡迎頁面 | 設定初始對話內容 |
+| 提示詞模板 | 提供可重複使用的提示詞模板以供快速使用 |
+| 檔案處理方式 | 控制上傳檔案的處理方式 |
+| 護欄 | 控管內容輸出 |
+
+4. **Adaptation Preview:** Allows users to test whether the Q&A results are as expected
 
 ## **Basic settings**
 
@@ -73,7 +97,7 @@ Users can control the Agent's reply behavior by adjusting the items in the "**Pa
 
 <figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Project⟬<table>4⟭⟬<table>5⟭Parameters⟬<table>6⟭⟬<table>7⟭Description⟬<table>8⟭⟬<table>9⟭Scope and Value⟬<table>10⟭⟬<table>11⟭⟬<table>12⟭⟬<table>13⟭⟬<table>14⟭⟬<table>15⟭1⟬<table>16⟭⟬<table>17⟭Model⟬<table>18⟭⟬<table>19⟭Agent The default model selected when creating; can be changed here⟬<table>20⟭⟬<table>21⟭n/a⟬<table>22⟭⟬<table>23⟭⟬<table>24⟭⟬<table>25⟭2⟬<table>26⟭⟬<table>27⟭Temperature⟬<table>28⟭⟬<table>29⟭Control the creativity of the reply. The higher the value, the more diverse and creative the responses; the lower the value, the more precise and consistent the responses⟬<table>30⟭⟬<table>31⟭0–1⟬<table>32⟭⟬<table>33⟭⟬<table>34⟭⟬<table>35⟭3⟬<table>36⟭⟬<table>37⟭Top P⟬<table>38⟭⟬<table>39⟭ controls randomness and diversity. Lower values produce more conservative and predictable text; higher values produce more diverse results⟬<table>40⟭⟬<table>41⟭0–1⟬<table>42⟭⟬<table>43⟭⟬<table>44⟭⟬<table> 45⟭4⟬<table>46⟭⟬<table>47⟭Maximum mark⟬<table>48⟭⟬<table>49⟭Limit maximum output length⟬<table>50⟭⟬<table>51⟭Set as required⟬<table>52⟭⟬P H0053⟭⟬<table>54⟭⟬<table>55⟭5⟬<table>56⟭⟬<table>57⟭Conversation Memory⟬<table>58⟭⟬<table>59⟭ Stores Q&A history to enhance coherence (may slow down responses Time) ⟬<table>60⟭⟬<table>61⟭⟬<table>62⟭0⟬<table>63⟭ represents a stateless response; ⟬<table>64⟭5-10⟬<table>65⟭ strikes a balance between consistency and performance. The more memories you have, the slower it becomes. ⟬<table>66⟭⟬<table>67⟭⟬<table>68⟭⟬<table>69⟭
+<table><thead><tr><th width="98">項目</th><th width="112">參數</th><th width="238">說明</th><th>範圍與數值</th></tr></thead><tbody><tr><td>1</td><td>模型</td><td>Agent 建立時選擇的預設模型；可在這裡變更</td><td>n/a</td></tr><tr><td>2</td><td>溫度</td><td>控制回覆的創造力。數值越高，回應越多元和有創意；數值越低，回應越精確和一致</td><td>0–1</td></tr><tr><td>3</td><td>Top P</td><td>控制隨機性和多樣性。數值越低，產生越保守和可預測的文字；數值越高，產生越多樣的結果</td><td>0–1</td></tr><tr><td>4</td><td>最大標記</td><td>限制最大輸出長度</td><td>依需求設定</td></tr><tr><td>5</td><td>對話記憶</td><td>儲存問答歷史以增強連貫性（可能會減慢回應時間）</td><td><code>0</code>表示無狀態回應；<code>5-10</code>可在連貫性和效能之間取得平衡。記憶越多，速度越慢。</td></tr></tbody></table>
 
 #### instruction
 
@@ -131,31 +155,31 @@ Users can enable/disable tools accessible to Agent in settings.
 
 #### **Session Memory**
 
-<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Tools⟬<table>4⟭⟬<table>5⟭ says Ming⟬<table>6⟭⟬<table>7⟭⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭KV Session short-term memory⟬<table>12⟭⟬<table>13⟭ enables precise, key-based storage and retrieval of temporary data during a session. Useful for tracking dynamic variables such as ⟬<table>14⟭Username⟬<table>15⟭, ⟬<table>16⟭Selected Plan⟬<table>17⟭. ⟬<table>18⟭⟬<table>19⟭⟬<table>20⟭⟬<table>21⟭graphiti - Added memory data ⟬<table>22⟭⟬<table>23⟭Storing episodic information (such as interactions or events) into the knowledge graph. ⟬<table>24⟭⟬<table>25⟭⟬<table>26⟭⟬<table>27⟭graphiti - Query memory node ⟬<table>28⟭⟬<table>29⟭Retrieve an entity summary or node-level memory representation. ⟬<table>30⟭⟬<table>31⟭⟬<table>32⟭⟬<table>33⟭graphiti - Query Memory Facts ⟬<table>34⟭⟬<table>35⟭Search for relevant facts and structured relationships in the memory graph. ⟬<table>36⟭⟬<table>37⟭⟬<table>38⟭⟬<table>39⟭graphiti - Delete Entity Relationship ⟬<table>40⟭⟬<table>41⟭Removes the defined relationship between entities from the graph. ⟬<table>42⟭⟬<table>43⟭⟬<table>44⟭⟬<table>45⟭graphiti - Delete event segment ⟬<table>46⟭⟬<table>47⟭Delete a specific event segment in the memory graph. ⟬<table>48⟭⟬<table>49⟭⟬<table>50⟭⟬<table>51⟭graphiti - Get Entity Relationships ⟬<table>52⟭⟬<table>53⟭ Retrieve structured relationships related to a specific entity. ⟬<table>54⟭⟬<table>55⟭⟬<table>56⟭⟬<table>57⟭graphiti - Get a fragment of an event ⟬<table>58⟭⟬<table>59⟭ Returns a recent memory episode to provide context for a conversation or decision-making. ⟬<table>60⟭⟬<table>61⟭⟬<table>62⟭⟬<table>63⟭graphiti - Clear Memory Graph ⟬<table>64⟭⟬<table>65⟭Resets the entire graph-based memory system. ⟬<table>66⟭⟬<table>67⟭⟬<table>68⟭⟬<table>69⟭
+<table><thead><tr><th width="250">工具</th><th>說明</th></tr></thead><tbody><tr><td>KV 會話短期記憶</td><td>能夠在會話期間精確地、基於鍵地儲存和檢索臨時資料。對於追蹤動態變數（例如<code>使用者名稱</code>、<code>所選方案</code>）非常有用。</td></tr><tr><td>graphiti - 新增記憶資料</td><td>將情節性資訊（例如互動或事件）儲存到知識圖譜中。</td></tr><tr><td>graphiti - 查詢記憶節點</td><td>檢索實體摘要或節點層級的記憶表示。</td></tr><tr><td>graphiti - 查詢記憶事實</td><td>在記憶圖譜中搜尋相關事實和結構化關係。</td></tr><tr><td>graphiti - 刪除實體關係</td><td>從圖譜中刪除實體之間定義的關係。</td></tr><tr><td>graphiti - 刪除事件片段</td><td>刪除記憶圖譜中的特定事件區段。</td></tr><tr><td>graphiti - 取得實體關係</td><td>檢索與特定實體相關的結構化關係。</td></tr><tr><td>graphiti - 取得事件片段</td><td>返回最近的記憶情節，以提供對話或決策背景。</td></tr><tr><td>graphiti - 清除記憶圖譜</td><td>重置整個基於圖譜的記憶系統。</td></tr></tbody></table>
 
 > PS: For more information about Graphiti, please see its official website.
 
 #### **Academic Articles**
 
-<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Tools⟬<table>4⟭⟬<table>5⟭Instructions South⟬<table>6⟭⟬<table>7⟭⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭arXiv Paper Search ⟬<table>12⟭⟬<table>13⟭ allows users to search for academic papers from the arXiv database. ⟬<table>14⟭⟬<table>15⟭⟬<table>16⟭⟬<table>17⟭Google Scholar Search⟬<table>18⟭⟬<table>19⟭Search for scholarly articles and citations using Google Scholar. ⟬<table>20⟭⟬<table>21⟭⟬<table>22⟭⟬<table>23⟭
+<table><thead><tr><th width="250">工具</th><th>使用指南</th></tr></thead><tbody><tr><td>arXiv 論文搜尋</td><td>允許使用者從 arXiv 資料庫搜尋學術論文。</td></tr><tr><td>Google Scholar 搜尋</td><td>使用 Google Scholar 搜尋學術文章和引文。</td></tr></tbody></table>
 
 #### **Web Search**
 
-<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Tools⟬<table>4⟭⟬<table>5⟭Usage Guide ⟬<table>6⟭⟬<table>7⟭⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭Serper - Web Content Extraction ⟬<table>12⟭⟬<table>13⟭ Extracts readable content from web URLs. ⟬<table>14⟭⟬<table>15⟭⟬<table>16⟭⟬<table>17⟭Serper - Google Search ⟬<table>18⟭⟬<table>19⟭Performs a Google search and returns summary results. ⟬<table>20⟭⟬<table>21⟭⟬<table>22⟭⟬<table>23⟭Serper - Patent Search ⟬<table>24⟭⟬<table>25⟭Search for issued patents and related documents. ⟬<table>26⟭⟬<table>27⟭⟬<table>28⟭⟬<table>29⟭Serper - Image Search ⟬<table>30⟭⟬<table>31⟭Search for images based on text queries. ⟬<table>32⟭⟬<table>33⟭⟬<table>34⟭⟬<table>35⟭Serper - Paper Search ⟬<table>36⟭⟬<table>37⟭ Search academic papers using Google Scholar-style sources. ⟬<table>38⟭⟬<table>39⟭⟬<table>40⟭⟬<table>41⟭Serper - News Search ⟬<table>42⟭⟬<table>43⟭ Search for news based on text queries. ⟬<table>44⟭⟬<table>45⟭⟬<table>46⟭⟬<table>47⟭Serper - Map Information Search ⟬<table>48⟭⟬<table>49⟭ Search maps based on text queries. ⟬<table>50⟭⟬<table>51⟭⟬<table>52⟭⟬<table>53⟭
+<table><thead><tr><th width="250">工具</th><th>使用指南</th></tr></thead><tbody><tr><td>Serper - 網頁內容擷取</td><td>從網頁 URL 提取可讀內容。</td></tr><tr><td>Serper - Google 搜尋</td><td>執行 Google 搜尋並返回摘要結果。</td></tr><tr><td>Serper - 專利搜尋</td><td>搜尋已發布的專利和相關文件。</td></tr><tr><td>Serper - 圖片搜尋</td><td>根據文字查詢搜尋圖片。</td></tr><tr><td>Serper - 論文搜尋</td><td>使用 Google Scholar 風格的來源查詢學術論文。</td></tr><tr><td>Serper - 新聞搜尋</td><td>根據文字查詢搜尋新聞。</td></tr><tr><td>Serper - 地圖資訊搜尋</td><td>根據文字查詢搜尋地圖。</td></tr></tbody></table>
 
 > Note: For more information about Sperper, please see its official website.
 
 #### **Code**
 
-<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Tools⟬<table>4⟭⟬<table>5⟭Use Guide ⟬<table>6⟭⟬<table>7⟭⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭Execution Python code ⟬<table>12⟭⟬<table>13⟭ executes Python scripts or logic to support tasks such as mathematics, data parsing, or automation. ⟬<table>14⟭⟬<table>15⟭⟬<table>16⟭⟬<table>17⟭
+<table><thead><tr><th width="250">工具</th><th>使用指南</th></tr></thead><tbody><tr><td>執行 Python 程式碼</td><td>執行 Python 腳本或邏輯，以支援數學、資料解析或自動化等任務。</td></tr></tbody></table>
 
 #### **Document Handling**
 
-<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Tools⟬<table>4⟭⟬<table>5⟭Usage Guide⟬<table>6⟭⟬<table>7 ⟭⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭Preview file ⟬<table>12⟭⟬<table>13⟭Displays the uploaded file in a readable format within the platform. ⟬<table>14⟭⟬<table>15⟭⟬<table>16⟭⟬<table>17⟭File to markdown⟬<table>18⟭⟬<table>19⟭Convert the file to Markdown format. ⟬<table>20⟭⟬<table>21⟭⟬<table>22⟭⟬<table>23⟭
+<table><thead><tr><th width="250">工具</th><th>使用指南</th></tr></thead><tbody><tr><td>預覽文件</td><td>在平台內以可讀格式顯示上傳的文件。</td></tr><tr><td>文件轉markdown</td><td>將文件轉換為 Markdown 格式。</td></tr></tbody></table>
 
 #### **Other**
 
-<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Tools⟬<table>4⟭⟬<table>5⟭Usage Guide⟬<table>6⟭⟬<table>7 ⟭⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭Get the current time ⟬<table>12⟭⟬<table>13⟭Returns the current system time when the request is made. ⟬<table>14⟭⟬<table>15⟭⟬<table>16⟭⟬<table>17⟭Easy Math ⟬<table>18⟭⟬<table>19⟭Perform simple arithmetic operations in the prompt. ⟬<table>20⟭⟬<table>21⟭⟬<table>22⟭⟬<table>23⟭Dynamic Thinking Chain (Sequential Thinking) ⟬<table>24⟭⟬<table>25⟭Decompose complex problems into step-by-step thinking, with the option to modify or branch. Good for planning, troubleshooting, and structured reasoning. ⟬<table>26⟭⟬<table>27⟭⟬<table>28⟭⟬<table>29⟭
+<table><thead><tr><th width="250">工具</th><th>使用指南</th></tr></thead><tbody><tr><td>取得目前時間</td><td>返回發出請求時的當前系統時間。</td></tr><tr><td>簡易數學式運算</td><td>在提示中執行簡單的算術運算。</td></tr><tr><td>動態思維鏈（Sequential Thinking）</td><td>將複雜問題分解為逐步思考，並可選擇修改或分支。適用於規劃、故障排除和結構化推理。</td></tr></tbody></table>
 
 ### Skill
 
@@ -191,7 +215,7 @@ Users can link existing or favorited application templates (prompt word template
 
 <figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Option ⟬<table>4⟭⟬<table>5⟭ Visible to MCP tools ⟬<table>6⟭⟬<table>7⟭ to LLM Visible⟬<table>8⟭⟬<table>9⟭ Description⟬<table>10⟭⟬<table>11⟭Example usage scenario⟬<table>12⟭⟬<table>13⟭⟬<table>14⟭⟬<table>15⟭⟬<table>16⟭⟬<table>17⟭Do not The process ⟬<table>18 ⟭ ⟬ <table>19 ⟭ Will not be opened or interpreted. ⟬<table>24⟭⟬<table>25⟭– –⟬<table>26⟭⟬<table>27⟭⟬<table>28⟭⟬<table>29⟭Process with Tool⟬<table>30⟭⟬<table>31⟭O⟬<table>32⟭⟬<table>33⟭X⟬<table>34⟭⟬<table>35⟭ files are passed to the MCP tool for processing, but not to LLM. ⟬<table>36⟭⟬<table>37⟭ Useful when you want to extract material from a CSV or PDF, but don’t need AI-generated comments. ⟬<table>38⟭⟬<table>39⟭⟬<table>40⟭⟬<table>41⟭File to Image Conversion ⟬<table>42 ⟭ ⟬ <table>43 ⟭ ⟬<table>48⟭⟬<table>49⟭ is suitable for scanned documents or visual layouts where diagrammatic relationships are important. ⟬<table>50⟭⟬<table>51⟭⟬<table>52⟭⟬<table>53⟭Convert to Image &#x26; Tool⟬<table>54⟭⟬<table>55⟭O⟬<table>56⟭⟬<table>57⟭O⟬<table>58⟭⟬<table>59⟭ files are simultaneously translated into LLM references and processed by the MCP tool. ⟬<table>60⟭⟬<table>61⟭ Best suited for invoices or forms that require interpretation of both visual layout and structured data. ⟬<table>62⟭⟬<table>63⟭⟬<table>64⟭⟬<table>65⟭
+<table><thead><tr><th width="161">選項</th><th width="103">對 MCP 工具可見</th><th width="96">對 LLM 可見</th><th>說明</th><th>範例使用情境</th></tr></thead><tbody><tr><td>Do not process</td><td>X</td><td>X</td><td>檔案已上傳，但對 LLM 或 MCP 工具都不可見。不會被開啟或解讀。</td><td>– –</td></tr><tr><td>Process with Tool</td><td>O</td><td>X</td><td>檔案會傳遞給 MCP 工具進行處理，但不會傳遞給 LLM。</td><td>當您想從 CSV 或 PDF 中提取資料，但不需要 AI 生成的評論時很有用。</td></tr><tr><td>File to Image Conversion</td><td>X</td><td>O</td><td>檔案會被轉譯成圖片，僅對 LLM 可見，以供參考。</td><td>適用於掃描文件或視覺版面，其中圖表關係很重要。</td></tr><tr><td>Convert to Image &#x26; Tool</td><td>O</td><td>O</td><td>檔案會同時被轉譯為 LLM 參考和由 MCP 工具處理。</td><td>最適合需要同時解讀視覺版面和結構化資料的發票或表格。</td></tr></tbody></table>
 
 ### guardrail
 
@@ -287,7 +311,7 @@ The creator can grant access rights to other users through "Permissions" (please
 
 <figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Project⟬<table>4⟭⟬<table>5⟭Operation Name⟬<table>6 ⟭⟬<table>7⟭Description⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭⟬<table>12⟭⟬<table>13⟭1⟬ <table>14⟭⟬<table>15⟭Edit table⟬<table>16⟭⟬<table>17⟭Allows the user to edit the presentation of the table⟬<table>18⟭⟬<table>19⟭⟬<table>20⟭⟬<table>21⟭2⟬<table>22⟭⟬<table>23⟭Refresh⟬<table>24⟭⟬<table>25⟭Click to refresh the list ⟬<table>26⟭⟬<table>27⟭⟬<table>28⟭⟬<table>29⟭3⟬<table>30⟭⟬<table>31⟭Content filtering⟬<table>32⟭ ⟬<table>33⟭Advanced filtering of specified content⟬<table>34⟭⟬<table>35⟭⟬<table>36⟭⟬<table>37⟭4⟬<table>38⟭⟬<table> 39⟭Batch deletion⟬<table>40⟭⟬<table>41⟭After checking the items, the delete button in the upper left corner will be displayed, allowing the user to delete multiple items⟬<table>42⟭⟬ <table>43⟭⟬<table>44⟭⟬<table>45⟭5⟬<table>46⟭⟬<table>47⟭Search field⟬<table>48⟭⟬<table>49⟭Search Name⟬<table>50⟭⟬<table>51⟭⟬<table>52⟭⟬<table>53⟭6⟬<table>54⟭⟬<table>55⟭Invite⟬<table>56⟭⟬<table>57⟭Invite Organization / Member⟬<table>58⟭⟬<table>59⟭⟬<table>60⟭⟬<table>61⟭7⟬<table>62⟭⟬<table>63⟭Action⟬<table> 64⟭⟬<table>65⟭Transfer your role or remove selected users⟬<table>66⟭⟬<table>67⟭⟬<table>68⟭⟬<table>69⟭
+<table><thead><tr><th width="80">項目</th><th width="146">操作名稱</th><th>說明</th></tr></thead><tbody><tr><td>1</td><td>編輯表格</td><td>允許使用者編輯表格的呈現方式</td></tr><tr><td>2</td><td>刷新</td><td>點擊後刷新列表</td></tr><tr><td>3</td><td>內容篩選</td><td>進階篩選指定內容</td></tr><tr><td>4</td><td>批次刪除</td><td>勾選項目後左上角的刪除按鈕便會顯示，可讓使用者刪除多個項目</td></tr><tr><td>5</td><td>搜尋欄位</td><td>搜尋 名稱</td></tr><tr><td>6</td><td>邀請</td><td>邀請組織 / 成員</td></tr><tr><td>7</td><td>動作</td><td>轉移您的角色或刪除選定的使用者</td></tr></tbody></table>
 
 ### **New member**
 

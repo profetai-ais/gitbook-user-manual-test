@@ -14,7 +14,7 @@ The tag management function helps users classify and manage items in the system 
 
 1. Enter the "Tag Management" page in "System Settings".
 2. Click the "Add" button in the upper right corner.
-3. Enter the label name, or click the button on the right to create a multi-language label. Please refer to [Multi-language settings] (biao-qian-guan-li.md#duo-guo-yu-yan-she-ding)
+3. Enter the label name, or click the button on the right to create a multi-language label, please refer to [ 多國語言設定](biao-qian-guan-li.md#duo-guo-yu-yan-she-ding)
 4. Select the function module to which this label belongs.
 5. After confirming that the content is correct, click Save or Create. After the creation is completed, the tag will appear in the tag management list.
 

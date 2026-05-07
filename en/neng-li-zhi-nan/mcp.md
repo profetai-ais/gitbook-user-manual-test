@@ -16,11 +16,23 @@ Users can:
 
 ## Permissions
 
-The creator can grant access rights to other users through "Permissions" (for role definition, please refer to [Permission Function Introduction] (../ru-men-zhi-nan/quan-xian-gong-neng-jie-shao.md)).
+The creator can grant access rights to other users through "Permissions" (please refer to [權限功能介紹 ](../ru-men-zhi-nan/quan-xian-gong-neng-jie-shao.md) for role definition).
 
 > Note: The creator is the default "owner", and each project can only have one owner.
 
-<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure> | project | Operation name | illustrate | | -- | ---- | ----------------------------- | | 1 | Edit table | Allows the user to edit the presentation of the table | | 2 | refresh | Refresh list after click | | 3 | Content filtering | Advanced filtering of specific content | | 4 | Batch delete | After checking the items, the delete button in the upper left corner will be displayed, allowing users to delete multiple items. | | 5 | search field | Search name | | 6 | invite | Invite organizations/members | | 7 | action | Transfer your role or remove selected users | ### **New member**
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
+
+| 項目 | 操作名稱 | 說明 |
+| -- | ---- | ----------------------------- |
+| 1 | 編輯表格 | 允許使用者編輯表格的呈現方式 |
+| 2 | 刷新 | 點擊後刷新列表 |
+| 3 | 內容篩選 | 進階篩選指定內容 |
+| 4 | 批次刪除 | 勾選項目後左上角的刪除按鈕便會顯示，可讓使用者刪除多個項目 |
+| 5 | 搜尋欄位 | 搜尋 名稱 |
+| 6 | 邀請 | 邀請組織 / 成員 |
+| 7 | 動作 | 轉移您的角色或刪除選定的使用者 |
+
+### **New member**
 
 <figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 

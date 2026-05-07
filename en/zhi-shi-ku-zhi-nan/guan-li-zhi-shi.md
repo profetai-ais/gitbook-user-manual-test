@@ -8,7 +8,7 @@ description: 點擊知識庫頁面中的知識卡片即可進入設定頁面。
 
 <figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Project⟬<table>4⟭⟬<table>5⟭Operation Name⟬P H0006⟭⟬<table>7⟭Description⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭⟬<table>12⟭ ⟬<table>13⟭1⟬<table>14⟭⟬<table>15⟭Return⟬<table>16⟭⟬<table>17⟭Click to return to the knowledge base homepage⟬<table>18⟭⟬<table>19⟭⟬<table>20⟭⟬<table>21⟭2⟬<table>22⟭⟬<table>23⟭Collapse⟬<table>24⟭ ⟬<table>25⟭Click to minimize the menu area ⟬<table>26⟭⟬<table>27⟭⟬<table>28⟭⟬<table>29⟭3⟬<table>30⟭⟬<table>31⟭Knowledge setting menu⟬<table>32⟭⟬<table>33⟭Provides various knowledge setting and testing functions⟬<table>34⟭⟬ <table>35⟭⟬<table>36⟭⟬<table>37⟭4⟬<table>38⟭⟬<table>39⟭Setting input area⟬<table>40⟭⟬<table>41⟭Open the corresponding operation page according to the menu item selected by the user⟬<table>42⟭⟬<table>43⟭⟬<table>44⟭⟬<table>45⟭
+<table><thead><tr><th width="80">項目</th><th width="180">操作名稱</th><th>說明</th></tr></thead><tbody><tr><td>1</td><td>返回</td><td>點擊後返回知識庫首頁</td></tr><tr><td>2</td><td>收起</td><td>點擊後將選單區域最小化</td></tr><tr><td>3</td><td>知識設定選單</td><td>提供各種知識設定與測試功能</td></tr><tr><td>4</td><td>設定輸入區</td><td>根據使用者所選選單項目開啟對應操作頁面</td></tr></tbody></table>
 
 ## **Basic settings**
 
@@ -31,7 +31,7 @@ The data set setting page allows users to upload and manage files. The file type
 
 <figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Project⟬<table>4⟭⟬<table>5⟭Operation Name ⟬<table>6⟭⟬<table>7⟭Instructions⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭⟬<table>12⟭⟬<table>13⟭1⟬<table>14⟭⟬<table>15⟭Edit Form⟬<table>16⟭⟬<table>17⟭Allow User Edit the presentation of the table⟬<table>18⟭⟬<table>19⟭⟬<table>20⟭⟬<table>21⟭2⟬<table>22⟭⟬<table>23⟭Refresh⟬<table>24⟭⟬<table>25⟭Click to rearrange the table⟬<table>26⟭⟬<table>27⟭⟬<table>28 ⟭⟬<table>29⟭3⟬<table>30⟭⟬<table>31⟭Filter⟬<table>32⟭⟬<table>33⟭You can filter content based on fields⟬ <table>34⟭⟬<table>35⟭⟬<table>36⟭⟬<table>37⟭4⟬<table>38⟭⟬<table>39⟭My List⟬P H0040⟭⟬<table>41⟭When turned on, only the information you created will be displayed⟬<table>42⟭⟬<table>43⟭⟬<table>44⟭⟬P H0045⟭5⟬<table>46⟭⟬<table>47⟭Batch download⟬<table>48⟭⟬<table>49⟭You can check multiple project batches at one time Download⟬<table>50⟭⟬<table>51⟭⟬<table>52⟭⟬<table>53⟭6⟬<table>54⟭⟬<table>55⟭Delete⟬ <table>56⟭⟬<table>57⟭After checking the data set in the list, a delete button will be displayed. Clicking it will delete the checked data set⟬<table>58⟭ ⟬<table>59⟭⟬<table>60⟭⟬<table>61⟭7⟬<table>62⟭⟬<table>63⟭Search⟬<table>64⟭⟬<table>65⟭Users can enter keywords to filter⟬<table>66⟭⟬<table>67⟭⟬<table>68⟭⟬<table>69⟭8⟬<table> 70⟭⟬<table>71⟭Add/Import⟬<table>72⟭⟬<table>73⟭Upload file, or create a blank data set⟬<table>7 4⟭⟬<table>75⟭⟬<table>76⟭⟬<table>77⟭9⟬<table>78⟭⟬<table>79⟭Operation⟬<table>80⟭⟬ <table>81⟭Users can edit or delete the corresponding data set⟬<table>82⟭⟬<table>83⟭⟬<table>84⟭⟬<table>85⟭
+<table><thead><tr><th width="80">項目</th><th width="180">操作名稱</th><th>說明</th></tr></thead><tbody><tr><td>1</td><td>編輯表格</td><td>允許使用者編輯表格的呈現方式</td></tr><tr><td>2</td><td>刷新</td><td>點擊後重新整理表格</td></tr><tr><td>3</td><td>篩選</td><td>可依據欄位篩選內容</td></tr><tr><td>4</td><td>我的清單</td><td>開啟後，會只顯示你創建的資料</td></tr><tr><td>5</td><td>批次下載</td><td>可一次勾選多個項目批次下載</td></tr><tr><td>6</td><td>刪除</td><td>勾選列表中的數據集後將顯示刪除按鈕，點擊後將刪除已勾選的數據集</td></tr><tr><td>7</td><td>搜尋</td><td>使用者可輸入關鍵字篩選</td></tr><tr><td>8</td><td>新增/匯入</td><td>上傳檔案，或建立一個空白的數據集</td></tr><tr><td>9</td><td>操作</td><td>使用者可編輯或刪除對應的數據集</td></tr></tbody></table>
 
 ## **New data set**
 
@@ -56,7 +56,14 @@ The data set setting page allows users to upload and manage files. The file type
 
 ### File upload restrictions
 
-To ensure data processing performance and indexing quality, the data set has the following restrictions when importing files: | project | limit | | ---------- | -------------- | | Maximum number of files imported at a time | Up to **100** files | | Maximum size of a single file | 300MB | Additional instructions:
+To ensure data processing performance and indexing quality, the data set has the following restrictions when importing files:
+
+| 項目 | 限制 |
+| ---------- | -------------- |
+| 單次匯入檔案數量上限 | 最多 **100** 個檔案 |
+| 單一檔案大小上限 | 300MB |
+
+Additional instructions:
 
 * If any of the above limits is exceeded, the system will display a prompt message and prevent uploading. Please adjust the number of files or split the files and re-import them.
 * If the file is a large file (such as a long PDF/DOCX), it is recommended to remove unnecessary images or appendix content first to avoid long processing time.
@@ -80,7 +87,7 @@ If the permission details are not displayed, the block is blank, or there is no 
 
 ### Display of data set status information
 
-Click on the status icon to enter the location. For detailed operation methods, please refer to the [Work Management] (../fen-xi-zhi-nan/gong-zuo-guan-li.md) page instructions.
+Click on the status icon to enter the location. For detailed operation methods, please refer to the [工作管理](../fen-xi-zhi-nan/gong-zuo-guan-li.md) page instructions.
 
 &#x20;。
 
@@ -101,9 +108,9 @@ Data processing after file upload supports the following two forms:
 
 When the original content does not have a clear question and answer structure, or users want to quickly create data segments, the "direct segmentation" mode can be enabled. The system will automatically divide paragraphs according to the settings.
 
-<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Processing method⟬<table>4⟭⟬<table>5⟭Instructions⟬<table>6⟭⟬<table>7⟭⟬<table>8⟭⟬ <table>9⟭⟬<table>10⟭⟬<table>11⟭Automatic⟬<table>12⟭⟬<table>13⟭The system is preset to automatically segment according to the input content length and language structure, which is suitable for situations where you can get started quickly and do not need to customize rules. When the segmentation method is not specified, the system will perform preliminary segmentation using common symbols such as line breaks and periods. ⟬<table>14⟭⟬<table>15⟭⟬<table>16⟭⟬<table>17⟭Token segmentation ⟬<table>18⟭⟬<table>19⟭ Split the text according to the set segmentation token length. It is recommended that the length of a single paragraph be controlled within the range of 100–1000 tokens to avoid semantic fragmentation or truncation of context. ⟬<table>20⟭⟬<table>21⟭⟬<table>22⟭⟬<table>23⟭Custom rules ⟬<table>24⟭⟬<table>25⟭ provide more detailed control. In addition to setting the paragraph length (recommended 100–1000) and overlapping range (such as 100 tokens), it also adds separator options to control segmentation. ⟬<table>26⟭⟬<table>27⟭⟬<table>28⟭⟬<table>29⟭Regex segmentation ⟬<table>30⟭⟬<table>31⟭ by specific characters such as ⟬<table>32⟭\\n⟬<table>33⟭, ⟬<table>34⟭. ⟬<table>35⟭, ⟬<table>36⟭, ⟬<table>37⟭, ⟬<table>38⟭; ⟬<table>39⟭) to segment text; can be used in combination with multiple symbols, suitable for general natural language processing scenarios. ⟬<table>40⟭⟬<table>41⟭⟬<table>42⟭⟬<table>43⟭
+<table><thead><tr><th width="180">處理方式</th><th>說明</th></tr></thead><tbody><tr><td>自動</td><td>系統預設根據輸入內容長度與語言結構自動分段，適合快速上手、無需自訂規則的情境。當未指定切分方式時，系統會以斷行、句號等常見符號進行初步分段。</td></tr><tr><td>Token 分段</td><td>依據設定的分段 token 長度切分文本。建議單段長度控制在 100–1000 tokens 範圍內，避免語意破碎或截斷上下文。</td></tr><tr><td>自訂規則</td><td>提供更細緻的控制，除了段落長度（建議 100–1000）與重疊範圍（如 100 tokens）的設定外，還增加分隔符選項控制分段。</td></tr><tr><td>Regex 分段</td><td>透過特定字元（如 <code>\\n</code>、<code>。</code>、<code>,</code>、<code>;</code>）切分文本；可多種符號組合使用，適合一般自然語言處理場景。</td></tr></tbody></table>
 
-<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Processing Options ⟬<table>4⟭⟬<table>5⟭Applicable Segmented Processing ⟬<table>6⟭⟬<table> 7⟭Description⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭⟬<table>12⟭⟬<table>13⟭Ideal Length Segmentation⟬<table>14⟭⟬<table>15⟭Token Segmentation and custom rules ⟬<table>16⟭⟬<table>17⟭ can set the target length of each paragraph (in tokens); the smaller the value, the thinner the segmentation, but the contextual link may be weakened; the larger the value, the overlapping range needs to be matched to ensure consistent context. ⟬<table>18⟭⟬<table>19⟭⟬<table>20⟭⟬<table>21⟭Overlapping range⟬<table>22⟭⟬<table>23⟭Token segmentation, custom rules ⟬<table>24⟭⟬<table>25⟭Define the number of tokens that each segment repeats with the previous segment (such as 100), improve context continuity. The recommended value is between 1 and the ideal length - 1; suitable for handling high-context content such as multi-turn conversations, technical documents, etc. ⟬<table>26⟭⟬<table>27⟭⟬<table>28⟭⟬<table>29⟭Custom separator ⟬<table>30⟭⟬<table>31⟭Custom rule ⟬<table>32⟭⟬<table>33⟭ Set the symbol for identifying segment points, separated by semicolons. Example: Setting ⟬<table>34⟭;; ;'';⟬<table>35⟭ will appear in the text as ⟬<table>36⟭;⟬<table>37⟭, ⟬<table>38⟭(space)⟬<table>39⟭, ⟬<table>40⟭''⟬<table>41⟭ segmentation occurs. ⟬<table>42⟭⟬<table>43⟭⟬<table>44⟭⟬<table>45⟭Rule⟬<table>46⟭⟬<table>47⟭Regex Segmentation⟬<table>48⟭⟬<table>49⟭Regex for user-defined segments Grammar, you can click on the preset segmentation examples below to edit: ⟬<table>50⟭.+\\n?⟬<table>51⟭ (line break segmentation), ⟬<table>52⟭[^. ]+. ?⟬<table>53⟭ (Chinese period segmentation). ⟬<table>54⟭⟬<table>55⟭⟬<table>56⟭⟬<table>57⟭Remove the last newline character ⟬<table>58⟭⟬<table>59⟭Regex segmentation ⟬<table>60⟭⟬<table>61⟭Whether to automatically remove the blank line at the end of the paragraph ⟬<table>62⟭\\n$⟬<table>63⟭ symbol. ⟬<table>64⟭⟬<table>65⟭⟬<table>66⟭⟬<table>67⟭
+<table><thead><tr><th width="180">處理方式的選項</th><th width="200">適用的分段處理方式</th><th>說明</th></tr></thead><tbody><tr><td>理想長度分段</td><td>Token 分段、自訂規則</td><td>可設定每個段落的目標長度（以 token 為單位）；數值越小分段越細，但上下文連結可能減弱；數值越大，則需搭配重疊範圍以保語境一致。</td></tr><tr><td>重疊範圍</td><td>Token 分段、自訂規則</td><td>定義每段與前一段重複的 token 數量（如 100），提升語境延續性。建議值介於 1 到理想長度 - 1 之間；適合處理多輪對話、技術文檔等高語境需求內容。</td></tr><tr><td>自訂分隔符</td><td>自訂規則</td><td>設定辨識分段點的符號，以分號區隔。例：設定 <code>;; ;'';</code> 會在文中出現 <code>;</code>、<code>(空格)</code>、<code>''</code> 時產生分段。</td></tr><tr><td>規則</td><td>Regex 分段</td><td>使用者自訂分段的 Regex 語法，可點擊下方預設的分段範例進行編輯：<code>.+\\n?</code> (換行分段)、<code>[^。]+。?</code> (中文句號分段)。</td></tr><tr><td>移除最後的換行符</td><td>Regex 分段</td><td>是否自動移除段尾空行 <code>\\n$</code> 符號。</td></tr></tbody></table>
 
 > Recommendation: Use Token segmentation + overlapping range to effectively keep the semantics and context intact and avoid the statement being cut off causing information fragmentation and loss.
 
@@ -111,7 +118,7 @@ When the original content does not have a clear question and answer structure, o
 
 When processing question-and-answer document content (such as FAQs, customer service records, interview transcripts, etc.), you can improve structural recognition and semantic clarity through QA segmentation settings. The system provides the following parameters to help identify and segment questions and answer blocks.
 
-<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Options⟬<table>4⟭⟬<table>5⟭Description⟬<table>6⟭⟬<table> 7⟭⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭Question prefix⟬<table>12⟭⟬<table>13⟭Specifies the identification string at the beginning of the question (e.g. ⟬<table>14⟭Q:⟬<table>15⟭, ⟬<table>16⟭Question: ⟬<table>17⟭), the system will mark this as the starting point of a new question paragraph. ⟬<table>18⟭⟬<table>19⟭⟬<table>20⟭⟬<table>21⟭Answer prefix ⟬<table>22⟭⟬<table>23⟭Specify the identification string at the beginning of the answer (e.g. ⟬<table>24⟭A:⟬<table>25⟭, ⟬<table>26⟭Answer: ⟬<table>27⟭), used to mark the answer content corresponding to the question. ⟬<table>28⟭⟬<table>29⟭⟬<table>30⟭⟬<table>31⟭Remove prefix ⟬<table>32⟭⟬<table>33⟭When enabled, the tag string at the beginning of the question and answer paragraphs (such as ⟬<table>34⟭Q:⟬<table>35⟭, ⟬<table>36⟭A:⟬<table>37⟭). ⟬<table>38⟭⟬<table>39⟭⟬<table>40⟭⟬<table>41⟭Prefix expression⟬<table>42⟭⟬<table>43⟭ supports the use of regular expressions (Regex) to identify question and answer prefixes, which is suitable for scenarios where the format is not fixed or a large amount of data is converted. For example: ⟬<table>44⟭^Q[0-9]*:⟬<table>45⟭ can match multiple question numbers. ⟬<table>46⟭⟬<table>47⟭⟬<table>48⟭⟬<table>49⟭Remove last newline character ⟬<table>50⟭⟬<table>51⟭When enabled, redundant newlines at the end of each QA block will be automatically cleared. ⟬<table>52⟭⟬<table>53⟭⟬<table>54⟭⟬<table>55⟭
+<table><thead><tr><th width="200">選項</th><th>說明</th></tr></thead><tbody><tr><td>問題前綴</td><td>指定問題開頭的識別字串（如 <code>Q:</code>、<code>問題：</code>），系統將以此標記為新問題段落的起始點。</td></tr><tr><td>回答前綴</td><td>指定回答開頭的識別字串（如 <code>A:</code>、<code>回答：</code>），用來標記與問題對應的解答內容。</td></tr><tr><td>移除前綴</td><td>啟用後將自動移除問題與回答段落開頭的標記字串（如 <code>Q:</code>、<code>A:</code>）。</td></tr><tr><td>前綴表達式</td><td>支援使用正則表達式（Regex）進行問題與回答前綴的識別，適用於格式不固定或大量資料轉換的場景。例如：<code>^Q[0-9]*:</code> 可匹配多個問題編號。</td></tr><tr><td>移除最後一個換行符</td><td>啟用後將自動清除每段 QA 區塊結尾的多餘換行符。</td></tr></tbody></table>
 
 ## **View/Edit Dataset**
 
@@ -119,7 +126,7 @@ Clicking on a file name in the file list will open the _data block_ view page, a
 
 <figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Project⟬<table>4⟭⟬<table>5⟭Options⟬<table>6⟭⟬<table>7⟭ says Ming⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭⟬<table>12⟭⟬<table>13⟭1⟬<table>14⟭⟬<table>15⟭data block The tab page ⟬<table>16⟭⟬<table>17⟭ displays the data blocks generated after the file is split ⟬<table>18⟭⟬<table>19⟭⟬<table>20⟭⟬<table>21⟭2⟬<table>22⟭⟬<table>23⟭Reference file The tab page ⟬<table>24⟭⟬<table>25⟭ displays all files associated with the data block, including the original files used for segmentation and the files used as reference materials ⟬<table>26⟭⟬<table>27⟭⟬<table>28⟭⟬<table>29⟭3⟬<table> 30⟭⟬<table>31⟭Return⟬<table>32⟭⟬<table>33⟭Click to return to the homepage of the data set⟬<table>34⟭ ⟬<table>35⟭⟬<table>36⟭⟬<table>37⟭4⟬<table>38⟭⟬<table>39⟭Search bar⟬<table>40⟭⟬<table>41⟭Allows users to enter text to search for relevant data blocks⟬<table>42⟭⟬<table>43⟭⟬<table>44⟭⟬<table>45⟭5⟬<table>46⟭⟬<table>47⟭Add/Import⟬<table>48⟭⟬ <table>49⟭Click to manually add a data block⟬<table>50⟭⟬<table>51⟭⟬<table>52⟭⟬<table>53⟭6⟬<table>54⟭⟬<table>55⟭Edit⟬<table>56⟭⟬<table>57⟭Click to display the data block ⟬<table>58⟭Edit ⟬<table>59⟭ and ⟬<table>60⟭Delete ⟬<table>61⟭ Operation options ⟬<table>62⟭⟬<table>63⟭⟬<table>64⟭⟬<table>65⟭
+<table><thead><tr><th width="80">項目</th><th width="180">選項</th><th>說明</th></tr></thead><tbody><tr><td>1</td><td>資料塊 標籤頁</td><td>顯示該檔案被切分後產生的資料塊</td></tr><tr><td>2</td><td>參考檔案 標籤頁</td><td>顯示與資料塊關聯的所有檔案，包括被用作切分的原始檔案與作為參考資料的檔案</td></tr><tr><td>3</td><td>返回</td><td>點擊後返回資料集首頁</td></tr><tr><td>4</td><td>搜尋欄</td><td>允許使用者輸入文字搜尋相關的資料塊</td></tr><tr><td>5</td><td>新增/匯入</td><td>點擊後可手動新增資料塊</td></tr><tr><td>6</td><td>編輯</td><td>點擊後顯示資料塊的 <em>編輯</em> 與 <em>刪除</em> 操作選項</td></tr></tbody></table>
 
 ## **Edit data block content**
 
@@ -180,13 +187,13 @@ After creating a data set, users can use the Test function to ask questions and 
 
 ## knowledge rights
 
-The creator can grant access rights to other users through "Knowledge Permissions" (for role definition, please refer to [Permission Function Introduction] (../ru-men-zhi-nan/quan-xian-gong-neng-jie-shao.md)).
+The creator can grant access rights to other users through "Knowledge Permissions" (please refer to [權限功能介紹](../ru-men-zhi-nan/quan-xian-gong-neng-jie-shao.md) for role definition).
 
 > Note: The creator is the default "manager", and each project can only have one owner.
 
 <figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Project⟬<table>4⟭⟬<table>5⟭Operation Name⟬<table>6⟭⟬<table>7⟭ says Ming⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭⟬<table>12⟭⟬<table>13⟭1⟬<table>14⟭⟬<table>15⟭Edit form⟬P H0016⟭⟬<table>17⟭Allows users to edit the presentation of tables⟬<table>18⟭⟬<table>19⟭⟬<table>20⟭⟬<table>21⟭2⟬<table>22⟭⟬<table>23⟭Refresh⟬<table>24⟭⟬<table>25⟭Click to refresh the list⟬<table>26⟭⟬<table>27⟭⟬<table>28⟭⟬<table>29⟭3⟬<table>30⟭⟬ <table>31⟭Content Filtering⟬<table>32⟭⟬<table>33⟭Advanced Filtering Specified Content⟬<table>34⟭⟬<table>35⟭⟬<table>36⟭⟬<table>37⟭4⟬<table>38⟭⟬<table>39⟭Status switching⟬<table>40⟭⟬<table>41⟭Quickly switch status by single or multiple selections on the form⟬<table>42⟭⟬<table>43⟭⟬<table>44⟭⟬ <table>45⟭5⟬<table>46⟭⟬<table>47⟭Batch deletion⟬<table>48⟭⟬<table>49⟭After checking the items, the delete button in the upper left corner will be displayed, allowing the user to delete multiple items Item⟬<table>50⟭⟬<table>51⟭⟬<table>52⟭⟬<table>53⟭6⟬<table>54⟭⟬<table>55⟭Search field⟬<table>56⟭⟬<table>57⟭Search Name⟬<table>58⟭⟬<table>59⟭⟬<table>60⟭⟬<table>61⟭7⟬<table>62⟭⟬<table>63⟭Invite⟬<table>64⟭⟬<table>65⟭Invite Organization / Member⟬<table>66⟭⟬<table>67⟭⟬<table>68⟭⟬<table>69⟭9⟬<table>70⟭⟬<table>71⟭Action⟬<table> 72⟭⟬<table>73⟭Transfer your role or remove selected users⟬<table>74⟭⟬<table>75⟭⟬<table>76⟭⟬<table>77⟭
+<table><thead><tr><th width="80">項目</th><th width="180">操作名稱</th><th>說明</th></tr></thead><tbody><tr><td>1</td><td>編輯表格</td><td>允許使用者編輯表格的呈現方式</td></tr><tr><td>2</td><td>刷新</td><td>點擊後刷新列表</td></tr><tr><td>3</td><td>內容篩選</td><td>進階篩選指定內容</td></tr><tr><td>4</td><td>狀態切換</td><td>在表格上單選或多選快速切換狀態</td></tr><tr><td>5</td><td>批次刪除</td><td>勾選項目後左上角的刪除按鈕便會顯示，可讓使用者刪除多個項目</td></tr><tr><td>6</td><td>搜尋欄位</td><td>搜尋 名稱</td></tr><tr><td>7</td><td>邀請</td><td>邀請組織 / 成員</td></tr><tr><td>9</td><td>動作</td><td>轉移您的角色或刪除選定的使用者</td></tr></tbody></table>
 
 ### **New member**
 

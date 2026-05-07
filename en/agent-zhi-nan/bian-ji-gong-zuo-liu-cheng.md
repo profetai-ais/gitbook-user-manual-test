@@ -6,12 +6,12 @@ The figure below shows the workflow editing interface, including the following c
 
 <figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-1. **Node List**: Workflow functional components provided by AI Studio; please refer to the [Workflow Node](gong-zuo-liu-cheng-jie-dian.md) page for detailed information on available nodes.
+1. **Node List**: Workflow functional components provided by AI Studio; see the [工作流程節點](gong-zuo-liu-cheng-jie-dian.md) page for details on available nodes.
 2. **Workflow function menu**: Provides functional operations of the editor; see the description below for details
 3. **Workflow editing area**: Function nodes can be dragged and dropped into this area to edit the workflow
 4. **Editor Map**: Helps users quickly navigate to specific areas of the editor
 
-<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Workflow function menu item (from left as shown above) to right)⟬<table>4⟭⟬<table>5⟭Description⟬<table>6⟭⟬<table>7⟭⟬<table>8⟭⟬<table>09⟭⟬<table>10⟭⟬<table>11⟭Previous step, next step⟬<table>12⟭⟬<table>13⟭Return to the previous step, or return to the next step⟬<table>14⟭⟬<table>15⟭⟬<table>16⟭⟬<table>17⟭History record⟬P H0018⟭⟬<table>19⟭Manage workflow edit history⟬<table>20⟭⟬<table>21⟭⟬<table>22⟭⟬<table>23⟭Export file⟬<table>24⟭⟬<table>25⟭Export this workflow as a file⟬<table> 26⟭⟬<table>27⟭⟬<table>28⟭⟬<table>29⟭Show mini map⟬<table>30⟭⟬<table>31⟭Show Show or hide the minimap in the lower right corner of the screen⟬<table>32⟭⟬<table>33⟭⟬<table>34⟭⟬<table>35⟭Reset View ⟬<table>36⟭⟬<table>37⟭Centers and displays the entire workflow ⟬<table>38⟭⟬<table>39⟭⟬<table> 40⟭⟬<table>41⟭Collapse⟬<table>42⟭⟬<table>43⟭Collapse all nodes in the editor⟬<table>44⟭⟬P H0045⟭⟬<table>46⟭⟬<table>47⟭Edit global variables⟬<table>48⟭⟬<table>49⟭Edit workflow Global variables in process⟬<table>50⟭⟬<table>51⟭⟬<table>52⟭⟬<table>53⟭Clipbook⟬<table>54 ⟭⟬<table>55⟭Save selected nodes and access them anytime ⟬<table>56⟭⟬<table>57⟭⟬<table>58⟭⟬<table>59⟭Save⟬<table>60⟭⟬<table>61⟭Save workflow changes⟬<table>62⟭⟬<table>63⟭⟬ <table>64⟭⟬<table>65⟭Test Preview⟬<table>66⟭⟬<table>67⟭ Open the chat window to test the workflow (this button will not be displayed when editing from the workflow template) ⟬<table>68⟭⟬<table>69⟭⟬<table>70⟭⟬<table>71⟭
+<table><thead><tr><th width="183">工作流程功能選單項目（依上圖由左至右）</th><th>說明</th></tr></thead><tbody><tr><td>上一步、下一步</td><td>返回上一個步驟、或回到下一個步驟</td></tr><tr><td>歷史紀錄</td><td>管理workflow的編輯歷史</td></tr><tr><td>匯出檔案</td><td>將此工作流程匯出為檔案</td></tr><tr><td>顯示小地圖</td><td>顯示或隱藏螢幕右下角的小地圖</td></tr><tr><td>重設檢視</td><td>置中並顯示整個工作流程</td></tr><tr><td>摺疊</td><td>摺疊編輯器中所有節點</td></tr><tr><td>編輯全域變數</td><td>編輯工作流程中的全域變數</td></tr><tr><td>剪貼簿</td><td>儲存選取的節點並隨時取用</td></tr><tr><td>儲存</td><td>儲存工作流程的變更</td></tr><tr><td>測試預覽</td><td>開啟聊天視窗測試工作流程（從工作流程範本編輯時不會顯示此按鈕）</td></tr></tbody></table>
 
 ## **Create/Edit Workflow**
 
@@ -19,7 +19,17 @@ The figure below shows the workflow editing interface, including the following c
 
 <figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-Taking a blank workflow as an example, the screen default will contain a **"Start"** node. Clicking on this node will display several basic variables: | variable name | illustrate | Show information | | -------------------------- | ---------------- | --------------------------------------------- | | `(x)${{start}.{query}}` | User input prompts | _User input, for example:_ `summarize the attached document` | | `(x)${{start}.{files}}` | List of files the user has attached to the chat input area | `metadata of the files in a JSON array` | | `(x)${{start}.{time}}` | Current system time | `17:19:13` | | `(x)${{start}.{date}}` | Current system date | `2025-06-06 Friday` | | `(x)${{start}.{dateTime}}` | Current system date and time | `2025-06-06 Friday 17:19:13` | The following is a simple example demonstrating basic workflow operations:
+Taking a blank workflow as an example, the screen default will contain a **"Start"** node. Clicking on this node will display several basic variables:
+
+| 變數名稱 | 說明 | 顯示資訊 |
+| -------------------------- | ---------------- | --------------------------------------------- |
+| `(x)${{start}.{query}}` | 使用者的輸入提示 | _使用者輸入，例如：_ `summarize the attached document` |
+| `(x)${{start}.{files}}` | 使用者在聊天輸入區附加的檔案清單 | `metadata of the files in a JSON array` |
+| `(x)${{start}.{time}}` | 目前系統時間 | `17:19:13` |
+| `(x)${{start}.{date}}` | 目前系統日期 | `2025-06-06 Friday` |
+| `(x)${{start}.{dateTime}}` | 目前系統日期與時間 | `2025-06-06 Friday 17:19:13` |
+
+The following is a simple example demonstrating basic workflow operations:
 
 <figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 

@@ -15,7 +15,7 @@ By adding different Skills, Agents can perform more specific tasks, such as obta
 1. Go to the Skills tab
 2. Click Add and select Create
 3. Select a classified group, or click the + sign on the right to add a new group
-4. The left side is the list directory. When you create a skill for the first time, there is a set of folders and Skill.md that cannot be deleted by default. However, you can add additional folders and files. For the new method, please refer to [Add a new folder or file] (ji-neng.md#xin-zeng-zi-liao-jia-huo-dang-an)
+4. The left side is the list directory. When you create a skill for the first time, there is a default set of folders and Skill.md that cannot be deleted. However, you can add additional folders and files. For the new method, please refer to [新增資料夾或檔案](ji-neng.md#xin-zeng-zi-liao-jia-huo-dang-an)
 5. Fill in the file content according to the format
 6. You can click Publish to complete the creation or initialize the entire draft.
 

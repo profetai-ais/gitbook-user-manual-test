@@ -12,7 +12,7 @@ The related question function uses LLM's replied content to generate related que
 
 1. In the left menu of AI Studio, expand the "Settings" item and select "System Settings"
 2. In the pagination, select "Related Questions"
-3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. For parameter details, please see [Inference Parameters](pei-zhi.md#tui-li-can-shu)
+3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. Please see [推理參數](pei-zhi.md#tui-li-can-shu) for parameter details
 4. If you want to edit translation prompts, you can enter them in the "Prompt Words" text field, or click "Default Template" to use the default translation prompts.
 5. Click the "Save" button at the bottom right to save changes
 
@@ -26,7 +26,7 @@ Used to automatically generate titles based on user input. The system recognizes
 
 1. In the left menu of AI Studio, expand the "Settings" item and select "System Settings"
 2. In the pagination, select "Generate title"
-3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. For parameter details, please see [Inference Parameters](pei-zhi.md#tui-li-can-shu)
+3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. Please see [推理參數](pei-zhi.md#tui-li-can-shu) for parameter details
 4. If you want to edit translation prompts, you can enter them in the "Prompt Words" text field, or click "Default Template" to use the default translation prompts.
 5. Click the "Save" button at the bottom right to save changes
 
@@ -40,7 +40,7 @@ Used to set the language model used for Personalization-related content located 
 
 1. In the left menu of AI Studio, expand the "Settings" item and select "System Settings"
 2. In the pagination, select "Memory Language Model"
-3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. For parameter details, please see [Inference Parameters](pei-zhi.md#tui-li-can-shu)
+3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. Please see [推理參數](pei-zhi.md#tui-li-can-shu) for parameter details
 
 ## **Memory Vector Model**
 
@@ -50,7 +50,7 @@ Used to set the Personalization located in the avatar in the upper right corner 
 
 1. In the left menu of AI Studio, expand the "Settings" item and select "System Settings"
 2. In the paging, select "Memory Vector Model"
-3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. For parameter details, please see [Inference Parameters](pei-zhi.md#tui-li-can-shu)
+3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. Please see [推理參數](pei-zhi.md#tui-li-can-shu) for parameter details
 
 ## **Memory Constraints**
 
@@ -60,7 +60,7 @@ Used to set "Personalization" located in the avatar in the upper right corner of
 
 1. In the left menu of AI Studio, expand the "Settings" item and select "System Settings"
 2. In the paging, select Remember Constraints
-3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. For parameter details, please see [Inference Parameters](pei-zhi.md#tui-li-can-shu)
+3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. Please see [推理參數](pei-zhi.md#tui-li-can-shu) for parameter details
 4. If you want to edit the prompt word, you can enter it in the "Prompt Word" text field, or click "Default Template" to use the default translation prompt word.
 5. Click the Save button to save the settings.
 
@@ -72,7 +72,7 @@ Rules and restrictions for translation when using the speech-to-text feature in 
 
 1. In the left menu of AI Studio, expand the "Settings" item and select "System Settings"
 2. In the tab, select "Voice Settings"
-3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. For parameter details, please see [Inference Parameters](pei-zhi.md#tui-li-can-shu)
+3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. Please see [推理參數](pei-zhi.md#tui-li-can-shu) for parameter details
 4. If you want to edit the prompt word, you can enter it in the "Prompt Word" text field, or click "Default Template" to use the default translation prompt word.
 5. Click the Save button to save the settings.
 
@@ -85,7 +85,7 @@ Used to control whether to enable the scanning mechanism when uploading skills. 
 1. In the left menu of AI Studio, expand the "Settings" item and select "System Settings"
 2. In the tab, select "Skill Scan Settings"
 3. Toggle switch to enable/disable features
-4. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. For parameter details, please see [Inference Parameters](pei-zhi.md#tui-li-can-shu)
+4. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. Please see [推理參數](pei-zhi.md#tui-li-can-shu) for parameter details
 5. Click the "Save" button at the bottom right to save changes
 
 ## Command override settings
@@ -96,7 +96,7 @@ The command rewriting setting can automatically organize the original commands e
 
 1. In the left menu of AI Studio, expand the "Settings" item and select "System Settings"
 2. In the tab, select "Command Override Settings"
-3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. For parameter details, please see [Inference Parameters](pei-zhi.md#tui-li-can-shu)
+3. Click the gear-shaped icon on the right side of the _model title_ to open the "Inference Parameters" window, select the model for translation and adjust the generation parameters. Please see [推理參數](pei-zhi.md#tui-li-can-shu) for parameter details
 4. If you want to edit the prompt word, you can enter it in the "Prompt Word" text field, or click "Default Template" to use the default translation prompt word.
 5. Click the Save button to save the settings.
 
@@ -117,4 +117,4 @@ The command rewriting setting can automatically organize the original commands e
 
 <figure><img src="../.gitbook/assets/image .png" alt="" width="494"><figcaption></figcaption></figure>
 
-<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Name⟬<table>4⟭⟬<table>5⟭Description⟬<table>6⟭⟬<table>07⟭⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭Temperature⟬<table>12⟭⟬<table>13⟭Control how creative your answers can be. A high value indicates that the answer is more creative and varied; a low value indicates that the answer is more precise and stable. ⟬<table>14⟭⟬<table>15⟭⟬<table>16⟭⟬<table>17⟭Top P⟬<table>18⟭⟬<table>19⟭Control the randomness and diversity of answers. The smaller the number, the more conservative and predictable the generated text will be; the larger the number, the more diverse the generated text will be. ⟬<table>20⟭⟬<table>21⟭top P＝0.5⟬<table>22⟭, only the words with the sum of the top 50% probability that are most likely to appear in the system are considered, and words with low probability of occurrence are excluded. ⟬<table>23⟭⟬<table>24⟭⟬<table>25⟭⟬<table>26⟭Max Tokens⟬<table>27⟭⟬<table>28⟭Limit the maximum length of the assistant output. ⟬<table>29⟭⟬<table>30⟭⟬<table>31⟭⟬<table>32⟭
+<table><thead><tr><th width="161">名稱</th><th>說明</th></tr></thead><tbody><tr><td>溫度</td><td>控制回答的創意程度。數值高，表示回答較創意且多變；數值低，表示回答較精確且穩定。</td></tr><tr><td>Top P</td><td>控制回答的隨機性及多樣性。數字小，生成的文字越保守、可預測；數字大，生成文字越具多樣性。<br><code>top P＝0.5</code>，僅考慮系統最有可能出現的前50%機率總和的詞，排除出現機率低的詞彙。</td></tr><tr><td>Max Tokens</td><td>限制助手輸出的最大長度。</td></tr></tbody></table>

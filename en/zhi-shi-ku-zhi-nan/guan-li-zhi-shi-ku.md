@@ -31,8 +31,8 @@ The summary method of data sets in knowledge is shown in the figure below:
 
 1. Click the "Knowledge Base" item in the left menu
 2. Click the "+" button on the upper right side of the screen
-3. Enter the knowledge name in the "Name" field and click the button on the right to create a multilingual label. Please refer to [Multiple Language Settings](guan-li-zhi-shi-ku.md#duo-guo-yu-yan-she-ding)
-4. Enter the knowledge description in the "Description" field and click the button on the right to create a multilingual label. Please refer to [Multiple Language Settings](guan-li-zhi-shi-ku.md#duo-guo-yu-yan-she-ding)
+3. Enter the knowledge name in the "Name" field and click the button on the right to create a multilingual label. Please refer to [多國語言設定](guan-li-zhi-shi-ku.md#duo-guo-yu-yan-she-ding)
+4. Enter the knowledge description in the "Description" field and click the button on the right to create a multilingual label. Please refer to [多國語言設定](guan-li-zhi-shi-ku.md#duo-guo-yu-yan-she-ding)
 5. Click the "Index Model" menu to select the model used by this knowledge to convert text into semantic vectors.
 6. Click the "Save" button to complete the addition
 
