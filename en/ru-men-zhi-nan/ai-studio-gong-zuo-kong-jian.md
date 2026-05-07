@@ -22,13 +22,13 @@ The conversation recording area is divided into two parts:
 
 Actions available in the conversation recording area:
 
-<table><thead><tr><th width="90">項目</th><th width="157">操作名稱</th><th>說明</th></tr></thead><tbody><tr><td>1</td><td>探索</td><td>回到探索 Agent / 應用模板頁面</td></tr><tr><td>2</td><td>近期 Agent / 對話</td><td>近期使用的 Agent 與對話</td></tr><tr><td>3</td><td>建立</td><td>建立新對話</td></tr><tr><td>4</td><td>編輯</td><td>編輯所選對話紀錄的名稱</td></tr><tr><td>5</td><td>刪除</td><td>刪除所選對話紀錄</td></tr></tbody></table>
+<table><thead><tr><th width="90">project</th><th width="157">Operation name</th><th>illustrate</th></tr></thead><tbody><tr><td>1</td><td>explore</td><td>Return to the Explore Agent/Application Templates page</td></tr><tr><td>2</td><td>Recent Agent/Conversations</td><td>Recently used agents and conversations</td></tr><tr><td>3</td><td>Establish</td><td>Create new conversation</td></tr><tr><td>4</td><td>edit</td><td>Edit the name of the selected conversation record</td></tr><tr><td>5</td><td>delete</td><td>Delete selected conversation history</td></tr></tbody></table>
 
 ## **Chat area**
 
 <figure><img src="../.gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure>
 
-<table data-first-column-sticky data-full-width="false"><thead><tr><th width="80">項目</th><th width="161">操作名稱</th><th>說明</th></tr></thead><tbody><tr><td>1</td><td>參考來源</td><td>點擊以查看 Agent 回應中參考的來源，方便使用者進一步探索或驗證資訊</td></tr><tr><td>2</td><td>動作按鈕</td><td>由左至右：複製回應文字、相關提問、花費金額 / Token</td></tr><tr><td>3</td><td>加入</td><td>添加附加檔案，或使用提示詞模板</td></tr><tr><td>4</td><td>輸入框</td><td>使用者在此輸入提示。點擊送出按鈕將提示傳送給所有選取的 Agent 進行回應</td></tr></tbody></table>
+<table data-first-column-sticky data-full-width="false"><thead><tr><th width="80">project</th><th width="161">Operation name</th><th>illustrate</th></tr></thead><tbody><tr><td>1</td><td>Reference sources</td><td>Click to view the sources referenced in the Agent's response, allowing users to further explore or verify the information.</td></tr><tr><td>2</td><td>action button</td><td>From left to right: Copy response text, related questions, amount spent/Token</td></tr><tr><td>3</td><td>join in</td><td>Add additional files, or use prompt word templates</td></tr><tr><td>4</td><td>Input box</td><td>The user enters the prompt here. Click the Send button to send the prompt to all selected Agents to respond.</td></tr></tbody></table>
 
 > Additional Note: The display of the attachment upload portal may vary depending on Agent settings. In some Agents or environments, administrators can control whether to display the "Upload File" icon; when this function is turned off, the attachment entry will not be displayed in the chat input area, and users will not be able to attach files in the session. If you do not see the attachment button in the workspace, please confirm whether the currently selected Agent allows the file attachment function, or contact the system administrator.
 
@@ -44,7 +44,7 @@ Actions available in the conversation recording area:
 
 Available prompt template types:
 
-<table><thead><tr><th width="176">範本類型</th><th>說明</th></tr></thead><tbody><tr><td>User Prompt</td><td> 從「探索」區域新增到個人收藏的提示範本，可在任何 Agent 對話中使用</td></tr><tr><td>Agent Prompt</td><td> 綁定到特定 Agent 的提示範本，只能在該 Agent 中使用</td></tr></tbody></table>
+<table><thead><tr><th width="176">Template type</th><th>illustrate</th></tr></thead><tbody><tr><td>User Prompt</td><td> Prompt templates added to Favorites from the Explore area and can be used in any Agent conversation</td></tr><tr><td>Agent Prompt</td><td> Prompt template bound to a specific Agent and can only be used in that Agent</td></tr></tbody></table>
 
 ## **Chat Session Archives**
 
@@ -71,7 +71,7 @@ The **Usage Quota** area allows users to clearly understand the Token and cost c
 
 Usage details will be displayed in **two places**, each with different purposes:
 
-<table data-full-width="false"><thead><tr><th width="83">項目</th><th width="121">顯示區域</th><th width="122">位置</th><th width="276">顯示指標</th><th>用途</th></tr></thead><tbody><tr><td>1</td><td>每日配額總覽</td><td>側邊欄左下角</td><td>- <strong>Quota Plan</strong>：目前預算與已花費金額（例如 0.01 / 10.00 USD）<br>- <strong>Usage</strong>：當日配額使用百分比視覺化</td><td>提供所有會話的每日使用概況</td></tr><tr><td>2</td><td>會話層級 Token 明細</td><td>每個 AI 回應下方（滑鼠懸停圖示顯示）</td><td>- <strong>Total Input Tokens</strong>：包含提示、系統指令、上下文<br>- <strong>Total Output Tokens</strong>：AI 生成的回應<br>- <strong>Total Tokens</strong>：輸入與輸出 Token 總和<br>- <strong>Total Usage Cost</strong>：依當前模型價格計算的成本</td><td>提供每次互動的詳細成本拆解</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="83">project</th><th width="121">display area</th><th width="122">Location</th><th width="276">Show indicators</th><th>use</th></tr></thead><tbody><tr><td>1</td><td>Daily Quota Overview</td><td>Sidebar lower left corner</td><td>- <strong>Quota Plan</strong>: Current budget and amount spent (e.g. 0.01 / 10.00 USD)<br>- <strong>Usage</strong>: Visualization of quota usage percentage for the day</td><td>Provides a daily usage overview of all sessions</td></tr><tr><td>2</td><td>Session level token details</td><td>Below each AI response (mouseover icon shows)</td><td>- <strong>Total Input Tokens</strong>: Contains prompts, system commands, and context<br>- <strong>Total Output Tokens</strong>: AI generated response<br>- <strong>Total Tokens</strong>: Sum of input and output Tokens<br>- <strong>Total Usage Cost</strong>: Cost calculated based on current model price</td><td>Provide a detailed cost breakdown of each interaction</td></tr></tbody></table>
 
 ## canvas
 

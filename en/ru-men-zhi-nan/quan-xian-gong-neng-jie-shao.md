@@ -20,7 +20,7 @@ The following table describes what can be done at the "Agent List" level. You ca
 
 <figure><img src="../.gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure>
 
-<table data-full-width="true"><thead><tr><th width="183">角色</th><th>Agent 清單管理員</th><th>Agent 清單協作者</th><th>Agent 清單使用者</th></tr></thead><tbody><tr><td><strong>說明</strong></td><td>可操作 Agent 清單與 Agent 全部功能的角色</td><td>被賦予權限協助管理 Agent 清單成員的角色</td><td>可建立與編輯屬於自己的 Agent 的角色</td></tr><tr><td><strong>建立 Agent</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>管理 Agent 清單成員</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>檢視所有 Agent</strong></td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>編輯所有 Agent</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="183">Role</th><th>Agent list manager</th><th>Agent list collaborator</th><th>Agent list user</th></tr></thead><tbody><tr><td><strong>illustrate</strong></td><td>Roles that can operate the Agent list and all Agent functions</td><td>Role given permission to assist in managing Agent inventory members</td><td>You can create and edit your own Agent role</td></tr><tr><td><strong>Create Agent</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>Manage Agent List Members</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>View all Agents</strong></td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>Edit all agents</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
 
 ### Agent
 
@@ -28,7 +28,7 @@ The following table describes what the "Agent" level can do. At this level, the 
 
 <figure><img src="../.gitbook/assets/image (122).png" alt=""><figcaption></figcaption></figure>
 
-<table data-full-width="true"><thead><tr><th>角色</th><th>Agent 管理員</th><th>Agent 協作者</th><th>Agent 使用者</th></tr></thead><tbody><tr><td><strong>說明</strong></td><td>擁有完整的 Agent 控制權</td><td>可協助管理 Agent 的使用與內容調整</td><td>僅能在工作空間使用 Agent 的角色</td></tr><tr><td><strong>在工作空間使用 Agent</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>在 Agent 清單檢視 Agent</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>管理 Agent 成員</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>編輯 Agent</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>刪除 Agent</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Role</th><th>Agent administrator</th><th>Agent collaborator</th><th>Agent user</th></tr></thead><tbody><tr><td><strong>illustrate</strong></td><td>Have full Agent control</td><td>Can assist in managing Agent usage and content adjustment</td><td>Only Agent roles can be used in the workspace</td></tr><tr><td><strong>Using Agent in Workspace</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>View Agent in Agent List</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>Manage Agent Members</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>Edit Agent</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>Delete Agent</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
 
 ## Knowledge base list function permissions
 
@@ -38,7 +38,7 @@ The following table describes what can be done at the Knowledge Base Inventory l
 
 <figure><img src="../.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure>
 
-<table data-full-width="true"><thead><tr><th>角色</th><th>知識庫清單管理員</th><th>知識庫清單協作者</th><th>知識庫清單使用者</th></tr></thead><tbody><tr><td><strong>說明</strong></td><td>可操作知識庫與知識全部功能的角色</td><td>被賦予權限協助管理知識庫成員的角色</td><td>可建立與編輯屬於自己的知識的角色</td></tr><tr><td><strong>建立知識</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>管理知識庫成員</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>檢視所有知識</strong></td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>編輯所有知識</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Role</th><th>Knowledge Base List Manager</th><th>Knowledge Base List Collaborators</th><th>Knowledge Base List Users</th></tr></thead><tbody><tr><td><strong>illustrate</strong></td><td>Roles that can operate the knowledge base and all functions of knowledge</td><td>A role assigned the authority to assist in the management of knowledge base members</td><td>Characters who can create and edit their own knowledge</td></tr><tr><td><strong>build knowledge</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>Manage knowledge base members</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>View all knowledge</strong></td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>Edit all knowledge</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
 
 ### Knowledge
 
@@ -46,7 +46,7 @@ The following table describes what can be done at the "knowledge" level. At this
 
 <figure><img src="../.gitbook/assets/image (124).png" alt=""><figcaption></figcaption></figure>
 
-<table data-full-width="true"><thead><tr><th>角色</th><th>知識管理員</th><th>知識協作者</th><th>知識使用者</th></tr></thead><tbody><tr><td><strong>說明</strong></td><td>擁有完整的知識控制權</td><td>可協助管理知識的內容調整</td><td>僅能讀取知識的角色</td></tr><tr><td><strong>可在 Agent 新增知識</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>在知識庫清單檢視知識</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>管理知識成員</strong></td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>編輯知識</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>刪除知識</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Role</th><th>knowledge manager</th><th>knowledge collaborator</th><th>knowledge user</th></tr></thead><tbody><tr><td><strong>illustrate</strong></td><td>Have complete knowledge control</td><td>Content adjustments that can assist in knowledge management</td><td>Characters who can only read knowledge</td></tr><tr><td><strong>New knowledge can be added to Agent</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>View knowledge in the knowledge base list</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>Manage knowledge members</strong></td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>Editing knowledge</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>delete knowledge</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
 
 ## **MCP Function Permissions**
 
@@ -56,7 +56,7 @@ The following table describes what can be done at the "**MCP** Checklist" level.
 
 <figure><img src="../.gitbook/assets/image (125).png" alt=""><figcaption></figcaption></figure>
 
-<table data-full-width="true"><thead><tr><th>角色</th><th>MCP 清單管理員</th><th>MCP 清單協作者</th><th>MCP 清單使用者</th></tr></thead><tbody><tr><td><strong>說明</strong></td><td>可操作MCP清單與MCP全部功能的角色</td><td>被賦予權限協助管理MCP清單成員的角色</td><td>可建立與編輯屬於自己的MCP的角色</td></tr><tr><td><strong>建立MCP</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>管理MCP成員</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>檢視所有MCP</strong></td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>編輯所有MCP</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Role</th><th>MCP inventory manager</th><th>MCP manifest collaborator</th><th>MCP list user</th></tr></thead><tbody><tr><td><strong>illustrate</strong></td><td>Roles that can operate the MCP list and all MCP functions</td><td>Role assigned the authority to assist in managing MCP inventory members</td><td>You can create and edit your own MCP character</td></tr><tr><td><strong>Create MCP</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>Manage MCP members</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>View all MCPs</strong></td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>Edit all MCPs</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
 
 ### **MCP**
 
@@ -64,7 +64,7 @@ The following table describes what can be done at the "MCP" level. At this level
 
 <figure><img src="../.gitbook/assets/image (126).png" alt=""><figcaption></figcaption></figure>
 
-<table data-full-width="true"><thead><tr><th>角色</th><th>MCP 管理員</th><th>MCP 協作者</th><th>MCP 使用者</th></tr></thead><tbody><tr><td><strong>說明</strong></td><td>擁有完整的MCP控制權</td><td>可協助管理MCP的內容調整</td><td>僅能讀取MCP的角色</td></tr><tr><td><strong>可在 Agent 新增MCP</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>在MCP清單清單檢視MCP</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>設定MCP成員</strong></td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>編輯MCP</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>刪除MCP</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Role</th><th>MCP Administrator</th><th>MCP collaborator</th><th>MCP user</th></tr></thead><tbody><tr><td><strong>illustrate</strong></td><td>Have complete control of MCP</td><td>Can assist in managing MCP content adjustments</td><td>Only characters that can read MCP</td></tr><tr><td><strong>MCP can be added to Agent</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>View MCP in MCP list</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>Set MCP members</strong></td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>EditMCP</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>Delete MCP</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
 
 ## **Workflow Template Function Permissions**
 
@@ -74,7 +74,7 @@ The following table describes what can be done at the "Workflow Template List" l
 
 <figure><img src="../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
 
-<table data-full-width="true"><thead><tr><th>角色</th><th>工作流程模板清單管理員</th><th>工作流程模板清單協作者</th><th>工作流程模板清單使用者</th></tr></thead><tbody><tr><td><strong>說明</strong></td><td>可操作工作流程模板清單與工作流程全部模板功能的角色</td><td>被賦予權限協助管理工作流程模板清單成員的角色</td><td>可建立與編輯屬於自己的工作流程模板的角色</td></tr><tr><td><strong>建立工作流程模板</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>管理提工作流程成員模板</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>檢視所有工作流程模板</strong></td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>編輯所有工作流程模板</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Role</th><th>Workflow Template Checklist Manager</th><th>Workflow template checklist collaborators</th><th>Workflow template list users</th></tr></thead><tbody><tr><td><strong>illustrate</strong></td><td>List of operational workflow templates and roles of all workflow template functions</td><td>Role assigned to members who have permission to assist in managing workflow template inventory</td><td>Roles that can create and edit their own workflow templates</td></tr><tr><td><strong>Create workflow templates</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>Management workflow member template</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>View all workflow templates</strong></td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>Edit all workflow templates</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
 
 ### Workflow template
 
@@ -82,7 +82,7 @@ The following table describes what can be done at the "Workflow Template" level.
 
 <figure><img src="../.gitbook/assets/image (128).png" alt=""><figcaption></figcaption></figure>
 
-<table data-full-width="true"><thead><tr><th>角色</th><th>工作流程模板管理員</th><th>工作流程模板協作者</th><th>工作流程模板使用者</th></tr></thead><tbody><tr><td><strong>說明</strong></td><td>擁有完整的工作流程模板控制權</td><td>可協助管理工作流程模板的內容調整</td><td>僅能讀取工作流程模板的角色</td></tr><tr><td><strong>可在工作空間使用工作流程模板</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>在工作流程清單清單檢視工作流程模板</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>設定工作流程模板成員</strong></td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>編輯工作流程模板</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>刪除提工作流程模板</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Role</th><th>Workflow template manager</th><th>Workflow template collaborators</th><th>Workflow template user</th></tr></thead><tbody><tr><td><strong>illustrate</strong></td><td>Have complete control over workflow templates</td><td>Can assist in managing content adjustments to workflow templates</td><td>Roles that can only read workflow templates</td></tr><tr><td><strong>Workflow templates available in workspaces</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>View workflow templates in the workflow list</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>Set up workflow template members</strong></td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>Edit workflow template</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>Delete workflow template</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
 
 ## **Prompt Word Template Function Permission**
 
@@ -92,7 +92,7 @@ The following table describes what can be done at the "Prompt Word Template List
 
 <figure><img src="../.gitbook/assets/image (129).png" alt=""><figcaption></figcaption></figure>
 
-<table data-full-width="true"><thead><tr><th>角色</th><th>提示詞模板清單管理員</th><th>提示詞模板清單協作者</th><th>提示詞模板清單使用者</th></tr></thead><tbody><tr><td><strong>說明</strong></td><td>可操作提示詞模板清單與提示詞模板全部功能的角色</td><td>被賦予權限協助管理提示詞模板清單成員的角色</td><td>可建立與編輯屬於自己的提示詞模板的角色</td></tr><tr><td><strong>建立提示詞模板</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>管理提示詞清單模板成員</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>檢視所有提示詞模板</strong></td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>編輯所有提示詞模板</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Role</th><th>Prompt word template list manager</th><th>Prompt Word Template Checklist Collaborators</th><th>Prompt word template list user</th></tr></thead><tbody><tr><td><strong>illustrate</strong></td><td>List of operable prompt word templates and roles of all functions of prompt word templates</td><td>Role assigned to members who have the authority to assist in managing prompt word template lists</td><td>Characters who can create and edit their own prompt word templates</td></tr><tr><td><strong>Create prompt word template</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>Manage Prompt Word List Template Members</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>View all prompt word templates</strong></td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>Edit all prompt word templates</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
 
 ### prompt word template
 
@@ -100,4 +100,4 @@ The following table describes what can be done at the "prompt word template" lev
 
 <figure><img src="../.gitbook/assets/image (130).png" alt=""><figcaption></figcaption></figure>
 
-<table data-full-width="true"><thead><tr><th>角色</th><th>提示詞模板管理員</th><th>提示詞模板協作者</th><th>提示詞模板使用者</th></tr></thead><tbody><tr><td><strong>說明</strong></td><td>擁有完整的提示詞模板控制權</td><td>可協助管理提示詞模板的內容調整</td><td>僅能讀取提示詞模板的角色</td></tr><tr><td><strong>可在工作空間使用提示詞模板</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>在提示詞清單清單檢視提示詞</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>設定提示詞模板成員</strong></td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>編輯提示詞模板</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>刪除提示詞模板</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Role</th><th>Prompt word template manager</th><th>prompt word template collaborator</th><th>Prompt word template user</th></tr></thead><tbody><tr><td><strong>illustrate</strong></td><td>Have complete control over prompt word templates</td><td>Can assist in managing the content adjustment of prompt word templates</td><td>Only roles that can read prompt word templates</td></tr><tr><td><strong>Prompt word templates available in workspaces</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>View cue words in the cue word list</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>Set prompt word template members</strong></td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>Edit Prompt Word Template</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>Delete prompt word template</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>

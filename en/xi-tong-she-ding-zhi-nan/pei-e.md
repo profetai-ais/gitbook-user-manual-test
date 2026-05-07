@@ -8,7 +8,7 @@ description: "Administrators can create and adjust usage quota plans to manage h
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="80">項目</th><th width="170">名稱</th><th>說明</th></tr></thead><tbody><tr><td>1</td><td>名稱</td><td>配額方案的顯示名稱（例如： <code>default</code>, <code>VVIP</code>, <code>Plan VIP</code>）。</td></tr><tr><td>2</td><td>用量重置週期</td><td>配額重置的頻率（例如：每天、每週、每小時）。</td></tr><tr><td>3</td><td>費用限制(USD)</td><td>每個重置週期內允許的最高花費（以美元計算）。<code>-1</code> 代表無限制。</td></tr><tr><td>4</td><td>建立者</td><td>建立此方案的管理員名稱。</td></tr><tr><td>5</td><td>修改日期</td><td>配額方案的修改時間。</td></tr><tr><td>6</td><td>描述</td><td>配額方案用途的內部註解或說明。</td></tr><tr><td>7</td><td>動作</td><td>編輯或刪除此方案的按鈕。</td></tr></tbody></table>
+<table><thead><tr><th width="80">project</th><th width="170">name</th><th>illustrate</th></tr></thead><tbody><tr><td>1</td><td>name</td><td>The display name of the quota plan (for example: <code>default</code>, <code>VVIP</code>, <code>Plan VIP</code>）。</td></tr><tr><td>2</td><td>Usage reset cycle</td><td>How often quotas are reset (for example: daily, weekly, hourly).</td></tr><tr><td>3</td><td>Fee Limit(USD)</td><td>Maximum allowed spend per reset period (in USD).<code>-1</code> Represents unlimited.</td></tr><tr><td>4</td><td>founder</td><td>The name of the administrator who created this scheme.</td></tr><tr><td>5</td><td>Modification date</td><td>The modification time of the quota plan.</td></tr><tr><td>6</td><td>describe</td><td>An internal note or description of the quota scheme's purpose.</td></tr><tr><td>7</td><td>action</td><td>Button to edit or delete this scenario.</td></tr></tbody></table>
 
 ## **New quota plan**
 
@@ -66,4 +66,4 @@ When the administrator clicks the **Refresh icon** on the **User Quota Plan Bind
 
 <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="80">項目</th><th width="220">欄位名稱</th><th>說明</th></tr></thead><tbody><tr><td>1</td><td>使用者名稱</td><td>配額被手動調整的使用者名稱。</td></tr><tr><td>2</td><td>處理預算之前 (USD)</td><td>調整前的使用者預算（以美元計算）。</td></tr><tr><td>3</td><td>處理預算之後 (USD)</td><td>調整後的預算（以美元計算）。</td></tr><tr><td>4</td><td>重置用量原因</td><td>用來記錄手動更新或修正的原因。</td></tr><tr><td>5</td><td>建立日期</td><td>執行調整的日期。</td></tr></tbody></table>
+<table><thead><tr><th width="80">project</th><th width="220">Field name</th><th>illustrate</th></tr></thead><tbody><tr><td>1</td><td>username</td><td>The name of the user whose quota was manually adjusted.</td></tr><tr><td>2</td><td>Before processing budget (USD)</td><td>User budget before adjustment (in USD).</td></tr><tr><td>3</td><td>After processing budget (USD)</td><td>Adjusted budget (in U.S. dollars).</td></tr><tr><td>4</td><td>Reason for resetting usage</td><td>Used to record reasons for manual updates or corrections.</td></tr><tr><td>5</td><td>Creation date</td><td>The date the adjustment was performed.</td></tr></tbody></table>

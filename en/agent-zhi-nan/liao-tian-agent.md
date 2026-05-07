@@ -97,7 +97,7 @@ Users can control the Agent's reply behavior by adjusting the items in the "**Pa
 
 <figure><img src="../.gitbook/assets/image (163).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="98">項目</th><th width="112">參數</th><th width="238">說明</th><th>範圍與數值</th></tr></thead><tbody><tr><td>1</td><td>模型</td><td>Agent 建立時選擇的預設模型；可在這裡變更</td><td>n/a</td></tr><tr><td>2</td><td>溫度</td><td>控制回覆的創造力。數值越高，回應越多元和有創意；數值越低，回應越精確和一致</td><td>0–1</td></tr><tr><td>3</td><td>Top P</td><td>控制隨機性和多樣性。數值越低，產生越保守和可預測的文字；數值越高，產生越多樣的結果</td><td>0–1</td></tr><tr><td>4</td><td>最大標記</td><td>限制最大輸出長度</td><td>依需求設定</td></tr><tr><td>5</td><td>對話記憶</td><td>儲存問答歷史以增強連貫性（可能會減慢回應時間）</td><td><code>0</code>表示無狀態回應；<code>5-10</code>可在連貫性和效能之間取得平衡。記憶越多，速度越慢。</td></tr></tbody></table>
+<table><thead><tr><th width="98">project</th><th width="112">parameter</th><th width="238">illustrate</th><th>Range and value</th></tr></thead><tbody><tr><td>1</td><td>Model</td><td>The default model selected when the Agent is created; it can be changed here</td><td>n/a</td></tr><tr><td>2</td><td>temperature</td><td>Control the creativity of your replies. The higher the value, the more diverse and creative the responses; the lower the value, the more precise and consistent the responses.</td><td>0–1</td></tr><tr><td>3</td><td>Top P</td><td>Control randomness and diversity. Lower values ​​produce more conservative and predictable text; higher values ​​produce more diverse results</td><td>0–1</td></tr><tr><td>4</td><td>maximum mark</td><td>Limit maximum output length</td><td>Set according to needs</td></tr><tr><td>5</td><td>dialogue memory</td><td>Store Q&A history to enhance coherence (may slow down response times)</td><td><code>0</code>Indicates a stateless response;<code>5-10</code>A balance can be struck between coherence and performance. The more memories you have, the slower it becomes.</td></tr></tbody></table>
 
 #### instruction
 
@@ -155,31 +155,31 @@ Users can enable/disable tools accessible to Agent in settings.
 
 #### **Session Memory**
 
-<table><thead><tr><th width="250">工具</th><th>說明</th></tr></thead><tbody><tr><td>KV 會話短期記憶</td><td>能夠在會話期間精確地、基於鍵地儲存和檢索臨時資料。對於追蹤動態變數（例如<code>使用者名稱</code>、<code>所選方案</code>）非常有用。</td></tr><tr><td>graphiti - 新增記憶資料</td><td>將情節性資訊（例如互動或事件）儲存到知識圖譜中。</td></tr><tr><td>graphiti - 查詢記憶節點</td><td>檢索實體摘要或節點層級的記憶表示。</td></tr><tr><td>graphiti - 查詢記憶事實</td><td>在記憶圖譜中搜尋相關事實和結構化關係。</td></tr><tr><td>graphiti - 刪除實體關係</td><td>從圖譜中刪除實體之間定義的關係。</td></tr><tr><td>graphiti - 刪除事件片段</td><td>刪除記憶圖譜中的特定事件區段。</td></tr><tr><td>graphiti - 取得實體關係</td><td>檢索與特定實體相關的結構化關係。</td></tr><tr><td>graphiti - 取得事件片段</td><td>返回最近的記憶情節，以提供對話或決策背景。</td></tr><tr><td>graphiti - 清除記憶圖譜</td><td>重置整個基於圖譜的記憶系統。</td></tr></tbody></table>
+<table><thead><tr><th width="250">tool</th><th>illustrate</th></tr></thead><tbody><tr><td>KV conversational short-term memory</td><td>Ability to accurately store and retrieve temporary data on a key-based basis during a session. For tracking dynamic variables (e.g.<code>username</code>、<code>Selected plan</code>) is very useful.</td></tr><tr><td>graphiti - add new memory data</td><td>Store episodic information, such as interactions or events, into the knowledge graph.</td></tr><tr><td>graphiti - Query memory nodes</td><td>Retrieve entity summaries or node-level memory representations.</td></tr><tr><td>graphiti - query memory facts</td><td>Search memory graphs for relevant facts and structured relationships.</td></tr><tr><td>graphiti - delete entity relationships</td><td>Removes defined relationships between entities from the graph.</td></tr><tr><td>graphiti - deleting event fragments</td><td>Delete a specific event segment in the memory graph.</td></tr><tr><td>graphiti - Get entity relationships</td><td>Retrieve structured relationships related to specific entities.</td></tr><tr><td>graphiti - Get event fragments</td><td>Return to recent memory episodes to provide context for conversations or decisions.</td></tr><tr><td>graphiti - clear memory graph</td><td>Reset the entire map-based memory system.</td></tr></tbody></table>
 
 > PS: For more information about Graphiti, please see its official website.
 
 #### **Academic Articles**
 
-<table><thead><tr><th width="250">工具</th><th>使用指南</th></tr></thead><tbody><tr><td>arXiv 論文搜尋</td><td>允許使用者從 arXiv 資料庫搜尋學術論文。</td></tr><tr><td>Google Scholar 搜尋</td><td>使用 Google Scholar 搜尋學術文章和引文。</td></tr></tbody></table>
+<table><thead><tr><th width="250">tool</th><th>User Guide</th></tr></thead><tbody><tr><td>arXiv paper search</td><td>Allows users to search academic papers from the arXiv database.</td></tr><tr><td>Google Scholar Search</td><td>Search scholarly articles and citations with Google Scholar.</td></tr></tbody></table>
 
 #### **Web Search**
 
-<table><thead><tr><th width="250">工具</th><th>使用指南</th></tr></thead><tbody><tr><td>Serper - 網頁內容擷取</td><td>從網頁 URL 提取可讀內容。</td></tr><tr><td>Serper - Google 搜尋</td><td>執行 Google 搜尋並返回摘要結果。</td></tr><tr><td>Serper - 專利搜尋</td><td>搜尋已發布的專利和相關文件。</td></tr><tr><td>Serper - 圖片搜尋</td><td>根據文字查詢搜尋圖片。</td></tr><tr><td>Serper - 論文搜尋</td><td>使用 Google Scholar 風格的來源查詢學術論文。</td></tr><tr><td>Serper - 新聞搜尋</td><td>根據文字查詢搜尋新聞。</td></tr><tr><td>Serper - 地圖資訊搜尋</td><td>根據文字查詢搜尋地圖。</td></tr></tbody></table>
+<table><thead><tr><th width="250">tool</th><th>User Guide</th></tr></thead><tbody><tr><td>Serper - web content extraction</td><td>Extract readable content from web page URLs.</td></tr><tr><td>Serper - Google Search</td><td>Perform a Google search and return summary results.</td></tr><tr><td>Serper - Patent Search</td><td>Search issued patents and related documents.</td></tr><tr><td>Serper - Image Search</td><td>Search images based on text queries.</td></tr><tr><td>Serper - paper search</td><td>Search academic papers using Google Scholar-style sources.</td></tr><tr><td>Serper - News Search</td><td>Search news based on text queries.</td></tr><tr><td>Serper - map information search</td><td>Search maps based on text queries.</td></tr></tbody></table>
 
 > Note: For more information about Sperper, please see its official website.
 
 #### **Code**
 
-<table><thead><tr><th width="250">工具</th><th>使用指南</th></tr></thead><tbody><tr><td>執行 Python 程式碼</td><td>執行 Python 腳本或邏輯，以支援數學、資料解析或自動化等任務。</td></tr></tbody></table>
+<table><thead><tr><th width="250">tool</th><th>User Guide</th></tr></thead><tbody><tr><td>Execute Python code</td><td>Execute Python scripts or logic to support tasks such as mathematics, data parsing, or automation.</td></tr></tbody></table>
 
 #### **Document Handling**
 
-<table><thead><tr><th width="250">工具</th><th>使用指南</th></tr></thead><tbody><tr><td>預覽文件</td><td>在平台內以可讀格式顯示上傳的文件。</td></tr><tr><td>文件轉markdown</td><td>將文件轉換為 Markdown 格式。</td></tr></tbody></table>
+<table><thead><tr><th width="250">tool</th><th>User Guide</th></tr></thead><tbody><tr><td>Preview file</td><td>Display uploaded files in a readable format within the platform.</td></tr><tr><td>Convert file to markdown</td><td>Convert the file to Markdown format.</td></tr></tbody></table>
 
 #### **Other**
 
-<table><thead><tr><th width="250">工具</th><th>使用指南</th></tr></thead><tbody><tr><td>取得目前時間</td><td>返回發出請求時的當前系統時間。</td></tr><tr><td>簡易數學式運算</td><td>在提示中執行簡單的算術運算。</td></tr><tr><td>動態思維鏈（Sequential Thinking）</td><td>將複雜問題分解為逐步思考，並可選擇修改或分支。適用於規劃、故障排除和結構化推理。</td></tr></tbody></table>
+<table><thead><tr><th width="250">tool</th><th>User Guide</th></tr></thead><tbody><tr><td>Get current time</td><td>Returns the current system time at the time of the request.</td></tr><tr><td>Simple mathematical operations</td><td>Perform simple arithmetic operations at the prompt.</td></tr><tr><td>Dynamic thinking chain (Sequential Thinking)</td><td>Break complex problems down into step-by-step considerations, with the option to modify or branch. Good for planning, troubleshooting, and structured reasoning.</td></tr></tbody></table>
 
 ### Skill
 
@@ -215,7 +215,7 @@ Users can link existing or favorited application templates (prompt word template
 
 <figure><img src="../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="161">選項</th><th width="103">對 MCP 工具可見</th><th width="96">對 LLM 可見</th><th>說明</th><th>範例使用情境</th></tr></thead><tbody><tr><td>Do not process</td><td>X</td><td>X</td><td>檔案已上傳，但對 LLM 或 MCP 工具都不可見。不會被開啟或解讀。</td><td>– –</td></tr><tr><td>Process with Tool</td><td>O</td><td>X</td><td>檔案會傳遞給 MCP 工具進行處理，但不會傳遞給 LLM。</td><td>當您想從 CSV 或 PDF 中提取資料，但不需要 AI 生成的評論時很有用。</td></tr><tr><td>File to Image Conversion</td><td>X</td><td>O</td><td>檔案會被轉譯成圖片，僅對 LLM 可見，以供參考。</td><td>適用於掃描文件或視覺版面，其中圖表關係很重要。</td></tr><tr><td>Convert to Image &#x26; Tool</td><td>O</td><td>O</td><td>檔案會同時被轉譯為 LLM 參考和由 MCP 工具處理。</td><td>最適合需要同時解讀視覺版面和結構化資料的發票或表格。</td></tr></tbody></table>
+<table><thead><tr><th width="161">Options</th><th width="103">Visible to MCP tools</th><th width="96">Visible to LLM</th><th>illustrate</th><th>Example use case</th></tr></thead><tbody><tr><td>Do not process</td><td>X</td><td>X</td><td>The archive has been uploaded but is not visible to either LLM or MCP tools. Will not be opened or interpreted.</td><td>– –</td></tr><tr><td>Process with Tool</td><td>O</td><td>X</td><td>Archives are passed to MCP tools for processing but not to LLM.</td><td>Useful when you want to extract material from a CSV or PDF, but don't need AI-generated comments.</td></tr><tr><td>File to Image Conversion</td><td>X</td><td>O</td><td>The files will be translated into images, visible only to LLM for reference.</td><td>Suitable for scanned documents or visual layouts where diagrammatic relationships are important.</td></tr><tr><td>Convert to Image &#x26; Tool</td><td>O</td><td>O</td><td>Archives are simultaneously translated into LLM references and processed by MCP tools.</td><td>Best suited for invoices or forms that require interpretation of both visual layout and structured information.</td></tr></tbody></table>
 
 ### guardrail
 
@@ -311,7 +311,7 @@ The creator can grant access rights to other users through "Permissions" (please
 
 <figure><img src="../.gitbook/assets/image (196).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="80">項目</th><th width="146">操作名稱</th><th>說明</th></tr></thead><tbody><tr><td>1</td><td>編輯表格</td><td>允許使用者編輯表格的呈現方式</td></tr><tr><td>2</td><td>刷新</td><td>點擊後刷新列表</td></tr><tr><td>3</td><td>內容篩選</td><td>進階篩選指定內容</td></tr><tr><td>4</td><td>批次刪除</td><td>勾選項目後左上角的刪除按鈕便會顯示，可讓使用者刪除多個項目</td></tr><tr><td>5</td><td>搜尋欄位</td><td>搜尋 名稱</td></tr><tr><td>6</td><td>邀請</td><td>邀請組織 / 成員</td></tr><tr><td>7</td><td>動作</td><td>轉移您的角色或刪除選定的使用者</td></tr></tbody></table>
+<table><thead><tr><th width="80">project</th><th width="146">Operation name</th><th>illustrate</th></tr></thead><tbody><tr><td>1</td><td>Edit table</td><td>Allows the user to edit the presentation of the table</td></tr><tr><td>2</td><td>refresh</td><td>Refresh list after click</td></tr><tr><td>3</td><td>Content filtering</td><td>Advanced filtering of specific content</td></tr><tr><td>4</td><td>Batch delete</td><td>After checking the items, the delete button in the upper left corner will be displayed, allowing users to delete multiple items.</td></tr><tr><td>5</td><td>search field</td><td>Search name</td></tr><tr><td>6</td><td>invite</td><td>Invite organizations/members</td></tr><tr><td>7</td><td>action</td><td>Transfer your role or remove selected users</td></tr></tbody></table>
 
 ### **New member**
 

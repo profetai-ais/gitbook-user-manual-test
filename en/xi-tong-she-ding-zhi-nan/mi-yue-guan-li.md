@@ -10,7 +10,7 @@ After entering the "Key Management" page, the screen will display the list of cu
 
 <figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="210">名稱</th><th>說明</th></tr></thead><tbody><tr><td>Type</td><td>密鑰類型（例如 SERPER、LiteLLM），代表此金鑰所對應的服務種類</td></tr><tr><td>Name</td><td>密鑰名稱，用於識別此 API Key 的用途</td></tr><tr><td>Key</td><td>API Key 值，為安全考量僅以遮罩方式顯示</td></tr><tr><td>Tenant ID</td><td>所屬租戶識別碼</td></tr><tr><td>Expire Date</td><td>密鑰到期時</td></tr><tr><td>Creator</td><td>建立者</td></tr><tr><td>Created Date</td><td>建立時間</td></tr><tr><td>Modified Date</td><td>最後更新時間</td></tr><tr><td>Actions</td><td>操作功能，目前提供刪除（垃圾桶圖示）</td></tr></tbody></table>
+<table><thead><tr><th width="210">name</th><th>illustrate</th></tr></thead><tbody><tr><td>Type</td><td>Key type (such as SERPER, LiteLLM), representing the type of service corresponding to this key</td></tr><tr><td>Name</td><td>Key name identifying the purpose of this API Key</td></tr><tr><td>Key</td><td>API Key value, only displayed in mask mode for security reasons</td></tr><tr><td>Tenant ID</td><td>Tenant identification code</td></tr><tr><td>Expire Date</td><td>when key expires</td></tr><tr><td>Creator</td><td>founder</td></tr><tr><td>Created Date</td><td>Setup time</td></tr><tr><td>Modified Date</td><td>Last updated</td></tr><tr><td>Actions</td><td>Operation function, currently provides deletion (trash can icon)</td></tr></tbody></table>
 
 ## Add new key
 

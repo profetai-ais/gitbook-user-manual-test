@@ -36,12 +36,12 @@ Workflow Agent's homepage can be divided into several main areas, as follows:
 
 The function options area contains the following function links. After clicking, the corresponding setting page will appear:
 
-<table><thead><tr><th width="250">名稱</th><th>說明</th></tr></thead><tbody><tr><td>基礎設置</td><td>編輯 Agent 的主頁</td></tr><tr><td>流程設置</td><td>編輯 Agent 的工作流程</td></tr><tr><td>會話日誌</td><td>提供此 Agent 的對話紀錄</td></tr><tr><td>成員管理</td><td>管理此 Agent 的存取權限</td></tr><tr><td>AI WEBAPP</td><td>設定此 Agent 的網頁嵌入</td></tr><tr><td>API Key</td><td>提供第三方應用安全呼叫 API 的憑證</td></tr></tbody></table>
+<table><thead><tr><th width="250">name</th><th>illustrate</th></tr></thead><tbody><tr><td>Basic settings</td><td>Edit the Agent's home page</td></tr><tr><td>Process settings</td><td>Edit an Agent's Workflow</td></tr><tr><td>session log</td><td>Provide conversation history for this Agent</td></tr><tr><td>Member management</td><td>Manage access to this Agent</td></tr><tr><td>AI WEBAPP</td><td>Configure web embedding for this Agent</td></tr><tr><td>API Key</td><td>Provide credentials for third-party applications to securely call the API</td></tr></tbody></table>
 
 2. **Basic information**: Editable Agent name, description and activation status
 3. **Application Settings:** Provides settings related to Agent behavior based on Agent type
 
-<table><thead><tr><th width="250">名稱</th><th>說明</th></tr></thead><tbody><tr><td>歡迎頁面</td><td>設定Agent 問題設定</td></tr><tr><td>提示詞模板</td><td>加入現有提示詞模板供後續使用</td></tr><tr><td>檔案處理方式</td><td>控制上傳檔案的處理方式</td></tr></tbody></table>
+<table><thead><tr><th width="250">name</th><th>illustrate</th></tr></thead><tbody><tr><td>welcome page</td><td>Configure Agent problem settings</td></tr><tr><td>prompt word template</td><td>Add existing prompt word templates for subsequent use</td></tr><tr><td>File handling</td><td>Control how uploaded files are processed</td></tr></tbody></table>
 
 4. **Adaptation Preview:** Allows users to test whether the Q&A results are as expected
 
@@ -116,7 +116,7 @@ The creator can grant access rights to other users through "Permissions" (please
 
 <figure><img src="../.gitbook/assets/image (215).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="99">項目</th><th width="132">操作名稱</th><th>說明</th></tr></thead><tbody><tr><td>1</td><td>編輯表格</td><td>允許使用者編輯表格的呈現方式</td></tr><tr><td>2</td><td>刷新</td><td>點擊後刷新列表</td></tr><tr><td>3</td><td>內容篩選</td><td>進階篩選指定內容</td></tr><tr><td>4</td><td>狀態切換</td><td>在表格上單選或多選快速切換狀態</td></tr><tr><td>5</td><td>批次刪除</td><td>勾選項目後左上角的刪除按鈕便會顯示，可讓使用者刪除多個項目</td></tr><tr><td>6</td><td>搜尋欄位</td><td>搜尋 名稱</td></tr><tr><td>7</td><td>邀請</td><td>邀請組織 / 成員</td></tr><tr><td>8</td><td>啟用狀態</td><td>使用者權限啟用狀態</td></tr><tr><td>9</td><td>動作</td><td>轉移您的角色或刪除選定的使用者</td></tr></tbody></table>
+<table><thead><tr><th width="99">project</th><th width="132">Operation name</th><th>illustrate</th></tr></thead><tbody><tr><td>1</td><td>Edit table</td><td>Allows the user to edit the presentation of the table</td></tr><tr><td>2</td><td>refresh</td><td>Refresh list after click</td></tr><tr><td>3</td><td>Content filtering</td><td>Advanced filtering of specific content</td></tr><tr><td>4</td><td>Status switching</td><td>Quickly switch status by selecting single or multiple selections on the table</td></tr><tr><td>5</td><td>Batch delete</td><td>After checking the items, the delete button in the upper left corner will be displayed, allowing users to delete multiple items.</td></tr><tr><td>6</td><td>search field</td><td>Search name</td></tr><tr><td>7</td><td>invite</td><td>Invite organizations/members</td></tr><tr><td>8</td><td>Enabled status</td><td>User permission enabled status</td></tr><tr><td>9</td><td>action</td><td>Transfer your role or remove selected users</td></tr></tbody></table>
 
 ### **New member**
 

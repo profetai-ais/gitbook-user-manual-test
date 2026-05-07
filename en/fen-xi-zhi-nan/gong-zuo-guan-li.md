@@ -14,7 +14,7 @@ When a user puts forward a request, the system will break it down into executabl
 
 There are 8 types of status in total:
 
-<table><thead><tr><th width="224">狀態名稱</th><th>說明</th></tr></thead><tbody><tr><td>PENDING</td><td>已建立，等待進入佇列/尚未派送</td></tr><tr><td>QUEUED</td><td>已在佇列中等待執行</td></tr><tr><td>RUNNING</td><td>執行中</td></tr><tr><td>SUCCEEDED</td><td>成功完成</td></tr><tr><td>FAILED</td><td>執行失敗</td></tr><tr><td>STOPPED</td><td>被停止（中止）</td></tr><tr><td>CANCELED</td><td>被取消</td></tr><tr><td>PAUSED</td><td>暫停中</td></tr></tbody></table>
+<table><thead><tr><th width="224">Status name</th><th>illustrate</th></tr></thead><tbody><tr><td>PENDING</td><td>Created, waiting to be queued/not yet dispatched</td></tr><tr><td>QUEUED</td><td>Already queued for execution</td></tr><tr><td>RUNNING</td><td>Executing</td></tr><tr><td>SUCCEEDED</td><td>Completed successfully</td></tr><tr><td>FAILED</td><td>Execution failed</td></tr><tr><td>STOPPED</td><td>to be stopped (aborted)</td></tr><tr><td>CANCELED</td><td>canceled</td></tr><tr><td>PAUSED</td><td>Paused</td></tr></tbody></table>
 
 ## Job page description
 
@@ -24,4 +24,4 @@ Click the name of the Task you want to view to open a pop-up window to browse th
 
 <figure><img src="../.gitbook/assets/image (232).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="101">項目</th><th width="177">名稱</th><th>說明</th></tr></thead><tbody><tr><td>1</td><td>重做</td><td>重新執行 Job</td></tr><tr><td>2</td><td>繼續 </td><td>繼續 Job 的工作進度</td></tr><tr><td>3</td><td>詳細資訊</td><td>查看詳細資訊</td></tr><tr><td>4</td><td>暫停</td><td>暫停 Job 的工作進度</td></tr><tr><td>3</td><td>取消</td><td>取消這個 Job 的工作任務</td></tr></tbody></table>
+<table><thead><tr><th width="101">project</th><th width="177">name</th><th>illustrate</th></tr></thead><tbody><tr><td>1</td><td>Redo</td><td>Re-execute the job</td></tr><tr><td>2</td><td>continue </td><td>Continue the work progress of the Job</td></tr><tr><td>3</td><td>Details</td><td>View details</td></tr><tr><td>4</td><td>pause</td><td>Pause the work progress of the Job</td></tr><tr><td>3</td><td>Cancel</td><td>Cancel the work tasks of this Job</td></tr></tbody></table>
