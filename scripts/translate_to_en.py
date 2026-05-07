@@ -24,9 +24,6 @@ def has_cjk(text: str) -> bool:
 
 
 def split_frontmatter(content: str):
-    """
-    Keep GitBook YAML front matter unchanged.
-    """
     match = re.match(r"\A(---\s*\n[\s\S]*?\n---\s*\n)([\s\S]*)\Z", content)
 
     if not match:
@@ -35,69 +32,44 @@ def split_frontmatter(content: str):
     return match.group(1), match.group(2)
 
 
-def loose_digits_pattern(number_text: str):
-    """
-    Convert "0033" into a regex that can match:
-    0033
-    0 033
-    0 0 3 3
-    33
-    """
-    number = str(int(number_text))
-    return r"0*\s*" + r"\s*".join(re.escape(char) for char in number)
-
-
 def cleanup_orphan_placeholders(text: str):
-    """
-    Remove placeholder fragments that the translator changed and we could not restore.
-
-    Examples:
-    O⟬PH0 033⟭ -> O
-    X[[6 8]] -> X
-    ZXQPLACEHOLDER37QXZ -> ""
-    """
     if not text:
         return text
 
     cleaned = text
 
-    cleanup_patterns = [
+    patterns = [
         r"⟬\s*PH\s*\d(?:\s*\d)*\s*⟭",
         r"⟦\s*PH\s*\d(?:\s*\d)*\s*⟧",
-        r"⟬\s*\d(?:\s*\d)*\s*⟭",
-        r"⟦\s*\d(?:\s*\d)*\s*⟧",
         r"\[\[\s*(?:PH\s*)?\d(?:\s*\d)*\s*\]\]",
         r"\[\s*(?:PH\s*)?\d(?:\s*\d)*\s*\]",
         r"\(\s*(?:PH\s*)?\d(?:\s*\d)*\s*\)",
         r"ZXQPLACEHOLDER\d+QXZ",
     ]
 
-    for pattern in cleanup_patterns:
+    for pattern in patterns:
         cleaned = re.sub(pattern, "", cleaned, flags=re.IGNORECASE)
 
     cleaned = re.sub(r"[ \t]{2,}", " ", cleaned)
-    cleaned = re.sub(r"\s+\|", " |", cleaned)
-    cleaned = re.sub(r"\|\s+", "| ", cleaned)
 
     return cleaned
 
 
-def protect_markdown_tokens(text: str):
+def protect_inline_tokens(text: str):
     placeholders = {}
     protected = text
     index = 0
 
     def make_token(original: str) -> str:
         nonlocal index
-        token = f"⟬PH{index:04d}⟭"
+        token = f"QQQPROTECT{index}QQQ"
         placeholders[token] = original
         index += 1
         return token
 
     patterns = [
-        r"!\[[^\]]*\]\([^)]+\)",    # images
-        r"`[^`]+`",                 # inline code
-        r"<[^>]+>",                 # html tags
+        r"`[^`]+`",
+        r"\[[^\]]+\]\([^)]+\)",
     ]
 
     for pattern in patterns:
@@ -106,41 +78,24 @@ def protect_markdown_tokens(text: str):
             original = match.group(0)
             protected = protected.replace(original, make_token(original), 1)
 
-    # Protect URLs in markdown links, but allow link text to be translated.
-    def protect_link_url(match):
-        label = match.group(1)
-        url = match.group(2)
-        return f"{label}({make_token(url)})"
-
-    protected = re.sub(r"(\[[^\]]+\])\(([^)]+)\)", protect_link_url, protected)
-
     return protected, placeholders
 
 
-def restore_markdown_tokens(text: str, placeholders: dict):
+def restore_inline_tokens(text: str, placeholders: dict):
     restored = text
 
     for token, original in placeholders.items():
         restored = restored.replace(token, original)
 
-        match = re.search(r"PH(\d+)", token)
-        if not match:
-            continue
-
-        number_text = match.group(1)
-        loose_number = loose_digits_pattern(number_text)
-
-        tolerant_patterns = [
-            rf"⟬\s*PH\s*{loose_number}\s*⟭",
-            rf"⟦\s*PH\s*{loose_number}\s*⟧",
-            rf"\[\[\s*PH\s*{loose_number}\s*\]\]",
-            rf"\[\s*PH\s*{loose_number}\s*\]",
-            rf"\(\s*PH\s*{loose_number}\s*\)",
-            rf"PH\s*{loose_number}",
-        ]
-
-        for pattern in tolerant_patterns:
-            restored = re.sub(pattern, original, restored, flags=re.IGNORECASE)
+        token_number = re.search(r"QQQPROTECT(\d+)QQQ", token)
+        if token_number:
+            number = token_number.group(1)
+            restored = re.sub(
+                rf"Q+\s*PROTECT\s*{number}\s*Q+",
+                original,
+                restored,
+                flags=re.IGNORECASE,
+            )
 
     return cleanup_orphan_placeholders(restored)
 
@@ -176,7 +131,7 @@ def translate_text(text: str):
     if not has_cjk(text):
         return cleanup_orphan_placeholders(text)
 
-    protected, placeholders = protect_markdown_tokens(text)
+    protected, placeholders = protect_inline_tokens(text)
     translated_chunks = []
 
     for chunk in split_long_text(protected):
@@ -199,80 +154,60 @@ def translate_text(text: str):
         str(chunk) for chunk in translated_chunks if chunk is not None
     )
 
-    return restore_markdown_tokens(translated_text, placeholders)
+    return restore_inline_tokens(translated_text, placeholders)
 
 
-def is_symbol_only_cell(text: str):
-    stripped = text.strip()
-
-    if not stripped:
-        return True
-
-    symbol_values = {
-        "O",
-        "X",
-        "o",
-        "x",
-        "✓",
-        "✔",
-        "✕",
-        "✖",
-        "-",
-        "—",
-        "–",
-        "N/A",
-        "n/a",
-    }
-
-    if stripped in symbol_values:
-        return True
-
-    if re.fullmatch(r"[OXox✓✔✕✖\-—–\s/]+", stripped):
-        return True
-
-    return False
+def is_markdown_image(line: str):
+    return bool(re.search(r"!\[[^\]]*\]\([^)]+\)", line))
 
 
-def is_table_separator(line: str):
-    stripped = line.strip()
-
-    if "|" not in stripped:
-        return False
-
-    cells = [cell.strip() for cell in stripped.strip("|").split("|")]
-
-    if not cells:
-        return False
-
-    return all(re.fullmatch(r":?-{3,}:?", cell or "") for cell in cells)
+def is_table_line(line: str):
+    return "|" in line
 
 
-def translate_table_line(line: str):
-    if is_table_separator(line):
-        return line
+def starts_html_block(line: str):
+    stripped = line.strip().lower()
 
-    parts = line.split("|")
-    translated_parts = []
+    html_starts = [
+        "<table",
+        "<thead",
+        "<tbody",
+        "<tr",
+        "<td",
+        "<th",
+        "<figure",
+        "<img",
+        "<picture",
+        "<video",
+        "<iframe",
+        "<div",
+        "<details",
+        "<summary",
+    ]
 
-    for part in parts:
-        if not part.strip():
-            translated_parts.append(part)
-            continue
+    return any(stripped.startswith(tag) for tag in html_starts)
 
-        leading = len(part) - len(part.lstrip())
-        trailing = len(part) - len(part.rstrip())
-        core = part.strip()
 
-        if is_symbol_only_cell(core):
-            translated_core = cleanup_orphan_placeholders(core)
-        else:
-            translated_core = translate_text(core)
+def ends_html_block(line: str):
+    stripped = line.strip().lower()
 
-        translated_parts.append(
-            (" " * leading) + str(translated_core) + (" " * trailing)
-        )
+    html_ends = [
+        "</table>",
+        "</thead>",
+        "</tbody>",
+        "</tr>",
+        "</td>",
+        "</th>",
+        "</figure>",
+        "</picture>",
+        "</video>",
+        "</iframe>",
+        "</div>",
+        "</details>",
+        "</summary>",
+    ]
 
-    return "|".join(translated_parts)
+    return any(tag in stripped for tag in html_ends)
 
 
 def translate_line(line: str):
@@ -298,6 +233,7 @@ def translate_markdown(content: str):
     result = []
     buffer = []
     in_code_block = False
+    in_html_block = False
 
     def flush_buffer():
         if buffer:
@@ -323,14 +259,31 @@ def translate_markdown(content: str):
             result.append(line)
             continue
 
+        if in_html_block:
+            result.append(line)
+            if ends_html_block(line):
+                in_html_block = False
+            continue
+
+        if starts_html_block(line):
+            flush_buffer()
+            result.append(line)
+
+            if not ends_html_block(line) and not stripped.lower().endswith("/>"):
+                in_html_block = True
+
+            continue
+
         if stripped == "":
             flush_buffer()
             result.append(line)
             continue
 
-        if "|" in line:
+        # Safety first:
+        # Keep tables and images unchanged so GitBook layout will not break.
+        if is_table_line(line) or is_markdown_image(line):
             flush_buffer()
-            result.append(translate_table_line(line))
+            result.append(line)
             continue
 
         if re.match(r"^\s{0,3}#{1,6}\s+", line):
