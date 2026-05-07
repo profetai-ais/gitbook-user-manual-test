@@ -14,7 +14,7 @@ When LLM receives a user query, the system will use Hybrid Search to search for 
 
 The system will return highly relevant content fragments (Chunks) and provide them to LLM as context to generate more accurate and traceable answers. This method ensures that LLM not only relies on pre-trained knowledge, but also combines the latest internal documents and database content, reducing response bias caused by outdated or omitted data.
 
-<figure><img src="../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 ## **Main Advantages**
 

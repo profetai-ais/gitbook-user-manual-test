@@ -6,9 +6,9 @@ description: 聊天 Agent 可讓使用者直接與大型語言模型互動，適
 
 ## **Create Agent**
 
-<figure><img src="../.gitbook/assets/image (154).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (155).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. Click the "+ Create" button in the upper right corner of the screen
 2. Select "Agent Type" in the pop-up window
@@ -22,9 +22,9 @@ description: 聊天 Agent 可讓使用者直接與大型語言模型互動，適
 
 
 
-### Multi-language setting <a href="#duo-guo-yu-yan-she-ding" id="duo-guo-yu-yan-she-ding"></a>
+### Multi-language setting <a href="#duo-guo-yu-yan-she-ding" id="duo-guo-yu-yan-she-ding">⟬<a href="#duo-guo-yu-yan-she-ding" id="duo-guo-yu-yan-she-ding">1⟭
 
-<figure><img src="../.gitbook/assets/image (157).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. Click the "Earth" button on the screen for automatic translation. Users can also manually edit the content.
 2. After automatic translation is completed, click the "OK" button to save the content.
@@ -33,40 +33,16 @@ description: 聊天 Agent 可讓使用者直接與大型語言模型互動，適
 
 ## Chat Agent functional interface
 
-<figure><img src="../.gitbook/assets/image (158).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 The chat agent homepage is mainly divided into several parts, as shown below:
 
-1. **Agent Function Options**: The function options area contains the following links, each link will open the corresponding setting page
-
-| name | illustrate |
-| --------- | ------------------- |
-| Basic settings | Edit the Agent's home page |
-| session log | Provide conversation history for this Agent |
-| Member management | Manage access to this Agent |
-| AI WEBAPP | Configure web embedding for this Agent |
-| API Key | Provide credentials for third-party applications to securely call the API |
-
-2. **Basic information**: You can view the Agent name, creation and editing time and personnel, and activation status
-3. **Application Settings:** Provides settings related to Agent behavior based on Agent type
-
-| name | illustrate |
-| ---------- | --------------------------- |
-| Inference parameters | Control how responses are generated |
-| Knowledge base configuration | Select parameters and available knowledge sources |
-| tool | Enable and configure available tools |
-| Skill | Functions used to expand Agent capabilities |
-| Agent collaboration | Allows Agents to connect in series and collaborate with other Agents to perform tasks |
-| Agent welcome page | Set initial conversation content |
-| prompt word template | Provides reusable prompt word templates for quick use |
-| File handling | Control how uploaded files are processed |
-| guardrail | Control content output |
-
-4. **Adaptation Preview:** Allows users to test whether the Q&A results are as expected
+1. **Agent Function Options**: The function options area contains the following links, each link will open the corresponding setting page | name | illustrate | | --------- | ------------------- | | Basic settings | Edit the Agent's home page | | session log | Provide conversation history for this Agent | | Member management | Manage access to this Agent | | AI WEBAPP | Configure web embedding for this Agent | | API Key | Provide credentials for third-party applications to securely call the API | 2. **Basic information**: You can view the Agent name, creation and editing time and personnel, and activation status
+3. **Application Settings:** Provides settings related to Agent behavior based on Agent type | name | illustrate | | ---------- | --------------------------- | | Inference parameters | Control how responses are generated | | Knowledge base configuration | Select parameters and available knowledge sources | | tool | Enable and configure available tools | | Skill | Functions used to expand Agent capabilities | | Agent collaboration | Allows Agents to connect in series and collaborate with other Agents to perform tasks | | Agent welcome page | Set initial conversation content | | prompt word template | Provides reusable prompt word templates for quick use | | File handling | Control how uploaded files are processed | | guardrail | Control content output | 4. **Adaptation Preview:** Allows users to test whether the Q&A results are as expected
 
 ## **Basic settings**
 
-<figure><img src="../.gitbook/assets/image (159).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 All types of Agent homepages share the **Basic Settings** section, which includes an **Enabled Status** switch and a **Settings** button for updating the Agent name and description. Clicking the Settings button will pop up the following dialog box:
 
@@ -75,9 +51,9 @@ All types of Agent homepages share the **Basic Settings** section, which include
 
 ### Agent status settings
 
-<figure><img src="../.gitbook/assets/image (160).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (161).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. Click the status bar to open the interface
 2. Click the Publish button
@@ -95,15 +71,15 @@ The settings include two tabs: "**Parameters**" and "**System Prompt Words**".
 
 Users can control the Agent's reply behavior by adjusting the items in the "**Parameters**" tab.
 
-<figure><img src="../.gitbook/assets/image (163).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="98">Project</th><th width="112">Parameters</th><th width="238">Description</th><th>Scope and Value</th></tr></thead><tbody><tr><td>1</td><td>Model</td><td>Agent The default model selected when creating; can be changed here</td><td>n/a</td></tr>⟬PH0 024⟭<td>2</td><td>Temperature</td><td>Control the creativity of the reply. The higher the value, the more diverse and creative the responses; the lower the value, the more precise and consistent the responses</td><td>0–1</td></tr><tr><td>3</td><td>Top P</td><td> controls randomness and diversity. Lower values produce more conservative and predictable text; higher values produce more diverse results</td><td>0–1</td></tr><tr>⟬PH00 45⟭4</td><td>Maximum mark</td><td>Limit maximum output length</td><td>Set as required</td>⟬P H0053⟭<tr><td>5</td><td>Conversation Memory</td><td> Stores Q&A history to enhance coherence (may slow down responses Time) </td><td><code>0</code> represents a stateless response; <code>5-10</code> strikes a balance between consistency and performance. The more memories you have, the slower it becomes. </td></tr></tbody></table>
+<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Project⟬<table>4⟭⟬<table>5⟭Parameters⟬<table>6⟭⟬<table>7⟭Description⟬<table>8⟭⟬<table>9⟭Scope and Value⟬<table>10⟭⟬<table>11⟭⟬<table>12⟭⟬<table>13⟭⟬<table>14⟭⟬<table>15⟭1⟬<table>16⟭⟬<table>17⟭Model⟬<table>18⟭⟬<table>19⟭Agent The default model selected when creating; can be changed here⟬<table>20⟭⟬<table>21⟭n/a⟬<table>22⟭⟬<table>23⟭⟬<table>24⟭⟬<table>25⟭2⟬<table>26⟭⟬<table>27⟭Temperature⟬<table>28⟭⟬<table>29⟭Control the creativity of the reply. The higher the value, the more diverse and creative the responses; the lower the value, the more precise and consistent the responses⟬<table>30⟭⟬<table>31⟭0–1⟬<table>32⟭⟬<table>33⟭⟬<table>34⟭⟬<table>35⟭3⟬<table>36⟭⟬<table>37⟭Top P⟬<table>38⟭⟬<table>39⟭ controls randomness and diversity. Lower values produce more conservative and predictable text; higher values produce more diverse results⟬<table>40⟭⟬<table>41⟭0–1⟬<table>42⟭⟬<table>43⟭⟬<table>44⟭⟬<table> 45⟭4⟬<table>46⟭⟬<table>47⟭Maximum mark⟬<table>48⟭⟬<table>49⟭Limit maximum output length⟬<table>50⟭⟬<table>51⟭Set as required⟬<table>52⟭⟬P H0053⟭⟬<table>54⟭⟬<table>55⟭5⟬<table>56⟭⟬<table>57⟭Conversation Memory⟬<table>58⟭⟬<table>59⟭ Stores Q&A history to enhance coherence (may slow down responses Time) ⟬<table>60⟭⟬<table>61⟭⟬<table>62⟭0⟬<table>63⟭ represents a stateless response; ⟬<table>64⟭5-10⟬<table>65⟭ strikes a balance between consistency and performance. The more memories you have, the slower it becomes. ⟬<table>66⟭⟬<table>67⟭⟬<table>68⟭⟬<table>69⟭
 
 #### instruction
 
 Users can use the "Commands" tab to define prompts to control the Agent's language, role, tone, etc.
 
-<figure><img src="../.gitbook/assets/image (164).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -111,9 +87,9 @@ Users can use the "Commands" tab to define prompts to control the Agent's langua
 
 Users can quickly add required application templates from templates.
 
-<figure><img src="../.gitbook/assets/image (165).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (166).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. Add directly from the blank space; or when prompted, use the mouse to select the location to be added.
 2. Click the "Template" button to open the template list and select the type of template you want to add.
@@ -126,9 +102,9 @@ Users can quickly add required application templates from templates.
 
 The prompt word generation function supports "rewriting existing content" or "generating from blank". The red box above can be filled in as the basis for rewriting, and the green input box below can fill in the generation guidelines to produce results.
 
-<figure><img src="../.gitbook/assets/image (167).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (168).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. Select the dialog box below and enter your requirements for prompt words.
 2. Press the Enter key on the keyboard or the generate button on the right and wait for AI to automatically generate the template.
@@ -139,53 +115,53 @@ The prompt word generation function supports "rewriting existing content" or "ge
 
 #### Knowledge base sources
 
-<figure><img src="../.gitbook/assets/image (197).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 #### Knowledge base parameters
 
-<figure><img src="../.gitbook/assets/image (169).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 ### **tool**
 
 Users can enable/disable tools accessible to Agent in settings.
 
-<figure><img src="../.gitbook/assets/image (170).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 
 
 #### **Session Memory**
 
-<table><thead><tr><th width="250">Tools</th><th> says Ming</th></tr></thead><tbody><tr><td>KV Session short-term memory</td><td> enables precise, key-based storage and retrieval of temporary data during a session. Useful for tracking dynamic variables such as <code>Username</code>, <code>Selected Plan</code>. </td></tr><tr><td>graphiti - Added memory data </td><td>Storing episodic information (such as interactions or events) into the knowledge graph. </td></tr><tr><td>graphiti - Query memory node </td><td>Retrieve an entity summary or node-level memory representation. </td></tr><tr><td>graphiti - Query Memory Facts </td><td>Search for relevant facts and structured relationships in the memory graph. </td></tr><tr><td>graphiti - Delete Entity Relationship </td><td>Removes the defined relationship between entities from the graph. </td></tr><tr><td>graphiti - Delete event segment </td><td>Delete a specific event segment in the memory graph. </td></tr><tr><td>graphiti - Get Entity Relationships </td><td> Retrieve structured relationships related to a specific entity. </td></tr><tr><td>graphiti - Get a fragment of an event </td><td> Returns a recent memory episode to provide context for a conversation or decision-making. </td></tr><tr><td>graphiti - Clear Memory Graph </td><td>Resets the entire graph-based memory system. </td></tr></tbody></table>
+<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Tools⟬<table>4⟭⟬<table>5⟭ says Ming⟬<table>6⟭⟬<table>7⟭⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭KV Session short-term memory⟬<table>12⟭⟬<table>13⟭ enables precise, key-based storage and retrieval of temporary data during a session. Useful for tracking dynamic variables such as ⟬<table>14⟭Username⟬<table>15⟭, ⟬<table>16⟭Selected Plan⟬<table>17⟭. ⟬<table>18⟭⟬<table>19⟭⟬<table>20⟭⟬<table>21⟭graphiti - Added memory data ⟬<table>22⟭⟬<table>23⟭Storing episodic information (such as interactions or events) into the knowledge graph. ⟬<table>24⟭⟬<table>25⟭⟬<table>26⟭⟬<table>27⟭graphiti - Query memory node ⟬<table>28⟭⟬<table>29⟭Retrieve an entity summary or node-level memory representation. ⟬<table>30⟭⟬<table>31⟭⟬<table>32⟭⟬<table>33⟭graphiti - Query Memory Facts ⟬<table>34⟭⟬<table>35⟭Search for relevant facts and structured relationships in the memory graph. ⟬<table>36⟭⟬<table>37⟭⟬<table>38⟭⟬<table>39⟭graphiti - Delete Entity Relationship ⟬<table>40⟭⟬<table>41⟭Removes the defined relationship between entities from the graph. ⟬<table>42⟭⟬<table>43⟭⟬<table>44⟭⟬<table>45⟭graphiti - Delete event segment ⟬<table>46⟭⟬<table>47⟭Delete a specific event segment in the memory graph. ⟬<table>48⟭⟬<table>49⟭⟬<table>50⟭⟬<table>51⟭graphiti - Get Entity Relationships ⟬<table>52⟭⟬<table>53⟭ Retrieve structured relationships related to a specific entity. ⟬<table>54⟭⟬<table>55⟭⟬<table>56⟭⟬<table>57⟭graphiti - Get a fragment of an event ⟬<table>58⟭⟬<table>59⟭ Returns a recent memory episode to provide context for a conversation or decision-making. ⟬<table>60⟭⟬<table>61⟭⟬<table>62⟭⟬<table>63⟭graphiti - Clear Memory Graph ⟬<table>64⟭⟬<table>65⟭Resets the entire graph-based memory system. ⟬<table>66⟭⟬<table>67⟭⟬<table>68⟭⟬<table>69⟭
 
 > PS: For more information about Graphiti, please see its official website.
 
 #### **Academic Articles**
 
-<table><thead><tr><th width="250">Tools</th><th>Instructions South</th></tr></thead><tbody><tr><td>arXiv Paper Search </td><td> allows users to search for academic papers from the arXiv database. </td></tr><tr><td>Google Scholar Search</td><td>Search for scholarly articles and citations using Google Scholar. </td></tr></tbody></table>
+<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Tools⟬<table>4⟭⟬<table>5⟭Instructions South⟬<table>6⟭⟬<table>7⟭⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭arXiv Paper Search ⟬<table>12⟭⟬<table>13⟭ allows users to search for academic papers from the arXiv database. ⟬<table>14⟭⟬<table>15⟭⟬<table>16⟭⟬<table>17⟭Google Scholar Search⟬<table>18⟭⟬<table>19⟭Search for scholarly articles and citations using Google Scholar. ⟬<table>20⟭⟬<table>21⟭⟬<table>22⟭⟬<table>23⟭
 
 #### **Web Search**
 
-<table><thead><tr><th width="250">Tools</th><th>Usage Guide </th></tr></thead><tbody><tr><td>Serper - Web Content Extraction </td><td> Extracts readable content from web URLs. </td></tr><tr><td>Serper - Google Search </td><td>Performs a Google search and returns summary results. </td></tr><tr><td>Serper - Patent Search </td><td>Search for issued patents and related documents. </td></tr><tr><td>Serper - Image Search </td><td>Search for images based on text queries. </td></tr><tr><td>Serper - Paper Search </td><td> Search academic papers using Google Scholar-style sources. </td></tr><tr><td>Serper - News Search </td><td> Search for news based on text queries. </td></tr><tr><td>Serper - Map Information Search </td><td> Search maps based on text queries. </td></tr></tbody></table>
+<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Tools⟬<table>4⟭⟬<table>5⟭Usage Guide ⟬<table>6⟭⟬<table>7⟭⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭Serper - Web Content Extraction ⟬<table>12⟭⟬<table>13⟭ Extracts readable content from web URLs. ⟬<table>14⟭⟬<table>15⟭⟬<table>16⟭⟬<table>17⟭Serper - Google Search ⟬<table>18⟭⟬<table>19⟭Performs a Google search and returns summary results. ⟬<table>20⟭⟬<table>21⟭⟬<table>22⟭⟬<table>23⟭Serper - Patent Search ⟬<table>24⟭⟬<table>25⟭Search for issued patents and related documents. ⟬<table>26⟭⟬<table>27⟭⟬<table>28⟭⟬<table>29⟭Serper - Image Search ⟬<table>30⟭⟬<table>31⟭Search for images based on text queries. ⟬<table>32⟭⟬<table>33⟭⟬<table>34⟭⟬<table>35⟭Serper - Paper Search ⟬<table>36⟭⟬<table>37⟭ Search academic papers using Google Scholar-style sources. ⟬<table>38⟭⟬<table>39⟭⟬<table>40⟭⟬<table>41⟭Serper - News Search ⟬<table>42⟭⟬<table>43⟭ Search for news based on text queries. ⟬<table>44⟭⟬<table>45⟭⟬<table>46⟭⟬<table>47⟭Serper - Map Information Search ⟬<table>48⟭⟬<table>49⟭ Search maps based on text queries. ⟬<table>50⟭⟬<table>51⟭⟬<table>52⟭⟬<table>53⟭
 
 > Note: For more information about Sperper, please see its official website.
 
 #### **Code**
 
-<table><thead><tr><th width="250">Tools</th><th>Use Guide </th></tr></thead><tbody><tr><td>Execution Python code </td><td> executes Python scripts or logic to support tasks such as mathematics, data parsing, or automation. </td></tr></tbody></table>
+<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Tools⟬<table>4⟭⟬<table>5⟭Use Guide ⟬<table>6⟭⟬<table>7⟭⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭Execution Python code ⟬<table>12⟭⟬<table>13⟭ executes Python scripts or logic to support tasks such as mathematics, data parsing, or automation. ⟬<table>14⟭⟬<table>15⟭⟬<table>16⟭⟬<table>17⟭
 
 #### **Document Handling**
 
-<table><thead><tr><th width="250">Tools</th><th>Usage Guide</th></tr></thead><tbody><tr><td>Preview file </td><td>Displays the uploaded file in a readable format within the platform. </td></tr><tr><td>File to markdown</td><td>Convert the file to Markdown format. </td></tr></tbody></table>
+<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Tools⟬<table>4⟭⟬<table>5⟭Usage Guide⟬<table>6⟭⟬<table>7 ⟭⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭Preview file ⟬<table>12⟭⟬<table>13⟭Displays the uploaded file in a readable format within the platform. ⟬<table>14⟭⟬<table>15⟭⟬<table>16⟭⟬<table>17⟭File to markdown⟬<table>18⟭⟬<table>19⟭Convert the file to Markdown format. ⟬<table>20⟭⟬<table>21⟭⟬<table>22⟭⟬<table>23⟭
 
 #### **Other**
 
-<table><thead><tr><th width="250">Tools</th><th>Usage Guide</th></tr></thead><tbody><tr><td>Get the current time </td><td>Returns the current system time when the request is made. </td></tr><tr><td>Easy Math </td><td>Perform simple arithmetic operations in the prompt. </td></tr><tr><td>Dynamic Thinking Chain (Sequential Thinking) </td><td>Decompose complex problems into step-by-step thinking, with the option to modify or branch. Good for planning, troubleshooting, and structured reasoning. </td></tr></tbody></table>
+<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Tools⟬<table>4⟭⟬<table>5⟭Usage Guide⟬<table>6⟭⟬<table>7 ⟭⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭Get the current time ⟬<table>12⟭⟬<table>13⟭Returns the current system time when the request is made. ⟬<table>14⟭⟬<table>15⟭⟬<table>16⟭⟬<table>17⟭Easy Math ⟬<table>18⟭⟬<table>19⟭Perform simple arithmetic operations in the prompt. ⟬<table>20⟭⟬<table>21⟭⟬<table>22⟭⟬<table>23⟭Dynamic Thinking Chain (Sequential Thinking) ⟬<table>24⟭⟬<table>25⟭Decompose complex problems into step-by-step thinking, with the option to modify or branch. Good for planning, troubleshooting, and structured reasoning. ⟬<table>26⟭⟬<table>27⟭⟬<table>28⟭⟬<table>29⟭
 
 ### Skill
 
-<figure><img src="../.gitbook/assets/image (180).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (179).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 By setting different skills, Agent can support more functions and task processing scenarios, such as data access, tool operation, process execution or specific task expansion. Users can configure corresponding skills according to their needs to improve the Agent's application flexibility and task processing capabilities.
 
@@ -193,35 +169,35 @@ By setting different skills, Agent can support more functions and task processin
 
 Through this function, users can establish cooperative relationships between multiple Agents and handle task content according to different divisions of responsibilities, thereby improving process flexibility and overall task processing efficiency.
 
-<figure><img src="../.gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (181).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 ### **Welcome Page**
 
 Users can set their own default conversation content, allowing the Agent to provide directly clickable question directions before the conversation begins, helping users start interacting more quickly.
 
-<figure><img src="../.gitbook/assets/image (178).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 ### **Prompt word template**
 
 Users can link existing or favorited application templates (prompt word templates) to the Agent to speed up Q&A by filling in required fields.
 
-<figure><img src="../.gitbook/assets/image (177).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 ### **File Processing**
 
 **File Handling** settings allow the user to define how the Agent handles files uploaded in the workspace. This feature is particularly useful when the Agent needs to interpret, convert, or extract content from files such as PDFs, DOCX, or images.
 
-<figure><img src="../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="161">Option </th><th width="103"> Visible to MCP tools </th><th width="96"> to LLM Visible</th><th> Description</th><th>Example usage scenario</th></tr></thead><tbody><tr><td>Do not The process </td> <td> Will not be opened or interpreted. </td><td>– –</td></tr><tr><td>Process with Tool</td><td>O</td><td>X</td><td> files are passed to the MCP tool for processing, but not to LLM. </td><td> Useful when you want to extract material from a CSV or PDF, but don’t need AI-generated comments. </td></tr><tr><td>File to Image Conversion </td> <td> </td><td> is suitable for scanned documents or visual layouts where diagrammatic relationships are important. </td></tr><tr><td>Convert to Image &#x26; Tool</td><td>O</td><td>O</td><td> files are simultaneously translated into LLM references and processed by the MCP tool. </td><td> Best suited for invoices or forms that require interpretation of both visual layout and structured data. </td></tr></tbody></table>
+<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Option ⟬<table>4⟭⟬<table>5⟭ Visible to MCP tools ⟬<table>6⟭⟬<table>7⟭ to LLM Visible⟬<table>8⟭⟬<table>9⟭ Description⟬<table>10⟭⟬<table>11⟭Example usage scenario⟬<table>12⟭⟬<table>13⟭⟬<table>14⟭⟬<table>15⟭⟬<table>16⟭⟬<table>17⟭Do not The process ⟬<table>18 ⟭ ⟬ <table>19 ⟭ Will not be opened or interpreted. ⟬<table>24⟭⟬<table>25⟭– –⟬<table>26⟭⟬<table>27⟭⟬<table>28⟭⟬<table>29⟭Process with Tool⟬<table>30⟭⟬<table>31⟭O⟬<table>32⟭⟬<table>33⟭X⟬<table>34⟭⟬<table>35⟭ files are passed to the MCP tool for processing, but not to LLM. ⟬<table>36⟭⟬<table>37⟭ Useful when you want to extract material from a CSV or PDF, but don’t need AI-generated comments. ⟬<table>38⟭⟬<table>39⟭⟬<table>40⟭⟬<table>41⟭File to Image Conversion ⟬<table>42 ⟭ ⟬ <table>43 ⟭ ⟬<table>48⟭⟬<table>49⟭ is suitable for scanned documents or visual layouts where diagrammatic relationships are important. ⟬<table>50⟭⟬<table>51⟭⟬<table>52⟭⟬<table>53⟭Convert to Image &#x26; Tool⟬<table>54⟭⟬<table>55⟭O⟬<table>56⟭⟬<table>57⟭O⟬<table>58⟭⟬<table>59⟭ files are simultaneously translated into LLM references and processed by the MCP tool. ⟬<table>60⟭⟬<table>61⟭ Best suited for invoices or forms that require interpretation of both visual layout and structured data. ⟬<table>62⟭⟬<table>63⟭⟬<table>64⟭⟬<table>65⟭
 
 ### guardrail
 
 Guardrails are a function used to control content output. They can check and restrict content during the process, helping to reduce risks related to personal data leakage, information security and legal compliance, and making the output content more consistent with usage specifications and management requirements.
 
-<figure><img src="../.gitbook/assets/image (183).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 ## **Adaptation Preview**
 
@@ -229,17 +205,17 @@ Use this block to test Agent responses and adjust settings accordingly.
 
 > Please note: Files uploaded or generated during the adaptation preview are only retained for 30 minutes.
 
-<figure><img src="../.gitbook/assets/image (184).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 ### **Adjust Preview** How to upload files
 
 * You can click the plus sign (+) in the dialog box to upload files.
 
-<figure><img src="../.gitbook/assets/image (185).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 * Also supports drag-and-drop file uploading method
 
-<figure><img src="../.gitbook/assets/image (186).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 ## memory
 
@@ -247,13 +223,13 @@ The memory function can help users create reusable memory content for the Agent,
 
 Users can view the created memory list on the Agent's memory page, and quickly identify the purpose of each memory through its activation status, name, description and usage context. Memory can be used to save specific task processes, judgment rules, preconditions, operating steps or precautions to help the Agent maintain consistent processing logic in subsequent interactions.
 
-<figure><img src="../.gitbook/assets/image (187).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 ### build memory
 
-<figure><img src="../.gitbook/assets/image (190).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (191).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. Enter the Agent page. Click "Memory" in the submenu on the left.
 2. Click the "Create" button in the upper right corner.
@@ -266,9 +242,9 @@ Users can view the created memory list on the Agent's memory page, and quickly i
 
 ### View memory details
 
-<figure><img src="../.gitbook/assets/image (189).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (188).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. Enter the memory list.
 2. Click the memory name you want to view.
@@ -281,7 +257,7 @@ Users can view the created memory list on the Agent's memory page, and quickly i
 
 The memory function includes the overall function switch and the single-stroke memory activation status.
 
-<figure><img src="../.gitbook/assets/image (192).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 If the switch is on, it means that this Agent can use the memory function. Users can still enable or disable different memories individually in the memory list.
 
@@ -289,7 +265,7 @@ If the switch is off, it means that this Agent does not use the memory function.
 
 #### Activating and deactivating single memory
 
-<figure><img src="../.gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 In the memory list, the "Enabled" field is used to display whether a single memory is enabled. When the memory master switch is turned on, the activated single memory will be used as reference content when the Agent responds or handles tasks.
 
@@ -299,9 +275,9 @@ Users can disable temporarily unused memories as needed, retaining the content b
 
 Conversation records store all conversation records of this Agent. Administrators can filter records by title, user or date range. Records include processing procedures. When errors occur or responses are slow, administrators can review processing details to diagnose the problem.
 
-<figure><img src="../.gitbook/assets/image (194).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (195).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 ## Permissions
 
@@ -309,17 +285,17 @@ The creator can grant access rights to other users through "Permissions" (please
 
 > Note: The creator is the default "manager", and each project can only have one owner.
 
-<figure><img src="../.gitbook/assets/image (196).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="80">Project</th><th width="146">Operation Name</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>Edit table</td><td>Allows the user to edit the presentation of the table</td>⟬PH0 019⟭<tr><td>2</td><td>Refresh</td><td>Click to refresh the list </td></tr><tr><td>3</td><td>Content filtering</td> <td>Advanced filtering of specified content</td></tr><tr><td>4</td>⟬PH00 39⟭Batch deletion</td><td>After checking the items, the delete button in the upper left corner will be displayed, allowing the user to delete multiple items</td></tr><tr><td>5</td><td>Search field</td><td>Search Name</td></tr><tr><td>6</td><td>Invite</td><td>Invite Organization / Member</td></tr><tr><td>7</td><td>Action⟬PH00 64⟭<td>Transfer your role or remove selected users</td></tr></tbody></table>
+<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Project⟬<table>4⟭⟬<table>5⟭Operation Name⟬<table>6 ⟭⟬<table>7⟭Description⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭⟬<table>12⟭⟬<table>13⟭1⟬ <table>14⟭⟬<table>15⟭Edit table⟬<table>16⟭⟬<table>17⟭Allows the user to edit the presentation of the table⟬<table>18⟭⟬<table>19⟭⟬<table>20⟭⟬<table>21⟭2⟬<table>22⟭⟬<table>23⟭Refresh⟬<table>24⟭⟬<table>25⟭Click to refresh the list ⟬<table>26⟭⟬<table>27⟭⟬<table>28⟭⟬<table>29⟭3⟬<table>30⟭⟬<table>31⟭Content filtering⟬<table>32⟭ ⟬<table>33⟭Advanced filtering of specified content⟬<table>34⟭⟬<table>35⟭⟬<table>36⟭⟬<table>37⟭4⟬<table>38⟭⟬<table> 39⟭Batch deletion⟬<table>40⟭⟬<table>41⟭After checking the items, the delete button in the upper left corner will be displayed, allowing the user to delete multiple items⟬<table>42⟭⟬ <table>43⟭⟬<table>44⟭⟬<table>45⟭5⟬<table>46⟭⟬<table>47⟭Search field⟬<table>48⟭⟬<table>49⟭Search Name⟬<table>50⟭⟬<table>51⟭⟬<table>52⟭⟬<table>53⟭6⟬<table>54⟭⟬<table>55⟭Invite⟬<table>56⟭⟬<table>57⟭Invite Organization / Member⟬<table>58⟭⟬<table>59⟭⟬<table>60⟭⟬<table>61⟭7⟬<table>62⟭⟬<table>63⟭Action⟬<table> 64⟭⟬<table>65⟭Transfer your role or remove selected users⟬<table>66⟭⟬<table>67⟭⟬<table>68⟭⟬<table>69⟭
 
 ### **New member**
 
-<figure><img src="../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (81).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. Click "Add" to open the conversation box
 2. The input box can search for organizations or users
@@ -333,19 +309,19 @@ The creator can grant access rights to other users through "Permissions" (please
 
 Agents can be embedded into web pages to provide question and answer services, as shown below:
 
-<figure><img src="../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 To embed an Agent into a website, use this feature to generate front-end embed code.
 
 ### **New Web App**
 
-<figure><img src="../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (87).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. Enter the Web App in "Agent Function List"
 2. Click "+" to open the _Create_ Web App dialog window
@@ -361,13 +337,13 @@ To embed an Agent into a website, use this feature to generate front-end embed c
 
 API Key is an access key used to verify identity, allowing the system to identify the source of the request and apply corresponding permissions and usage quotas when calling the Agent API. Please keep your API Key safe to avoid leakage; if you suspect that the key has been leaked, it is recommended to immediately replace and update all integration settings that use the key.
 
-<figure><img src="../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 ### Add API Key
 
-<figure><img src="../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. Enter the API Key in "Agent Function List"
 2. Click "+" to open the _Create_ API Key dialog window
@@ -384,4 +360,4 @@ Endpoint is the service entry location (URL) of Agent API. The system will send 
 
 Endpoint's copy button is located next to the search box. Click the copy button to copy the URL. Please pay attention to the environment in which you copy the URL.
 
-<figure><img src="../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>

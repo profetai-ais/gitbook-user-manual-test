@@ -4,4 +4,4 @@ description: 分析 是用來檢視報表與資料分析結果的頁面。 使�
 
 # Report
 
-<figure><img src="../.gitbook/assets/image (233).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>

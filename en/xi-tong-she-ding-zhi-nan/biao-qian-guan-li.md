@@ -4,13 +4,13 @@
 
 The tag management function helps users classify and manage items in the system through tags. Users can add different labels to each item to quickly identify, filter and find target items in the list. Users can centrally view, create, edit or delete tags here, and confirm the functional module to which each tag belongs.
 
-<figure><img src="../.gitbook/assets/image (256).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 ## Create tags
 
-<figure><img src="../.gitbook/assets/image (257).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (258).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. Enter the "Tag Management" page in "System Settings".
 2. Click the "Add" button in the upper right corner.
@@ -20,7 +20,7 @@ The tag management function helps users classify and manage items in the system 
 
 ### Multi-language settings
 
-<figure><img src="../.gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. Click the "Earth" button on the screen for automatic translation. Users can also manually edit the content.
 2. After automatic translation is completed, click the "OK" button to save the content.
@@ -45,13 +45,13 @@ If "Replace other tags" is selected, the user needs to specify a new tag as the 
 
 If you select "Don't replace, delete all associations", the system will remove all data associations with this label. The original data itself will not be deleted, but the tag will no longer remain on the data. This action cannot be undone after it is completed.
 
-<figure><img src="../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (261).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (262).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (263).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. Enter the "Tag Management" page.
 2. Find the tag you want to delete and click the delete icon on the right side of the column.

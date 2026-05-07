@@ -8,11 +8,11 @@ Prompt templates are used to simplify the way users ask questions. Frequently as
 
 ## **New prompt template**
 
-<figure><img src="../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (278).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (279).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. Click "Add" to display the window to create a prompt word template.
 2. Select prompt template type
@@ -24,7 +24,7 @@ Prompt templates are used to simplify the way users ask questions. Frequently as
 
 ### Multi-language settings
 
-<figure><img src="../.gitbook/assets/image (275).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. Click the "Earth" button on the screen for automatic translation. Users can also manually edit the content.
 2. After automatic translation is completed, click the "OK" button to save the content.
@@ -38,7 +38,7 @@ Prompt templates are used to simplify the way users ask questions. Frequently as
 
 ### **Field Description**
 
-<figure><img src="../.gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 _Field_ can be regarded as a variable in the prompt word, allowing the user to provide necessary information in the prompt word according to the actual scenario. Fields are of the following types:
 
@@ -54,27 +54,15 @@ The creator can grant access rights to other users through "Permissions" (for ro
 
 > Note: The creator is the default "manager", and each project can only have one owner.
 
-<figure><img src="../.gitbook/assets/image (281).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure> | project | Operation name | illustrate | | -- | ---- | ----------------------------- | | 1 | Edit table | Allows the user to edit the presentation of the table | | 2 | refresh | Refresh list after click | | 3 | Content filtering | Advanced filtering of specific content | | 4 | Batch delete | After checking the items, the delete button in the upper left corner will be displayed, allowing users to delete multiple items. | | 5 | search field | Search name | | 6 | invite | Invite organizations/members | | 7 | action | Transfer your role or remove selected users | ### **New member**
 
-| project | Operation name | illustrate |
-| -- | ---- | ----------------------------- |
-| 1 | Edit table | Allows the user to edit the presentation of the table |
-| 2 | refresh | Refresh list after click |
-| 3 | Content filtering | Advanced filtering of specific content |
-| 4 | Batch delete | After checking the items, the delete button in the upper left corner will be displayed, allowing users to delete multiple items. |
-| 5 | search field | Search name |
-| 6 | invite | Invite organizations/members |
-| 7 | action | Transfer your role or remove selected users |
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-### **New member**
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (282).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (283).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (284).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (285).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. Click "Add" to open the conversation box
 2. The input box can search for organizations or users

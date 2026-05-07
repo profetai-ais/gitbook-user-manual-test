@@ -4,38 +4,28 @@
 
 The figure below shows the workflow editing interface, including the following control items:
 
-<figure><img src="../.gitbook/assets/image (234).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. **Node List**: Workflow functional components provided by AI Studio; please refer to the [Workflow Node](gong-zuo-liu-cheng-jie-dian.md) page for detailed information on available nodes.
 2. **Workflow function menu**: Provides functional operations of the editor; see the description below for details
 3. **Workflow editing area**: Function nodes can be dragged and dropped into this area to edit the workflow
 4. **Editor Map**: Helps users quickly navigate to specific areas of the editor
 
-<table><thead><tr><th width="183">Workflow function menu item (from left as shown above) to right)</th><th>Description</th></tr></thead>⟬PH0 009⟭<tr><td>Previous step, next step</td><td>Return to the previous step, or return to the next step</td></tr><tr><td>History record⟬P H0018⟭<td>Manage workflow edit history</td></tr><tr><td>Export file</td><td>Export this workflow as a file⟬PH00 26⟭</tr><tr><td>Show mini map</td><td>Show Show or hide the minimap in the lower right corner of the screen</td></tr><tr><td>Reset View </td><td>Centers and displays the entire workflow </td></tr>⟬PH00 40⟭<td>Collapse</td><td>Collapse all nodes in the editor</td>⟬P H0045⟭<tr><td>Edit global variables</td><td>Edit workflow Global variables in process</td></tr><tr><td>Clipbook</td><td>Save selected nodes and access them anytime </td></tr><tr><td>Save</td><td>Save workflow changes</td></tr><tr><td>Test Preview</td><td> Open the chat window to test the workflow (this button will not be displayed when editing from the workflow template) </td></tr></tbody></table>
+<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Workflow function menu item (from left as shown above) to right)⟬<table>4⟭⟬<table>5⟭Description⟬<table>6⟭⟬<table>7⟭⟬<table>8⟭⟬<table>09⟭⟬<table>10⟭⟬<table>11⟭Previous step, next step⟬<table>12⟭⟬<table>13⟭Return to the previous step, or return to the next step⟬<table>14⟭⟬<table>15⟭⟬<table>16⟭⟬<table>17⟭History record⟬P H0018⟭⟬<table>19⟭Manage workflow edit history⟬<table>20⟭⟬<table>21⟭⟬<table>22⟭⟬<table>23⟭Export file⟬<table>24⟭⟬<table>25⟭Export this workflow as a file⟬<table> 26⟭⟬<table>27⟭⟬<table>28⟭⟬<table>29⟭Show mini map⟬<table>30⟭⟬<table>31⟭Show Show or hide the minimap in the lower right corner of the screen⟬<table>32⟭⟬<table>33⟭⟬<table>34⟭⟬<table>35⟭Reset View ⟬<table>36⟭⟬<table>37⟭Centers and displays the entire workflow ⟬<table>38⟭⟬<table>39⟭⟬<table> 40⟭⟬<table>41⟭Collapse⟬<table>42⟭⟬<table>43⟭Collapse all nodes in the editor⟬<table>44⟭⟬P H0045⟭⟬<table>46⟭⟬<table>47⟭Edit global variables⟬<table>48⟭⟬<table>49⟭Edit workflow Global variables in process⟬<table>50⟭⟬<table>51⟭⟬<table>52⟭⟬<table>53⟭Clipbook⟬<table>54 ⟭⟬<table>55⟭Save selected nodes and access them anytime ⟬<table>56⟭⟬<table>57⟭⟬<table>58⟭⟬<table>59⟭Save⟬<table>60⟭⟬<table>61⟭Save workflow changes⟬<table>62⟭⟬<table>63⟭⟬ <table>64⟭⟬<table>65⟭Test Preview⟬<table>66⟭⟬<table>67⟭ Open the chat window to test the workflow (this button will not be displayed when editing from the workflow template) ⟬<table>68⟭⟬<table>69⟭⟬<table>70⟭⟬<table>71⟭
 
 ## **Create/Edit Workflow**
 
 > Note: It is recommended to open the workflow editor from the assistant settings so that you can use Test Preview directly for testing after editing.
 
-<figure><img src="../.gitbook/assets/image (235).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-Taking a blank workflow as an example, the screen default will contain a **"Start"** node. Clicking on this node will display several basic variables:
+Taking a blank workflow as an example, the screen default will contain a **"Start"** node. Clicking on this node will display several basic variables: | variable name | illustrate | Show information | | -------------------------- | ---------------- | --------------------------------------------- | | `(x)${{start}.{query}}` | User input prompts | _User input, for example:_ `summarize the attached document` | | `(x)${{start}.{files}}` | List of files the user has attached to the chat input area | `metadata of the files in a JSON array` | | `(x)${{start}.{time}}` | Current system time | `17:19:13` | | `(x)${{start}.{date}}` | Current system date | `2025-06-06 Friday` | | `(x)${{start}.{dateTime}}` | Current system date and time | `2025-06-06 Friday 17:19:13` | The following is a simple example demonstrating basic workflow operations:
 
-| variable name | illustrate | Show information |
-| -------------------------- | ---------------- | --------------------------------------------- |
-| `(x)${{start}.{query}}` | User input prompts | _User input, for example:_ `summarize the attached document` |
-| `(x)${{start}.{files}}` | List of files the user has attached to the chat input area | `metadata of the files in a JSON array` |
-| `(x)${{start}.{time}}` | Current system time | `17:19:13` |
-| `(x)${{start}.{date}}` | Current system date | `2025-06-06 Friday` |
-| `(x)${{start}.{dateTime}}` | Current system date and time | `2025-06-06 Friday 17:19:13` |
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-The following is a simple example demonstrating basic workflow operations:
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (236).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (237).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (238).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. In the new workflow, click the "Start" node to view the basic variables
 2. Drag and drop the "Reply" node from the node list to the editing area
@@ -60,7 +50,7 @@ Situational demonstration users send a query, and the system can search for info
 
 The workflow supports quick copying and pasting of node settings, which is suitable for creating multiple similar nodes or moving existing logic across processes.
 
-<figure><img src="../.gitbook/assets/image (239).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 How to use:
 
@@ -80,7 +70,7 @@ Additional behavioral instructions:
 
 In order to avoid loss of edits when the browser is refreshed or closed for abnormal reasons, the editor will temporarily store part of the draft status in the local storage (Local Storage) and synchronize it between multiple pages.
 
-<figure><img src="../.gitbook/assets/image (240).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 ## History
 
@@ -88,11 +78,11 @@ The history record can store every content that the user clicks to save. The use
 
 > Note: You need to click the save button in the upper right corner before the content will be recorded in the history.
 
-<figure><img src="../.gitbook/assets/image (241).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-&#x20;![](<../.gitbook/assets/image (243).png>)
+&#x20;![](<../.gitbook/assets/image .png>)
 
 1. Click "History" in the workflow function menu
 2. The left side of the pop-up window is a real-time preview
@@ -106,9 +96,9 @@ The history record can store every content that the user clicks to save. The use
 
 Global variables can be regarded as "constants/settings shared by this workflow" and are suitable for placing content that will be reused by multiple nodes, such as company policies, tone specifications, fixed formats, reply template fragments, API parameter default values, etc. Through centralized management, repeated modifications in multiple nodes can be avoided.
 
-<figure><img src="../.gitbook/assets/image (244).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (245).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. Click "Edit Global Variables" in the workflow function menu
 2. Add or edit variable content in the pop-up window
@@ -125,7 +115,7 @@ Global variables can be regarded as "constants/settings shared by this workflow"
 
 Enter / in the node settings (such as the LLM node's Context or other input field) to insert available global variables from the variable list. After insertion, the system will present it in the form of a variable expression, and the latest content will be automatically brought in later.
 
-<figure><img src="../.gitbook/assets/image (246).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 ### Reference global variables in System Prompt
 

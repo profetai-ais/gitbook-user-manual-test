@@ -8,15 +8,15 @@ description: 本頁面用於集中管理系統所需的密鑰（API Key）。透
 
 After entering the "Key Management" page, the screen will display the list of currently created keys. The field descriptions are as follows:
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="210">Name</th><th>Description</th></tr></thead><tbody><tr><td>Type</td><td>Key type (e.g. SERPER, LiteLLM), represents the service type corresponding to this key</td></tr><tr><td>Name</td><td>Key name, used to identify this API Key Purpose</td></tr><tr><td>Key</td><td>API Key Value, only displayed in mask mode for security reasons</td></tr><tr><td>Tenant ID</td><td>Tenant identification code</td></tr><tr><td>Expire Date</td><td>When key expires</td></tr><tr><td>Crea tor</td><td>Created by</td></tr><tr><td>Created Date</td><td>Establishment Time</td></tr><tr><td>Modified Date</td><td>Last updated</td></tr><tr><td>Actions </td><td> operation function, currently provides deletion (trash can icon) </td></tr></tbody></table>
+<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Name⟬<table>4⟭⟬<table>5⟭Description⟬<table>6⟭⟬<table>7⟭⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭Type⟬<table>12⟭⟬<table>13⟭Key type (e.g. SERPER, LiteLLM), represents the service type corresponding to this key⟬<table>14⟭⟬<table>15⟭⟬<table>16⟭⟬<table>17⟭Name⟬<table>18⟭⟬<table>19⟭Key name, used to identify this API Key Purpose⟬<table>20⟭⟬<table>21⟭⟬<table>22⟭⟬<table>23⟭Key⟬<table>24⟭⟬<table>25⟭API Key Value, only displayed in mask mode for security reasons⟬<table>26⟭⟬<table>27⟭⟬<table>28⟭⟬<table>29⟭Tenant ID⟬<table>30⟭⟬<table>31⟭Tenant identification code⟬<table>32⟭⟬<table>33⟭⟬<table>34⟭⟬<table>35⟭Expire Date⟬<table>36⟭⟬<table>37⟭When key expires⟬<table>38⟭⟬<table>39⟭⟬<table>40⟭⟬<table>41⟭Crea tor⟬<table>42⟭⟬<table>43⟭Created by⟬<table>44⟭⟬<table>45⟭⟬<table>46⟭⟬<table>47⟭Created Date⟬<table>48⟭⟬<table>49⟭Establishment Time⟬<table>50⟭⟬<table>51⟭⟬<table>52⟭⟬<table>53⟭Modified Date⟬<table>54⟭⟬<table>55⟭Last updated⟬<table>56⟭⟬<table>57⟭⟬<table>58⟭⟬<table>59⟭Actions ⟬<table>60⟭⟬<table>61⟭ operation function, currently provides deletion (trash can icon) ⟬<table>62⟭⟬<table>63⟭⟬<table>64⟭⟬<table>65⟭
 
 ## Add new key
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. After clicking the "+" in the upper right corner, the setting window for adding a new key will open. Please complete the following settings in order:
 2. Type: Select the key type.
@@ -28,9 +28,9 @@ After entering the "Key Management" page, the screen will display the list of cu
 
 ## delete key
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. Click the trash can icon in the Actions column on the far right of the column
 2. Click to confirm and then perform the deletion action. The key will be removed from the list immediately.

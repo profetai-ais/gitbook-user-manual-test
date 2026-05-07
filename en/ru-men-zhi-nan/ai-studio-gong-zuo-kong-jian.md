@@ -13,7 +13,7 @@ The interface mainly consists of two parts:
 
 ## **Conversation Record**
 
-<figure><img src="../.gitbook/assets/image (108).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 The conversation recording area is divided into two parts:
 
@@ -22,21 +22,21 @@ The conversation recording area is divided into two parts:
 
 Actions available in the conversation recording area:
 
-<table><thead><tr><th width="90">Project</th><th width="157">Operation Name</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>Explore </td><td>Back to Explore Agent/Application Template Page</td></tr><tr><td>2</td><td>Recent Agent/Conversation</td><td>Recently Used Agent Conversation with </td></tr><tr><td>3</td><td>Build </td><td>Create new conversation</td></tr><tr><td>4</td><td>Edit⟬PH0 040⟭<td>Edit the name of the selected conversation record</td></tr><tr><td>5</td><td>Delete</td><td>Delete selected conversation record</td></tr></tbody></table>
+<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Project⟬<table>4⟭⟬<table>5⟭Operation Name⟬<table>6⟭⟬<table>7⟭Description⟬<table>8 ⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭⟬<table>12⟭⟬<table>13⟭1⟬<table>14⟭⟬<table>15⟭Explore ⟬<table>16⟭⟬<table>17⟭Back to Explore Agent/Application Template Page⟬<table>18⟭⟬<table>19⟭⟬<table>20⟭⟬<table>21⟭2⟬<table>22⟭⟬<table>23⟭Recent Agent/Conversation⟬<table>24⟭⟬<table>25⟭Recently Used Agent Conversation with ⟬<table>26⟭⟬<table>27⟭⟬<table>28⟭⟬<table>29⟭3⟬<table>30⟭⟬<table>31⟭Build ⟬<table>32⟭⟬<table>33⟭Create new conversation⟬<table>34⟭⟬<table>35⟭⟬<table>36⟭⟬<table>37⟭4⟬<table>38⟭⟬<table>39⟭Edit⟬<table>40⟭⟬<table>41⟭Edit the name of the selected conversation record⟬<table>42⟭⟬<table>43⟭⟬<table>44⟭⟬<table>45⟭5⟬<table>46⟭⟬ <table>47⟭Delete⟬<table>48⟭⟬<table>49⟭Delete selected conversation record⟬<table>50⟭⟬<table>51⟭⟬<table>52⟭⟬<table>53⟭
 
 ## **Chat area**
 
-<figure><img src="../.gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<table data-first-column-sticky data-full-width="false"><thead><tr><th width="80">Project</th><th width="161">Operation Name</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>Reference source</td><td>Click to view Agent Sources referenced in responses to facilitate users to further explore or verify information</td></tr><tr><td>2 </td><td>Action button </td><td>From left to right: copy response text, related questions, and amount spent / Token</td></tr><tr><td>3</td><td>Join</td><td>Add additional files, or use Prompt word template</td></tr><tr><td>4</td><td>Input box</td><td>The user enters the prompt here. Click the Send button to send the prompt to all selected Agents to respond</td></tr></tbody></table>
+<table data-first-column-sticky data-full-width="false">⟬<table data-first-column-sticky data-full-width="false">1⟭⟬<table data-first-column-sticky data-full-width="false">2⟭⟬<table data-first-column-sticky data-full-width="false">3⟭Project⟬<table data-first-column-sticky data-full-width="false">4⟭⟬<table data-first-column-sticky data-full-width="false">5⟭Operation Name⟬<table data-first-column-sticky data-full-width="false">6⟭⟬<table data-first-column-sticky data-full-width="false">7⟭Description⟬<table data-first-column-sticky data-full-width="false">8⟭⟬ <table data-first-column-sticky data-full-width="false">9⟭⟬<table data-first-column-sticky data-full-width="false">10⟭⟬<table data-first-column-sticky data-full-width="false">11⟭⟬<table data-first-column-sticky data-full-width="false">12⟭⟬<table data-first-column-sticky data-full-width="false">13⟭1⟬<table data-first-column-sticky data-full-width="false">14⟭⟬<table data-first-column-sticky data-full-width="false">15⟭Reference source⟬<table data-first-column-sticky data-full-width="false">16⟭⟬<table data-first-column-sticky data-full-width="false">17⟭Click to view Agent Sources referenced in responses to facilitate users to further explore or verify information⟬<table data-first-column-sticky data-full-width="false">18⟭⟬<table data-first-column-sticky data-full-width="false">19⟭⟬<table data-first-column-sticky data-full-width="false">20⟭⟬<table data-first-column-sticky data-full-width="false">21⟭2 ⟬<table data-first-column-sticky data-full-width="false">22⟭⟬<table data-first-column-sticky data-full-width="false">23⟭Action button ⟬<table data-first-column-sticky data-full-width="false">24⟭⟬<table data-first-column-sticky data-full-width="false">25⟭From left to right: copy response text, related questions, and amount spent / Token⟬<table data-first-column-sticky data-full-width="false">26⟭⟬<table data-first-column-sticky data-full-width="false">27⟭⟬<table data-first-column-sticky data-full-width="false">28⟭⟬<table data-first-column-sticky data-full-width="false">29⟭3⟬<table data-first-column-sticky data-full-width="false">30⟭⟬<table data-first-column-sticky data-full-width="false">31⟭Join⟬<table data-first-column-sticky data-full-width="false">32⟭⟬<table data-first-column-sticky data-full-width="false">33⟭Add additional files, or use Prompt word template⟬<table data-first-column-sticky data-full-width="false">34⟭⟬<table data-first-column-sticky data-full-width="false">35⟭⟬<table data-first-column-sticky data-full-width="false">36⟭⟬<table data-first-column-sticky data-full-width="false">37⟭4⟬<table data-first-column-sticky data-full-width="false">38⟭⟬<table data-first-column-sticky data-full-width="false">39⟭Input box⟬<table data-first-column-sticky data-full-width="false">40⟭⟬<table data-first-column-sticky data-full-width="false">41⟭The user enters the prompt here. Click the Send button to send the prompt to all selected Agents to respond⟬<table data-first-column-sticky data-full-width="false">42⟭⟬<table data-first-column-sticky data-full-width="false">43⟭⟬<table data-first-column-sticky data-full-width="false">44⟭⟬<table data-first-column-sticky data-full-width="false">45⟭
 
 > Additional Note: The display of the attachment upload portal may vary depending on Agent settings. In some Agents or environments, administrators can control whether to display the "Upload File" icon; when this function is turned off, the attachment entry will not be displayed in the chat input area, and users will not be able to attach files in the session. If you do not see the attachment button in the workspace, please confirm whether the currently selected Agent allows the file attachment function, or contact the system administrator.
 
 ## **Use prompt templates in chat**
 
-<figure><img src="../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. Press the "/" key in the prompt input area, or click the "+" "Prompt Word Template" to display the list of available prompt templates
 2. Click on the desired prompt template from the list
@@ -44,7 +44,7 @@ Actions available in the conversation recording area:
 
 Available prompt template types:
 
-<table><thead><tr><th width="176">Template Type</th><th> says Ming</th></tr></thead><tbody><tr><td>User Prompt</td><td> Prompt templates added to favorites from the Explore area and can be used in any Agent conversation </td></tr><tr><td>Agent Prompt</td><td> A prompt template bound to a specific Agent and can only be used in that Agent </td></tr></tbody></table>
+<table>⟬<table>1⟭⟬<table>2⟭⟬<table>3⟭Template Type⟬<table>4⟭⟬<table>5⟭ says Ming⟬<table>6⟭⟬<table>7⟭⟬<table>8⟭⟬<table>9⟭⟬<table>10⟭⟬<table>11⟭User Prompt⟬<table>12⟭⟬<table>13⟭ Prompt templates added to favorites from the Explore area and can be used in any Agent conversation ⟬<table>14⟭⟬<table>15⟭⟬<table>16⟭⟬<table>17⟭Agent Prompt⟬<table>18⟭⟬<table>19⟭ A prompt template bound to a specific Agent and can only be used in that Agent ⟬<table>20⟭⟬<table>21⟭⟬<table>22⟭⟬<table>23⟭
 
 ## **Chat Session Archives**
 
@@ -67,11 +67,11 @@ The **Usage Quota** area allows users to clearly understand the Token and cost c
 
 > Note: By default, quota usage is automatically reset daily.
 
-<figure><img src="../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 Usage details will be displayed in **two places**, each with different purposes:
 
-<table data-full-width="false"><thead><tr><th width="83">Project</th><th width="121">Display Area</th><th width="122">Position</th><th width="276">Display indicator</th><th>Purpose </th></tr></thead><tbody><tr><td>1⟬PH001 8⟭<td>Daily quota overview</td><td>Bottom left corner of sidebar</td><td>- <strong>Quota Plan</strong>: Current budget and amount spent (e.g. 0.01 / 10.00 USD) <br>- <strong>Usage</strong>: Visualization of quota usage percentage for the day </td><td> Provides per-day quota usage for all sessions Daily Usage Profile</td></tr><tr><td>2</td><td>Session Level Token details</td><td>Below each AI response (mouseover icon displays) </td><td>- <strong>Total Input Tokens</strong>: Contains prompts, system commands, context <br>- <strong>Total Output Tokens</strong>: AI generated response <br>- <strong>Total Tokens</strong>: Sum of input and output Tokens <br>- <strong>Total Usage Cost</strong>: Cost based on current model price</td><td>Provides detailed cost breakdown for each interaction</td></tr></tbody></table>
+<table data-full-width="false">⟬<table data-full-width="false">1⟭⟬<table data-full-width="false">2⟭⟬<table data-full-width="false">3⟭Project⟬<table data-full-width="false">4⟭⟬<table data-full-width="false">5⟭Display Area⟬ <table data-full-width="false">6⟭⟬<table data-full-width="false">7⟭Position⟬<table data-full-width="false">8⟭⟬<table data-full-width="false">9⟭Display indicator⟬<table data-full-width="false">10⟭⟬<table data-full-width="false">11⟭Purpose ⟬<table data-full-width="false">12⟭⟬<table data-full-width="false">13⟭⟬<table data-full-width="false">14⟭⟬<table data-full-width="false">15⟭⟬<table data-full-width="false">16⟭⟬<table data-full-width="false">17⟭1⟬<table data-full-width="false">1 8⟭⟬<table data-full-width="false">19⟭Daily quota overview⟬<table data-full-width="false">20⟭⟬<table data-full-width="false">21⟭Bottom left corner of sidebar⟬<table data-full-width="false">22⟭⟬<table data-full-width="false">23⟭- ⟬<table data-full-width="false">24⟭Quota Plan⟬<table data-full-width="false">25⟭: Current budget and amount spent (e.g. 0.01 / 10.00 USD) ⟬<table data-full-width="false">26⟭- ⟬<table data-full-width="false">27⟭Usage⟬<table data-full-width="false">28⟭: Visualization of quota usage percentage for the day ⟬<table data-full-width="false">29⟭⟬<table data-full-width="false">30⟭ Provides per-day quota usage for all sessions Daily Usage Profile⟬<table data-full-width="false">31⟭⟬<table data-full-width="false">32⟭⟬<table data-full-width="false">33⟭⟬<table data-full-width="false">34⟭2⟬<table data-full-width="false">35⟭⟬<table data-full-width="false">36⟭Session Level Token details⟬<table data-full-width="false">37⟭⟬<table data-full-width="false">38⟭Below each AI response (mouseover icon displays) ⟬<table data-full-width="false">39⟭⟬<table data-full-width="false">40⟭- ⟬<table data-full-width="false">41⟭Total Input Tokens⟬<table data-full-width="false">42⟭: Contains prompts, system commands, context ⟬<table data-full-width="false">43⟭- ⟬<table data-full-width="false">44⟭Total Output Tokens⟬<table data-full-width="false">45⟭: AI generated response ⟬<table data-full-width="false">46⟭- ⟬<table data-full-width="false">47⟭Total Tokens⟬<table data-full-width="false">48⟭: Sum of input and output Tokens ⟬<table data-full-width="false">49⟭- ⟬<table data-full-width="false">50⟭Total Usage Cost⟬<table data-full-width="false">51⟭: Cost based on current model price⟬<table data-full-width="false">52⟭⟬<table data-full-width="false">53⟭Provides detailed cost breakdown for each interaction⟬<table data-full-width="false">54⟭⟬<table data-full-width="false">55⟭⟬<table data-full-width="false">56⟭⟬<table data-full-width="false">57⟭
 
 ## canvas
 
@@ -81,9 +81,9 @@ Canvas is suitable for situations where you need to review and adjust content fo
 
 ### call canvas
 
-<figure><img src="../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (116).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. Click the + sign in the lower left corner, select canvas, and the function will appear in the input box.
 2. Enter your requirements in the chat window and ask AI to generate documents, tables, charts, or other content.
@@ -101,11 +101,11 @@ Different content types may support different operations. For example, documents
 
 The voice dictation function helps users input text content through voice. Users only need to turn on the microphone and start speaking, and the system will convert the voice content into text, reducing manual input time and improving the efficiency of data filling or text input.
 
-<figure><img src="../.gitbook/assets/image (151).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (152).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (153).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image .png" alt=""><figcaption></figcaption></figure>
 
 1. Enter the Agent dialogue page and click the microphone icon next to the text input box.
 2. If the system pops up a microphone permission prompt, please allow the system to use the microphone.
