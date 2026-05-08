@@ -6,9 +6,9 @@ description: "Workflow Agent allows users to create processes and design how the
 
 ## **Create Workflow Agent**
 
-<figure><img src="../.gitbook/assets/image (200).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (144).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (201).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (188).png" alt=""><figcaption></figcaption></figure>
 
 1. Click the "+ Create" button in the upper right corner of the screen
 2. In the pop-up window, select "Agent Type" as _Workflow_
@@ -19,7 +19,7 @@ description: "Workflow Agent allows users to create processes and design how the
 
 ### Multi-language settings
 
-<figure><img src="../.gitbook/assets/image (198).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (147).png" alt=""><figcaption></figcaption></figure>
 
 1. Click the "Earth" button on the screen for automatic translation. Users can also manually edit the content.
 2. After automatic translation is completed, click the "OK" button to save the content.
@@ -30,7 +30,7 @@ description: "Workflow Agent allows users to create processes and design how the
 
 Workflow Agent's homepage can be divided into several main areas, as follows:
 
-<figure><img src="../.gitbook/assets/image (203).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (190).png" alt=""><figcaption></figcaption></figure>
 
 1. **Agent function options:** Provides links to Agent function settings
 
@@ -49,18 +49,18 @@ The function options area contains the following function links. After clicking,
 
 All types of Agent homepages share the Basic Settings section, which includes an Enabled Status switch and a Settings button for updating the Agent name and description. Clicking the Settings button will pop up the following dialog box:
 
-<figure><img src="../.gitbook/assets/image (204).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (191).png" alt=""><figcaption></figcaption></figure>
 
 1. **Agent Status**: Users can edit the activation status of Agent, and the status will change immediately when the switch is switched.
 2. **Basic Settings Edit**: Can edit the most basic name, description and international language translation.
 
 ### Agent status settings
 
-<figure><img src="../.gitbook/assets/image (205).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (191).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (206).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (192).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (207).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
 
 1. Click the status bar to open the interface
 2. Click the Publish button
@@ -76,21 +76,21 @@ Provides settings related to Agent behavior based on Agent type. The application
 
 The application template (prompt word template) that has been created or collected can be bound to the Agent. When using it, you only need to fill in the necessary information to speed up the question and answer process.
 
-<figure><img src="../.gitbook/assets/image (208).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (194).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (210).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (196).png" alt=""><figcaption></figcaption></figure>
 
 ### **Welcome Page**
 
 Users can set their own default conversation content, allowing the Agent to provide directly clickable question directions before the conversation begins, helping users start interacting more quickly.
 
-<figure><img src="../.gitbook/assets/image (209).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (195).png" alt=""><figcaption></figcaption></figure>
 
 ## **Adaptation Preview**
 
 Users can test Agent behavior and response content in this area, and adjust Agent configuration based on the responses.
 
-<figure><img src="../.gitbook/assets/image (211).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (197).png" alt=""><figcaption></figcaption></figure>
 
 ## Workflow settings
 
@@ -104,9 +104,9 @@ The conversation log provides all conversation records of this Agent. Administra
 
 The processing flow is also retained in the log record; when an error occurs in a conversation or performance is poor, managers can review the processing flow of each reply to discover the reason.
 
-<figure><img src="../.gitbook/assets/image (212).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (198).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (199).png" alt=""><figcaption></figcaption></figure>
 
 ## Permissions
 
@@ -114,21 +114,19 @@ The creator can grant access rights to other users through "Permissions" (please
 
 > Note: The creator is the default "owner", and each project can only have one owner.
 
-<figure><img src="../.gitbook/assets/image (215).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (201).png" alt=""><figcaption></figcaption></figure>
 
 <table><thead><tr><th width="99">project</th><th width="132">Operation name</th><th>illustrate</th></tr></thead><tbody><tr><td>1</td><td>Edit table</td><td>Allows the user to edit the presentation of the table</td></tr><tr><td>2</td><td>refresh</td><td>Refresh list after click</td></tr><tr><td>3</td><td>Content filtering</td><td>Advanced filtering of specific content</td></tr><tr><td>4</td><td>Status switching</td><td>Quickly switch status by selecting single or multiple selections on the table</td></tr><tr><td>5</td><td>Batch delete</td><td>After checking the items, the delete button in the upper left corner will be displayed, allowing users to delete multiple items.</td></tr><tr><td>6</td><td>search field</td><td>Search name</td></tr><tr><td>7</td><td>invite</td><td>Invite organizations/members</td></tr><tr><td>8</td><td>Enabled status</td><td>User permission enabled status</td></tr><tr><td>9</td><td>action</td><td>Transfer your role or remove selected users</td></tr></tbody></table>
 
 ### **New member**
 
-<figure><img src="../.gitbook/assets/image (216).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (202).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;
+<figure><img src="../.gitbook/assets/image (203).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (217).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (204).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (218).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image (219).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (205).png" alt=""><figcaption></figcaption></figure>
 
 1. Click "Invite" to open the conversation box
 2. The input box can search for organizations or users
@@ -142,19 +140,19 @@ The creator can grant access rights to other users through "Permissions" (please
 
 Agents can be embedded into web pages to provide question and answer services, as shown in the figure below:
 
-<figure><img src="../.gitbook/assets/image (221).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
 
 If users want to embed Agent into a web page, they need to use this function to create code embedded in the front end of the web page.
 
 ### **New AI WEBAPP**
 
-<figure><img src="../.gitbook/assets/image (222).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (206).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (223).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (207).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (224).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (208).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (209).png" alt=""><figcaption></figcaption></figure>
 
 1. Enter the Web App in "Agent Function List"
 2. Click "+" to open the _Create_ Web App dialog box
@@ -170,13 +168,13 @@ If users want to embed Agent into a web page, they need to use this function to 
 
 API Key is an access key used to verify identity, allowing the system to identify the source of the request and apply corresponding permissions and usage quotas when calling the Agent API. Please keep your API Key safe to avoid leakage; if you suspect that the key has been leaked, it is recommended to immediately replace and update all integration settings that use the key.
 
-<figure><img src="../.gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (210).png" alt=""><figcaption></figcaption></figure>
 
 ### Add API Key
 
-<figure><img src="../.gitbook/assets/image (227).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (211).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (228).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (212).png" alt=""><figcaption></figcaption></figure>
 
 1. Enter the API Key in "Agent Function List"
 2. Click "+" to open the _Create_ API Key dialog window
@@ -192,4 +190,4 @@ Endpoint is the service entry location (URL) of Agent API. The system will send 
 
 Endpoint's copy button is located next to the search box. Click the copy button to copy the URL. Please pay attention to the environment in which you copy the URL.
 
-<figure><img src="../.gitbook/assets/image (229).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure>

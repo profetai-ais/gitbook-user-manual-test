@@ -8,23 +8,23 @@ Prompt templates are used to simplify the way users ask questions. Frequently as
 
 ## **New prompt template**
 
-<figure><img src="../.gitbook/assets/image (277).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (278).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (261).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (279).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (262).png" alt=""><figcaption></figcaption></figure>
 
 1. Click "Add" to display the window to create a prompt word template.
 2. Select prompt template type
 3. Enter the knowledge name in the "Name" field and click the button on the right to create a multi-language label. Please refer to 
 4. Enter the knowledge description in the "Description" field and click the button on the right to create a multilingual label. Please refer to 
 5. Create "Field"
-6. &#x20;Set prompt words in the "Prompt Word Settings" tab
+6. Set prompt words in the "Prompt Word Settings" tab
 7. Click "OK" to complete the addition
 
 ### Multi-language settings
 
-<figure><img src="../.gitbook/assets/image (275).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (258).png" alt=""><figcaption></figcaption></figure>
 
 1. Click the "Earth" button on the screen for automatic translation. Users can also manually edit the content.
 2. After automatic translation is completed, click the "OK" button to save the content.
@@ -36,9 +36,9 @@ Prompt templates are used to simplify the way users ask questions. Frequently as
 * **Chat Tips:** Templates for all scenarios. After completing the editing, you can save it for use in the "Application Templates" on the "Explore" page.
 * **Agent Tips:** Prompt word templates specifically bound to the assistant will not appear in the "Explore" page for collection.
 
-### **Field Description**
+### **Field description**
 
-<figure><img src="../.gitbook/assets/image (280).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (263).png" alt=""><figcaption></figcaption></figure>
 
 _Field_ can be regarded as a variable in the prompt word, allowing the user to provide necessary information in the prompt word according to the actual scenario. Fields are of the following types:
 
@@ -54,7 +54,7 @@ The creator can grant access rights to other users through "Permissions" (for ro
 
 > Note: The creator is the default "manager", and each project can only have one owner.
 
-<figure><img src="../.gitbook/assets/image (281).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (264).png" alt=""><figcaption></figcaption></figure>
 
 | project | Operation name | illustrate |
 | -- | ---- | ----------------------------- |
@@ -68,13 +68,13 @@ The creator can grant access rights to other users through "Permissions" (for ro
 
 ### **New member**
 
-<figure><img src="../.gitbook/assets/image (282).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (265).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (283).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (266).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (284).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (267).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (285).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (268).png" alt=""><figcaption></figcaption></figure>
 
 1. Click "Add" to open the conversation box
 2. The input box can search for organizations or users

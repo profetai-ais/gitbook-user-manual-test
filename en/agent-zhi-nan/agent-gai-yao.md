@@ -3,11 +3,9 @@ description: "Agent is a conversational application that allows users to input t
 ---
 # Agent Summary
 
-
-
 ## **Main Advantages**
 
-<figure><img src="../.gitbook/assets/image (131).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure>
 
 * **Diversity**: Provides a variety of Agent types to meet different application needs. High-quality Agent applications can be created through simple configuration.
 * **Achieve governance**: You can manage the usage rights of Agents to ensure that the application of generative AI complies with enterprise specifications.

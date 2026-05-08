@@ -4,7 +4,7 @@
 
 The figure below shows the workflow editing interface, including the following control items:
 
-<figure><img src="../.gitbook/assets/image (234).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (218).png" alt=""><figcaption></figcaption></figure>
 
 1. **Node List**: Workflow functional components provided by AI Studio; see the page for details on available nodes.
 2. **Workflow function menu**: Provides functional operations of the editor; see the description below for details
@@ -17,7 +17,7 @@ The figure below shows the workflow editing interface, including the following c
 
 > Note: It is recommended to open the workflow editor from the assistant settings so that you can use Test Preview directly for testing after editing.
 
-<figure><img src="../.gitbook/assets/image (235).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (219).png" alt=""><figcaption></figcaption></figure>
 
 Taking a blank workflow as an example, the screen default will contain a **"Start"** node. Clicking on this node will display several basic variables:
 
@@ -31,11 +31,11 @@ Taking a blank workflow as an example, the screen default will contain a **"Star
 
 The following is a simple example demonstrating basic workflow operations:
 
-<figure><img src="../.gitbook/assets/image (236).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (220).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (237).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (221).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (238).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (222).png" alt=""><figcaption></figcaption></figure>
 
 1. In the new workflow, click the "Start" node to view the basic variables
 2. Drag and drop the "Reply" node from the node list to the editing area
@@ -60,7 +60,7 @@ Situational demonstration users send a query, and the system can search for info
 
 The workflow supports quick copying and pasting of node settings, which is suitable for creating multiple similar nodes or moving existing logic across processes.
 
-<figure><img src="../.gitbook/assets/image (239).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (223).png" alt=""><figcaption></figcaption></figure>
 
 How to use:
 
@@ -80,7 +80,7 @@ Additional behavioral instructions:
 
 In order to avoid loss of edits when the browser is refreshed or closed for abnormal reasons, the editor will temporarily store part of the draft status in the local storage (Local Storage) and synchronize it between multiple pages.
 
-<figure><img src="../.gitbook/assets/image (240).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (224).png" alt=""><figcaption></figcaption></figure>
 
 ## History
 
@@ -88,11 +88,11 @@ The history record can store every content that the user clicks to save. The use
 
 > Note: You need to click the save button in the upper right corner before the content will be recorded in the history.
 
-<figure><img src="../.gitbook/assets/image (241).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (225).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
 
-&#x20;![](<../.gitbook/assets/image (243).png>)
+![](<../.gitbook/assets/image (227).png>)
 
 1. Click "History" in the workflow function menu
 2. The left side of the pop-up window is a real-time preview
@@ -106,9 +106,9 @@ The history record can store every content that the user clicks to save. The use
 
 Global variables can be regarded as "constants/settings shared by this workflow" and are suitable for placing content that will be reused by multiple nodes, such as company policies, tone specifications, fixed formats, reply template fragments, API parameter default values, etc. Through centralized management, repeated modifications in multiple nodes can be avoided.
 
-<figure><img src="../.gitbook/assets/image (244).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (228).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (245).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (229).png" alt=""><figcaption></figcaption></figure>
 
 1. Click "Edit Global Variables" in the workflow function menu
 2. Add or edit variable content in the pop-up window
@@ -125,7 +125,7 @@ Global variables can be regarded as "constants/settings shared by this workflow"
 
 Enter / in the node settings (such as the LLM node's Context or other input field) to insert available global variables from the variable list. After insertion, the system will present it in the form of a variable expression, and the latest content will be automatically brought in later.
 
-<figure><img src="../.gitbook/assets/image (246).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (230).png" alt=""><figcaption></figcaption></figure>
 
 ### Reference global variables in System Prompt
 
@@ -148,4 +148,3 @@ Advantages: When the specification is updated, it only needs to be changed once 
 Scenario demonstration: By setting global variables once, you can simultaneously control the output behavior of all AI nodes in the entire workflow, such as output language. Users can quickly switch between Chinese, English or other languages ​​without modifying each node one by one, ensuring that the overall output is consistent, which is especially suitable for multi-lingual or multinational application scenarios.
 
 {% file src="../.gitbook/assets/Understanding Global Variables A Localization Agent_2026-02-04_影片.mp4" %}
-

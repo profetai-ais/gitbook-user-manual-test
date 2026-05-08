@@ -2,7 +2,7 @@
 
 ## **Type of Agent**
 
-<figure><img src="../.gitbook/assets/image (145).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (135).png" alt=""><figcaption></figcaption></figure>
 
 * **Chat Agent**: Interact directly with internal or external large language models through basic question and answer.
 * **Workflow**: Workflow can be arranged to handle complex application scenarios.
@@ -11,9 +11,9 @@
 
 ## **Assign Agent Library Manager**
 
-<figure><img src="../.gitbook/assets/image (146).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (136).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (147).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
 
 1. Click the "… (More)" button in the upper left corner of the screen
 2. Select "Assign"
@@ -30,7 +30,7 @@ The export/import function can be used to back up Agent settings, move settings 
 
 ### Export Agent
 
-<figure><img src="../.gitbook/assets/image (148).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (138).png" alt=""><figcaption></figcaption></figure>
 
 1. Go to the Agent list, or enter the edit page of the target Agent.
 2. Move the mouse over the Agent table to be exported.
@@ -38,9 +38,9 @@ The export/import function can be used to back up Agent settings, move settings 
 
 ### Import Agent
 
-<figure><img src="../.gitbook/assets/image (149).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (139).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (150).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>
 
 1. Click the "… (More)" button in the upper left corner of the screen
 2. Select "Import File"

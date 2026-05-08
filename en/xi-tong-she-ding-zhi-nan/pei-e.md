@@ -56,7 +56,7 @@ Administrators can create a new usage quota plan by setting parameters such as n
 
 > Note: Once assigned, even if the default plan is modified later, the user will still execute according to the bound custom plan.
 
-## **Quota adjustment record**
+## **Quota Adjustment Record**
 
 The **Quota Adjustment Record** page records all manual changes to user quota usage, especially operations from the **User Quota Plan Binding Management** tab.
 

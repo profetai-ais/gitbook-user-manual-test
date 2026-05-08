@@ -5,13 +5,13 @@ description: "AI Studio allows IT staff to connect externally subscribed large l
 
 ## **New large language model**
 
-<figure><img src="../.gitbook/assets/image (286).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (269).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (287).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (270).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (288).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (271).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (289).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (272).png" alt=""><figcaption></figcaption></figure>
 
 1. After entering, click "+Add" in the upper right corner to start setting.
 2. Choose a service provider (for example: OpenAI / Azure / Gemini / Ollama / Claude)

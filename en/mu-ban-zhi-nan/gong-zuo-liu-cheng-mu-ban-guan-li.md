@@ -16,7 +16,7 @@ Process templates are used in workflow assistants, allowing users to visually de
 
 This option will create a blank process template.
 
-<figure><img src="../.gitbook/assets/image (265).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (248).png" alt=""><figcaption></figcaption></figure>
 
 1. Click the "Add" button in the upper right corner
 2. Enter the knowledge name in the "Name" field and click the button on the right to create a multi-language label. Please refer to 
@@ -25,7 +25,7 @@ This option will create a blank process template.
 
 #### Multi-language settings
 
-<figure><img src="../.gitbook/assets/image (266).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (249).png" alt=""><figcaption></figcaption></figure>
 
 1. Click the "Earth" button on the screen for automatic translation. Users can also manually edit the content.
 2. After automatic translation is completed, click the "OK" button to save the content.
@@ -36,7 +36,7 @@ This option will create a blank process template.
 
 This option allows users to copy an existing workflow template into a new process for editing.
 
-<figure><img src="../.gitbook/assets/image (268).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>
 
 1. Select the template to copy from the list of templates
 2. Click the copy button
@@ -46,7 +46,7 @@ This option allows users to copy an existing workflow template into a new proces
 
 This option allows users to import a workflow template from a file into a new process for editing.
 
-<figure><img src="../.gitbook/assets/image (269).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (252).png" alt=""><figcaption></figcaption></figure>
 
 1. Click the More button on the upper right and select Import File
 2. Click "File Upload Area" to select the template file to be imported (the file with the file extension )
@@ -60,7 +60,7 @@ The creator can grant access rights to other users through "Permissions" (for ro
 
 > Note: The creator is the default "manager", and each project can only have one owner.
 
-<figure><img src="../.gitbook/assets/image (270).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (253).png" alt=""><figcaption></figcaption></figure>
 
 | project | Operation name | illustrate |
 | -- | ---- | ----------------------------- |
@@ -74,13 +74,13 @@ The creator can grant access rights to other users through "Permissions" (for ro
 
 ### **New member**
 
-<figure><img src="../.gitbook/assets/image (271).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (254).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (272).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (255).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (273).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (256).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (274).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (257).png" alt=""><figcaption></figcaption></figure>
 
 1. Click "Add" to open the conversation box
 2. The input box can search for organizations or users

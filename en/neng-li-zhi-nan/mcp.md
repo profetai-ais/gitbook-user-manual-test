@@ -10,9 +10,9 @@ Users can:
 * **Track** New tools for developers
 * **Reference** Available tools and their capabilities
 
-<figure><img src="../.gitbook/assets/image (247).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (231).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (248).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (232).png" alt=""><figcaption></figcaption></figure>
 
 ## Permissions
 
@@ -20,7 +20,7 @@ The creator can grant access rights to other users through "Permissions" (please
 
 > Note: The creator is the default "owner", and each project can only have one owner.
 
-<figure><img src="../.gitbook/assets/image (249).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (233).png" alt=""><figcaption></figcaption></figure>
 
 | project | Operation name | illustrate |
 | -- | ---- | ----------------------------- |
@@ -34,15 +34,15 @@ The creator can grant access rights to other users through "Permissions" (please
 
 ### **New member**
 
-<figure><img src="../.gitbook/assets/image (250).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (234).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (235).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (252).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (236).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (253).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (237).png" alt=""><figcaption></figcaption></figure>
 
-1. &#x20;Click "Invite" to open the conversation box
+1. Click "Invite" to open the conversation box
 2. The input box can search for organizations or users
 3. Select the corresponding permissions
 4. Enter keywords to jump out to the corresponding organization/user
@@ -52,9 +52,9 @@ The creator can grant access rights to other users through "Permissions" (please
 
 ## Added MCP tool permissions
 
-<figure><img src="../.gitbook/assets/image (254).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (238).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (255).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (239).png" alt=""><figcaption></figcaption></figure>
 
 1. Click the MCP tool permission item in the "MCP Menu"
 2. Click the button to add permissions to the tool batch

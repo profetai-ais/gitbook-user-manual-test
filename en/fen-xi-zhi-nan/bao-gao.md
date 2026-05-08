@@ -4,4 +4,4 @@ description: "Analysis is the page used to view reports and data analysis result
 ---
 # Report
 
-<figure><img src="../.gitbook/assets/image (233).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (217).png" alt=""><figcaption></figcaption></figure>

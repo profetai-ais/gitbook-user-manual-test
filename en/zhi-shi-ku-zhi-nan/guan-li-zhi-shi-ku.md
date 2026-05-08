@@ -25,9 +25,9 @@ The summary method of data sets in knowledge is shown in the figure below:
 
 ## **Build new knowledge**
 
-<figure><img src="../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
 1. Click the "Knowledge Base" item in the left menu
 2. Click the "+" button on the upper right side of the screen
@@ -38,7 +38,7 @@ The summary method of data sets in knowledge is shown in the figure below:
 
 ### Multi-language settings
 
-<figure><img src="../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
 1. Click the "Earth" button on the screen for automatic translation. Users can also manually edit the content.
 2. After automatic translation is completed, click the "Save" button to save the content.
