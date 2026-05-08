@@ -67,7 +67,7 @@ After you save the permission settings, selected users, groups, or organizations
 
 #### **Skill List**
 
-The following table describes what can be done at the "**Skills** List" level. You can think of the "**MCP** List" as a management scope: whether you can create projects, manage members, and view/edit all projects depends on the role you have been granted in this function list.
+The following table describes what can be done at the "**Skills** List" level. You can think of the "**Skills** List" as a management scope: whether you can create projects, manage members, and view/edit all projects depends on the role you have been granted in this function list.
 
 <figure><img src="../.gitbook/assets/image (283).png" alt=""><figcaption></figcaption></figure>
 
