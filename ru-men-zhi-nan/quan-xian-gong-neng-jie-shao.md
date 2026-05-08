@@ -48,6 +48,32 @@ description: 本功能提供雙層級的權限控管，協助您彈性設定「�
 
 <table data-full-width="true"><thead><tr><th>角色</th><th>知識管理員</th><th>知識協作者</th><th>知識使用者</th></tr></thead><tbody><tr><td><strong>說明</strong></td><td>擁有完整的知識控制權</td><td>可協助管理知識的內容調整</td><td>僅能讀取知識的角色</td></tr><tr><td><strong>可在 Agent 新增知識</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>在知識庫清單檢視知識</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>管理知識成員</strong></td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>編輯知識</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>刪除知識</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
 
+### **知識數據集**
+
+透過將使用者、群組或組織指派給資料集，管理員可以控制哪些使用者可以在其他功能（例如代理設定、測試或其他基於知識的功能）中使用該資料集。
+
+儲存權限設定後，選定的使用者、群組或組織將能夠在受支援的功能中存取和使用該資料集。
+
+<figure><img src="../.gitbook/assets/image (286).png" alt=""><figcaption></figcaption></figure>
+
+## **技能 功能權限**
+
+### **技能清單**
+
+以下表格描述的是「**技能** 清單」層級可以做的事情。你可以把「**MCP** 清單」當成一個管理範圍：能不能建立項目、能不能管理成員、能不能檢視/編輯所有項目，取決於你在此功能清單被授予的角色。
+
+<figure><img src="../.gitbook/assets/image (283).png" alt=""><figcaption></figcaption></figure>
+
+<table data-full-width="true"><thead><tr><th>角色</th><th>技能 清單管理員</th><th>技能 清單協作者</th><th>技能 清單使用者</th></tr></thead><tbody><tr><td><strong>說明</strong></td><td>可操作技能清單與技能全部功能的角色</td><td>被賦予權限協助管理技能清單成員的角色</td><td>可建立與編輯屬於自己的技能的角色</td></tr><tr><td><strong>建立技能</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>管理技能成員</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>檢視所有技能</strong></td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>編輯所有技能</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
+
+### **技能**
+
+以下表格描述的是「MCP」層級可以做的事情。這一層通常由「MCP 管理員」或「MCP 協作者」負責管理成員，將適合的權限分配給協作者或使用者。
+
+<figure><img src="../.gitbook/assets/image (285).png" alt=""><figcaption></figcaption></figure>
+
+<table data-full-width="true"><thead><tr><th>角色</th><th>技能 管理員</th><th>技能 協作者</th><th>技能 使用者</th></tr></thead><tbody><tr><td><strong>說明</strong></td><td>擁有完整的技能控制權</td><td>可協助管理技能的內容調整</td><td>僅能讀取技能的角色</td></tr><tr><td><strong>可在 Agent 新增技能</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>在技能清單清單檢視技能</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>設定技能成員</strong></td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>編輯技能</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>刪除技能</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
+
 ## **MCP 功能權限**
 
 ### **MCP 清單**
@@ -65,6 +91,14 @@ description: 本功能提供雙層級的權限控管，協助您彈性設定「�
 <figure><img src="../.gitbook/assets/image (116).png" alt=""><figcaption></figcaption></figure>
 
 <table data-full-width="true"><thead><tr><th>角色</th><th>MCP 管理員</th><th>MCP 協作者</th><th>MCP 使用者</th></tr></thead><tbody><tr><td><strong>說明</strong></td><td>擁有完整的MCP控制權</td><td>可協助管理MCP的內容調整</td><td>僅能讀取MCP的角色</td></tr><tr><td><strong>可在 Agent 新增MCP</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>在MCP清單清單檢視MCP</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>設定MCP成員</strong></td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>編輯MCP</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>刪除MCP</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
+
+### MCP 工具
+
+透過將使用者、群組或組織指派給工具，管理員可以控制哪些使用者可以在其他功能（例如代理設定、測試或其他基於工具的功能）中使用該工具。
+
+儲存權限設定後，選定的使用者、群組或組織將能夠在受支援的功能中存取和使用該工具。
+
+<figure><img src="../.gitbook/assets/image (287).png" alt=""><figcaption></figcaption></figure>
 
 ## **工作流程模板 功能權限**
 
