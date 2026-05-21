@@ -49,3 +49,27 @@ description: >-
 <table><thead><tr><th width="186">設定項目</th><th width="288">說明</th><th>選項</th></tr></thead><tbody><tr><td>服務名稱</td><td>提供模型的服務名稱</td><td><code>openai</code>, <code>gemini</code>, <code>ollama</code> (on-premises)</td></tr><tr><td>模式</td><td>模型的類型</td><td><code>chat</code>, <code>embedding</code></td></tr><tr><td>模型</td><td>服務提供可使用的模型</td><td>例：<code>gpt-4.1</code>, <code>gemini-2.0-flash</code> 等，視系統安裝時的設定</td></tr><tr><td>名稱</td><td>在 AI Studio 裡辨識此模型使用的名稱</td><td>預設與模型相同，使用者輸入</td></tr><tr><td>描述</td><td>模型的描述</td><td>使用者輸入</td></tr><tr><td>API 金鑰/API 基礎</td><td>服務選擇 <code>openai</code> 與 <code>gemini</code> 時輸入金鑰，選擇 <code>ollama</code> 時輸入模型 API 服務的 URL 網址</td><td>使用者輸入</td></tr><tr><td>自訂價格 (進階設定)</td><td>是否提供模型服務價格，用於計算使用生成式 AI 的成本</td><td>使用者選項</td></tr><tr><td>定價模型 (進階設定)</td><td>服務如何定價？</td><td>預設為每百萬個標記</td></tr><tr><td>輸入成本 (進階設定)</td><td>輸入金額數值</td><td>使用者輸入</td></tr><tr><td>輸出成本 (進階設定)</td><td>輸入金額數值</td><td>使用者輸入</td></tr><tr><td>啟用狀態</td><td>啟用/停止模型</td><td>使用者選項</td></tr></tbody></table>
 
 > 注意：模型建立完成後無法變更 服務名稱、模式 與 模型。
+
+## 模型支援清單
+
+AI Studio 目前支援多種模型接入來源，包含：
+
+* OpenAI
+* Azure OpenAI
+* Google / Gemini
+* Ollama
+* Anthropic Claude
+* AWS Bedrock
+* Google Vertex AI
+* DeepSeek
+* Mistral AI
+* Cohere
+* OpenRouter
+* NVIDIA NIM
+* GLM
+* MiniMax
+* Qwen
+
+
+
+> 注意：上述清單主要是 AI Studio 目前支援的模型接入來源。實際使用時，模型可採用 Cloud 或 On-premise 方式部署，會依客戶的環境需求、模型授權、API 服務或私有化部署條件而定。
