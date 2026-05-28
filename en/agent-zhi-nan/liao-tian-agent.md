@@ -1,10 +1,17 @@
 ---
-description: "Chat Agent allows users to directly interact with large-scale language models, and is suitable for tasks such as brainstorming, information summarization, and generating formatted text content, without worrying about the leakage of sensitive data."
+description: >-
+  Chat Agent allows users to directly interact with large-scale language models,
+  and is suitable for tasks such as brainstorming, information summarization,
+  and generating formatted text content, withou
 ---
----
+
 # Chat Agent
 
-## **Create Agent**
+***
+
+## Chat Agent
+
+### **Create Agent**
 
 <figure><img src="../.gitbook/assets/image (144).png" alt=""><figcaption></figcaption></figure>
 
@@ -12,13 +19,13 @@ description: "Chat Agent allows users to directly interact with large-scale lang
 
 1. Click the "+ Create" button in the upper right corner of the screen
 2. Select "Agent Type" in the pop-up window
-3. Enter the knowledge name in the "Name" field and click the button on the right to create a multi-language label. Please refer to 
-4. Enter the knowledge description in the "Description" field and click the button on the right to create a multilingual label. Please refer to 
+3. Enter the knowledge name in the "Name" field and click the button on the right to create a multi-language label. Please refer to
+4. Enter the knowledge description in the "Description" field and click the button on the right to create a multilingual label. Please refer to
 5. Click the "Label" menu to select the label to be brought into this Agent
 6. Click the "Model" menu to select the large language model used by this Agent
 7. Click the "Save" button to complete the addition, and the system will automatically enter the Agent editing screen for the user to complete the settings.
 
-### Multi-language settings <a href="#duo-guo-yu-yan-she-ding" id="duo-guo-yu-yan-she-ding"></a>
+#### Multi-language settings <a href="#duo-guo-yu-yan-she-ding" id="duo-guo-yu-yan-she-ding"></a>
 
 <figure><img src="../.gitbook/assets/image (147).png" alt=""><figcaption></figcaption></figure>
 
@@ -27,7 +34,7 @@ description: "Chat Agent allows users to directly interact with large-scale lang
 
 > Note: The large language model options in the "Model" menu should be based on the configuration of the actual installation environment. The options presented in the documentation are for reference only.
 
-## Chat Agent functional interface
+### Chat Agent functional interface
 
 <figure><img src="../.gitbook/assets/image (148).png" alt=""><figcaption></figcaption></figure>
 
@@ -35,32 +42,32 @@ The chat agent homepage is mainly divided into several parts, as shown below:
 
 1. **Agent Function Options**: The function options area contains the following links, each link will open the corresponding setting page
 
-| name | illustrate |
-| --------- | ------------------- |
-| Basic settings | Edit the Agent's home page |
-| session log | Provide conversation history for this Agent |
-| Member management | Manage access to this Agent |
-| AI WEBAPP | Configure web embedding for this Agent |
-| API Key | Provide credentials for third-party applications to securely call the API |
+| name              | illustrate                                                                |
+| ----------------- | ------------------------------------------------------------------------- |
+| Basic settings    | Edit the Agent's home page                                                |
+| session log       | Provide conversation history for this Agent                               |
+| Member management | Manage access to this Agent                                               |
+| AI WEBAPP         | Configure web embedding for this Agent                                    |
+| API Key           | Provide credentials for third-party applications to securely call the API |
 
 2. **Basic information**: You can view the Agent name, creation and editing time and personnel, and activation status
 3. **Application Settings:** Provides settings related to Agent behavior based on Agent type
 
-| name | illustrate |
-| ---------- | --------------------------- |
-| Inference parameters | Control how responses are generated |
-| Knowledge base configuration | Select parameters and available knowledge sources |
-| tool | Enable and configure available tools |
-| Skill | Functions used to expand Agent capabilities |
-| Agent collaboration | Allows Agents to connect in series and collaborate with other Agents to perform tasks |
-| Agent welcome page | Set initial conversation content |
-| prompt word template | Provides reusable prompt word templates for quick use |
-| File handling | Control how uploaded files are processed |
-| guardrail | Control content output |
+| name                         | illustrate                                                                            |
+| ---------------------------- | ------------------------------------------------------------------------------------- |
+| Inference parameters         | Control how responses are generated                                                   |
+| Knowledge base configuration | Select parameters and available knowledge sources                                     |
+| tool                         | Enable and configure available tools                                                  |
+| Skill                        | Functions used to expand Agent capabilities                                           |
+| Agent collaboration          | Allows Agents to connect in series and collaborate with other Agents to perform tasks |
+| Agent welcome page           | Set initial conversation content                                                      |
+| prompt word template         | Provides reusable prompt word templates for quick use                                 |
+| File handling                | Control how uploaded files are processed                                              |
+| guardrail                    | Control content output                                                                |
 
-4. **Adaptation Preview:** Allows users to test whether the Q&A results are as expected
+4. **Adaptation Preview:** Allows users to test whether the Q\&A results are as expected
 
-## **Basic settings**
+### **Basic settings**
 
 <figure><img src="../.gitbook/assets/image (149).png" alt=""><figcaption></figcaption></figure>
 
@@ -69,7 +76,7 @@ All types of Agent homepages share the **Basic Settings** section, which include
 1. **Agent Status**: Users can edit the activation status of Agent, and the status will change immediately when the switch is switched.
 2. **Basic Settings Edit**: Can edit the most basic name, description and international language translation.
 
-### Agent status settings
+#### Agent status settings
 
 <figure><img src="../.gitbook/assets/image (150).png" alt=""><figcaption></figcaption></figure>
 
@@ -81,21 +88,21 @@ All types of Agent homepages share the **Basic Settings** section, which include
 4. After clicking the dialog button, the workspace dialog opens
 5. Click the Unpublished button to unpublish
 
-## **APP SETTINGS**
+### **APP SETTINGS**
 
-### **Inference Parameters**
+#### **Inference Parameters**
 
 The settings include two tabs: "**Parameters**" and "**System Prompt Words**".
 
-#### **parameter**
+**parameter**
 
 Users can control the Agent's reply behavior by adjusting the items in the "**Parameters**" tab.
 
 <figure><img src="../.gitbook/assets/image (152).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="98">project</th><th width="112">parameter</th><th width="238">illustrate</th><th>Range and value</th></tr></thead><tbody><tr><td>1</td><td>Model</td><td>The default model selected when the Agent is created; it can be changed here</td><td>n/a</td></tr><tr><td>2</td><td>temperature</td><td>Control the creativity of your replies. The higher the value, the more diverse and creative the responses; the lower the value, the more precise and consistent the responses.</td><td>0–1</td></tr><tr><td>3</td><td>Top P</td><td>Control randomness and diversity. Lower values ​​produce more conservative and predictable text; higher values ​​produce more diverse results</td><td>0–1</td></tr><tr><td>4</td><td>maximum mark</td><td>Limit maximum output length</td><td>Set according to needs</td></tr><tr><td>5</td><td>dialogue memory</td><td>Store Q&A history to enhance coherence (may slow down response times)</td><td><code>0</code>Indicates a stateless response;<code>5-10</code>A balance can be struck between coherence and performance. The more memories you have, the slower it becomes.</td></tr></tbody></table>
+<table><thead><tr><th width="98">project</th><th width="112">parameter</th><th width="238">illustrate</th><th>Range and value</th></tr></thead><tbody><tr><td>1</td><td>Model</td><td>The default model selected when the Agent is created; it can be changed here</td><td>n/a</td></tr><tr><td>2</td><td>temperature</td><td>Control the creativity of your replies. The higher the value, the more diverse and creative the responses; the lower the value, the more precise and consistent the responses.</td><td>0–2</td></tr><tr><td>3</td><td>Top P</td><td>Control randomness and diversity. Lower values ​​produce more conservative and predictable text; higher values ​​produce more diverse results</td><td>0–1</td></tr><tr><td>4</td><td>maximum mark</td><td>Limit maximum output length</td><td>Set according to needs</td></tr><tr><td>5</td><td>dialogue memory</td><td>Store Q&#x26;A history to enhance coherence (may slow down response times)</td><td><code>0</code>Indicates a stateless response;<code>5-10</code>A balance can be struck between coherence and performance. The more memories you have, the slower it becomes.</td></tr></tbody></table>
 
-#### instruction
+**instruction**
 
 Users can use the "Commands" tab to define prompts to control the Agent's language, role, tone, etc.
 
@@ -127,51 +134,51 @@ The prompt word generation function supports "rewriting existing content" or "ge
 3. It is automatically generated and can be edited according to your own needs.
 4. Click the "Save" button to complete editing.
 
-### knowledge base
+#### knowledge base
 
-#### Knowledge base sources
+**Knowledge base sources**
 
 <figure><img src="../.gitbook/assets/image (186).png" alt=""><figcaption></figcaption></figure>
 
-#### Knowledge base parameters
+**Knowledge base parameters**
 
 <figure><img src="../.gitbook/assets/image (158).png" alt=""><figcaption></figcaption></figure>
 
-### **tool**
+#### **tool**
 
 Users can enable/disable tools accessible to Agent in settings.
 
 <figure><img src="../.gitbook/assets/image (159).png" alt=""><figcaption></figcaption></figure>
 
-#### **Session Memory**
+**Session Memory**
 
 <table><thead><tr><th width="250">tool</th><th>illustrate</th></tr></thead><tbody><tr><td>KV conversational short-term memory</td><td>Ability to accurately store and retrieve temporary data on a key-based basis during a session. For tracking dynamic variables (e.g.<code>username</code>、<code>Selected plan</code>) is very useful.</td></tr><tr><td>graphiti - add new memory data</td><td>Store episodic information, such as interactions or events, into the knowledge graph.</td></tr><tr><td>graphiti - Query memory nodes</td><td>Retrieve entity summaries or node-level memory representations.</td></tr><tr><td>graphiti - query memory facts</td><td>Search memory graphs for relevant facts and structured relationships.</td></tr><tr><td>graphiti - delete entity relationships</td><td>Removes defined relationships between entities from the graph.</td></tr><tr><td>graphiti - deleting event fragments</td><td>Delete a specific event segment in the memory graph.</td></tr><tr><td>graphiti - Get entity relationships</td><td>Retrieve structured relationships related to specific entities.</td></tr><tr><td>graphiti - Get event fragments</td><td>Return to recent memory episodes to provide context for conversations or decisions.</td></tr><tr><td>graphiti - clear memory graph</td><td>Reset the entire map-based memory system.</td></tr></tbody></table>
 
 > PS: For more information about Graphiti, please see its official website.
 
-#### **Academic Articles**
+**Academic Articles**
 
 <table><thead><tr><th width="250">tool</th><th>User Guide</th></tr></thead><tbody><tr><td>arXiv paper search</td><td>Allows users to search academic papers from the arXiv database.</td></tr><tr><td>Google Scholar Search</td><td>Search scholarly articles and citations with Google Scholar.</td></tr></tbody></table>
 
-#### **Web Search**
+**Web Search**
 
 <table><thead><tr><th width="250">tool</th><th>User Guide</th></tr></thead><tbody><tr><td>Serper - web content extraction</td><td>Extract readable content from web page URLs.</td></tr><tr><td>Serper - Google Search</td><td>Perform a Google search and return summary results.</td></tr><tr><td>Serper - Patent Search</td><td>Search issued patents and related documents.</td></tr><tr><td>Serper - Image Search</td><td>Search images based on text queries.</td></tr><tr><td>Serper - paper search</td><td>Search academic papers using Google Scholar-style sources.</td></tr><tr><td>Serper - News Search</td><td>Search news based on text queries.</td></tr><tr><td>Serper - map information search</td><td>Search maps based on text queries.</td></tr></tbody></table>
 
 > Note: For more information about Sperper, please see its official website.
 
-#### **Code**
+**Code**
 
 <table><thead><tr><th width="250">tool</th><th>User Guide</th></tr></thead><tbody><tr><td>Execute Python code</td><td>Execute Python scripts or logic to support tasks such as mathematics, data parsing, or automation.</td></tr></tbody></table>
 
-#### **Document Handling**
+**Document Handling**
 
 <table><thead><tr><th width="250">tool</th><th>User Guide</th></tr></thead><tbody><tr><td>Preview file</td><td>Display uploaded files in a readable format within the platform.</td></tr><tr><td>Convert file to markdown</td><td>Convert the file to Markdown format.</td></tr></tbody></table>
 
-#### **Other**
+**Other**
 
 <table><thead><tr><th width="250">tool</th><th>User Guide</th></tr></thead><tbody><tr><td>Get current time</td><td>Returns the current system time at the time of the request.</td></tr><tr><td>Simple mathematical operations</td><td>Perform simple arithmetic operations at the prompt.</td></tr><tr><td>Dynamic thinking chain (Sequential Thinking)</td><td>Break complex problems down into step-by-step considerations, with the option to modify or branch. Good for planning, troubleshooting, and structured reasoning.</td></tr></tbody></table>
 
-### Skill
+#### Skill
 
 <figure><img src="../.gitbook/assets/image (169).png" alt=""><figcaption></figcaption></figure>
 
@@ -179,7 +186,7 @@ Users can enable/disable tools accessible to Agent in settings.
 
 By setting different skills, Agent can support more functions and task processing scenarios, such as data access, tool operation, process execution or specific task expansion. Users can configure corresponding skills according to their needs to improve the Agent's application flexibility and task processing capabilities.
 
-### Agent collaboration
+#### Agent collaboration
 
 Through this function, users can establish cooperative relationships between multiple Agents and handle task content according to different divisions of responsibilities, thereby improving process flexibility and overall task processing efficiency.
 
@@ -187,19 +194,19 @@ Through this function, users can establish cooperative relationships between mul
 
 <figure><img src="../.gitbook/assets/image (170).png" alt=""><figcaption></figcaption></figure>
 
-### **Welcome Page**
+#### **Welcome Page**
 
 Users can set their own default conversation content, allowing the Agent to provide directly clickable question directions before the conversation begins, helping users start interacting more quickly.
 
 <figure><img src="../.gitbook/assets/image (167).png" alt=""><figcaption></figcaption></figure>
 
-### **Prompt word template**
+#### **Prompt word template**
 
-Users can link existing or favorited application templates (prompt word templates) to the Agent to speed up Q&A by filling in required fields.
+Users can link existing or favorited application templates (prompt word templates) to the Agent to speed up Q\&A by filling in required fields.
 
 <figure><img src="../.gitbook/assets/image (166).png" alt=""><figcaption></figcaption></figure>
 
-### **File Processing**
+#### **File Processing**
 
 **File Handling** settings allow the user to define how the Agent handles files uploaded in the workspace. This feature is particularly useful when the Agent needs to interpret, convert, or extract content from files such as PDFs, DOCX, or images.
 
@@ -207,13 +214,13 @@ Users can link existing or favorited application templates (prompt word template
 
 <table><thead><tr><th width="161">Options</th><th width="103">Visible to MCP tools</th><th width="96">Visible to LLM</th><th>illustrate</th><th>Example use case</th></tr></thead><tbody><tr><td>Do not process</td><td>X</td><td>X</td><td>The archive has been uploaded but is not visible to either LLM or MCP tools. Will not be opened or interpreted.</td><td>– –</td></tr><tr><td>Process with Tool</td><td>O</td><td>X</td><td>Archives are passed to MCP tools for processing but not to LLM.</td><td>Useful when you want to extract material from a CSV or PDF, but don't need AI-generated comments.</td></tr><tr><td>File to Image Conversion</td><td>X</td><td>O</td><td>The files will be translated into images, visible only to LLM for reference.</td><td>Suitable for scanned documents or visual layouts where diagrammatic relationships are important.</td></tr><tr><td>Convert to Image &#x26; Tool</td><td>O</td><td>O</td><td>Archives are simultaneously translated into LLM references and processed by MCP tools.</td><td>Best suited for invoices or forms that require interpretation of both visual layout and structured information.</td></tr></tbody></table>
 
-### guardrail
+#### guardrail
 
 Guardrails are a function used to control content output. They can check and restrict content during the process, helping to reduce risks related to personal data leakage, information security and legal compliance, and making the output content more consistent with usage specifications and management requirements.
 
 <figure><img src="../.gitbook/assets/image (172).png" alt=""><figcaption></figcaption></figure>
 
-## **Adaptation Preview**
+### **Adaptation Preview**
 
 Use this block to test Agent responses and adjust settings accordingly.
 
@@ -221,7 +228,7 @@ Use this block to test Agent responses and adjust settings accordingly.
 
 <figure><img src="../.gitbook/assets/image (173).png" alt=""><figcaption></figcaption></figure>
 
-### **Adjust Preview** How to upload files
+#### **Adjust Preview** How to upload files
 
 * You can click the plus sign (+) in the dialog box to upload files.
 
@@ -231,7 +238,7 @@ Use this block to test Agent responses and adjust settings accordingly.
 
 <figure><img src="../.gitbook/assets/image (175).png" alt=""><figcaption></figcaption></figure>
 
-## memory
+### memory
 
 The memory function can help users create reusable memory content for the Agent, so that the Agent can refer to preset background information, usage scenarios and processing procedures when performing tasks or responding to questions.
 
@@ -239,7 +246,7 @@ Users can view the created memory list on the Agent's memory page, and quickly i
 
 <figure><img src="../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
 
-### build memory
+#### build memory
 
 <figure><img src="../.gitbook/assets/image (179).png" alt=""><figcaption></figcaption></figure>
 
@@ -248,13 +255,15 @@ Users can view the created memory list on the Agent's memory page, and quickly i
 1. Enter the Agent page. Click "Memory" in the submenu on the left.
 2. Click the "Create" button in the upper right corner.
 3. Fill in the basic information of memory:
- * Name: Enter the memory name.
- * Description: Enter memory description.
- * Applicable situations: Enter the usage situations where this memory is applicable.
- * Content: Enter detailed content, which can be formatted in Markdown format.
+
+* Name: Enter the memory name.
+* Description: Enter memory description.
+* Applicable situations: Enter the usage situations where this memory is applicable.
+* Content: Enter detailed content, which can be formatted in Markdown format.
+
 4. After confirming that the content is correct, click "Create" to complete the creation.
 
-### View memory details
+#### View memory details
 
 <figure><img src="../.gitbook/assets/image (178).png" alt=""><figcaption></figcaption></figure>
 
@@ -265,9 +274,9 @@ Users can view the created memory list on the Agent's memory page, and quickly i
 3. The system will open the details panel on the right.
 4. Users can view the name, activation status, description, usage context and complete content of the memory. If the content is long, you can scroll up and down in the right panel to view it.
 
-### Enable and disable memory
+#### Enable and disable memory
 
-#### Memory enablement rules
+**Memory enablement rules**
 
 The memory function includes the overall function switch and the single-stroke memory activation status.
 
@@ -277,7 +286,7 @@ If the switch is on, it means that this Agent can use the memory function. Users
 
 If the switch is off, it means that this Agent does not use the memory function. Even if there are already created memories in the memory list, the Agent will not apply these memory contents.
 
-#### Activating and deactivating single memory
+**Activating and deactivating single memory**
 
 <figure><img src="../.gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
 
@@ -285,7 +294,7 @@ In the memory list, the "Enabled" field is used to display whether a single memo
 
 Users can disable temporarily unused memories as needed, retaining the content but not allowing the Agent to apply it; they can re-enable it if they need to use it again in the future.
 
-## **Session Log**
+### **Session Log**
 
 Conversation records store all conversation records of this Agent. Administrators can filter records by title, user or date range. Records include processing procedures. When errors occur or responses are slow, administrators can review processing details to diagnose the problem.
 
@@ -293,7 +302,7 @@ Conversation records store all conversation records of this Agent. Administrator
 
 <figure><img src="../.gitbook/assets/image (184).png" alt=""><figcaption></figcaption></figure>
 
-## Permissions
+### Permissions
 
 The creator can grant access rights to other users through "Permissions" (please refer to role definition).
 
@@ -303,7 +312,7 @@ The creator can grant access rights to other users through "Permissions" (please
 
 <table><thead><tr><th width="80">project</th><th width="146">Operation name</th><th>illustrate</th></tr></thead><tbody><tr><td>1</td><td>Edit table</td><td>Allows the user to edit the presentation of the table</td></tr><tr><td>2</td><td>refresh</td><td>Refresh list after click</td></tr><tr><td>3</td><td>Content filtering</td><td>Advanced filtering of specific content</td></tr><tr><td>4</td><td>Batch delete</td><td>After checking the items, the delete button in the upper left corner will be displayed, allowing users to delete multiple items.</td></tr><tr><td>5</td><td>search field</td><td>Search name</td></tr><tr><td>6</td><td>invite</td><td>Invite organizations/members</td></tr><tr><td>7</td><td>action</td><td>Transfer your role or remove selected users</td></tr></tbody></table>
 
-### **New member**
+#### **New member**
 
 <figure><img src="../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
 
@@ -319,7 +328,7 @@ The creator can grant access rights to other users through "Permissions" (please
 6. After selecting the target organization/user, you can click the label to open the view menu and view all users within the organization level and role.
 7. Click the "Add" button to complete the invitation
 
-## **Web App**
+### **Web App**
 
 Agents can be embedded into web pages to provide question and answer services, as shown below:
 
@@ -327,7 +336,7 @@ Agents can be embedded into web pages to provide question and answer services, a
 
 To embed an Agent into a website, use this feature to generate front-end embed code.
 
-### **New Web App**
+#### **New Web App**
 
 <figure><img src="../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
 
@@ -347,13 +356,13 @@ To embed an Agent into a website, use this feature to generate front-end embed c
 
 > Note: Each Agent can have multiple API keys and matching embed code to independently manage expiration dates and usage limits for different Web App instances.
 
-## API Key
+### API Key
 
 API Key is an access key used to verify identity, allowing the system to identify the source of the request and apply corresponding permissions and usage quotas when calling the Agent API. Please keep your API Key safe to avoid leakage; if you suspect that the key has been leaked, it is recommended to immediately replace and update all integration settings that use the key.
 
 <figure><img src="../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
 
-### Add API Key
+#### Add API Key
 
 <figure><img src="../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
 
@@ -368,7 +377,7 @@ API Key is an access key used to verify identity, allowing the system to identif
 
 > Please note: Please copy your ID and API key immediately after saving to avoid losing them.
 
-### Copy Endpoint
+#### Copy Endpoint
 
 Endpoint is the service entry location (URL) of Agent API. The system will send API requests to this location to perform the corresponding function. Please choose the correct Endpoint (such as test environment or production environment) according to the usage scenario to avoid sending requests to the wrong environment or causing connection failure.
 
