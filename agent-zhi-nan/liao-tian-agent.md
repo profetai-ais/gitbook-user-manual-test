@@ -93,7 +93,7 @@ description: 聊天 Agent 可讓使用者直接與大型語言模型互動，適
 
 <figure><img src="../.gitbook/assets/image (152).png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="98">項目</th><th width="112">參數</th><th width="238">說明</th><th>範圍與數值</th></tr></thead><tbody><tr><td>1</td><td>模型</td><td>Agent 建立時選擇的預設模型；可在這裡變更</td><td>n/a</td></tr><tr><td>2</td><td>溫度</td><td>控制回覆的創造力。數值越高，回應越多元和有創意；數值越低，回應越精確和一致</td><td>0–1</td></tr><tr><td>3</td><td>Top P</td><td>控制隨機性和多樣性。數值越低，產生越保守和可預測的文字；數值越高，產生越多樣的結果</td><td>0–1</td></tr><tr><td>4</td><td>最大標記</td><td>限制最大輸出長度</td><td>依需求設定</td></tr><tr><td>5</td><td>對話記憶</td><td>儲存問答歷史以增強連貫性（可能會減慢回應時間）</td><td><code>0</code>表示無狀態回應；<code>5-10</code>可在連貫性和效能之間取得平衡。記憶越多，速度越慢。</td></tr></tbody></table>
+<table><thead><tr><th width="98">項目</th><th width="112">參數</th><th width="238">說明</th><th>範圍與數值</th></tr></thead><tbody><tr><td>1</td><td>模型</td><td>Agent 建立時選擇的預設模型；可在這裡變更</td><td>n/a</td></tr><tr><td>2</td><td>溫度</td><td>控制回覆的創造力。數值越高，回應越多元和有創意；數值越低，回應越精確和一致</td><td>0–2</td></tr><tr><td>3</td><td>Top P</td><td>控制隨機性和多樣性。數值越低，產生越保守和可預測的文字；數值越高，產生越多樣的結果</td><td>0–1</td></tr><tr><td>4</td><td>最大標記</td><td>限制最大輸出長度</td><td>依需求設定</td></tr><tr><td>5</td><td>對話記憶</td><td>儲存問答歷史以增強連貫性（可能會減慢回應時間）</td><td><code>0</code>表示無狀態回應；<code>5-10</code>可在連貫性和效能之間取得平衡。記憶越多，速度越慢。</td></tr></tbody></table>
 
 #### 指令
 
