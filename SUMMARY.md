@@ -1,8 +1,12 @@
 # Table of contents
 
+## Group 1
+
+* [忘記密碼](README.md)
+
 ## 入門指南
 
-* [AI Studio 基礎介紹](README.md)
+* [AI Studio 基礎介紹](<README (1).md>)
 * [AI Studio 工作空間](ru-men-zhi-nan/ai-studio-gong-zuo-kong-jian.md)
 * [AI Studio 角色與權限說明](ru-men-zhi-nan/ai-studio-jue-se-yu-quan-xian-shuo-ming.md)
 * [基礎介面介紹](ru-men-zhi-nan/ji-chu-jie-mian-jie-shao.md)
