@@ -47,6 +47,62 @@ By adding different Skills, Agents can perform more specific tasks, such as obta
 4. Import files in specified format (only supports **.zip, .md, .skill**)
 5. Click Import to complete the creation
 
+## Import Skills from SkillsMP
+
+### Enable the SkillsMP Import Option
+
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
+
+To display the SkillsMP import option in AIS, complete the following settings first:
+
+1. Go to the official SkillsMP platform and apply for a personal or enterprise account.
+2. Create an API Key from your SkillsMP account.
+   1. Application URL: https://skillsmp.com/docs/api
+3. Return to AIS and go to: System Settings → Key Management
+4. Click Create.
+5. In the Type field, select: SkillsMP
+6. Paste the API Key obtained from SkillsMP into the designated field.
+7. After the key is added successfully, the SkillsMP import option will be displayed in the system.
+
+> Note:> &#x20;The SkillsMP import feature is only displayed after the API Key setup is completed. If the SkillsMP provider and its corresponding API Key have not been added in Key Management, the SkillsMP import option will not appear in the system.
+
+#### Rate Limits
+
+The SkillsMP API applies different rate limits depending on whether an API Key is used.
+
+1. Without an API Key
+   * Up to 50 requests per day
+   * Up to 10 requests per minute
+   * Supports keyword search only
+2. With an API Key
+   * Up to 500 requests per day
+   * Up to 30 requests per minute
+   * Supports keyword search
+3. Wildcard Search Is Not Supported
+   * The SkillsMP API does not support wildcard searches, such as \*.
+4. Quota Usage Tracking
+   * Each API response includes related response headers that can be used to track the current quota usage.
+
+### Import Skills from SkillsMP in AIS
+
+<figure><img src="../.gitbook/assets/image (106).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (163).png" alt=""><figcaption></figcaption></figure>
+
+After the SkillsMP API Key has been configured, you can import skills from SkillsMP in AIS.
+
+1. Go to the Skills page.
+2. Click Add, then select Import from SkillsMP.
+3. Select a group for the imported skill.
+4. Select the skill you want to import.
+5. Click the + icon to import the selected skill.
+
 ## View security level
 
 After each skill is imported, the system will automatically scan it and assign different security levels. Users can click on the icon to view detailed content.
@@ -59,7 +115,7 @@ After each skill is imported, the system will automatically scan it and assign d
 
 The current security level is determined based on inspection and evaluation based on the relevant specifications of **OWASP Top 10 for LLM**.
 
-Reference: 
+Reference:
 
 ## Use skills
 
