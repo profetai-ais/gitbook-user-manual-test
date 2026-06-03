@@ -47,6 +47,60 @@
 4. 匯入指定格式檔案 ( 僅支援 **.zip, .md, .skill** )
 5. 點擊匯入，完成建立
 
+
+
+## 從 SkillsMP 匯入技能
+
+### 啟用 SkillsMP 匯入選項
+
+<figure><img src="../.gitbook/assets/image (295).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (296).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (297).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (298).png" alt=""><figcaption></figcaption></figure>
+
+若要在 AIS 中顯示 SkillsMP 匯入選項，請先完成以下設定：
+
+1. 前往 SkillsMP 官方平台申請個人或企業帳號，建立一組 API Key
+   * 申請網址：[https://skillsmp.com/docs/api](https://skillsmp.com/docs/api)
+2. 回到 AIS，進入：   &#x20;系統設定 → 密鑰管理
+3. 點選 新增
+4. 在 類型 欄位選擇：   SkillsMP
+5. 將從 SkillsMP 取得的 API Key 貼入指定欄位
+6. 完成新增後，系統才會顯示 SkillsMP 匯入選項
+
+> 注意 : SkillsMP 匯入功能需先完成 API Key 設定後才會顯示。若未在 Key Management 中新增 SkillsMP Provider 與對應的 API Key，系統將不會顯示 SkillsMP 匯入選項。
+
+#### 使用限制
+
+SkillsMP API 會依據是否使用 API Key，套用不同的請求限制：
+
+1. 未使用 API Key
+   * 每日最多可發送 50 次請求
+   * 每分鐘最多可發送 10 次請求
+   * 僅支援 關鍵字搜尋
+2. 已使用 API Key
+   * 每日最多可發送 500 次請求
+   * 每分鐘最多可發送 30 次請求
+   * 支援 關鍵字搜尋
+3. 不支援萬用字元搜尋
+   * SkillsMP API 不支援使用萬用字元進行搜尋，例如：\*
+4. Quota 用量追蹤
+   * 每一次 API 回應都會包含相關的 response headers，可用於追蹤目前的 quota 使用狀況
+
+### 在 AIS 內使用 SkillsMP 匯入技能
+
+<figure><img src="../.gitbook/assets/image (299).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (301).png" alt=""><figcaption></figcaption></figure>
+
+1. 到技能分頁
+2. 點擊添加，選擇 從 SkillsMP 匯入
+3. 選擇群組
+4. 選擇技能，點擊 + 號匯入
+
 ## 檢視安全等級
 
 每一筆技能匯入後，系統都會自動掃描一遍，並給予不同的安全等級分類。使用者可點擊圖標檢視詳細內容。
