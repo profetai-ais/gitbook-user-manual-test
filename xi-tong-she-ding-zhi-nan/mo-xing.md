@@ -44,6 +44,20 @@ description: >-
    2. 若使用 **自家部署模型**→ 可評估是否自行填入費率。
 5. 點擊創建，完成設定。
 
+### 常見問題：模型 Logo 與實際串接供應商不一致
+
+<figure><img src="../.gitbook/assets/image (303).png" alt="" width="561"><figcaption></figcaption></figure>
+
+在模型管理頁面中，模型 Logo 會依據建立模型時所選擇的供應商（Provider）進行顯示。
+
+例如：若模型建立時選擇的供應商為 OpenAI，畫面上會顯示 GPT / OpenAI 相關 Logo；若選擇 Azure OpenAI，則會顯示 Azure 相關標示。
+
+若該模型實際串接的是 Azure API，但建立模型時的供應商欄位選擇為 OpenAI，可能會出現「實際使用 Azure API，但畫面顯示 GPT Logo」的情形。
+
+此情況屬於模型建立時的供應商選擇與畫面顯示邏輯差異，模型仍會依照已設定的 API URL、Key 與相關參數進行呼叫。若模型可正常完成連線測試與使用，表示目前 API 串接可正常運作。
+
+若需要讓畫面 Logo 與實際供應商一致，建議於新增或重新建立模型時，確認供應商欄位已選擇正確的服務來源。
+
 ## **模型設定內容說明**
 
 <table><thead><tr><th width="186">設定項目</th><th width="288">說明</th><th>選項</th></tr></thead><tbody><tr><td>服務名稱</td><td>提供模型的服務名稱</td><td><code>openai</code>, <code>gemini</code>, <code>ollama</code> (on-premises)</td></tr><tr><td>模式</td><td>模型的類型</td><td><code>chat</code>, <code>embedding</code></td></tr><tr><td>模型</td><td>服務提供可使用的模型</td><td>例：<code>gpt-4.1</code>, <code>gemini-2.0-flash</code> 等，視系統安裝時的設定</td></tr><tr><td>名稱</td><td>在 AI Studio 裡辨識此模型使用的名稱</td><td>預設與模型相同，使用者輸入</td></tr><tr><td>描述</td><td>模型的描述</td><td>使用者輸入</td></tr><tr><td>API 金鑰/API 基礎</td><td>服務選擇 <code>openai</code> 與 <code>gemini</code> 時輸入金鑰，選擇 <code>ollama</code> 時輸入模型 API 服務的 URL 網址</td><td>使用者輸入</td></tr><tr><td>自訂價格 (進階設定)</td><td>是否提供模型服務價格，用於計算使用生成式 AI 的成本</td><td>使用者選項</td></tr><tr><td>定價模型 (進階設定)</td><td>服務如何定價？</td><td>預設為每百萬個標記</td></tr><tr><td>輸入成本 (進階設定)</td><td>輸入金額數值</td><td>使用者輸入</td></tr><tr><td>輸出成本 (進階設定)</td><td>輸入金額數值</td><td>使用者輸入</td></tr><tr><td>啟用狀態</td><td>啟用/停止模型</td><td>使用者選項</td></tr></tbody></table>
