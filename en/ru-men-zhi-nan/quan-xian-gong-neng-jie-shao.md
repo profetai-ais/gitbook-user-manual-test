@@ -142,11 +142,3 @@ The following table describes what can be done at the "prompt word template" lev
 <figure><img src="../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
 
 <table data-full-width="true"><thead><tr><th>Role</th><th>Prompt word template manager</th><th>Prompt Word Template Collaborator</th><th>Prompt word template user</th></tr></thead><tbody><tr><td><strong>illustrate</strong></td><td>Have complete control over prompt word templates</td><td>Can assist in managing the content adjustment of prompt word templates</td><td>Only roles that can read prompt word templates</td></tr><tr><td><strong>Prompt word templates available in workspaces</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>View cue words in the cue word list</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>Set prompt word template members</strong></td><td>O</td><td>X</td><td>X</td></tr><tr><td><strong>Edit Prompt Word Template</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>Delete prompt word template</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
-
-## Model Function Permissions
-
-The table below describes what each role can do at the model level. This layer is usually managed by Model Admins, who assign the appropriate permissions to collaborators or users.
-
-<figure><img src="../.gitbook/assets/image (284).png" alt=""><figcaption></figcaption></figure>
-
-<table data-full-width="true"><thead><tr><th>Role</th><th>Model Collaborator</th><th>Model User</th></tr></thead><tbody><tr><td><strong>Description</strong></td><td>Role that can access models from the model list and use the model</td><td>Can only use models</td></tr><tr><td><strong>Use models in Agents within the workspace</strong></td><td>O</td><td>O</td></tr><tr><td><strong>Select models from the model list</strong></td><td>O</td><td>X</td></tr></tbody></table>
