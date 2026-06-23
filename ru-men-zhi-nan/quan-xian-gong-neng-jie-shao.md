@@ -135,12 +135,3 @@ description: 本功能提供雙層級的權限控管，協助您彈性設定「�
 <figure><img src="../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
 
 <table data-full-width="true"><thead><tr><th>角色</th><th>提示詞模板管理員</th><th>提示詞模板協作者</th><th>提示詞模板使用者</th></tr></thead><tbody><tr><td><strong>說明</strong></td><td>擁有完整的提示詞模板控制權</td><td>可協助管理提示詞模板的內容調整</td><td>僅能讀取提示詞模板的角色</td></tr><tr><td><strong>可在工作空間使用提示詞模板</strong></td><td>O</td><td>O</td><td>O</td></tr><tr><td><strong>在提示詞清單清單檢視提示詞</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>設定提示詞模板成員</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>編輯提示詞模板</strong></td><td>O</td><td>O</td><td>X</td></tr><tr><td><strong>刪除提示詞模板</strong></td><td>O</td><td>X</td><td>X</td></tr></tbody></table>
-
-## **模型功能權限**
-
-### **模型**
-
-以下表格描述的是「模型」層級可以做的事情。這一層通常由「模型管理員」負責管理成員，將適合的權限分配給協作者或使用者。
-
-<table data-full-width="true"><thead><tr><th>角色</th><th>模型協作者</th><th>模型使用者</th></tr></thead><tbody><tr><td><strong>說明</strong></td><td>可以從模型清單中存取模型並使用模型的角色</td><td>僅能讀取模型的角色</td></tr><tr><td><strong>在工作空間中問答使用模型的 Agent</strong></td><td>O</td><td>O</td></tr><tr><td><strong>可在模型清單中選取模型</strong></td><td>O</td><td>X</td></tr></tbody></table>
-
